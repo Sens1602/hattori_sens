@@ -1,0 +1,2107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Board Support Package"
+                     displayName="Board Support Package"
+                     projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="Image Decoder"
+                     displayName="Image Decoder"
+                     projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="MDD File System"
+                     displayName="MDD File System"
+                     projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="USB Stack" displayName="USB Stack" projectFiles="true">
+      </logicalFolder>
+      <itemPath>../BitmapFile.h</itemPath>
+      <itemPath>../FlashProgrammer.h</itemPath>
+      <itemPath>../GraphicsConfig.h</itemPath>
+      <itemPath>../HardwareProfile.h</itemPath>
+      <itemPath>../MainDemo.h</itemPath>
+      <itemPath>../icons.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Board Support Package"
+                     displayName="Board Support Package"
+                     projectFiles="true">
+        <itemPath>../../../Board Support Package/SST25VF016.c</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreen.c</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreenAR1020.c</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreenResistive.c</itemPath>
+        <itemPath>../../../Board Support Package/drv_spi.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Common/TimeDelay.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="External Memory Programmer"
+                     displayName="External Memory Programmer"
+                     projectFiles="true">
+        <itemPath>../../Common/FlashProgrammer.c</itemPath>
+        <itemPath>../UART.c</itemPath>
+        <itemPath>../../Common/comm_pkt.c</itemPath>
+        <itemPath>../../Common/comm_pkt_callback.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../Microchip/Graphics/AnalogClock.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Button.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Chart.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/EditBox.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOL.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOLFontDefault.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOLSchemeDefault.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GroupBox.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Primitive.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/RadioButton.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Drivers/S1D13517.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/StaticText.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Transitions.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Transitions_weak.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Drivers/gfxepmp.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Images" displayName="Images" projectFiles="true">
+        <itemPath>../Pictures C32.c</itemPath>
+        <itemPath>../external_images.c</itemPath>
+        <itemPath>../gfx_resources_fonts.c</itemPath>
+        <itemPath>../smallicons C30.c</itemPath>
+        <itemPath>../smallicons C32.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Screens" displayName="Screens" projectFiles="true">
+        <itemPath>../alpha_blend_screen.c</itemPath>
+        <itemPath>../comfort_screen.c</itemPath>
+        <itemPath>../config_screen.c</itemPath>
+        <itemPath>../energy_screen.c</itemPath>
+        <itemPath>../gradient_screen.c</itemPath>
+        <itemPath>../info_screen.c</itemPath>
+        <itemPath>../lighting_screen.c</itemPath>
+        <itemPath>../main_screen.c</itemPath>
+        <itemPath>../panel_screen.c</itemPath>
+        <itemPath>../performance_screen.c</itemPath>
+        <itemPath>../pre_load_screen.c</itemPath>
+        <itemPath>../security_screen.c</itemPath>
+        <itemPath>../upload_screen.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="USB" projectFiles="true">
+        <itemPath>../../../Microchip/USB/usb_device.c</itemPath>
+        <itemPath>../../../Microchip/USB/Generic Device Driver/usb_function_generic.c</itemPath>
+      </logicalFolder>
+      <itemPath>../ChineseFonts.c</itemPath>
+      <itemPath>../MainDemo.c</itemPath>
+      <itemPath>../gfx_schemes.c</itemPath>
+      <itemPath>../gfx_strings.c</itemPath>
+      <itemPath>../gol_callbacks.c</itemPath>
+      <itemPath>../timer_tick.c</itemPath>
+      <itemPath>../usb_callback.c</itemPath>
+      <itemPath>../usb_descriptors.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="PIC24_GB210_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB210</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.25</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/Graphics/AnalogClock.c"
+            ex="false"
+            overriding="true">
+        <C30>
+          <property key="scalar-model" value="default"/>
+          <property key="extra-include-directories"
+                    value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+          <property key="preprocessor-macros"
+                    value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_VGAv1"/>
+          <property key="data-model" value="default"/>
+          <property key="enable-all-warnings" value="false"/>
+          <property key="pre-instruction-scheduling" value="default"/>
+          <property key="enable-short-double" value="false"/>
+          <property key="enable-ansi-warnings" value="false"/>
+          <property key="optimization-level" value="0"/>
+          <property key="enable-procedural-abstraction" value="false"/>
+          <property key="enable-fatal-warnings" value="false"/>
+          <property key="post-instruction-scheduling" value="default"/>
+          <property key="enable-omit-frame-pointer" value="false"/>
+          <property key="enable-ansi-std" value="false"/>
+          <property key="enable-unroll-loops" value="false"/>
+          <property key="const-model" value="default"/>
+          <property key="code-model" value="large-code"/>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../Pictures C32.c" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../smallicons C32.c" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="../../Common;..;../../../Microchip/Include;../../../Board Support Package"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_VGAv1"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="optimization-level" value="s"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="large-code"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value="..;"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories"
+                  value="../../../../../../Program Files/Microchip/MPLAB C30/lib;"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_360_GFXv3e_EX16_8PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_8PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_360_GFXv3e_EX16_8PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_8PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_360_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_360_GFXv3e_EX16_16PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_460_GFXv3e_EX16_8PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_8PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_460_GFXv3e_EX16_8PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_8PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_460_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_460_GFXv3e_EX16_16PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_EX16_16PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_GP_SK_GFXv3e_EX16_8PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/FlashProgrammer.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_GP_SK_GFXv3e_EX16_8PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/FlashProgrammer.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_GP_SK_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/FlashProgrammer.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_GP_SK_GFXv3e_EX16_16PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX360F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Microchip/USB/Generic Device Driver/usb_function_generic.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../Microchip/USB/usb_device.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/FlashProgrammer.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt.c" ex="true" overriding="false">
+      </item>
+      <item path="../../Common/comm_pkt_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../usb_callback.c" ex="true" overriding="false">
+      </item>
+      <item path="../usb_descriptors.c" ex="true" overriding="false">
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_USB_SK_GFXv3e_EX16_8PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_USB_SK_GFXv3e_EX16_8PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_USB_SK_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_USB_SK_GFXv3e_EX16_16PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_ETH_SK_GFXv3e_EX16_8PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_ETH_SK_GFXv3e_EX16_8PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_8PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_ETH_SK_GFXv3e_EX16_16PMP_VGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_VGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+    <conf name="PIC32_ETH_SK_GFXv3e_EX16_16PMP_WVGA" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../UART.c" ex="true" overriding="false">
+      </item>
+      <item path="../external_images.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../smallicons C30.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../common;../../../Board Support Package;../../../Microchip/Include"/>
+        <property key="additional-warnings" value="true"/>
+        <property key="preprocessor-macros"
+                  value="CFG_INCLUDE_MPLAB_X;CFG_INCLUDE_GFXv3e_PIC32_SK_16PMP_WVGAv1"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value="4000"/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+      </SKDEPIC32PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

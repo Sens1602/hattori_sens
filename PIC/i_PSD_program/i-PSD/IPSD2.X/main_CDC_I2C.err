@@ -1,0 +1,8 @@
+Warning[2058] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 102 : call of function without prototype
+Warning[2054] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 176 : suspicious pointer conversion
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 263 : unexpected return value
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 265 : unexpected return value
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 268 : unexpected return value
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 270 : unexpected return value
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 276 : unexpected return value
+Warning[2052] F:\prog\mplab_projects\i_PSD_program\i-PSD\IPSD2.X\main_CDC_I2C.c 278 : unexpected return value

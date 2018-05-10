@@ -1,0 +1,37 @@
+unsigned int RI2C(unsigned char control, unsigned char address){
+    
+    IdleI2C();                                 // アイドル確認
+    StartI2C();                                // start 出力・終了待ち
+    //if ( PIR2bits.BCLIF )return ( 8 );        // バス衝突発生時 
+        
+// ---------------- コントロール出力 -----------------------------
+    if(WriteI2C(control))return(33);           // バス衝突発生時 
+    IdleI2C();                                 // アイドル確認
+    if ( counter = SSPCON2bits.ACKSTAT )return(34);      // ACK無時 
+    PIR1bits.SSPIF = 0;                        // SSPIFクリア
+// ---------------- MPU9250アドレス出力 ------------------------
+    if(WriteI2C(address))return(35);      // バス衝突時 
+    IdleI2C();                                 // アイドル確認
+    if ( SSPCON2bits.ACKSTAT )return(36);      // ACK無時 
+    PIR1bits.SSPIF = 0;                        // SSPIFクリア
+// ---------------- Restart出力 -----------------------
+    RestartI2C();                              // restart 出力・終了待ち、リピートスタートコンディション？
+    //if ( PIR2bits.BCLIF )return (37);        // バス衝突発生時 
+// ---------------- コントロールRead Mode出力 -----------------------------
+    if(WriteI2C(control+1))return(38);         // バス衝突発生時 
+    IdleI2C();// アイドル確認
+    if ( SSPCON2bits.ACKSTAT )return(39);     // ACK無時 
+    PIR1bits.SSPIF = 0;                        // SSPIFクリア
+// ---------------- １バイト受信 -----------------------------
+    SSPCON2bits.RCEN = 1;                      // 受信ON
+    while ( SSPCON2bits.RCEN );                // 受信完了待ち
+       
+    NotAckI2C();                               // ACK返信なし（Not ACK)
+    PIR1bits.SSPIF = 0;                        // SSPIFクリア
+// ---------------- Stop condition出力 --------------------------
+    StopI2C();                                 // 出力・終了待ち
+    PIR1bits.SSPIF = 0;                        // SSPIFクリア
+    //if ( PIR2bits.BCLIF )return (40);       // バス衝突発生 
+    PIR1bits.SSPIF = 0;                    // SSPIFクリア*/
+    return ( (unsigned int) SSPBUF );      // 正常終了
+}

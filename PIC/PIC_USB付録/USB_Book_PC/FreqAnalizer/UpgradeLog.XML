@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FreqAnalizer">
+</Property><Property Name="ソリューション ファイル" Value="D:\USB_Book_PC\FreqAnalizer_ver2\FreqAnalizer\FreqAnalizer.sln">
+</Property><Property Name="Date" Value="2011年4月5日">
+</Property><Property Name="Time" Value="21:44">
+</Property></Properties><Event ErrorLevel="0" Project="FreqAnalizer" Source="FreqAnalizer\FreqAnalizer.vbproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="FreqAnalizer" Source="FreqAnalizer\FreqAnalizer.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FreqAnalizer.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="FreqAnalizer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FreqAnalizer" Source="FreqAnalizer\FreqAnalizer.vbproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event></UpgradeLog>

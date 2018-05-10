@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f3"
+                     displayName="Board Support Package"
+                     projectFiles="true">
+        <itemPath>../../../../Board Support Package/Beep.c</itemPath>
+        <itemPath>../../../../Board Support Package/EEPROM.c</itemPath>
+        <itemPath>../../../../Board Support Package/SST25VF016.c</itemPath>
+        <itemPath>../../../../Board Support Package/SST39VF040.c</itemPath>
+        <itemPath>../../../../Microchip/Common/TimeDelay.c</itemPath>
+        <itemPath>../../../../Board Support Package/TouchScreen.c</itemPath>
+        <itemPath>../../../../Board Support Package/TouchScreenResistive.c</itemPath>
+        <itemPath>../../../../Board Support Package/drv_spi.c</itemPath>
+        <itemPath>../../../../Microchip/Common/uart2.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../../Microchip/Graphics/Button.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/EditBox.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/GOL.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/GOLFontDefault.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/GOLSchemeDefault.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/GroupBox.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/Picture.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/Primitive.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/StaticText.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/Window.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="Graphics Display Drivers"
+                     projectFiles="true">
+        <itemPath>../../../../Microchip/Graphics/Drivers/SSD1926.c</itemPath>
+        <itemPath>../../../../Microchip/Graphics/Drivers/TCON_SSD1289.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="USB" projectFiles="true">
+        <itemPath>../../../../Microchip/USB/usb_host.c</itemPath>
+        <itemPath>../../../../Microchip/USB/Printer Host Driver/usb_host_printer.c</itemPath>
+        <itemPath>../../../../Microchip/USB/Printer Host Driver/usb_host_printer_esc_pos.c</itemPath>
+        <itemPath>../../../../Microchip/USB/Printer Host Driver/usb_host_printer_pcl_5.c</itemPath>
+        <itemPath>../../../../Microchip/USB/Printer Host Driver/usb_host_printer_postscript.c</itemPath>
+        <itemPath>../../../../Microchip/USB/Printer Host Driver/usb_host_printer_primitives.c</itemPath>
+      </logicalFolder>
+      <itemPath>../Print Screen Demo.c</itemPath>
+      <itemPath>../usb_config.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="PIC24FJ256GB110_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Board Support Package"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="large-data"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="true"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="large-code"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32MX460F512L_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Board Support Package"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32MX795F512L_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Board Support Package"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+      </C32-AS>
+      <C32-LD>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

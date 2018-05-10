@@ -1,0 +1,1011 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ALLOW_DIRS	D:\USB_Book\GPS_Logger3\FSconfig.h	84;"	d	line:84
+ALLOW_FILESEARCH	D:\USB_Book\GPS_Logger3\FSconfig.h	69;"	d	line:69
+ALLOW_PGMFUNCTIONS	D:\USB_Book\GPS_Logger3\FSconfig.h	89;"	d	line:89
+ALLOW_WRITES	D:\USB_Book\GPS_Logger3\FSconfig.h	74;"	d	line:74
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	299;"	v	line:299
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	301;"	v	line:301
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	303;"	v	line:303
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	305;"	v	line:305
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1031;"	l	line:1031
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1487;"	l	line:1487
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	887;"	l	line:887
+BatV	D:\USB_Book\GPS_Logger3\GPSLogger3.c	71;"	v	line:71
+Battery	D:\USB_Book\GPS_Logger3\GPSLogger3.c	435;"	f	line:435	signature:(void)
+Battery	D:\USB_Book\GPS_Logger3\GPSLogger3.c	88;"	p	line:88	file:	signature:(void)
+BaudRateGen	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	140;"	v	line:140
+BothEP0OutUOWNsSet	D:\USB_Book\Microchip\USB\usb_device.c	270;"	v	line:270
+BytesPerSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1032;"	l	line:1032
+CDCDataInHandle	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	136;"	v	line:136
+CDCDataOutHandle	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	135;"	v	line:135
+CDCInitEP	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	301;"	f	line:301	signature:(void)
+CDCTxService	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	715;"	f	line:715	signature:(void)
+CDC_COMM_EP::2	D:\USB_Book\GPS_Logger3\usb_config.h	172;"	d	line:172
+CDC_COMM_INTF_ID::0x01	D:\USB_Book\GPS_Logger3\usb_config.h	171;"	d	line:171
+CDC_COMM_IN_EP_SIZE::8	D:\USB_Book\GPS_Logger3\usb_config.h	173;"	d	line:173
+CDC_DATA_EP::3	D:\USB_Book\GPS_Logger3\usb_config.h	176;"	d	line:176
+CDC_DATA_INTF_ID::0x01	D:\USB_Book\GPS_Logger3\usb_config.h	175;"	d	line:175
+CDC_DATA_IN_EP_SIZE::64	D:\USB_Book\GPS_Logger3\usb_config.h	178;"	d	line:178
+CDC_DATA_OUT_EP_SIZE::64	D:\USB_Book\GPS_Logger3\usb_config.h	177;"	d	line:177
+CE_EOF::61	D:\USB_Book\Microchip\MDD File System\FSIO.c	190;"	d	line:190	file:
+CE_FAT_EOF::60	D:\USB_Book\Microchip\MDD File System\FSIO.c	189;"	d	line:189	file:
+CLOCK::16	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	15;"	d	line:15
+CLOCK_FREQ::32000000	D:\USB_Book\GPS_Logger3\HardwareProfile.h	47;"	d	line:47
+CONTRAST::0x30	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	17;"	d	line:17
+CSDResponse	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1185;"	l	line:1185
+CacheTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	235;"	p	line:235	file:	signature:(void)
+CacheTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	2788;"	f	line:2788	signature:(void)
+Cache_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	228;"	p	line:228	file:	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+Cache_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2301;"	f	line:2301	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+CloseSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	108;"	p	line:108	file:	signature:( void )
+CloseSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	112;"	p	line:112	file:	signature:( void )
+CloseSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	894;"	f	line:894	signature:(void)
+Cluster2Sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	230;"	p	line:230	file:	signature:(DISK * disk, DWORD cluster)
+Cluster2Sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	4944;"	f	line:4944	signature:(DISK * dsk, DWORD cluster)
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+CmdPacket	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	391;"	l	line:391
+CmdPacket	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	498;"	l	line:498
+CreateDIR	D:\USB_Book\Microchip\MDD File System\FSIO.c	272;"	p	line:272	file:	signature:(char * path)
+CreateDIR	D:\USB_Book\Microchip\MDD File System\FSIO.c	7792;"	f	line:7792	signature:(char * path)
+CreateFileEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2456;"	f	line:2456	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFileEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	265;"	p	line:265	file:	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFirstCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2515;"	f	line:2515	signature:(FILEOBJ fo)
+CreateFirstCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	263;"	p	line:263	file:	signature:(FILEOBJ fo)
+CtrlTrfData	D:\USB_Book\Microchip\USB\usb_device.c	314;"	v	line:314
+CyHdSc	D:\USB_Book\Microchip\MDD File System\FSIO.c	1356;"	l	line:1356
+DATA_BUFFER_ADDRESS::0x800	D:\USB_Book\GPS_Logger3\FSconfig.h	155;"	d	line:155
+DFlag	D:\USB_Book\GPS_Logger3\GPSLogger3.c	70;"	v	line:70
+DIRECTORY::0x12	D:\USB_Book\Microchip\MDD File System\FSIO.c	184;"	d	line:184	file:
+DIRENTRIES_PER_SECTOR::(MEDIA_SECTOR_SIZE/32)	D:\USB_Book\Microchip\MDD File System\FSIO.c	186;"	d	line:186	file:
+DIRENTRY	D:\USB_Book\Microchip\MDD File System\FSIO.c	182;"	t	line:182	file:
+DIR_Attr	D:\USB_Book\Microchip\MDD File System\FSIO.c	169;"	m	line:169	file:
+DIR_CrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	173;"	m	line:173	file:
+DIR_CrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	172;"	m	line:172	file:
+DIR_CrtTimeTenth	D:\USB_Book\Microchip\MDD File System\FSIO.c	171;"	m	line:171	file:
+DIR_Extension	D:\USB_Book\Microchip\MDD File System\FSIO.c	168;"	m	line:168	file:
+DIR_FileSize	D:\USB_Book\Microchip\MDD File System\FSIO.c	179;"	m	line:179	file:
+DIR_FstClusHI	D:\USB_Book\Microchip\MDD File System\FSIO.c	175;"	m	line:175	file:
+DIR_FstClusLO	D:\USB_Book\Microchip\MDD File System\FSIO.c	178;"	m	line:178	file:
+DIR_LstAccDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	174;"	m	line:174	file:
+DIR_NTRes	D:\USB_Book\Microchip\MDD File System\FSIO.c	170;"	m	line:170	file:
+DIR_Name	D:\USB_Book\Microchip\MDD File System\FSIO.c	167;"	m	line:167	file:
+DIR_WrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	177;"	m	line:177	file:
+DIR_WrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	176;"	m	line:176	file:
+DISKmount	D:\USB_Book\Microchip\MDD File System\FSIO.c	300;"	p	line:300	file:	signature:( DISK *dsk)
+DISKmount	D:\USB_Book\Microchip\MDD File System\FSIO.c	808;"	f	line:808	signature:( DISK *dsk)
+DataClusters	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+DataSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1029;"	l	line:1029
+Delayms	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	101;"	p	line:101	file:	signature:(BYTE milliseconds)
+Delayms	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	859;"	f	line:859	signature:(BYTE milliseconds)
+EndClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+EraseCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	262;"	p	line:262	file:	signature:(DISK *disk, DWORD cluster)
+EraseCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	4789;"	f	line:4789	signature:(DISK *disk, DWORD cluster)
+Exit	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5914;"	l	line:5914
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5951;"	l	line:5951
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5990;"	l	line:5990
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	6031;"	l	line:6031
+FAT_BUFFER_ADDRESS::0xA00	D:\USB_Book\GPS_Logger3\FSconfig.h	156;"	d	line:156
+FAT_erase_cluster_chain	D:\USB_Book\Microchip\MDD File System\FSIO.c	2205;"	f	line:2205	signature:(DWORD cluster, DISK * dsk)
+FAT_erase_cluster_chain	D:\USB_Book\Microchip\MDD File System\FSIO.c	257;"	p	line:257	file:	signature:(DWORD cluster, DISK * dsk)
+FATfindEmptyCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	258;"	p	line:258	file:	signature:(FILEOBJ fo)
+FATfindEmptyCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	3062;"	f	line:3062	signature:(FILEOBJ fo)
+FILECreateHeadCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	261;"	p	line:261	file:	signature:( FILEOBJ fo, DWORD *cluster)
+FILECreateHeadCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	4713;"	f	line:4713	signature:( FILEOBJ fo, DWORD *cluster)
+FILEOBJ	D:\USB_Book\Microchip\MDD File System\FSIO.c	192;"	t	line:192	file:
+FILEallocate_new_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	256;"	p	line:256	file:	signature:( FILEOBJ fo, BYTE mode)
+FILEallocate_new_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2994;"	f	line:2994	signature:( FILEOBJ fo, BYTE mode)
+FILEerase	D:\USB_Book\Microchip\MDD File System\FSIO.c	255;"	p	line:255	file:	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEerase	D:\USB_Book\Microchip\MDD File System\FSIO.c	3792;"	f	line:3792	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEfind	D:\USB_Book\Microchip\MDD File System\FSIO.c	247;"	p	line:247	file:	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEfind	D:\USB_Book\Microchip\MDD File System\FSIO.c	415;"	f	line:415	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEget_next_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	248;"	p	line:248	file:	signature:(FILEOBJ fo, DWORD n)
+FILEget_next_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	721;"	f	line:721	signature:(FILEOBJ fo, DWORD n)
+FILEopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	249;"	p	line:249	file:	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FILEopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	600;"	f	line:600	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FSCreateMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	1353;"	f	line:1353	signature:(unsigned long firstSector, unsigned long numSectors)
+FSGetDiskProperties	D:\USB_Book\Microchip\MDD File System\FSIO.c	3231;"	f	line:3231	signature:(FS_DISK_PROPERTIES* properties)
+FSInit	D:\USB_Book\Microchip\MDD File System\FSIO.c	330;"	f	line:330	signature:(void)
+FS_DYNAMIC_MEM	D:\USB_Book\GPS_Logger3\FSconfig.h	142;"	d	line:142
+FS_MAX_FILES_OPEN::3	D:\USB_Book\GPS_Logger3\FSconfig.h	52;"	d	line:52
+FS_free::SRAMfree	D:\USB_Book\GPS_Logger3\FSconfig.h	145;"	d	line:145
+FS_free::free	D:\USB_Book\GPS_Logger3\FSconfig.h	148;"	d	line:148
+FS_malloc::SRAMalloc	D:\USB_Book\GPS_Logger3\FSconfig.h	144;"	d	line:144
+FS_malloc::malloc	D:\USB_Book\GPS_Logger3\FSconfig.h	147;"	d	line:147
+FSattrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	5004;"	f	line:5004	signature:(FSFILE * file, unsigned char attributes)
+FSchdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	6446;"	f	line:6446	signature:(char * path)
+FSchdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	6474;"	f	line:6474	signature:(const rom char * path)
+FSerrno	D:\USB_Book\Microchip\MDD File System\FSIO.c	127;"	v	line:127
+FSerror	D:\USB_Book\Microchip\MDD File System\FSIO.c	4642;"	f	line:4642	signature:(void)
+FSfclose	D:\USB_Book\Microchip\MDD File System\FSIO.c	3356;"	f	line:3356	signature:(FSFILE *fo)
+FSfeof	D:\USB_Book\Microchip\MDD File System\FSIO.c	5337;"	f	line:5337	signature:( FSFILE * stream )
+FSfopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	4055;"	f	line:4055	signature:( const char * fileName, const char *mode )
+FSfopenpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5949;"	f	line:5949	signature:(const rom char * fileName, const rom char *mode)
+FSformat	D:\USB_Book\Microchip\MDD File System\FSIO.c	1483;"	f	line:1483	signature:(char mode, long int serialNumber, char * volumeID)
+FSfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	8854;"	f	line:8854	signature:(FSFILE *fptr, const rom char *fmt, ...)
+FSfread	D:\USB_Book\Microchip\MDD File System\FSIO.c	5374;"	f	line:5374	signature:(void *ptr, size_t size, size_t n, FSFILE *stream)
+FSfseek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5746;"	f	line:5746	signature:(FSFILE *stream, long offset, int whence)
+FSftell	D:\USB_Book\Microchip\MDD File System\FSIO.c	4325;"	f	line:4325	signature:(FSFILE * fo)
+FSfwrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	5090;"	f	line:5090	signature:(const void *ptr, size_t size, size_t n, FSFILE *stream)
+FSgetcwd	D:\USB_Book\Microchip\MDD File System\FSIO.c	6935;"	f	line:6935	signature:(char * path, int numchars)
+FSmkdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	7306;"	f	line:7306	signature:(char * path)
+FSmkdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	7334;"	f	line:7334	signature:(const rom char * path)
+FSputc	D:\USB_Book\Microchip\MDD File System\FSIO.c	296;"	p	line:296	file:	signature:(char c, FSFILE * file)
+FSputc	D:\USB_Book\Microchip\MDD File System\FSIO.c	8782;"	f	line:8782	signature:(char c, FSFILE * file)
+FSremove	D:\USB_Book\Microchip\MDD File System\FSIO.c	4356;"	f	line:4356	signature:(const char * fileName)
+FSremovepgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5988;"	f	line:5988	signature:(const rom char * fileName)
+FSrename	D:\USB_Book\Microchip\MDD File System\FSIO.c	3895;"	f	line:3895	signature:(const char * fileName, FSFILE * fo)
+FSrenamepgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5912;"	f	line:5912	signature:(const rom char * fileName, FSFILE * fo)
+FSrewind	D:\USB_Book\Microchip\MDD File System\FSIO.c	4442;"	f	line:4442	signature:(FSFILE * fo)
+FSrmdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	8008;"	f	line:8008	signature:(char * path, unsigned char rmsubdirs)
+FSrmdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	8038;"	f	line:8038	signature:(const rom char * path, unsigned char rmsubdirs)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	292;"	p	line:292	file:	signature:(auto FSFILE *handle, auto const rom char *formatString, auto va_list ap)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	294;"	p	line:294	file:	signature:(FSFILE *handle, const char *formatString, va_list ap)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	8896;"	f	line:8896	signature:(auto FSFILE *handle, auto const rom char * formatString, auto va_list ap)
+Fail	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+FatRootDirClusterValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	125;"	v	line:125
+FileObjectCopy	D:\USB_Book\Microchip\MDD File System\FSIO.c	244;"	p	line:244	file:	signature:(FILEOBJ foDest,FILEOBJ foSource)
+FileObjectCopy	D:\USB_Book\Microchip\MDD File System\FSIO.c	4669;"	f	line:4669	signature:(FILEOBJ foDest,FILEOBJ foSource)
+Fill_File_Object	D:\USB_Book\Microchip\MDD File System\FSIO.c	229;"	p	line:229	file:	signature:(FILEOBJ fo, WORD *fHandle)
+Fill_File_Object	D:\USB_Book\Microchip\MDD File System\FSIO.c	3587;"	f	line:3587	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	2580;"	f	line:2580	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	259;"	p	line:259	file:	signature:(FILEOBJ fo, WORD *fHandle)
+FindFirst	D:\USB_Book\Microchip\MDD File System\FSIO.c	8524;"	f	line:8524	signature:(const char * fileName, unsigned int attr, SearchRec * rec)
+FindFirstpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	6029;"	f	line:6029	signature:(const rom char * fileName, unsigned int attr, SearchRec * rec)
+FindNext	D:\USB_Book\Microchip\MDD File System\FSIO.c	8655;"	f	line:8655	signature:(SearchRec * rec)
+Flag	D:\USB_Book\GPS_Logger3\GPSLogger3.c	70;"	v	line:70
+FormatDirName	D:\USB_Book\Microchip\MDD File System\FSIO.c	271;"	p	line:271	file:	signature:(char * string, BYTE mode)
+FormatDirName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5596;"	f	line:5596	signature:(char * string, BYTE mode)
+FormatFileName	D:\USB_Book\Microchip\MDD File System\FSIO.c	246;"	p	line:246	file:	signature:( const char* fileName, char* fN2, BYTE mode)
+FormatFileName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5508;"	f	line:5508	signature:( const char* fileName, char* fN2, BYTE mode)
+GGABuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	62;"	v	line:62
+GGASize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	67;"	v	line:67
+GLLSize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	67;"	v	line:67
+GSABuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	63;"	v	line:63
+GSASize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	67;"	v	line:67
+GSVBuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	64;"	v	line:64
+GSVSize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	67;"	v	line:67
+GSVSize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	68;"	v	line:68
+GetFullClusterNumber	D:\USB_Book\Microchip\MDD File System\FSIO.c	1297;"	f	line:1297	signature:(DIRENTRY entry)
+GetFullClusterNumber	D:\USB_Book\Microchip\MDD File System\FSIO.c	303;"	p	line:303	file:	signature:(DIRENTRY entry)
+GetInstructionClock::GetSystemClock	D:\USB_Book\GPS_Logger3\HardwareProfile.h	49;"	d	line:49
+GetPreviousEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	270;"	p	line:270	file:	signature:(FSFILE * fo)
+GetPreviousEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	7191;"	f	line:7191	signature:(FSFILE * fo)
+GetSystemClock::CLOCK_FREQ	D:\USB_Book\GPS_Logger3\HardwareProfile.h	48;"	d	line:48
+Good	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+I2COut	D:\USB_Book\GPS_Logger3\i2c_lib2.c	38;"	f	line:38	signature:(unsigned char data)
+I2COut	D:\USB_Book\GPS_Logger3\i2c_lib2.h	15;"	p	line:15	signature:(unsigned char data)
+I2CRcv	D:\USB_Book\GPS_Logger3\i2c_lib2.c	50;"	f	line:50	signature:(unsigned char Ack)
+I2CRcv	D:\USB_Book\GPS_Logger3\i2c_lib2.h	16;"	p	line:16	signature:(unsigned char Ack)
+I2CStart	D:\USB_Book\GPS_Logger3\i2c_lib2.c	16;"	f	line:16	signature:(void)
+I2CStart	D:\USB_Book\GPS_Logger3\i2c_lib2.h	13;"	p	line:13	signature:(void)
+I2CStop	D:\USB_Book\GPS_Logger3\i2c_lib2.c	24;"	f	line:24	signature:(void)
+I2CStop	D:\USB_Book\GPS_Logger3\i2c_lib2.h	14;"	p	line:14	signature:(void)
+ICON	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	17;"	v	line:17
+INCREMENTTIMESTAMP	D:\USB_Book\GPS_Logger3\FSconfig.h	114;"	d	line:114
+IdleI2C1	D:\USB_Book\GPS_Logger3\i2c_lib2.c	30;"	f	line:30	signature:(void)
+IdleI2C1	D:\USB_Book\GPS_Logger3\i2c_lib2.h	17;"	p	line:17	signature:(void)
+IncrementTimeStamp	D:\USB_Book\Microchip\MDD File System\FSIO.c	233;"	p	line:233	file:	signature:(DIRENTRY dir)
+IncrementTimeStamp	D:\USB_Book\Microchip\MDD File System\FSIO.c	3484;"	f	line:3484	signature:(DIRENTRY dir)
+Index	D:\USB_Book\GPS_Logger3\GPSLogger3.c	69;"	v	line:69
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	1492;"	l	line:1492
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	4674;"	l	line:4674
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8096;"	l	line:8096
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8437;"	l	line:8437
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8531;"	l	line:8531
+Index2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8096;"	l	line:8096
+InitializeSystem	D:\USB_Book\GPS_Logger3\GPSLogger3.c	205;"	f	line:205	file:	signature:(void)
+InitializeSystem	D:\USB_Book\GPS_Logger3\GPSLogger3.c	81;"	p	line:81	file:	signature:(void)
+LBA	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	156;"	v	line:156	file:
+LUNMediaDetect::LUN[LUN_INDEX].MediaDetect	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	112;"	d	line:112	file:
+LUNMediaDetect::MDD_MediaDetect	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	128;"	d	line:128	file:
+LUNMediaInitialize::LUN[LUN_INDEX].MediaInitialize	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	109;"	d	line:109	file:
+LUNMediaInitialize::MDD_MediaInitialize	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	125;"	d	line:125	file:
+LUNReadCapacity::LUN[LUN_INDEX].ReadCapacity	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	110;"	d	line:110	file:
+LUNReadCapacity::MDD_ReadCapacity	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	126;"	d	line:126	file:
+LUNReadSectorSize::LUN[LUN_INDEX].ReadSectorSize	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	111;"	d	line:111	file:
+LUNReadSectorSize::MDD_ReadSectorSize	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	127;"	d	line:127	file:
+LUNSectorRead::(bLBA,pSrc)LUN[LUN_INDEX].Sect	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	115;"	d	line:115	file:
+LUNSectorRead::(bLBA,pSrc)MDD_SectorRead(bLBA	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	131;"	d	line:131	file:
+LUNSectorWrite::(bLBA,pDest,Write0)LUN[LUN_IND	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	113;"	d	line:113	file:
+LUNSectorWrite::(bLBA,pDest,Write0)MDD_SectorW	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	129;"	d	line:129	file:
+LUNWriteProtectState::LUN[LUN_INDEX].WriteProtectSta	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	114;"	d	line:114	file:
+LUNWriteProtectState::MDD_WriteProtectState	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	130;"	d	line:130	file:
+LUN_INDEX::0	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	94;"	d	line:94	file:
+LUN_INDEX::gblCBW.bCBWLUN	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	96;"	d	line:96	file:
+LastClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	2306;"	l	line:2306
+LastClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+LastClustervalue	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+LoadBootSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	1026;"	f	line:1026	signature:(DISK *dsk)
+LoadBootSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	302;"	p	line:302	file:	signature:(DISK *dsk)
+LoadDirAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	231;"	p	line:231	file:	signature:(FILEOBJ fo, WORD *fHandle)
+LoadDirAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	3719;"	f	line:3719	signature:(FILEOBJ fo, WORD *fHandle)
+LoadMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	301;"	p	line:301	file:	signature:(DISK *dsk)
+LoadMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	882;"	f	line:882	signature:(DISK *dsk)
+LogAdr	D:\USB_Book\GPS_Logger3\GPSLogger3.c	72;"	v	line:72
+LogCnt	D:\USB_Book\GPS_Logger3\GPSLogger3.c	70;"	v	line:70
+Logging	D:\USB_Book\GPS_Logger3\GPSLogger3.c	355;"	f	line:355	signature:(void)
+Logging	D:\USB_Book\GPS_Logger3\GPSLogger3.c	89;"	p	line:89	file:	signature:(void)
+M	D:\USB_Book\Microchip\MDD File System\FSIO.c	5952;"	l	line:5952
+MANUAL_SPI_CLOCK_VALUE::1	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1051;"	d	line:1051	file:
+MAX_LUN::0	D:\USB_Book\GPS_Logger3\usb_config.h	165;"	d	line:165
+MDD_CFread::MDD_CFBT_CFread	D:\USB_Book\GPS_Logger3\FSconfig.h	199;"	d	line:199
+MDD_CFread::MDD_CFPMP_CFread	D:\USB_Book\GPS_Logger3\FSconfig.h	186;"	d	line:186
+MDD_CFwait::MDD_CFBT_CFwait	D:\USB_Book\GPS_Logger3\FSconfig.h	197;"	d	line:197
+MDD_CFwait::MDD_CFPMP_CFwait	D:\USB_Book\GPS_Logger3\FSconfig.h	184;"	d	line:184
+MDD_CFwrite::MDD_CFBT_CFwrite	D:\USB_Book\GPS_Logger3\FSconfig.h	198;"	d	line:198
+MDD_CFwrite::MDD_CFPMP_CFwrite	D:\USB_Book\GPS_Logger3\FSconfig.h	185;"	d	line:185
+MDD_FINAL_SPI_SPEED::2000000	D:\USB_Book\GPS_Logger3\FSconfig.h	173;"	d	line:173
+MDD_InitIO::;	D:\USB_Book\GPS_Logger3\FSconfig.h	207;"	d	line:207
+MDD_InitIO::MDD_CFBT_InitIO	D:\USB_Book\GPS_Logger3\FSconfig.h	194;"	d	line:194
+MDD_InitIO::MDD_CFPMP_InitIO	D:\USB_Book\GPS_Logger3\FSconfig.h	181;"	d	line:181
+MDD_InitIO::MDD_SDSPI_InitIO	D:\USB_Book\GPS_Logger3\FSconfig.h	168;"	d	line:168
+MDD_MediaDetect::MDD_CFBT_MediaDetect	D:\USB_Book\GPS_Logger3\FSconfig.h	191;"	d	line:191
+MDD_MediaDetect::MDD_CFPMP_MediaDetect	D:\USB_Book\GPS_Logger3\FSconfig.h	178;"	d	line:178
+MDD_MediaDetect::MDD_SDSPI_MediaDetect	D:\USB_Book\GPS_Logger3\FSconfig.h	165;"	d	line:165
+MDD_MediaDetect::USBHostMSDSCSIMediaDetect	D:\USB_Book\GPS_Logger3\FSconfig.h	204;"	d	line:204
+MDD_MediaInitialize::MDD_CFBT_MediaInitialize	D:\USB_Book\GPS_Logger3\FSconfig.h	190;"	d	line:190
+MDD_MediaInitialize::MDD_CFPMP_MediaInitialize	D:\USB_Book\GPS_Logger3\FSconfig.h	177;"	d	line:177
+MDD_MediaInitialize::MDD_SDSPI_MediaInitialize	D:\USB_Book\GPS_Logger3\FSconfig.h	164;"	d	line:164
+MDD_MediaInitialize::USBHostMSDSCSIMediaInitialize	D:\USB_Book\GPS_Logger3\FSconfig.h	203;"	d	line:203
+MDD_ReadCapacity::MDD_SDSPI_ReadCapacity	D:\USB_Book\GPS_Logger3\FSconfig.h	172;"	d	line:172
+MDD_ReadSectorSize::MDD_SDSPI_ReadSectorSize	D:\USB_Book\GPS_Logger3\FSconfig.h	171;"	d	line:171
+MDD_SDSPI_InitIO	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	314;"	f	line:314	signature:(void)
+MDD_SDSPI_MediaDetect	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	194;"	f	line:194	signature:(void)
+MDD_SDSPI_MediaInitialize	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	103;"	p	line:103	file:	signature:(void)
+MDD_SDSPI_MediaInitialize	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1181;"	f	line:1181	signature:(void)
+MDD_SDSPI_ReadCapacity	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	287;"	f	line:287	signature:(void)
+MDD_SDSPI_ReadMedia	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	102;"	p	line:102	file:	signature:(void)
+MDD_SDSPI_ReadMedia	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	976;"	f	line:976	signature:(void)
+MDD_SDSPI_ReadSectorSize	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	261;"	f	line:261	signature:(void)
+MDD_SDSPI_SectorRead	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	595;"	f	line:595	signature:(DWORD sector_addr, BYTE* buffer)
+MDD_SDSPI_SectorWrite	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	711;"	f	line:711	signature:(DWORD sector_addr, BYTE* buffer, BYTE allowWriteToZero)
+MDD_SDSPI_ShutdownMedia	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	346;"	f	line:346	signature:(void)
+MDD_SDSPI_WriteProtectState	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	832;"	f	line:832	signature:(void)
+MDD_SDSPI_finalLBA	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	59;"	v	line:59
+MDD_SectorRead::MDD_CFBT_SectorRead	D:\USB_Book\GPS_Logger3\FSconfig.h	192;"	d	line:192
+MDD_SectorRead::MDD_CFPMP_SectorRead	D:\USB_Book\GPS_Logger3\FSconfig.h	179;"	d	line:179
+MDD_SectorRead::MDD_SDSPI_SectorRead	D:\USB_Book\GPS_Logger3\FSconfig.h	166;"	d	line:166
+MDD_SectorRead::USBHostMSDSCSISectorRead	D:\USB_Book\GPS_Logger3\FSconfig.h	205;"	d	line:205
+MDD_SectorWrite::MDD_CFBT_SectorWrite	D:\USB_Book\GPS_Logger3\FSconfig.h	193;"	d	line:193
+MDD_SectorWrite::MDD_CFPMP_SectorWrite	D:\USB_Book\GPS_Logger3\FSconfig.h	180;"	d	line:180
+MDD_SectorWrite::MDD_SDSPI_SectorWrite	D:\USB_Book\GPS_Logger3\FSconfig.h	167;"	d	line:167
+MDD_SectorWrite::USBHostMSDSCSISectorWrite	D:\USB_Book\GPS_Logger3\FSconfig.h	206;"	d	line:206
+MDD_ShutdownMedia::MDD_CFBT_ShutdownMedia	D:\USB_Book\GPS_Logger3\FSconfig.h	195;"	d	line:195
+MDD_ShutdownMedia::MDD_CFPMP_ShutdownMedia	D:\USB_Book\GPS_Logger3\FSconfig.h	182;"	d	line:182
+MDD_ShutdownMedia::MDD_SDSPI_ShutdownMedia	D:\USB_Book\GPS_Logger3\FSconfig.h	169;"	d	line:169
+MDD_ShutdownMedia::USBHostMSDSCSIMediaReset	D:\USB_Book\GPS_Logger3\FSconfig.h	208;"	d	line:208
+MDD_WriteProtectState::MDD_CFBT_WriteProtectState	D:\USB_Book\GPS_Logger3\FSconfig.h	196;"	d	line:196
+MDD_WriteProtectState::MDD_CFPMP_WriteProtectState	D:\USB_Book\GPS_Logger3\FSconfig.h	183;"	d	line:183
+MDD_WriteProtectState::MDD_SDSPI_WriteProtectState	D:\USB_Book\GPS_Logger3\FSconfig.h	170;"	d	line:170
+MDD_WriteProtectState::USBHostMSDSCSIWriteProtectStat	D:\USB_Book\GPS_Logger3\FSconfig.h	209;"	d	line:209
+MEDIA_SECTOR_SIZE::512	D:\USB_Book\GPS_Logger3\FSconfig.h	58;"	d	line:58
+MSBBufferIndex	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	150;"	v	line:150
+MSDCommandState	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	153;"	v	line:153	file:
+MSDProcessCommand	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	167;"	p	line:167	file:	signature:(void)
+MSDProcessCommand	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	759;"	f	line:759	signature:(void)
+MSDProcessCommandMediaAbsent	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	669;"	f	line:669	signature:(void)
+MSDProcessCommandMediaPresent	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	507;"	f	line:507	signature:(void)
+MSDReadHandler	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	168;"	p	line:168	file:	signature:(void)
+MSDReadHandler	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	820;"	f	line:820	signature:(void)
+MSDReadState	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	141;"	v	line:141
+MSDRetryAttempt	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	143;"	v	line:143
+MSDTasks	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	362;"	f	line:362	signature:(void)
+MSDWriteHandler	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	169;"	p	line:169	file:	signature:(void)
+MSDWriteHandler	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	958;"	f	line:958	signature:(void)
+MSDWriteState	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	142;"	v	line:142
+MSD_BUFFER_ADDRESS::0x600	D:\USB_Book\GPS_Logger3\usb_config.h	168;"	d	line:168
+MSD_DATA_IN_EP::1	D:\USB_Book\GPS_Logger3\usb_config.h	166;"	d	line:166
+MSD_DATA_OUT_EP::1	D:\USB_Book\GPS_Logger3\usb_config.h	167;"	d	line:167
+MSD_FAILED_READ_MAX_ATTEMPTS::(BYTE)100u	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	135;"	d	line:135	file:
+MSD_FAILED_WRITE_MAX_ATTEMPTS::(BYTE)100u	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	136;"	d	line:136	file:
+MSD_INTF_ID::0x00	D:\USB_Book\GPS_Logger3\usb_config.h	162;"	d	line:162
+MSD_IN_EP_SIZE::64	D:\USB_Book\GPS_Logger3\usb_config.h	163;"	d	line:163
+MSD_OUT_EP_SIZE::64	D:\USB_Book\GPS_Logger3\usb_config.h	164;"	d	line:164
+MSD_State	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	140;"	v	line:140
+Max::256	D:\USB_Book\GPS_Logger3\GPSLogger3.c	61;"	d	line:61	file:
+ModeC	D:\USB_Book\Microchip\MDD File System\FSIO.c	4061;"	l	line:4061
+OpenSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1020;"	f	line:1020	signature:(unsigned char sync_mode)
+OpenSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	107;"	p	line:107	file:	signature:( unsigned int sync_mode)
+OpenSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	111;"	p	line:111	file:	signature:( unsigned char sync_mode)
+Partition	D:\USB_Book\Microchip\MDD File System\FSIO.c	1355;"	l	line:1355
+Partition	D:\USB_Book\Microchip\MDD File System\FSIO.c	884;"	l	line:884
+PopulateEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	260;"	p	line:260	file:	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+PopulateEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	2699;"	f	line:2699	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+PosDisp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	371;"	f	line:371	signature:(void)
+PosDisp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	84;"	p	line:84	file:	signature:(void)
+Ptr	D:\USB_Book\GPS_Logger3\GPSLogger3.c	69;"	v	line:69
+RMCBuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	65;"	v	line:65
+RMCSize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	68;"	v	line:68
+ReadByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	239;"	p	line:239	file:	signature:( BYTE* pBuffer, WORD index )
+ReadByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4843;"	f	line:4843	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	241;"	p	line:241	file:	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4903;"	f	line:4903	signature:( BYTE* pBuffer, WORD index )
+ReadFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	227;"	p	line:227	file:	signature:(DISK *dsk, DWORD ccls)
+ReadFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	6072;"	f	line:6072	signature:(DISK *dsk, DWORD ccls)
+ReadMediaManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1126;"	f	line:1126	signature:(void)
+ReadMediaManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	116;"	p	line:116	file:	signature:(void)
+ReadWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	240;"	p	line:240	file:	signature:( BYTE* pBuffer, WORD index )
+ReadWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4869;"	f	line:4869	signature:( BYTE* pBuffer, WORD index )
+Receive	D:\USB_Book\GPS_Logger3\GPSLogger3.c	86;"	p	line:86	file:	signature:(void)
+RemoteWakeup	D:\USB_Book\Microchip\USB\usb_device.c	266;"	v	line:266
+ReservedSectorCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	1033;"	l	line:1033
+ResetSenseData	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	1113;"	f	line:1113	signature:(void)
+ResetSenseData	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	170;"	p	line:170	file:	signature:(void)
+RootDirSectors	D:\USB_Book\Microchip\MDD File System\FSIO.c	1028;"	l	line:1028
+RootDirSectors	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+SD_CD::PORTAbits.RA0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	28;"	d	line:28
+SD_CD_TRIS::TRISAbits.TRISA0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	29;"	d	line:29
+SD_CS::PORTBbits.RB0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	26;"	d	line:26
+SD_CS_TRIS::TRISBbits.TRISB0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	27;"	d	line:27
+SD_WE::PORTAbits.RA0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	30;"	d	line:30
+SD_WE_TRIS::TRISAbits.TRISA0	D:\USB_Book\GPS_Logger3\HardwareProfile.h	31;"	d	line:31
+SPIBUF::SPI1BUF	D:\USB_Book\GPS_Logger3\HardwareProfile.h	36;"	d	line:36
+SPICLOCK::TRISBbits.TRISB14	D:\USB_Book\GPS_Logger3\HardwareProfile.h	43;"	d	line:43
+SPICON1::SPI1CON1	D:\USB_Book\GPS_Logger3\HardwareProfile.h	34;"	d	line:34
+SPICON1bits::SPI1CON1bits	D:\USB_Book\GPS_Logger3\HardwareProfile.h	38;"	d	line:38
+SPICalutateBRG	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	142;"	f	line:142	file:	signature:(unsigned int pb_clk, unsigned int spi_clk)
+SPIENABLE::SPISTATbits.SPIEN	D:\USB_Book\GPS_Logger3\HardwareProfile.h	40;"	d	line:40
+SPIIN::TRISBbits.TRISB15	D:\USB_Book\GPS_Logger3\HardwareProfile.h	44;"	d	line:44
+SPIOUT::TRISBbits.TRISB13	D:\USB_Book\GPS_Logger3\HardwareProfile.h	45;"	d	line:45
+SPISTAT::SPI1STAT	D:\USB_Book\GPS_Logger3\HardwareProfile.h	35;"	d	line:35
+SPISTAT_RBF::SPI1STATbits.SPIRBF	D:\USB_Book\GPS_Logger3\HardwareProfile.h	37;"	d	line:37
+SPISTATbits::SPI1STATbits	D:\USB_Book\GPS_Logger3\HardwareProfile.h	39;"	d	line:39
+SUPPORT_FAT32	D:\USB_Book\GPS_Logger3\FSconfig.h	99;"	d	line:99
+SavBuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	60;"	v	line:60
+SectorAddress	D:\USB_Book\Microchip\MDD File System\FSIO.c	4792;"	l	line:4792
+Send	D:\USB_Book\GPS_Logger3\GPSLogger3.c	87;"	p	line:87	file:	signature:(char Data)
+SendFlag	D:\USB_Book\GPS_Logger3\GPSLogger3.c	69;"	v	line:69
+SendMMCCmd	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	104;"	p	line:104	file:	signature:(BYTE cmd, DWORD address)
+SendMMCCmd	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	386;"	f	line:386	signature:(BYTE cmd, DWORD address)
+SendMMCCmdManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	117;"	p	line:117	file:	signature:(BYTE cmd, DWORD address)
+SendMMCCmdManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	493;"	f	line:493	signature:(BYTE cmd, DWORD address)
+SendState	D:\USB_Book\GPS_Logger3\GPSLogger3.c	69;"	v	line:69
+SetClockVars	D:\USB_Book\Microchip\MDD File System\FSIO.c	2925;"	f	line:2925	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
+SetupPkt	D:\USB_Book\Microchip\USB\usb_device.c	313;"	v	line:313
+Size	D:\USB_Book\GPS_Logger3\GPSLogger3.c	69;"	v	line:69
+SoftDetach	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	152;"	v	line:152
+StrMsg	D:\USB_Book\GPS_Logger3\GPSLogger3.c	75;"	v	line:75
+StrSz	D:\USB_Book\Microchip\MDD File System\FSIO.c	5674;"	l	line:5674
+TXEMsg	D:\USB_Book\GPS_Logger3\GPSLogger3.c	78;"	v	line:78
+TXSMsg	D:\USB_Book\GPS_Logger3\GPSLogger3.c	77;"	v	line:77
+TempClusterCalc	D:\USB_Book\Microchip\MDD File System\FSIO.c	129;"	v	line:129
+TempFullClusterCalc	D:\USB_Book\Microchip\MDD File System\FSIO.c	1300;"	l	line:1300
+TempMsbCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2518;"	l	line:2518
+TimeDisp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	405;"	f	line:405	signature:(void)
+TimeDisp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	85;"	p	line:85	file:	signature:(void)
+TotSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1029;"	l	line:1029
+TransferLength	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	155;"	v	line:155	file:
+TriedBackupBootSecAtAddress6	D:\USB_Book\Microchip\MDD File System\FSIO.c	1037;"	l	line:1037
+TriedSpecifiedBackupBootSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1036;"	l	line:1036
+USBActiveConfiguration	D:\USB_Book\Microchip\USB\usb_device.c	255;"	v	line:255
+USBAdvancePingPongBuffer::(buffer)((BYTE_VAL*)buffer)->V	D:\USB_Book\Microchip\USB\usb_device.c	420;"	d	line:420	file:
+USBAlternateInterface	D:\USB_Book\Microchip\USB\usb_device.c	256;"	v	line:256
+USBBusIsSuspended	D:\USB_Book\Microchip\USB\usb_device.c	267;"	v	line:267
+USBCBCheckOtherReq	D:\USB_Book\GPS_Logger3\GPSLogger3.c	517;"	f	line:517	signature:(void)
+USBCBErrorHandler	D:\USB_Book\GPS_Logger3\GPSLogger3.c	511;"	f	line:511	signature:(void)
+USBCBInitEP	D:\USB_Book\GPS_Logger3\GPSLogger3.c	530;"	f	line:530	signature:(void)
+USBCBSendResume	D:\USB_Book\GPS_Logger3\GPSLogger3.c	545;"	f	line:545	signature:(void)
+USBCBSendResume	D:\USB_Book\GPS_Logger3\GPSLogger3.c	83;"	p	line:83	file:	signature:(void)
+USBCBStdSetDscHandler	D:\USB_Book\GPS_Logger3\GPSLogger3.c	524;"	f	line:524	signature:(void)
+USBCBSuspend	D:\USB_Book\GPS_Logger3\GPSLogger3.c	483;"	f	line:483	signature:(void)
+USBCBWakeFromSuspend	D:\USB_Book\GPS_Logger3\GPSLogger3.c	499;"	f	line:499	signature:(void)
+USBCB_SOF_Handler	D:\USB_Book\GPS_Logger3\GPSLogger3.c	505;"	f	line:505	signature:(void)
+USBCDCSetLineCoding	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	158;"	p	line:158	file:	signature:(void)
+USBCFG_H	D:\USB_Book\GPS_Logger3\usb_config.h	50;"	d	line:50
+USBCancelIO	D:\USB_Book\Microchip\USB\usb_device.c	2704;"	f	line:2704	signature:(BYTE endpoint)
+USBCheckCDCRequest	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	185;"	f	line:185	signature:(void)
+USBCheckMSDRequest	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	280;"	f	line:280	signature:(void)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	1415;"	f	line:1415	file:	signature:(void)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	372;"	p	line:372	file:	signature:(void)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2387;"	f	line:2387	file:	signature:(BYTE EPNum, BYTE direction)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	381;"	p	line:381	file:	signature:(BYTE EPNum, BYTE direction)
+USBCtrlEPAllowDataStage	D:\USB_Book\Microchip\USB\usb_device.c	1782;"	f	line:1782	signature:(void)
+USBCtrlEPAllowStatusStage	D:\USB_Book\Microchip\USB\usb_device.c	1712;"	f	line:1712	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	1099;"	f	line:1099	file:	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	369;"	p	line:369	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	1980;"	f	line:1980	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	374;"	p	line:374	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	1324;"	f	line:1324	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	371;"	p	line:371	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	1271;"	f	line:1271	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	380;"	p	line:380	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	2213;"	f	line:2213	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	376;"	p	line:376	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	1199;"	f	line:1199	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	370;"	p	line:370	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	2132;"	f	line:2132	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	375;"	p	line:375	file:	signature:(void)
+USBDeferINDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	277;"	v	line:277
+USBDeferOUTDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	278;"	v	line:278
+USBDeferStatusStagePacket	D:\USB_Book\Microchip\USB\usb_device.c	274;"	v	line:274
+USBDeviceAttach	D:\USB_Book\Microchip\USB\usb_device.c	2849;"	f	line:2849	signature:(void)
+USBDeviceDetach	D:\USB_Book\Microchip\USB\usb_device.c	2745;"	f	line:2745	signature:(void)
+USBDeviceInit	D:\USB_Book\Microchip\USB\usb_device.c	448;"	f	line:448	signature:(void)
+USBDeviceState	D:\USB_Book\Microchip\USB\usb_device.c	254;"	v	line:254
+USBDeviceTasks	D:\USB_Book\GPS_Logger3\GPSLogger3.c	82;"	p	line:82	file:	signature:(void)
+USBDeviceTasks	D:\USB_Book\Microchip\USB\usb_device.c	570;"	f	line:570	signature:(void)
+USBEnableEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2479;"	f	line:2479	signature:(BYTE ep, BYTE options)
+USBHALPingPongSetToEven::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	422;"	d	line:422	file:
+USBHALPingPongSetToOdd::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	421;"	d	line:421	file:
+USBMSDInHandle	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	149;"	v	line:149
+USBMSDInit	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	208;"	f	line:208	signature:(void)
+USBMSDOutHandle	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	148;"	v	line:148
+USBMsg	D:\USB_Book\GPS_Logger3\GPSLogger3.c	76;"	v	line:76
+USBOutBuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	73;"	v	line:73
+USBSend	D:\USB_Book\GPS_Logger3\GPSLogger3.c	298;"	f	line:298	signature:(void)
+USBSend	D:\USB_Book\GPS_Logger3\GPSLogger3.c	90;"	p	line:90	file:	signature:(void)
+USBStallEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2522;"	f	line:2522	signature:(BYTE ep, BYTE dir)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	384;"	p	line:384	file:	signature:(void)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	932;"	f	line:932	file:	signature:(void)
+USBStatusStageEnabledFlag1	D:\USB_Book\Microchip\USB\usb_device.c	275;"	v	line:275
+USBStatusStageEnabledFlag2	D:\USB_Book\Microchip\USB\usb_device.c	276;"	v	line:276
+USBStatusStageTimeoutCounter	D:\USB_Book\Microchip\USB\usb_device.c	273;"	v	line:273
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	1480;"	f	line:1480	file:	signature:(void)
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	379;"	p	line:379	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	1828;"	f	line:1828	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	373;"	p	line:373	file:	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	1895;"	f	line:1895	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	378;"	p	line:378	file:	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	2317;"	f	line:2317	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	377;"	p	line:377	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	383;"	p	line:383	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	975;"	f	line:975	file:	signature:(void)
+USBTransferOnePacket	D:\USB_Book\Microchip\USB\usb_device.c	2628;"	f	line:2628	signature:(BYTE ep,BYTE dir,BYTE* data,BYTE len)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	1032;"	f	line:1032	file:	signature:(void)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	382;"	p	line:382	file:	signature:(void)
+USB_BUS_SENSE	D:\USB_Book\Microchip\USB\usb_device.c	245;"	d	line:245	file:
+USB_BUS_SENSE::1	D:\USB_Book\Microchip\USB\usb_device.c	246;"	d	line:246	file:
+USB_BUS_SENSE::U1OTGSTATbits.SESVD	D:\USB_Book\GPS_Logger3\HardwareProfile.h	16;"	d	line:16
+USB_CDC_SET_LINE_CODING_HANDLER	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	154;"	p	line:154	file:
+USB_CDC_SET_LINE_CODING_HANDLER::mySetLineCodingHandler	D:\USB_Book\GPS_Logger3\usb_config.h	180;"	d	line:180
+USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D1::	D:\USB_Book\GPS_Logger3\usb_config.h	184;"	d	line:184
+USB_CD_Ptr	D:\USB_Book\GPS_Logger3\usb_descriptors.c	312;"	v	line:312
+USB_ENABLE_ALL_HANDLERS	D:\USB_Book\GPS_Logger3\usb_config.h	145;"	d	line:145
+USB_ENABLE_STATUS_STAGE_TIMEOUTS::	D:\USB_Book\GPS_Logger3\usb_config.h	118;"	d	line:118
+USB_EP0_BUFF_SIZE::8	D:\USB_Book\GPS_Logger3\usb_config.h	53;"	d	line:53
+USB_INTERRUPT	D:\USB_Book\GPS_Logger3\usb_config.h	82;"	d	line:82
+USB_MAX_EP_NUMBER::3	D:\USB_Book\GPS_Logger3\usb_config.h	61;"	d	line:61
+USB_MAX_NUM_INT::1	D:\USB_Book\GPS_Logger3\usb_config.h	60;"	d	line:60
+USB_NUM_STRING_DESCRIPTORS::3	D:\USB_Book\GPS_Logger3\usb_config.h	142;"	d	line:142
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\GPS_Logger3\usb_config.h	77;"	d	line:77
+USB_PULLUP_OPTION::USB_PULLUP_ENABLE	D:\USB_Book\GPS_Logger3\usb_config.h	85;"	d	line:85
+USB_SD_Ptr	D:\USB_Book\GPS_Logger3\usb_descriptors.c	318;"	v	line:318
+USB_SPEED_OPTION::USB_FULL_SPEED	D:\USB_Book\GPS_Logger3\usb_config.h	94;"	d	line:94
+USB_STATUS_STAGE_TIMEOUT::(BYTE)45	D:\USB_Book\GPS_Logger3\usb_config.h	134;"	d	line:134
+USB_SUPPORT_DEVICE	D:\USB_Book\GPS_Logger3\usb_config.h	140;"	d	line:140
+USB_TRANSCEIVER_OPTION::USB_INTERNAL_TRANSCEIVER	D:\USB_Book\GPS_Logger3\usb_config.h	88;"	d	line:88
+USB_USER_CONFIG_DESCRIPTOR::USB_CD_Ptr	D:\USB_Book\GPS_Logger3\usb_config.h	71;"	d	line:71
+USB_USER_CONFIG_DESCRIPTOR_INCLUDE::externROMBYTE*ROMUSB_CD_Ptr[]	D:\USB_Book\GPS_Logger3\usb_config.h	72;"	d	line:72
+USB_USER_DEVICE_DESCRIPTOR::&device_dsc	D:\USB_Book\GPS_Logger3\usb_config.h	66;"	d	line:66
+USB_USER_DEVICE_DESCRIPTOR_INCLUDE::externROMUSB_DEVICE_DESCRIPTOR	D:\USB_Book\GPS_Logger3\usb_config.h	67;"	d	line:67
+USB_USE_CDC	D:\USB_Book\GPS_Logger3\usb_config.h	157;"	d	line:157
+USB_USE_MSD	D:\USB_Book\GPS_Logger3\usb_config.h	156;"	d	line:156
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\GPS_Logger3\GPSLogger3.c	578;"	f	line:578	signature:(USB_EVENT event, void *pdata, WORD size)
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\Microchip\USB\usb_device.c	366;"	p	line:366	file:	signature:(USB_EVENT event, void *pdata, WORD size)
+USE_16BIT	D:\USB_Book\GPS_Logger3\HardwareProfile.h	23;"	d	line:23
+USE_PIC24F	D:\USB_Book\GPS_Logger3\HardwareProfile.h	22;"	d	line:22
+USE_SD_INTERFACE_WITH_SPI	D:\USB_Book\GPS_Logger3\HardwareProfile.h	21;"	d	line:21
+USTATcopy	D:\USB_Book\Microchip\USB\usb_device.c	268;"	v	line:268
+VTGBuf	D:\USB_Book\GPS_Logger3\GPSLogger3.c	66;"	v	line:66
+VTGSize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	68;"	v	line:68
+ValidateChars	D:\USB_Book\Microchip\MDD File System\FSIO.c	245;"	p	line:245	file:	signature:(char * FileName, BYTE mode)
+ValidateChars	D:\USB_Book\Microchip\MDD File System\FSIO.c	5672;"	f	line:5672	signature:( char * FileName , BYTE mode)
+WriteFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	264;"	p	line:264	file:	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	6244;"	f	line:6244	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	109;"	p	line:109	file:	signature:( unsigned char data_out )
+WriteSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	113;"	p	line:113	file:	signature:( unsigned char data_out )
+WriteSPIM	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	929;"	f	line:929	signature:( unsigned char data_out )
+WriteSPIManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1073;"	f	line:1073	signature:(unsigned char data_out)
+WriteSPIManual	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	115;"	p	line:115	file:	signature:(unsigned char data_out)
+Write_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2134;"	f	line:2134	signature:( FILEOBJ fo, WORD * curEntry)
+Write_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	253;"	p	line:253	file:	signature:( FILEOBJ fo, WORD * curEntry)
+ZDASize	D:\USB_Book\GPS_Logger3\GPSLogger3.c	68;"	v	line:68
+_DIRENTRY	D:\USB_Book\Microchip\MDD File System\FSIO.c	180;"	t	line:180	file:
+_FLAG_MINUS::0x1	D:\USB_Book\Microchip\MDD File System\FSIO.c	196;"	d	line:196	file:
+_FLAG_OCTO::0x8	D:\USB_Book\Microchip\MDD File System\FSIO.c	199;"	d	line:199	file:
+_FLAG_PLUS::0x2	D:\USB_Book\Microchip\MDD File System\FSIO.c	197;"	d	line:197	file:
+_FLAG_SIGNED::0x80	D:\USB_Book\Microchip\MDD File System\FSIO.c	201;"	d	line:201	file:
+_FLAG_SPACE::0x4	D:\USB_Book\Microchip\MDD File System\FSIO.c	198;"	d	line:198	file:
+_FLAG_ZERO::0x10	D:\USB_Book\Microchip\MDD File System\FSIO.c	200;"	d	line:200	file:
+_FMT_BYTE::3	D:\USB_Book\Microchip\MDD File System\FSIO.c	207;"	d	line:207	file:
+_FMT_BYTE::3	D:\USB_Book\Microchip\MDD File System\FSIO.c	212;"	d	line:212	file:
+_FMT_LONG::1	D:\USB_Book\Microchip\MDD File System\FSIO.c	205;"	d	line:205	file:
+_FMT_LONG::2	D:\USB_Book\Microchip\MDD File System\FSIO.c	211;"	d	line:211	file:
+_FMT_LONGLONG::1	D:\USB_Book\Microchip\MDD File System\FSIO.c	210;"	d	line:210	file:
+_FMT_SHRTLONG::2	D:\USB_Book\Microchip\MDD File System\FSIO.c	206;"	d	line:206	file:
+_FMT_UNSPECIFIED::0	D:\USB_Book\Microchip\MDD File System\FSIO.c	204;"	d	line:204	file:
+_FMT_UNSPECIFIED::0	D:\USB_Book\Microchip\MDD File System\FSIO.c	209;"	d	line:209	file:
+_U1RXInterrupt	D:\USB_Book\GPS_Logger3\GPSLogger3.c	245;"	f	line:245	signature:(void)
+__USB_DESCRIPTORS_C	D:\USB_Book\GPS_Logger3\usb_descriptors.c	154;"	d	line:154	file:
+_status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	g	line:2208	file:
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	2584;"	l	line:2584
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3590;"	l	line:3590
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3722;"	l	line:3722
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3795;"	l	line:3795
+aChar	D:\USB_Book\Microchip\MDD File System\FSIO.c	6948;"	l	line:6948
+amountfound	D:\USB_Book\Microchip\MDD File System\FSIO.c	2583;"	l	line:2583
+ap	D:\USB_Book\Microchip\MDD File System\FSIO.c	8859;"	l	line:8859
+attrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	417;"	l	line:417
+b	D:\USB_Book\Microchip\MDD File System\FSIO.c	2586;"	l	line:2586
+bDscType	D:\USB_Book\GPS_Logger3\usb_descriptors.c	292;"	m	line:292	file:
+bDscType	D:\USB_Book\GPS_Logger3\usb_descriptors.c	299;"	m	line:299	file:
+bDscType	D:\USB_Book\GPS_Logger3\usb_descriptors.c	306;"	m	line:306	file:
+bHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	2585;"	l	line:2585
+bLength	D:\USB_Book\GPS_Logger3\usb_descriptors.c	292;"	m	line:292	file:
+bLength	D:\USB_Book\GPS_Logger3\usb_descriptors.c	299;"	m	line:299	file:
+bLength	D:\USB_Book\GPS_Logger3\usb_descriptors.c	306;"	m	line:306	file:
+block_len	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1189;"	l	line:1189
+brg	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	144;"	l	line:144
+buf	D:\USB_Book\Microchip\MDD File System\FSIO.c	9264;"	l	line:9264
+buf	D:\USB_Book\Microchip\MDD File System\FSIO.c	9270;"	l	line:9270
+bufferEnd	D:\USB_Book\Microchip\MDD File System\FSIO.c	6941;"	l	line:6941
+bufferOverflow	D:\USB_Book\Microchip\MDD File System\FSIO.c	6943;"	l	line:6943
+byteToRead	D:\USB_Book\Microchip\USB\usb_device.c	2215;"	l	line:2215
+byteToSend	D:\USB_Book\Microchip\USB\usb_device.c	2134;"	l	line:2134
+byte_to_send	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	717;"	l	line:717
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2997;"	l	line:2997
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	8901;"	l	line:8901
+c2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+c2	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+c_size	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1187;"	l	line:1187
+c_size_mult	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1188;"	l	line:1188
+capacity	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	535;"	l	line:535
+ccls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2140;"	l	line:2140
+ccls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2307;"	l	line:2307
+cdc_data_rx	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	122;"	v	line:122
+cdc_data_tx	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	123;"	v	line:123
+cdc_mem_type	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	133;"	v	line:133
+cdc_notice	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	121;"	v	line:121
+cdc_rx_len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	127;"	v	line:127
+cdc_trf_state	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	129;"	v	line:129
+cdc_tx_len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	132;"	v	line:132
+character	D:\USB_Book\Microchip\MDD File System\FSIO.c	3591;"	l	line:3591
+character	D:\USB_Book\Microchip\MDD File System\FSIO.c	421;"	l	line:421
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	280;"	p	line:280	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	286;"	p	line:286	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	6518;"	f	line:6518	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+clear	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	932;"	l	line:932
+clock	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1076;"	l	line:1076
+clock	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1129;"	l	line:1129
+clus	D:\USB_Book\Microchip\MDD File System\FSIO.c	3797;"	l	line:3797
+cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2306;"	l	line:2306
+cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2518;"	l	line:2518
+compareAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	417;"	l	line:417
+configDescriptor1	D:\USB_Book\GPS_Logger3\usb_descriptors.c	187;"	v	line:187
+controlTransferState	D:\USB_Book\Microchip\USB\usb_device.c	262;"	v	line:262
+control_signal_bitmap	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	139;"	v	line:139
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5092;"	l	line:5092
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5513;"	l	line:5513
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5915;"	l	line:5915
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5953;"	l	line:5953
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5991;"	l	line:5991
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	6032;"	l	line:6032
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	8902;"	l	line:8902
+count	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1186;"	l	line:1186
+count	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	862;"	l	line:862
+counter	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	714;"	l	line:714
+curcls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2997;"	l	line:2997
+curcls	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+curclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	6945;"	l	line:6945
+curent	D:\USB_Book\Microchip\MDD File System\FSIO.c	6524;"	l	line:6524
+current_ep_data	D:\USB_Book\Microchip\USB\usb_device.c	1483;"	l	line:1483
+cval	D:\USB_Book\Microchip\MDD File System\FSIO.c	8917;"	l	line:8917
+cwd	D:\USB_Book\Microchip\MDD File System\FSIO.c	136;"	v	line:136
+cwdptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	137;"	v	line:137
+d	D:\USB_Book\Microchip\MDD File System\FSIO.c	1488;"	l	line:1488
+d	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+d0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2796;"	l	line:2796
+d1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2796;"	l	line:2796
+data	D:\USB_Book\GPS_Logger3\GPSLogger3.c	247;"	l	line:247
+dataBufferPointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	1496;"	l	line:1496
+data_response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	715;"	l	line:715
+data_token	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	600;"	l	line:600
+day	D:\USB_Book\Microchip\MDD File System\FSIO.c	3490;"	l	line:3490
+defaultArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	6892;"	v	line:6892
+defaultString	D:\USB_Book\Microchip\MDD File System\FSIO.c	6420;"	v	line:6420
+delay	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	598;"	l	line:598
+delay_count	D:\USB_Book\GPS_Logger3\GPSLogger3.c	547;"	l	line:547	file:
+delay_ms	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	130;"	f	line:130	signature:(int msec)
+delay_ms	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	27;"	p	line:27	signature:(int msec)
+delay_us	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	118;"	f	line:118	signature:(int usec)
+delay_us	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	26;"	p	line:26	signature:(int usec)
+dest	D:\USB_Book\Microchip\MDD File System\FSIO.c	4672;"	l	line:4672
+device_dsc	D:\USB_Book\GPS_Logger3\usb_descriptors.c	168;"	v	line:168
+digit_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	9258;"	l	line:9258
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2303;"	l	line:2303
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2520;"	l	line:2520
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2587;"	l	line:2587
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2702;"	l	line:2702
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3364;"	l	line:3364
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3589;"	l	line:3589
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3721;"	l	line:3721
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3794;"	l	line:3794
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3900;"	l	line:3900
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	5007;"	l	line:5007
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	7795;"	l	line:7795
+dirCleared	D:\USB_Book\Microchip\MDD File System\FSIO.c	130;"	v	line:130
+dirEntryPtr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7794;"	l	line:7794
+dirclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	7195;"	l	line:7195
+dirptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7196;"	l	line:7196
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	1489;"	l	line:1489
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	3064;"	l	line:3064
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	3798;"	l	line:3798
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	4715;"	l	line:4715
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	725;"	l	line:725
+dot	D:\USB_Book\Microchip\MDD File System\FSIO.c	7797;"	l	line:7797
+dotdot	D:\USB_Book\Microchip\MDD File System\FSIO.c	7797;"	l	line:7797
+dotdotPath	D:\USB_Book\Microchip\MDD File System\FSIO.c	7391;"	l	line:7391
+dotdotname	D:\USB_Book\Microchip\MDD File System\FSIO.c	8101;"	l	line:8101
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2136;"	l	line:2136
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2304;"	l	line:2304
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2996;"	l	line:2996
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5094;"	l	line:5094
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5292;"	l	line:5292
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5378;"	l	line:5378
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5749;"	l	line:5749
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	602;"	l	line:602
+dummy_encapsulated_cmd_response	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	151;"	v	line:151
+dummy_length::0x08	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	150;"	d	line:150	file:
+endpoint_number	D:\USB_Book\Microchip\USB\usb_device.c	269;"	v	line:269
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	6525;"	l	line:6525
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	6949;"	l	line:6949
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	7888;"	l	line:7888
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	8092;"	l	line:8092
+entryptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7889;"	l	line:7889
+ep_data_in	D:\USB_Book\Microchip\USB\usb_device.c	271;"	v	line:271
+ep_data_out	D:\USB_Book\Microchip\USB\usb_device.c	272;"	v	line:272
+eraseDir	D:\USB_Book\Microchip\MDD File System\FSIO.c	274;"	p	line:274	file:	signature:(char * path)
+eraseDir	D:\USB_Book\Microchip\MDD File System\FSIO.c	8434;"	f	line:8434	signature:(char * path)
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	1030;"	l	line:1030
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2459;"	l	line:2459
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2517;"	l	line:2517
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2701;"	l	line:2701
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	3362;"	l	line:3362
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	4716;"	l	line:4716
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	4793;"	l	line:4793
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	5095;"	l	line:5095
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	5381;"	l	line:5381
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	605;"	l	line:605
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	724;"	l	line:724
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	810;"	l	line:810
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	885;"	l	line:885
+f	D:\USB_Book\Microchip\MDD File System\FSIO.c	8526;"	l	line:8526
+f	D:\USB_Book\Microchip\MDD File System\FSIO.c	8657;"	l	line:8657
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	2519;"	l	line:2519
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3358;"	l	line:3358
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3899;"	l	line:3899
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	4062;"	l	line:4062
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	418;"	l	line:418
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	5006;"	l	line:5006
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	6946;"	l	line:6946
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	7194;"	l	line:7194
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	8529;"	l	line:8529
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	332;"	l	line:332
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	3360;"	l	line:3360
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	4059;"	l	line:4059
+fatsize	D:\USB_Book\Microchip\MDD File System\FSIO.c	1491;"	l	line:1491
+filePtr	D:\USB_Book\Microchip\MDD File System\FSIO.c	4057;"	l	line:4057
+filesize	D:\USB_Book\Microchip\MDD File System\FSIO.c	5098;"	l	line:5098
+final	D:\USB_Book\Microchip\MDD File System\FSIO.c	4063;"	l	line:4063
+flags	D:\USB_Book\Microchip\MDD File System\FSIO.c	8908;"	l	line:8908
+flushData	D:\USB_Book\Microchip\MDD File System\FSIO.c	254;"	p	line:254	file:	signature:(void)
+flushData	D:\USB_Book\Microchip\MDD File System\FSIO.c	5289;"	f	line:5289	signature:(void)
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	4358;"	l	line:4358
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8091;"	l	line:8091
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8527;"	l	line:8527
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8658;"	l	line:8658
+gBufferOwner	D:\USB_Book\Microchip\MDD File System\FSIO.c	118;"	v	line:118
+gBufferZeroed	D:\USB_Book\Microchip\MDD File System\FSIO.c	123;"	v	line:123
+gDataBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	143;"	v	line:143
+gDataBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	149;"	v	line:149
+gDiskData	D:\USB_Book\Microchip\MDD File System\FSIO.c	156;"	v	line:156
+gFATBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	145;"	v	line:145
+gFATBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	150;"	v	line:150
+gFileArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	102;"	v	line:102
+gFileSlotOpen	D:\USB_Book\Microchip\MDD File System\FSIO.c	103;"	v	line:103
+gFileTemp	D:\USB_Book\Microchip\MDD File System\FSIO.c	133;"	v	line:133
+gLastDataSectorRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	119;"	v	line:119
+gLastFATSectorRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	116;"	v	line:116
+gMediaSectorSize	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	60;"	v	line:60
+gNeedDataWrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	120;"	v	line:120
+gNeedFATWrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	117;"	v	line:117
+gSDMode	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	61;"	v	line:61
+gTimeAccDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	111;"	v	line:111
+gTimeCrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	110;"	v	line:110
+gTimeCrtMS	D:\USB_Book\Microchip\MDD File System\FSIO.c	108;"	v	line:108
+gTimeCrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	109;"	v	line:109
+gTimeWrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	113;"	v	line:113
+gTimeWrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	112;"	v	line:112
+gblBLKLen	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	163;"	v	line:163
+gblCBW	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	144;"	v	line:144
+gblCBWLength	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	145;"	v	line:145
+gblMediaPresent	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	151;"	v	line:151
+gblNumBLKS	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	163;"	v	line:163
+gblSenseData	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	146;"	v	line:146
+getsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	370;"	f	line:370	signature:(char *buffer, BYTE len)
+goodHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3899;"	l	line:3899
+handle	D:\USB_Book\Microchip\MDD File System\FSIO.c	7796;"	l	line:7796
+handle	D:\USB_Book\Microchip\MDD File System\FSIO.c	8093;"	l	line:8093
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2389;"	l	line:2389
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2630;"	l	line:2630
+handle2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8094;"	l	line:8094
+have_precision	D:\USB_Book\Microchip\MDD File System\FSIO.c	8911;"	l	line:8911
+hiByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4871;"	l	line:4871
+hiWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4905;"	l	line:4905
+hid_report_in	D:\USB_Book\Microchip\USB\usb_device.c	322;"	v	line:322
+hid_report_out	D:\USB_Book\Microchip\USB\usb_device.c	321;"	v	line:321
+hours	D:\USB_Book\Microchip\MDD File System\FSIO.c	3488;"	l	line:3488
+i	D:\USB_Book\GPS_Logger3\GPSLogger3.c	373;"	l	line:373
+i	D:\USB_Book\GPS_Logger3\GPSLogger3.c	406;"	l	line:406
+i	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	131;"	l	line:131
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	3233;"	l	line:3233
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	5598;"	l	line:5598
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6523;"	l	line:6523
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6947;"	l	line:6947
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7193;"	l	line:7193
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7382;"	l	line:7382
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7798;"	l	line:7798
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7886;"	l	line:7886
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	8660;"	l	line:8660
+i	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1075;"	l	line:1075
+i	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1128;"	l	line:1128
+i	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	718;"	l	line:718
+i	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	364;"	l	line:364
+i	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	509;"	l	line:509
+i	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	671;"	l	line:671
+i	D:\USB_Book\Microchip\USB\usb_device.c	2216;"	l	line:2216
+i	D:\USB_Book\Microchip\USB\usb_device.c	2319;"	l	line:2319
+i	D:\USB_Book\Microchip\USB\usb_device.c	450;"	l	line:450
+i	D:\USB_Book\Microchip\USB\usb_device.c	580;"	l	line:580
+inPipes	D:\USB_Book\Microchip\USB\usb_device.c	263;"	v	line:263
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	2458;"	l	line:2458
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	3590;"	l	line:3590
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	419;"	l	line:419
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	4791;"	l	line:4791
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	5674;"	l	line:5674
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	6947;"	l	line:6947
+index	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1186;"	l	line:1186
+index	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	389;"	l	line:389
+index	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	496;"	l	line:496
+index	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	597;"	l	line:597
+index	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	713;"	l	line:713
+initResults	D:\USB_Book\GPS_Logger3\GPSLogger3.c	41;"	v	line:41
+inq_resp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	43;"	v	line:43
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	1490;"	l	line:1490
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	3897;"	l	line:3897
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	5598;"	l	line:5598
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	6523;"	l	line:6523
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	6944;"	l	line:6944
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	7382;"	l	line:7382
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	8530;"	l	line:8530
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	8660;"	l	line:8660
+k	D:\USB_Book\Microchip\MDD File System\FSIO.c	3897;"	l	line:3897
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	5097;"	l	line:5097
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	5291;"	l	line:5291
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	604;"	l	line:604
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	6075;"	l	line:6075
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+larg	D:\USB_Book\Microchip\MDD File System\FSIO.c	8919;"	l	line:8919
+larg	D:\USB_Book\Microchip\MDD File System\FSIO.c	8922;"	l	line:8922
+lastDTS	D:\USB_Book\Microchip\USB\usb_device.c	1326;"	l	line:1326
+lcd_clear	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	88;"	f	line:88	signature:(void)
+lcd_clear	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	24;"	p	line:24	signature:(void)
+lcd_cmd	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	50;"	f	line:50	signature:(unsigned char cmd)
+lcd_cmd	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	21;"	p	line:21	signature:(unsigned char cmd)
+lcd_data	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	37;"	f	line:37	signature:(unsigned char data)
+lcd_data	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	20;"	p	line:20	signature:(unsigned char data)
+lcd_icon	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	103;"	f	line:103	signature:(unsigned char num, unsigned char onoff)
+lcd_icon	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	25;"	p	line:25	signature:(unsigned char num, unsigned char onoff)
+lcd_init	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	66;"	f	line:66	signature:(void)
+lcd_init	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	22;"	p	line:22	signature:(void)
+lcd_str	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c	95;"	f	line:95	signature:(const unsigned char* ptr)
+lcd_str	D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h	23;"	p	line:23	signature:(const unsigned char* ptr)
+len	D:\USB_Book\Microchip\MDD File System\FSIO.c	5376;"	l	line:5376
+len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	516;"	l	line:516
+len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	613;"	l	line:613
+li	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+line_coding	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	124;"	v	line:124
+loByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4871;"	l	line:4871
+loWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4905;"	l	line:4905
+logFile	D:\USB_Book\GPS_Logger3\GPSLogger3.c	40;"	v	line:40
+main	D:\USB_Book\GPS_Logger3\GPSLogger3.c	94;"	f	line:94	signature:(void)
+masterBootRecord	D:\USB_Book\Microchip\MDD File System\FSIO.c	1485;"	l	line:1485
+mediaInfo	D:\USB_Book\Microchip\MDD File System\FSIO.c	1493;"	l	line:1493
+mediaInformation	D:\USB_Book\Microchip\MDD File System\FSIO.c	811;"	l	line:811
+mediaInformation	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	62;"	v	line:62	file:
+minsec	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+minutes	D:\USB_Book\Microchip\MDD File System\FSIO.c	3487;"	l	line:3487
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	277;"	p	line:277	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	283;"	p	line:283	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	7377;"	f	line:7377	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+month	D:\USB_Book\Microchip\MDD File System\FSIO.c	3491;"	l	line:3491
+monthday	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+ms	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	861;"	l	line:861
+msd_buffer	D:\USB_Book\Microchip\USB\usb_device.c	334;"	v	line:334
+msd_cbw	D:\USB_Book\Microchip\USB\usb_device.c	327;"	v	line:327
+msd_csw	D:\USB_Book\Microchip\USB\usb_device.c	328;"	v	line:328
+mySetLineCodingHandler	D:\USB_Book\GPS_Logger3\GPSLogger3.c	463;"	f	line:463	signature:(void)
+n	D:\USB_Book\Microchip\MDD File System\FSIO.c	8860;"	l	line:8860
+n	D:\USB_Book\Microchip\MDD File System\FSIO.c	8925;"	l	line:8925
+name	D:\USB_Book\Microchip\MDD File System\FSIO.c	2460;"	l	line:2460
+needRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	5173;"	l	line:5173
+new_addr	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	602;"	l	line:602
+nextClusterIsLast	D:\USB_Book\Microchip\MDD File System\FSIO.c	121;"	v	line:121
+numofclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	2309;"	l	line:2309
+numsector	D:\USB_Book\Microchip\MDD File System\FSIO.c	5748;"	l	line:5748
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2138;"	l	line:2138
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2308;"	l	line:2308
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	5751;"	l	line:5751
+outPipes	D:\USB_Book\Microchip\USB\usb_device.c	264;"	v	line:264
+p	D:\USB_Book\Microchip\MDD File System\FSIO.c	6075;"	l	line:6075
+p	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+p	D:\USB_Book\Microchip\USB\usb_device.c	1482;"	l	line:1482
+p	D:\USB_Book\Microchip\USB\usb_device.c	1927;"	l	line:1927
+p	D:\USB_Book\Microchip\USB\usb_device.c	2481;"	l	line:2481
+p	D:\USB_Book\Microchip\USB\usb_device.c	2524;"	l	line:2524
+pBDTEntryEP0OutCurrent	D:\USB_Book\Microchip\USB\usb_device.c	257;"	v	line:257
+pBDTEntryEP0OutNext	D:\USB_Book\Microchip\USB\usb_device.c	258;"	v	line:258
+pBDTEntryIn	D:\USB_Book\Microchip\USB\usb_device.c	260;"	v	line:260
+pBDTEntryOut	D:\USB_Book\Microchip\USB\usb_device.c	259;"	v	line:259
+pCDCDst	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	131;"	v	line:131
+pCDCSrc	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	130;"	v	line:130
+pData	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	517;"	l	line:517
+pData	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	614;"	l	line:614
+pDst	D:\USB_Book\Microchip\USB\usb_device.c	265;"	v	line:265
+pExt	D:\USB_Book\Microchip\MDD File System\FSIO.c	5510;"	l	line:5510
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	1386;"	p	line:1386	file:
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	2274;"	p	line:2274	file:
+pointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	5377;"	l	line:5377
+pos	D:\USB_Book\Microchip\MDD File System\FSIO.c	5096;"	l	line:5096
+pos	D:\USB_Book\Microchip\MDD File System\FSIO.c	5380;"	l	line:5380
+precision	D:\USB_Book\Microchip\MDD File System\FSIO.c	8910;"	l	line:8910
+prefix_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	9259;"	l	line:9259
+ptr0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2791;"	l	line:2791
+ptr1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2791;"	l	line:2791
+ptrNextData	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	147;"	v	line:147
+putUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	441;"	f	line:441	signature:(char *data, BYTE length)
+putrsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	611;"	f	line:611	signature:(const ROM char *data)
+putsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	514;"	f	line:514	signature:(char *data)
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	6074;"	l	line:6074
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	9266;"	l	line:9266
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	9271;"	l	line:9271
+r	D:\USB_Book\Microchip\MDD File System\FSIO.c	603;"	l	line:603
+radix	D:\USB_Book\Microchip\MDD File System\FSIO.c	5675;"	l	line:5675
+ramstring	D:\USB_Book\Microchip\MDD File System\FSIO.c	8924;"	l	line:8924
+readCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	5382;"	l	line:5382
+recache	D:\USB_Book\Microchip\MDD File System\FSIO.c	131;"	v	line:131
+res	D:\USB_Book\Microchip\MDD File System\FSIO.c	4872;"	l	line:4872
+response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1184;"	l	line:1184
+response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	390;"	l	line:390
+response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	497;"	l	line:497
+response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	599;"	l	line:599
+response	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	716;"	l	line:716
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	2927;"	l	line:2927
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	4359;"	l	line:4359
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	4906;"	l	line:4906
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8436;"	l	line:8436
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8528;"	l	line:8528
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8659;"	l	line:8659
+result	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1130;"	l	line:1130
+returnPointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	6940;"	l	line:6940
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	278;"	p	line:278	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	284;"	p	line:284	file:	signature:(BYTE mode, char * ramptr, char * romptr, unsigned char rmsubdirs)
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	8085;"	f	line:8085	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+romstring	D:\USB_Book\Microchip\MDD File System\FSIO.c	8920;"	l	line:8920
+s_digits	D:\USB_Book\Microchip\MDD File System\FSIO.c	216;"	v	line:216	file:
+s_digits	D:\USB_Book\Microchip\MDD File System\FSIO.c	218;"	v	line:218	file:
+sd000	D:\USB_Book\GPS_Logger3\usb_descriptors.c	292;"	v	line:292
+sd001	D:\USB_Book\GPS_Logger3\usb_descriptors.c	299;"	v	line:299
+sd002	D:\USB_Book\GPS_Logger3\usb_descriptors.c	306;"	v	line:306
+sdmmc_cmdtable	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	69;"	v	line:69
+secCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+sec_sel	D:\USB_Book\Microchip\MDD File System\FSIO.c	5379;"	l	line:5379
+seconds	D:\USB_Book\Microchip\MDD File System\FSIO.c	3486;"	l	line:3486
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	2139;"	l	line:2139
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	2305;"	l	line:2305
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	4946;"	l	line:4946
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	7890;"	l	line:7890
+sectorSize	D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c	534;"	l	line:534
+seek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5098;"	l	line:5098
+seek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5379;"	l	line:5379
+self_power::1	D:\USB_Book\GPS_Logger3\HardwareProfile.h	12;"	d	line:12
+setup_cnt	D:\USB_Book\Microchip\USB\usb_device.c	1128;"	l	line:1128
+shortPacketStatus	D:\USB_Book\Microchip\USB\usb_device.c	261;"	v	line:261
+sign_char	D:\USB_Book\Microchip\MDD File System\FSIO.c	9260;"	l	line:9260
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	4671;"	l	line:4671
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	7887;"	l	line:7887
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	8912;"	l	line:8912
+size2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8914;"	l	line:8914
+source	D:\USB_Book\Microchip\MDD File System\FSIO.c	4673;"	l	line:4673
+space_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	8916;"	l	line:8916
+spiconvalue	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1192;"	l	line:1192
+src	D:\USB_Book\Microchip\MDD File System\FSIO.c	5093;"	l	line:5093
+state	D:\USB_Book\Microchip\MDD File System\FSIO.c	419;"	l	line:419
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2137;"	l	line:2137
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	l	line:2208
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2582;"	l	line:2582
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	3592;"	l	line:3592
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	3796;"	l	line:3796
+status	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	601;"	l	line:601
+status	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	717;"	l	line:717
+statusB	D:\USB_Book\Microchip\MDD File System\FSIO.c	420;"	l	line:420
+str_put_n_chars	D:\USB_Book\Microchip\MDD File System\FSIO.c	297;"	p	line:297	file:	signature:(FSFILE * handle, unsigned char n, char c)
+str_put_n_chars	D:\USB_Book\Microchip\MDD File System\FSIO.c	8816;"	f	line:8816	signature:(FSFILE * handle, unsigned char n, char c)
+stream	D:\USB_Book\Microchip\MDD File System\FSIO.c	5295;"	l	line:5295
+string	D:\USB_Book\GPS_Logger3\usb_descriptors.c	292;"	m	line:292	file:
+string	D:\USB_Book\GPS_Logger3\usb_descriptors.c	299;"	m	line:299	file:
+string	D:\USB_Book\GPS_Logger3\usb_descriptors.c	306;"	m	line:306	file:
+string	D:\USB_Book\Microchip\MDD File System\FSIO.c	3898;"	l	line:3898
+subDirDepth	D:\USB_Book\Microchip\MDD File System\FSIO.c	8095;"	l	line:8095
+sw1::!PORTBbits.RB5	D:\USB_Book\GPS_Logger3\HardwareProfile.h	52;"	d	line:52
+sw2::!PORTBbits.RB7	D:\USB_Book\GPS_Logger3\HardwareProfile.h	53;"	d	line:53
+szName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5512;"	l	line:5512
+t0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2795;"	l	line:2795
+t1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2795;"	l	line:2795
+temp	D:\USB_Book\GPS_Logger3\GPSLogger3.c	70;"	v	line:70
+temp	D:\USB_Book\Microchip\MDD File System\FSIO.c	5511;"	l	line:5511
+temp	D:\USB_Book\Microchip\MDD File System\FSIO.c	5748;"	l	line:5748
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	6531;"	l	line:6531
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	7387;"	l	line:7387
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	7980;"	v	line:7980
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	8099;"	l	line:8099
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	6532;"	l	line:6532
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	6942;"	l	line:6942
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	7388;"	l	line:7388
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	8090;"	l	line:8090
+tempCWDobj	D:\USB_Book\Microchip\MDD File System\FSIO.c	132;"	v	line:132
+tempCWDobj2	D:\USB_Book\Microchip\MDD File System\FSIO.c	6530;"	l	line:6530
+tempCWDobj2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8438;"	l	line:8438
+tempSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	1357;"	l	line:1357
+tempString	D:\USB_Book\Microchip\MDD File System\FSIO.c	5599;"	l	line:5599
+tempindex	D:\USB_Book\Microchip\MDD File System\FSIO.c	6946;"	l	line:6946
+temppath	D:\USB_Book\Microchip\MDD File System\FSIO.c	6526;"	l	line:6526
+temppath	D:\USB_Book\Microchip\MDD File System\FSIO.c	7383;"	l	line:7383
+temppath2	D:\USB_Book\Microchip\MDD File System\FSIO.c	6528;"	l	line:6528
+temppath2	D:\USB_Book\Microchip\MDD File System\FSIO.c	7385;"	l	line:7385
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	1491;"	l	line:1491
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	3593;"	l	line:3593
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	421;"	l	line:421
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	5750;"	l	line:5750
+timeout	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	1183;"	l	line:1183
+timeout	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	388;"	l	line:388
+timeout	D:\USB_Book\Microchip\MDD File System\SD-SPI.c	495;"	l	line:495
+totalchars	D:\USB_Book\Microchip\MDD File System\FSIO.c	6939;"	l	line:6939
+tris_self_power::TRISAbits.TRISA2	D:\USB_Book\GPS_Logger3\HardwareProfile.h	11;"	d	line:11
+tris_usb_bus_sense::TRISBbits.TRISB5	D:\USB_Book\GPS_Logger3\HardwareProfile.h	15;"	d	line:15
+type	D:\USB_Book\Microchip\MDD File System\FSIO.c	886;"	l	line:886
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9486;"	p	line:9486	file:	signature:(ap, long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9490;"	p	line:9490	file:	signature:(ap, short long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9494;"	p	line:9494	file:	signature:(ap, long long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9498;"	p	line:9498	file:	signature:(ap, signed char *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9501;"	p	line:9501	file:	signature:(ap, int *)
+value	D:\USB_Book\Microchip\MDD File System\FSIO.c	3065;"	l	line:3065
+value	D:\USB_Book\Microchip\MDD File System\FSIO.c	3234;"	l	line:3234
+weekhour	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+width	D:\USB_Book\Microchip\MDD File System\FSIO.c	8909;"	l	line:8909
+writeCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	5099;"	l	line:5099
+writeDotEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	273;"	p	line:273	file:	signature:(DISK * dsk, DWORD dotAddress, DWORD dotdotAddress)
+writeDotEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	7884;"	f	line:7884	signature:(DISK * disk, DWORD dotAddress, DWORD dotdotAddress)
+year	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+year	D:\USB_Book\Microchip\MDD File System\FSIO.c	3492;"	l	line:3492

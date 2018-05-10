@@ -1,0 +1,3 @@
+Warning[2058] F:\prog\mplab_projects\PulseForNeuronCircuit_6\main_CDC_I2C.c 129 : call of function without prototype
+Warning[2054] F:\prog\mplab_projects\PulseForNeuronCircuit_6\main_CDC_I2C.c 146 : suspicious pointer conversion
+Warning[2054] F:\prog\mplab_projects\PulseForNeuronCircuit_6\main_CDC_I2C.c 178 : suspicious pointer conversion

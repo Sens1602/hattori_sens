@@ -1,0 +1,1114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ALLOW_FILESEARCH	D:\USB_Book\USB_MP3_Player2\FSconfig.h	67;"	d	line:67
+ALLOW_GLOBAL_VID_AND_PID	D:\USB_Book\Microchip\USB\usb_host.c	104;"	d	line:104	file:
+ALLOW_MULTIPLE_BULK_TRANSACTIONS_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	113;"	d	line:113	file:
+ASCII16dot	D:\USB_Book\USB_MP3_Player2\ASCII16dot.h	1;"	v	line:1
+BASS	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	37;"	v	line:37
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	144;"	v	line:144	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	150;"	v	line:150	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	157;"	v	line:157	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	146;"	d	line:146	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	152;"	d	line:152	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	159;"	d	line:159	file:
+BDT_IN_ODD::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	160;"	d	line:160	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	147;"	d	line:147	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	153;"	d	line:153	file:
+BDT_OUT::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	161;"	d	line:161	file:
+BDT_OUT_ODD::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	154;"	d	line:154	file:
+BDT_OUT_ODD::(&BDT[3])	D:\USB_Book\Microchip\USB\usb_host.c	162;"	d	line:162	file:
+BLACK::0x0000	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	27;"	d	line:27
+BLUE::0x001F	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	30;"	d	line:30
+BROWN::0x8000	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	34;"	d	line:34
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1031;"	l	line:1031
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1487;"	l	line:1487
+BSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	887;"	l	line:887
+BYTE	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	263;"	m	line:263	struct:_USB_MSD_CBW::<anonymous>::<anonymous>	file:
+Buffer	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	22;"	v	line:22
+Button	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	39;"	v	line:39
+BytesPerSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1032;"	l	line:1032
+CBWCB	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	270;"	m	line:270	struct:_USB_MSD_CBW	file:
+CBW_SIZE::31	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	192;"	d	line:192	file:
+CE_EOF::61	D:\USB_Book\Microchip\MDD File System\FSIO.c	190;"	d	line:190	file:
+CE_FAT_EOF::60	D:\USB_Book\Microchip\MDD File System\FSIO.c	189;"	d	line:189	file:
+CLOCK::32	D:\USB_Book\USB_MP3_Player2\VS1011.h	7;"	d	line:7
+COBALT::0x041F	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	37;"	d	line:37
+CSW_RECEIVE_ATTEMPTS::100	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	195;"	d	line:195	file:
+CSW_SIZE::13	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	193;"	d	line:193	file:
+CYAN::0x07FF	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	31;"	d	line:31
+CacheTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	235;"	p	line:235	file:	signature:(void)
+CacheTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	2788;"	f	line:2788	signature:(void)
+Cache_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	228;"	p	line:228	file:	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+Cache_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2301;"	f	line:2301	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+Chatta	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	36;"	v	line:36
+CheckBtn	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	249;"	f	line:249	signature:(int x, int y)
+CheckBtn	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	46;"	p	line:46	file:	signature:(int x, int y)
+ChgFlag	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	37;"	v	line:37
+Class	D:\USB_Book\Microchip\USB\usb_host.c	4586;"	l	line:4586
+ClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	4589;"	l	line:4589
+Cluster2Sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	230;"	p	line:230	file:	signature:(DISK * disk, DWORD cluster)
+Cluster2Sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	4944;"	f	line:4944	signature:(DISK * dsk, DWORD cluster)
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+ClusterFailValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+CmdCheck	D:\USB_Book\USB_MP3_Player2\VS1011.c	32;"	f	line:32	signature:(BYTE RegAdrs, BYTE UpData, BYTE LowData)
+Command	D:\USB_Book\USB_MP3_Player2\VS1011.c	19;"	f	line:19	signature:(BYTE RegAdrs, BYTE UpData, BYTE LowData)
+Command	D:\USB_Book\USB_MP3_Player2\VS1011.h	30;"	p	line:30	signature:(BYTE RegAdrs, BYTE UpData, BYTE LowData)
+Count	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	36;"	v	line:36
+CreateDIR	D:\USB_Book\Microchip\MDD File System\FSIO.c	272;"	p	line:272	file:	signature:(char * path)
+CreateDIR	D:\USB_Book\Microchip\MDD File System\FSIO.c	7792;"	f	line:7792	signature:(char * path)
+CreateFileEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2456;"	f	line:2456	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFileEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	265;"	p	line:265	file:	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFirstCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2515;"	f	line:2515	signature:(FILEOBJ fo)
+CreateFirstCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	263;"	p	line:263	file:	signature:(FILEOBJ fo)
+CyHdSc	D:\USB_Book\Microchip\MDD File System\FSIO.c	1356;"	l	line:1356
+DEVICE_CONNECTED	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	30;"	e	line:30	file:
+DEVICE_NOT_CONNECTED	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	29;"	e	line:29	file:
+DIRECTORY::0x12	D:\USB_Book\Microchip\MDD File System\FSIO.c	184;"	d	line:184	file:
+DIRENTRIES_PER_SECTOR::(MEDIA_SECTOR_SIZE/32)	D:\USB_Book\Microchip\MDD File System\FSIO.c	186;"	d	line:186	file:
+DIRENTRY	D:\USB_Book\Microchip\MDD File System\FSIO.c	182;"	t	line:182	file:
+DIR_Attr	D:\USB_Book\Microchip\MDD File System\FSIO.c	169;"	m	line:169	file:
+DIR_CrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	173;"	m	line:173	file:
+DIR_CrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	172;"	m	line:172	file:
+DIR_CrtTimeTenth	D:\USB_Book\Microchip\MDD File System\FSIO.c	171;"	m	line:171	file:
+DIR_Extension	D:\USB_Book\Microchip\MDD File System\FSIO.c	168;"	m	line:168	file:
+DIR_FileSize	D:\USB_Book\Microchip\MDD File System\FSIO.c	179;"	m	line:179	file:
+DIR_FstClusHI	D:\USB_Book\Microchip\MDD File System\FSIO.c	175;"	m	line:175	file:
+DIR_FstClusLO	D:\USB_Book\Microchip\MDD File System\FSIO.c	178;"	m	line:178	file:
+DIR_LstAccDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	174;"	m	line:174	file:
+DIR_NTRes	D:\USB_Book\Microchip\MDD File System\FSIO.c	170;"	m	line:170	file:
+DIR_Name	D:\USB_Book\Microchip\MDD File System\FSIO.c	167;"	m	line:167	file:
+DIR_WrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	177;"	m	line:177	file:
+DIR_WrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	176;"	m	line:176	file:
+DISKmount	D:\USB_Book\Microchip\MDD File System\FSIO.c	300;"	p	line:300	file:	signature:( DISK *dsk)
+DISKmount	D:\USB_Book\Microchip\MDD File System\FSIO.c	808;"	f	line:808	signature:( DISK *dsk)
+DataBuf	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	23;"	v	line:23
+DataClusters	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3495;"	p	line:3495	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_READ, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3594;"	p	line:3594	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_WRITE, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+DataSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1029;"	l	line:1029
+DispMenu	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	377;"	f	line:377	signature:(void)
+DispMenu	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	43;"	p	line:43	file:	signature:(void)
+Display	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	406;"	f	line:406	signature:(void)
+Display	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	44;"	p	line:44	file:	signature:(void)
+ENDCOL::320	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	18;"	d	line:18
+ENDROW::240	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	19;"	d	line:19
+EndClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+EraseCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	262;"	p	line:262	file:	signature:(DISK *disk, DWORD cluster)
+EraseCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	4789;"	f	line:4789	signature:(DISK *disk, DWORD cluster)
+EventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1535;"	p	line:1535	file:	signature:( deviceInfoMSD[i].deviceAddress, EVENT_MSD_MAX_LUN, &(deviceInfoMSD[i].maxLUN), 1 )
+EventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1800;"	p	line:1800	file:	signature:( deviceInfoMSD[i].deviceAddress, EVENT_MSD_MAX_LUN, &(deviceInfoMSD[i].maxLUN), 1 )
+EventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	2040;"	p	line:2040	file:	signature:( deviceInfoMSD[i].deviceAddress, EVENT_MSD_RESET, NULL, 0 )
+EventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	640;"	p	line:640	file:	signature:( deviceInfoMSD[i].deviceAddress, EVENT_MSD_MAX_LUN, &(deviceInfoMSD[i].maxLUN), 1 )
+EventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	856;"	p	line:856	file:	signature:( deviceInfoMSD[i].deviceAddress, EVENT_MSD_TRANSFER, NULL, 0 )
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4517;"	p	line:4517	file:
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4524;"	p	line:4524	file:
+Exit	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5914;"	l	line:5914
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5951;"	l	line:5951
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	5990;"	l	line:5990
+F	D:\USB_Book\Microchip\MDD File System\FSIO.c	6031;"	l	line:6031
+F	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	203;"	l	line:203
+FAT_GOOD_SIGN_0::0x55	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	80;"	d	line:80	file:
+FAT_GOOD_SIGN_1::0xAA	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	81;"	d	line:81	file:
+FAT_erase_cluster_chain	D:\USB_Book\Microchip\MDD File System\FSIO.c	2205;"	f	line:2205	signature:(DWORD cluster, DISK * dsk)
+FAT_erase_cluster_chain	D:\USB_Book\Microchip\MDD File System\FSIO.c	257;"	p	line:257	file:	signature:(DWORD cluster, DISK * dsk)
+FATfindEmptyCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	258;"	p	line:258	file:	signature:(FILEOBJ fo)
+FATfindEmptyCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	3062;"	f	line:3062	signature:(FILEOBJ fo)
+FILECreateHeadCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	261;"	p	line:261	file:	signature:( FILEOBJ fo, DWORD *cluster)
+FILECreateHeadCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	4713;"	f	line:4713	signature:( FILEOBJ fo, DWORD *cluster)
+FILEOBJ	D:\USB_Book\Microchip\MDD File System\FSIO.c	192;"	t	line:192	file:
+FILE_FOUND	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	31;"	e	line:31	file:
+FILEallocate_new_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	256;"	p	line:256	file:	signature:( FILEOBJ fo, BYTE mode)
+FILEallocate_new_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2994;"	f	line:2994	signature:( FILEOBJ fo, BYTE mode)
+FILEerase	D:\USB_Book\Microchip\MDD File System\FSIO.c	255;"	p	line:255	file:	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEerase	D:\USB_Book\Microchip\MDD File System\FSIO.c	3792;"	f	line:3792	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEfind	D:\USB_Book\Microchip\MDD File System\FSIO.c	247;"	p	line:247	file:	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEfind	D:\USB_Book\Microchip\MDD File System\FSIO.c	415;"	f	line:415	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEget_next_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	248;"	p	line:248	file:	signature:(FILEOBJ fo, DWORD n)
+FILEget_next_cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	721;"	f	line:721	signature:(FILEOBJ fo, DWORD n)
+FILEopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	249;"	p	line:249	file:	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FILEopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	600;"	f	line:600	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FINISH	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	33;"	e	line:33	file:
+FO_MBR::0L	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	82;"	d	line:82	file:
+FSCreateMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	1353;"	f	line:1353	signature:(unsigned long firstSector, unsigned long numSectors)
+FSGetDiskProperties	D:\USB_Book\Microchip\MDD File System\FSIO.c	3231;"	f	line:3231	signature:(FS_DISK_PROPERTIES* properties)
+FSInit	D:\USB_Book\Microchip\MDD File System\FSIO.c	330;"	f	line:330	signature:(void)
+FS_DYNAMIC_MEM	D:\USB_Book\USB_MP3_Player2\FSconfig.h	156;"	d	line:156
+FS_MAX_FILES_OPEN::2	D:\USB_Book\USB_MP3_Player2\FSconfig.h	53;"	d	line:53
+FS_free::SRAMfree	D:\USB_Book\USB_MP3_Player2\FSconfig.h	159;"	d	line:159
+FS_free::free	D:\USB_Book\USB_MP3_Player2\FSconfig.h	162;"	d	line:162
+FS_malloc::SRAMalloc	D:\USB_Book\USB_MP3_Player2\FSconfig.h	158;"	d	line:158
+FS_malloc::malloc	D:\USB_Book\USB_MP3_Player2\FSconfig.h	161;"	d	line:161
+FSattrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	5004;"	f	line:5004	signature:(FSFILE * file, unsigned char attributes)
+FSchdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	6446;"	f	line:6446	signature:(char * path)
+FSchdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	6474;"	f	line:6474	signature:(const rom char * path)
+FSerrno	D:\USB_Book\Microchip\MDD File System\FSIO.c	127;"	v	line:127
+FSerror	D:\USB_Book\Microchip\MDD File System\FSIO.c	4642;"	f	line:4642	signature:(void)
+FSfclose	D:\USB_Book\Microchip\MDD File System\FSIO.c	3356;"	f	line:3356	signature:(FSFILE *fo)
+FSfeof	D:\USB_Book\Microchip\MDD File System\FSIO.c	5337;"	f	line:5337	signature:( FSFILE * stream )
+FSfopen	D:\USB_Book\Microchip\MDD File System\FSIO.c	4055;"	f	line:4055	signature:( const char * fileName, const char *mode )
+FSfopenpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5949;"	f	line:5949	signature:(const rom char * fileName, const rom char *mode)
+FSformat	D:\USB_Book\Microchip\MDD File System\FSIO.c	1483;"	f	line:1483	signature:(char mode, long int serialNumber, char * volumeID)
+FSfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	8854;"	f	line:8854	signature:(FSFILE *fptr, const rom char *fmt, ...)
+FSfread	D:\USB_Book\Microchip\MDD File System\FSIO.c	5374;"	f	line:5374	signature:(void *ptr, size_t size, size_t n, FSFILE *stream)
+FSfseek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5746;"	f	line:5746	signature:(FSFILE *stream, long offset, int whence)
+FSftell	D:\USB_Book\Microchip\MDD File System\FSIO.c	4325;"	f	line:4325	signature:(FSFILE * fo)
+FSfwrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	5090;"	f	line:5090	signature:(const void *ptr, size_t size, size_t n, FSFILE *stream)
+FSgetcwd	D:\USB_Book\Microchip\MDD File System\FSIO.c	6935;"	f	line:6935	signature:(char * path, int numchars)
+FSmkdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	7306;"	f	line:7306	signature:(char * path)
+FSmkdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	7334;"	f	line:7334	signature:(const rom char * path)
+FSputc	D:\USB_Book\Microchip\MDD File System\FSIO.c	296;"	p	line:296	file:	signature:(char c, FSFILE * file)
+FSputc	D:\USB_Book\Microchip\MDD File System\FSIO.c	8782;"	f	line:8782	signature:(char c, FSFILE * file)
+FSremove	D:\USB_Book\Microchip\MDD File System\FSIO.c	4356;"	f	line:4356	signature:(const char * fileName)
+FSremovepgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5988;"	f	line:5988	signature:(const rom char * fileName)
+FSrename	D:\USB_Book\Microchip\MDD File System\FSIO.c	3895;"	f	line:3895	signature:(const char * fileName, FSFILE * fo)
+FSrenamepgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	5912;"	f	line:5912	signature:(const rom char * fileName, FSFILE * fo)
+FSrewind	D:\USB_Book\Microchip\MDD File System\FSIO.c	4442;"	f	line:4442	signature:(FSFILE * fo)
+FSrmdir	D:\USB_Book\Microchip\MDD File System\FSIO.c	8008;"	f	line:8008	signature:(char * path, unsigned char rmsubdirs)
+FSrmdirpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	8038;"	f	line:8038	signature:(const rom char * path, unsigned char rmsubdirs)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	292;"	p	line:292	file:	signature:(auto FSFILE *handle, auto const rom char *formatString, auto va_list ap)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	294;"	p	line:294	file:	signature:(FSFILE *handle, const char *formatString, va_list ap)
+FSvfprintf	D:\USB_Book\Microchip\MDD File System\FSIO.c	8896;"	f	line:8896	signature:(auto FSFILE *handle, auto const rom char * formatString, auto va_list ap)
+FUA_ALLOW_CACHE::0x00	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	83;"	d	line:83	file:
+Fail	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+FatRootDirClusterValue	D:\USB_Book\Microchip\MDD File System\FSIO.c	125;"	v	line:125
+FileCount	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	36;"	v	line:36
+FileObjectCopy	D:\USB_Book\Microchip\MDD File System\FSIO.c	244;"	p	line:244	file:	signature:(FILEOBJ foDest,FILEOBJ foSource)
+FileObjectCopy	D:\USB_Book\Microchip\MDD File System\FSIO.c	4669;"	f	line:4669	signature:(FILEOBJ foDest,FILEOBJ foSource)
+Fill_File_Object	D:\USB_Book\Microchip\MDD File System\FSIO.c	229;"	p	line:229	file:	signature:(FILEOBJ fo, WORD *fHandle)
+Fill_File_Object	D:\USB_Book\Microchip\MDD File System\FSIO.c	3587;"	f	line:3587	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	2580;"	f	line:2580	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	259;"	p	line:259	file:	signature:(FILEOBJ fo, WORD *fHandle)
+FindFirst	D:\USB_Book\Microchip\MDD File System\FSIO.c	8524;"	f	line:8524	signature:(const char * fileName, unsigned int attr, SearchRec * rec)
+FindFirstpgm	D:\USB_Book\Microchip\MDD File System\FSIO.c	6029;"	f	line:6029	signature:(const rom char * fileName, unsigned int attr, SearchRec * rec)
+FindNext	D:\USB_Book\Microchip\MDD File System\FSIO.c	8655;"	f	line:8655	signature:(SearchRec * rec)
+FormatDirName	D:\USB_Book\Microchip\MDD File System\FSIO.c	271;"	p	line:271	file:	signature:(char * string, BYTE mode)
+FormatDirName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5596;"	f	line:5596	signature:(char * string, BYTE mode)
+FormatFileName	D:\USB_Book\Microchip\MDD File System\FSIO.c	246;"	p	line:246	file:	signature:( const char* fileName, char* fN2, BYTE mode)
+FormatFileName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5508;"	f	line:5508	signature:( const char* fileName, char* fN2, BYTE mode)
+Fosc::80	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	8;"	d	line:8
+GREEN::0x07E0	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	29;"	d	line:29
+GetFullClusterNumber	D:\USB_Book\Microchip\MDD File System\FSIO.c	1297;"	f	line:1297	signature:(DIRENTRY entry)
+GetFullClusterNumber	D:\USB_Book\Microchip\MDD File System\FSIO.c	303;"	p	line:303	file:	signature:(DIRENTRY entry)
+GetInstructionClock::(GetSystemClock/2)	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	17;"	d	line:17
+GetInstructionClock::(GetSystemClock/2)???	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	30;"	d	line:30
+GetInstructionClock::(GetSystemClock/2)???	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	34;"	d	line:34
+GetInstructionClock::(GetSystemClock/2)???	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	38;"	d	line:38
+GetPeripheralClock::(GetSystemClock)	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	16;"	d	line:16
+GetPeripheralClock::24000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	33;"	d	line:33
+GetPeripheralClock::30000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	37;"	d	line:37
+GetPeripheralClock::48000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	29;"	d	line:29
+GetPreviousEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	270;"	p	line:270	file:	signature:(FSFILE * fo)
+GetPreviousEntry	D:\USB_Book\Microchip\MDD File System\FSIO.c	7191;"	f	line:7191	signature:(FSFILE * fo)
+GetSystemClock::24000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	32;"	d	line:32
+GetSystemClock::32000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	15;"	d	line:15
+GetSystemClock::48000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	28;"	d	line:28
+GetSystemClock::60000000UL	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	36;"	d	line:36
+Getscreen	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	232;"	f	line:232	signature:(unsigned int chn)
+Getscreen	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	45;"	p	line:45	file:	signature:(unsigned int chn)
+Good	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	e	line:2208	enum:_status	file:
+INITIALIZATION_ATTEMPTS::100	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	84;"	d	line:84	file:
+IncrementTimeStamp	D:\USB_Book\Microchip\MDD File System\FSIO.c	233;"	p	line:233	file:	signature:(DIRENTRY dir)
+IncrementTimeStamp	D:\USB_Book\Microchip\MDD File System\FSIO.c	3484;"	f	line:3484	signature:(DIRENTRY dir)
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	1492;"	l	line:1492
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	4674;"	l	line:4674
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8096;"	l	line:8096
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8437;"	l	line:8437
+Index	D:\USB_Book\Microchip\MDD File System\FSIO.c	8531;"	l	line:8531
+Index2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8096;"	l	line:8096
+Item	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	37;"	v	line:37
+LCD_CS::LATAbits.LATA8	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	12;"	d	line:12
+LCD_DB::LATC	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	16;"	d	line:16
+LCD_RD::LATAbits.LATA9	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	15;"	d	line:15
+LCD_RESET::LATCbits.LATC8	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	14;"	d	line:14
+LCD_RS::LATBbits.LATB4	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	11;"	d	line:11
+LCD_TRIS::TRISC	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	10;"	d	line:10
+LCD_WR::LATAbits.LATA4	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	13;"	d	line:13
+LastClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	2306;"	l	line:2306
+LastClusterLimit	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+LastClustervalue	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+LoadBootSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	1026;"	f	line:1026	signature:(DISK *dsk)
+LoadBootSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	302;"	p	line:302	file:	signature:(DISK *dsk)
+LoadDirAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	231;"	p	line:231	file:	signature:(FILEOBJ fo, WORD *fHandle)
+LoadDirAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	3719;"	f	line:3719	signature:(FILEOBJ fo, WORD *fHandle)
+LoadMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	301;"	p	line:301	file:	signature:(DISK *dsk)
+LoadMBR	D:\USB_Book\Microchip\MDD File System\FSIO.c	882;"	f	line:882	signature:(DISK *dsk)
+M	D:\USB_Book\Microchip\MDD File System\FSIO.c	5952;"	l	line:5952
+MAGENTA::0xF81F	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	32;"	d	line:32
+MARK_RESET_RECOVERY::0x0E	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	202;"	d	line:202	file:
+MDD_CFread::MDD_CFBT_CFread	D:\USB_Book\USB_MP3_Player2\FSconfig.h	203;"	d	line:203
+MDD_CFread::MDD_CFPMP_CFread	D:\USB_Book\USB_MP3_Player2\FSconfig.h	190;"	d	line:190
+MDD_CFwait::MDD_CFBT_CFwait	D:\USB_Book\USB_MP3_Player2\FSconfig.h	201;"	d	line:201
+MDD_CFwait::MDD_CFPMP_CFwait	D:\USB_Book\USB_MP3_Player2\FSconfig.h	188;"	d	line:188
+MDD_CFwrite::MDD_CFBT_CFwrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	202;"	d	line:202
+MDD_CFwrite::MDD_CFPMP_CFwrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	189;"	d	line:189
+MDD_InitIO::;	D:\USB_Book\USB_MP3_Player2\FSconfig.h	211;"	d	line:211
+MDD_InitIO::MDD_CFBT_InitIO	D:\USB_Book\USB_MP3_Player2\FSconfig.h	198;"	d	line:198
+MDD_InitIO::MDD_CFPMP_InitIO	D:\USB_Book\USB_MP3_Player2\FSconfig.h	185;"	d	line:185
+MDD_InitIO::MDD_SDSPI_InitIO	D:\USB_Book\USB_MP3_Player2\FSconfig.h	175;"	d	line:175
+MDD_MediaDetect::MDD_CFBT_MediaDetect	D:\USB_Book\USB_MP3_Player2\FSconfig.h	195;"	d	line:195
+MDD_MediaDetect::MDD_CFPMP_MediaDetect	D:\USB_Book\USB_MP3_Player2\FSconfig.h	182;"	d	line:182
+MDD_MediaDetect::MDD_SDSPI_MediaDetect	D:\USB_Book\USB_MP3_Player2\FSconfig.h	172;"	d	line:172
+MDD_MediaDetect::USBHostMSDSCSIMediaDetect	D:\USB_Book\USB_MP3_Player2\FSconfig.h	208;"	d	line:208
+MDD_MediaInitialize::MDD_CFBT_MediaInitialize	D:\USB_Book\USB_MP3_Player2\FSconfig.h	194;"	d	line:194
+MDD_MediaInitialize::MDD_CFPMP_MediaInitialize	D:\USB_Book\USB_MP3_Player2\FSconfig.h	181;"	d	line:181
+MDD_MediaInitialize::MDD_SDSPI_MediaInitialize	D:\USB_Book\USB_MP3_Player2\FSconfig.h	171;"	d	line:171
+MDD_MediaInitialize::USBHostMSDSCSIMediaInitialize	D:\USB_Book\USB_MP3_Player2\FSconfig.h	207;"	d	line:207
+MDD_SectorRead::MDD_CFBT_SectorRead	D:\USB_Book\USB_MP3_Player2\FSconfig.h	196;"	d	line:196
+MDD_SectorRead::MDD_CFPMP_SectorRead	D:\USB_Book\USB_MP3_Player2\FSconfig.h	183;"	d	line:183
+MDD_SectorRead::MDD_SDSPI_SectorRead	D:\USB_Book\USB_MP3_Player2\FSconfig.h	173;"	d	line:173
+MDD_SectorRead::USBHostMSDSCSISectorRead	D:\USB_Book\USB_MP3_Player2\FSconfig.h	209;"	d	line:209
+MDD_SectorWrite::MDD_CFBT_SectorWrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	197;"	d	line:197
+MDD_SectorWrite::MDD_CFPMP_SectorWrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	184;"	d	line:184
+MDD_SectorWrite::MDD_SDSPI_SectorWrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	174;"	d	line:174
+MDD_SectorWrite::USBHostMSDSCSISectorWrite	D:\USB_Book\USB_MP3_Player2\FSconfig.h	210;"	d	line:210
+MDD_ShutdownMedia::MDD_CFBT_ShutdownMedia	D:\USB_Book\USB_MP3_Player2\FSconfig.h	199;"	d	line:199
+MDD_ShutdownMedia::MDD_CFPMP_ShutdownMedia	D:\USB_Book\USB_MP3_Player2\FSconfig.h	186;"	d	line:186
+MDD_ShutdownMedia::MDD_SDSPI_ShutdownMedia	D:\USB_Book\USB_MP3_Player2\FSconfig.h	176;"	d	line:176
+MDD_ShutdownMedia::USBHostMSDSCSIMediaReset	D:\USB_Book\USB_MP3_Player2\FSconfig.h	212;"	d	line:212
+MDD_WriteProtectState::MDD_CFBT_WriteProtectState	D:\USB_Book\USB_MP3_Player2\FSconfig.h	200;"	d	line:200
+MDD_WriteProtectState::MDD_CFPMP_WriteProtectState	D:\USB_Book\USB_MP3_Player2\FSconfig.h	187;"	d	line:187
+MDD_WriteProtectState::MDD_SDSPI_WriteProtectState	D:\USB_Book\USB_MP3_Player2\FSconfig.h	177;"	d	line:177
+MDD_WriteProtectState::USBHostMSDSCSIWriteProtectStat	D:\USB_Book\USB_MP3_Player2\FSconfig.h	213;"	d	line:213
+MEDIA_SECTOR_SIZE::512	D:\USB_Book\USB_MP3_Player2\FSconfig.h	59;"	d	line:59
+MP3_DREQ_IO::(PORTAbits.RA10)	D:\USB_Book\USB_MP3_Player2\VS1011.h	10;"	d	line:10
+MP3_DREQ_TRIS::(TRISAbits.TRISA10)	D:\USB_Book\USB_MP3_Player2\VS1011.h	9;"	d	line:9
+MP3_SCK_TRIS::(TRISBbits.TRISB15)	D:\USB_Book\USB_MP3_Player2\VS1011.h	18;"	d	line:18
+MP3_SDI_TRIS::(TRISAbits.TRISA1)	D:\USB_Book\USB_MP3_Player2\VS1011.h	19;"	d	line:19
+MP3_SDO_TRIS::(TRISAbits.TRISA0)	D:\USB_Book\USB_MP3_Player2\VS1011.h	20;"	d	line:20
+MP3_SPICON1::(SPI1CON1)	D:\USB_Book\USB_MP3_Player2\VS1011.h	23;"	d	line:23
+MP3_SPICON1bits::(SPI1CON1bits)	D:\USB_Book\USB_MP3_Player2\VS1011.h	24;"	d	line:24
+MP3_SPICON2::(SPI1CON2)	D:\USB_Book\USB_MP3_Player2\VS1011.h	25;"	d	line:25
+MP3_SPISTAT::(SPI1STAT)	D:\USB_Book\USB_MP3_Player2\VS1011.h	26;"	d	line:26
+MP3_SPISTATbits::(SPI1STATbits)	D:\USB_Book\USB_MP3_Player2\VS1011.h	27;"	d	line:27
+MP3_SPI_IF::(IFS0bits.SPI1IF)	D:\USB_Book\USB_MP3_Player2\VS1011.h	21;"	d	line:21
+MP3_SSPBUF::(SPI1BUF)	D:\USB_Book\USB_MP3_Player2\VS1011.h	22;"	d	line:22
+MP3_XCS_IO::(LATBbits.LATB14)	D:\USB_Book\USB_MP3_Player2\VS1011.h	16;"	d	line:16
+MP3_XCS_TRIS::(TRISBbits.TRISB14)	D:\USB_Book\USB_MP3_Player2\VS1011.h	15;"	d	line:15
+MP3_XDCS_IO::(LATAbits.LATA7)	D:\USB_Book\USB_MP3_Player2\VS1011.h	14;"	d	line:14
+MP3_XDCS_TRIS::(TRISAbits.TRISA7)	D:\USB_Book\USB_MP3_Player2\VS1011.h	13;"	d	line:13
+MP3_XRESET_IO::(LATBbits.LATB13)	D:\USB_Book\USB_MP3_Player2\VS1011.h	12;"	d	line:12
+MP3_XRESET_TRIS::(TRISBbits.TRISB13)	D:\USB_Book\USB_MP3_Player2\VS1011.h	11;"	d	line:11
+Mask	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	228;"	l	line:228
+MaxTag::512	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	408;"	d	line:408	file:
+ModeC	D:\USB_Book\Microchip\MDD File System\FSIO.c	4061;"	l	line:4061
+MsgScrn	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	40;"	v	line:40
+NEXT_STATE::0x0010	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	127;"	d	line:127	file:
+NEXT_SUBSTATE::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	128;"	d	line:128	file:
+NUM_TPL_ENTRIES::1	D:\USB_Book\USB_MP3_Player2\usb_config.h	62;"	d	line:62
+NameSize	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	409;"	l	line:409
+ONE_CONTROL_TRANSACTION_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	109;"	d	line:109	file:
+ORANGE::0xFC00	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	35;"	d	line:35
+PERPLE::0x8010	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	36;"	d	line:36
+PLAY	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	32;"	e	line:32	file:
+Partition	D:\USB_Book\Microchip\MDD File System\FSIO.c	1355;"	l	line:1355
+Partition	D:\USB_Book\Microchip\MDD File System\FSIO.c	884;"	l	line:884
+PlayEnd	D:\USB_Book\USB_MP3_Player2\VS1011.c	94;"	f	line:94	signature:(void)
+PlayEnd	D:\USB_Book\USB_MP3_Player2\VS1011.h	38;"	p	line:38	signature:(void)
+PopulateEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	260;"	p	line:260	file:	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+PopulateEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	2699;"	f	line:2699	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+Process	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	274;"	f	line:274	signature:(int sw)
+Process	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	48;"	p	line:48	file:	signature:(int sw)
+Protocol	D:\USB_Book\Microchip\USB\usb_host.c	4588;"	l	line:4588
+RDPROTECT_NORMAL::0x00	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	85;"	d	line:85	file:
+RED::0xF800	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	28;"	d	line:28
+RUN_AT_60MHZ	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	24;"	d	line:24
+ReadByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	239;"	p	line:239	file:	signature:( BYTE* pBuffer, WORD index )
+ReadByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4843;"	f	line:4843	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	241;"	p	line:241	file:	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4903;"	f	line:4903	signature:( BYTE* pBuffer, WORD index )
+ReadFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	227;"	p	line:227	file:	signature:(DISK *dsk, DWORD ccls)
+ReadFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	6072;"	f	line:6072	signature:(DISK *dsk, DWORD ccls)
+ReadWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	240;"	p	line:240	file:	signature:( BYTE* pBuffer, WORD index )
+ReadWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4869;"	f	line:4869	signature:( BYTE* pBuffer, WORD index )
+Record	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	24;"	v	line:24
+ReservedSectorCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	1033;"	l	line:1033
+RootDirSectors	D:\USB_Book\Microchip\MDD File System\FSIO.c	1028;"	l	line:1028
+RootDirSectors	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+STATE_CBW_WAIT::0x0003	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	173;"	d	line:173	file:
+STATE_CSW_WAIT::0x0005	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	175;"	d	line:175	file:
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	131;"	d	line:131	file:
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	168;"	d	line:168	file:
+STATE_HOLDING::0x0009	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	181;"	d	line:181	file:
+STATE_HOLDING::0x0060	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	164;"	d	line:164	file:
+STATE_INITIALIZE_DEVICE::0x0010	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	133;"	d	line:133	file:
+STATE_MASK::0x00F0	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	124;"	d	line:124	file:
+STATE_MSD_CLEAR_DATA_IN::0x0040	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	154;"	d	line:154	file:
+STATE_MSD_CLEAR_DATA_OUT::0x0050	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	159;"	d	line:159	file:
+STATE_MSD_RESET_RECOVERY::0x0030	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	149;"	d	line:149	file:
+STATE_REQUEST_CSW::0x000A	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	183;"	d	line:183	file:
+STATE_RUNNING::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	172;"	d	line:172	file:
+STATE_RUNNING::0x0020	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	139;"	d	line:139	file:
+STATE_TRANSFER_WAIT::0x0004	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	174;"	d	line:174	file:
+STATE_WAIT_FOR_CLEAR_IN::0x0007	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	178;"	d	line:178	file:
+STATE_WAIT_FOR_CLEAR_OUT::0x0008	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	179;"	d	line:179	file:
+STATE_WAIT_FOR_MAX_LUN::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	170;"	d	line:170	file:
+STATE_WAIT_FOR_RESET::0x0006	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	177;"	d	line:177	file:
+SUBSTATE_CBW_WAIT::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	142;"	d	line:142	file:
+SUBSTATE_CLEAR_IN_COMPLETE::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	157;"	d	line:157	file:
+SUBSTATE_CLEAR_OUT_COMPLETE::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	162;"	d	line:162	file:
+SUBSTATE_CSW_WAIT::0x0006	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	146;"	d	line:146	file:
+SUBSTATE_GET_MAX_LUN_COMPLETE::0x0003	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	137;"	d	line:137	file:
+SUBSTATE_HOLDING::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	140;"	d	line:140	file:
+SUBSTATE_MASK::0x000F	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	125;"	d	line:125	file:
+SUBSTATE_REQUEST_CSW::0x0005	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	145;"	d	line:145	file:
+SUBSTATE_RESET_COMPLETE::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	152;"	d	line:152	file:
+SUBSTATE_SEND_CBW::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	141;"	d	line:141	file:
+SUBSTATE_SEND_CLEAR_IN::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	155;"	d	line:155	file:
+SUBSTATE_SEND_CLEAR_OUT::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	160;"	d	line:160	file:
+SUBSTATE_SEND_GET_MAX_LUN::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	135;"	d	line:135	file:
+SUBSTATE_SEND_RESET::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	150;"	d	line:150	file:
+SUBSTATE_TRANSFER_DATA::0x0003	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	143;"	d	line:143	file:
+SUBSTATE_TRANSFER_DONE::0x0007	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	147;"	d	line:147	file:
+SUBSTATE_TRANSFER_WAIT::0x0004	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	144;"	d	line:144	file:
+SUBSTATE_WAIT_FOR_CLEAR_IN::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	156;"	d	line:156	file:
+SUBSTATE_WAIT_FOR_CLEAR_OUT::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	161;"	d	line:161	file:
+SUBSTATE_WAIT_FOR_ENUMERATION::0x0000	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	134;"	d	line:134	file:
+SUBSTATE_WAIT_FOR_MAX_LUN::0x0002	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	136;"	d	line:136	file:
+SUBSTATE_WAIT_FOR_RESET::0x0001	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	151;"	d	line:151	file:
+SUPPORT_FAT32	D:\USB_Book\USB_MP3_Player2\FSconfig.h	95;"	d	line:95
+SW_DOWN	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	337;"	f	line:337	signature:(void)
+SW_DOWN	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	49;"	p	line:49	file:	signature:(void)
+SW_UP	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	305;"	f	line:305	signature:(void)
+SW_UP	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	50;"	p	line:50	file:	signature:(void)
+SectorAddress	D:\USB_Book\Microchip\MDD File System\FSIO.c	4792;"	l	line:4792
+SendData	D:\USB_Book\USB_MP3_Player2\VS1011.c	56;"	f	line:56	signature:(BYTE Data)
+SendData	D:\USB_Book\USB_MP3_Player2\VS1011.h	31;"	p	line:31	signature:(BYTE Data)
+SetBassBoost	D:\USB_Book\USB_MP3_Player2\VS1011.c	76;"	f	line:76	signature:(BYTE bass, BYTE gfreq)
+SetBassBoost	D:\USB_Book\USB_MP3_Player2\VS1011.h	37;"	p	line:37	signature:(BYTE bass, BYTE gfreq)
+SetClockVars	D:\USB_Book\Microchip\MDD File System\FSIO.c	2925;"	f	line:2925	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
+SetVolume	D:\USB_Book\USB_MP3_Player2\VS1011.c	67;"	f	line:67	signature:(BYTE vRight, BYTE vLeft)
+SetVolume	D:\USB_Book\USB_MP3_Player2\VS1011.h	36;"	p	line:36	signature:(BYTE right, BYTE left)
+State	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	34;"	v	line:34
+StrSz	D:\USB_Book\Microchip\MDD File System\FSIO.c	5674;"	l	line:5674
+SubClass	D:\USB_Book\Microchip\USB\usb_host.c	4587;"	l	line:4587
+Swit	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	36;"	v	line:36
+TREB	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	37;"	v	line:37
+TempClusterCalc	D:\USB_Book\Microchip\MDD File System\FSIO.c	129;"	v	line:129
+TempFullClusterCalc	D:\USB_Book\Microchip\MDD File System\FSIO.c	1300;"	l	line:1300
+TempMsbCluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2518;"	l	line:2518
+TotSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1029;"	l	line:1029
+TriedBackupBootSecAtAddress6	D:\USB_Book\Microchip\MDD File System\FSIO.c	1037;"	l	line:1037
+TriedSpecifiedBackupBootSec	D:\USB_Book\Microchip\MDD File System\FSIO.c	1036;"	l	line:1036
+U1STAT_ODD_MASK::0x04	D:\USB_Book\Microchip\USB\usb_host.c	5279;"	d	line:5279	file:
+U1STAT_TX_MASK::0x08	D:\USB_Book\Microchip\USB\usb_host.c	5278;"	d	line:5278	file:
+USBHostClearEndpointErrors	D:\USB_Book\Microchip\USB\usb_host.c	229;"	f	line:229	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostDeviceSpecificClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	298;"	f	line:298	signature:( BYTE deviceAddress )
+USBHostDeviceStatus	D:\USB_Book\Microchip\USB\usb_host.c	342;"	f	line:342	signature:( BYTE deviceAddress )
+USBHostInit	D:\USB_Book\Microchip\USB\usb_host.c	399;"	f	line:399	signature:( unsigned long flags )
+USBHostIsochronousBuffersCreate	D:\USB_Book\Microchip\USB\usb_host.c	465;"	f	line:465	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers, WORD bufferSize )
+USBHostIsochronousBuffersDestroy	D:\USB_Book\Microchip\USB\usb_host.c	519;"	f	line:519	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIsochronousBuffersReset	D:\USB_Book\Microchip\USB\usb_host.c	559;"	f	line:559	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIssueDeviceRequest	D:\USB_Book\Microchip\USB\usb_host.c	634;"	f	line:634	signature:( BYTE deviceAddress, BYTE bmRequestType, BYTE bRequest, WORD wValue, WORD wIndex, WORD wLength, BYTE *data, BYTE dataDirection, BYTE clientDriverID )
+USBHostMSDDeviceStatus	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	387;"	f	line:387	signature:( BYTE deviceAddress )
+USBHostMSDEventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1461;"	f	line:1461	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USBHostMSDInitialize	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1294;"	f	line:1294	signature:( BYTE address, DWORD flags, BYTE clientDriverID )
+USBHostMSDResetDevice	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	499;"	f	line:499	signature:( BYTE deviceAddress )
+USBHostMSDSCSIEventHandler	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	197;"	f	line:197	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USBHostMSDSCSIInitialize	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	151;"	f	line:151	signature:( BYTE address, DWORD flags, BYTE clientDriverID )
+USBHostMSDSCSIMediaDetect	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	271;"	f	line:271	signature:( void )
+USBHostMSDSCSIMediaInitialize	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	338;"	f	line:338	signature:( void )
+USBHostMSDSCSIMediaReset	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	474;"	f	line:474	signature:( void )
+USBHostMSDSCSISectorRead	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	542;"	f	line:542	signature:( DWORD sectorAddress, BYTE *dataBuffer )
+USBHostMSDSCSISectorWrite	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	653;"	f	line:653	signature:( DWORD sectorAddress, BYTE *dataBuffer, BYTE allowWriteToZero )
+USBHostMSDSCSIWriteProtectState	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	747;"	f	line:747	signature:( void )
+USBHostMSDTasks	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	565;"	f	line:565	signature:( void )
+USBHostMSDTerminateTransfer	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1012;"	f	line:1012	signature:( BYTE deviceAddress )
+USBHostMSDTransfer	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1086;"	f	line:1086	signature:( BYTE deviceAddress, BYTE deviceLUN, BYTE direction, BYTE *commandBlock, BYTE commandBlockLength, BYTE *data, DWORD dataLength )
+USBHostMSDTransferIsComplete	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1215;"	f	line:1215	signature:( BYTE deviceAddress, BYTE *errorCode, DWORD *byteCount )
+USBHostRead	D:\USB_Book\Microchip\USB\usb_host.c	803;"	f	line:803	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *pData, DWORD size )
+USBHostResetDevice	D:\USB_Book\Microchip\USB\usb_host.c	891;"	f	line:891	signature:( BYTE deviceAddress )
+USBHostResumeDevice	D:\USB_Book\Microchip\USB\usb_host.c	935;"	f	line:935	signature:( BYTE deviceAddress )
+USBHostSetDeviceConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	1013;"	f	line:1013	signature:( BYTE deviceAddress, BYTE configuration )
+USBHostSetNAKTimeout	D:\USB_Book\Microchip\USB\usb_host.c	1085;"	f	line:1085	signature:( BYTE deviceAddress, BYTE endpoint, WORD flags, WORD timeoutCount )
+USBHostShutdown	D:\USB_Book\Microchip\USB\usb_host.c	1132;"	f	line:1132	signature:( void )
+USBHostSuspendDevice	D:\USB_Book\Microchip\USB\usb_host.c	1209;"	f	line:1209	signature:( BYTE deviceAddress )
+USBHostTasks	D:\USB_Book\Microchip\USB\usb_host.c	1265;"	f	line:1265	signature:( void )
+USBHostTerminateTransfer	D:\USB_Book\Microchip\USB\usb_host.c	2472;"	f	line:2472	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostTransferIsComplete	D:\USB_Book\Microchip\USB\usb_host.c	2539;"	f	line:2539	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *errorCode, DWORD *byteCount )
+USBHostVbusEvent	D:\USB_Book\Microchip\USB\usb_host.c	2632;"	f	line:2632	signature:(USB_EVENT vbusEvent, BYTE hubAddress, BYTE portNumber)
+USBHostWrite	D:\USB_Book\Microchip\USB\usb_host.c	2709;"	f	line:2709	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *data, DWORD size )
+USBInitialize::(x)	D:\USB_Book\USB_MP3_Player2\usb_config.h	90;"	d	line:90
+USBTasks::	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	100;"	d	line:100	file:
+USBTasks::	D:\USB_Book\USB_MP3_Player2\usb_config.h	85;"	d	line:85
+USB_A0_SILICON_WORK_AROUND	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	21;"	d	line:21
+USB_ApplicationEventHandler	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	42;"	p	line:42	file:	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USB_ApplicationEventHandler	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	476;"	f	line:476	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USB_FREE::(ptr)free(ptr)	D:\USB_Book\Microchip\USB\usb_host.c	84;"	d	line:84	file:
+USB_FREE_AND_CLEAR::(ptr){USB_FREE(ptr);ptr=NULL;}	D:\USB_Book\Microchip\USB\usb_host.c	87;"	d	line:87	file:
+USB_HOST_APP_EVENT_HANDLER::USB_ApplicationEventHandler	D:\USB_Book\USB_MP3_Player2\usb_config.h	71;"	d	line:71
+USB_INITIAL_VBUS_CURRENT::(100/2)	D:\USB_Book\USB_MP3_Player2\usb_config.h	69;"	d	line:69
+USB_INSERT_TIME::(250+1)	D:\USB_Book\USB_MP3_Player2\usb_config.h	70;"	d	line:70
+USB_MALLOC::(size)malloc(size)	D:\USB_Book\Microchip\USB\usb_host.c	80;"	d	line:80	file:
+USB_MAX_MASS_STORAGE_DEVICES::1	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	109;"	d	line:109	file:
+USB_MAX_MASS_STORAGE_DEVICES::1	D:\USB_Book\USB_MP3_Player2\usb_config.h	77;"	d	line:77
+USB_MSD_CBW	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	271;"	t	line:271	file:
+USB_MSD_CSW	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	286;"	t	line:286	file:
+USB_MSD_DCBWSIGNATURE::0x43425355ul	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	199;"	d	line:199	file:
+USB_MSD_DCSWSIGNATURE::0x53425355ul	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	200;"	d	line:200	file:
+USB_MSD_DEVICE_INFO	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	245;"	t	line:245	file:
+USB_MSD_GET_MAX_LUN::0xFE	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	197;"	d	line:197	file:
+USB_MSD_RESET::0xFF	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	198;"	d	line:198	file:
+USB_NUM_BULK_NAKS::20000	D:\USB_Book\USB_MP3_Player2\usb_config.h	67;"	d	line:67
+USB_NUM_CONTROL_NAKS::200	D:\USB_Book\USB_MP3_Player2\usb_config.h	63;"	d	line:63
+USB_NUM_INTERRUPT_NAKS::3	D:\USB_Book\USB_MP3_Player2\usb_config.h	65;"	d	line:65
+USB_PING_PONG_MODE	D:\USB_Book\Microchip\USB\usb_host.c	137;"	d	line:137	file:
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\Microchip\USB\usb_host.c	138;"	d	line:138	file:
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\USB_MP3_Player2\usb_config.h	58;"	d	line:58
+USB_SUPPORT_BULK_TRANSFERS	D:\USB_Book\USB_MP3_Player2\usb_config.h	66;"	d	line:66
+USB_SUPPORT_HOST	D:\USB_Book\USB_MP3_Player2\usb_config.h	53;"	d	line:53
+USB_SUPPORT_INTERRUPT_TRANSFERS	D:\USB_Book\USB_MP3_Player2\usb_config.h	64;"	d	line:64
+USB_TRANSACTION_RETRY_ATTEMPTS::20	D:\USB_Book\Microchip\USB\usb_host.c	126;"	d	line:126	file:
+USERDEFINEDCLOCK	D:\USB_Book\USB_MP3_Player2\FSconfig.h	124;"	d	line:124
+USEREALTIMECLOCK	D:\USB_Book\USB_MP3_Player2\FSconfig.h	109;"	d	line:109
+USE_USB_INTERFACE::	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	50;"	d	line:50
+VS1011_Init	D:\USB_Book\USB_MP3_Player2\VS1011.c	111;"	f	line:111	signature:(void)
+VS1011_Init	D:\USB_Book\USB_MP3_Player2\VS1011.h	34;"	p	line:34	signature:(void)
+VS1011_SineTest	D:\USB_Book\USB_MP3_Player2\VS1011.c	146;"	f	line:146	signature:(void)
+VS1011_SineTest	D:\USB_Book\USB_MP3_Player2\VS1011.h	35;"	p	line:35	signature:(void)
+ValidateChars	D:\USB_Book\Microchip\MDD File System\FSIO.c	245;"	p	line:245	file:	signature:(char * FileName, BYTE mode)
+ValidateChars	D:\USB_Book\Microchip\MDD File System\FSIO.c	5672;"	f	line:5672	signature:( char * FileName , BYTE mode)
+Volume	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	37;"	v	line:37
+WHITE::0xFFFF	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	26;"	d	line:26
+WRPROTECT_NORMAL::0x00	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	86;"	d	line:86	file:
+WriteFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	264;"	p	line:264	file:	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteFAT	D:\USB_Book\Microchip\MDD File System\FSIO.c	6244;"	f	line:6244	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteSPI	D:\USB_Book\USB_MP3_Player2\VS1011.c	10;"	f	line:10	signature:(BYTE output)
+WriteSPI	D:\USB_Book\USB_MP3_Player2\VS1011.h	29;"	p	line:29	signature:(BYTE output)
+Write_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	2134;"	f	line:2134	signature:( FILEOBJ fo, WORD * curEntry)
+Write_File_Entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	253;"	p	line:253	file:	signature:( FILEOBJ fo, WORD * curEntry)
+XChar::(short)((ENDCOL)/16)	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	20;"	d	line:20
+Xold	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	188;"	l	line:188	file:
+Xset	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	188;"	l	line:188	file:
+YELLOW::0xFFE0	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	33;"	d	line:33
+YLine::(short)((ENDROW)/17)	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	21;"	d	line:21
+Yold	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	188;"	l	line:188	file:
+Yset	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	188;"	l	line:188	file:
+_DIRENTRY	D:\USB_Book\Microchip\MDD File System\FSIO.c	180;"	t	line:180	file:
+_FLAG_MINUS::0x1	D:\USB_Book\Microchip\MDD File System\FSIO.c	196;"	d	line:196	file:
+_FLAG_OCTO::0x8	D:\USB_Book\Microchip\MDD File System\FSIO.c	199;"	d	line:199	file:
+_FLAG_PLUS::0x2	D:\USB_Book\Microchip\MDD File System\FSIO.c	197;"	d	line:197	file:
+_FLAG_SIGNED::0x80	D:\USB_Book\Microchip\MDD File System\FSIO.c	201;"	d	line:201	file:
+_FLAG_SPACE::0x4	D:\USB_Book\Microchip\MDD File System\FSIO.c	198;"	d	line:198	file:
+_FLAG_ZERO::0x10	D:\USB_Book\Microchip\MDD File System\FSIO.c	200;"	d	line:200	file:
+_FMT_BYTE::3	D:\USB_Book\Microchip\MDD File System\FSIO.c	207;"	d	line:207	file:
+_FMT_BYTE::3	D:\USB_Book\Microchip\MDD File System\FSIO.c	212;"	d	line:212	file:
+_FMT_LONG::1	D:\USB_Book\Microchip\MDD File System\FSIO.c	205;"	d	line:205	file:
+_FMT_LONG::2	D:\USB_Book\Microchip\MDD File System\FSIO.c	211;"	d	line:211	file:
+_FMT_LONGLONG::1	D:\USB_Book\Microchip\MDD File System\FSIO.c	210;"	d	line:210	file:
+_FMT_SHRTLONG::2	D:\USB_Book\Microchip\MDD File System\FSIO.c	206;"	d	line:206	file:
+_FMT_UNSPECIFIED::0	D:\USB_Book\Microchip\MDD File System\FSIO.c	204;"	d	line:204	file:
+_FMT_UNSPECIFIED::0	D:\USB_Book\Microchip\MDD File System\FSIO.c	209;"	d	line:209	file:
+_HARDWARE_PROFILE_H_	D:\USB_Book\USB_MP3_Player2\HardwareProfile.h	4;"	d	line:4
+_T1Interrupt	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	186;"	f	line:186	signature:(void)
+_USB1Interrupt	D:\USB_Book\Microchip\USB\usb_host.c	5282;"	f	line:5282	signature:( void )
+_USBHostMSDSCSI_TestUnitReady	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	104;"	p	line:104	file:	signature:( void )
+_USBHostMSDSCSI_TestUnitReady	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	792;"	f	line:792	signature:( void )
+_USBHostMSD_GetNextTag	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1945;"	f	line:1945	signature:( void )
+_USBHostMSD_GetNextTag	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	295;"	p	line:295	file:	signature:( void )
+_USBHostMSD_ResetStateJump	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1975;"	f	line:1975	signature:( BYTE i )
+_USBHostMSD_ResetStateJump	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	296;"	p	line:296	file:	signature:( BYTE i )
+_USBHostMSD_SetNextState::{deviceInfoMSD[i].state=(devic	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	306;"	d	line:306	file:
+_USBHostMSD_SetNextSubState::{deviceInfoMSD[i].state+=NEXT_	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	307;"	d	line:307	file:
+_USBHostMSD_TerminateTransfer::(error){	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	311;"	d	line:311	file:
+_USBHostMSD_TerminateTransfer::(error){	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	318;"	d	line:318	file:
+_USBHostMSD_TerminateTransfer::(error){	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	323;"	d	line:323	file:
+_USB_CONFIG_VERSION_BUILD::0	D:\USB_Book\USB_MP3_Player2\usb_config.h	49;"	d	line:49
+_USB_CONFIG_VERSION_DOT::0	D:\USB_Book\USB_MP3_Player2\usb_config.h	48;"	d	line:48
+_USB_CONFIG_VERSION_MAJOR::2	D:\USB_Book\USB_MP3_Player2\usb_config.h	46;"	d	line:46
+_USB_CONFIG_VERSION_MINOR::0	D:\USB_Book\USB_MP3_Player2\usb_config.h	47;"	d	line:47
+_USB_CheckCommandAndEnumerationAttempts	D:\USB_Book\Microchip\USB\usb_host.c	2803;"	f	line:2803	signature:( void )
+_USB_FindClassDriver	D:\USB_Book\Microchip\USB\usb_host.c	2869;"	f	line:2869	signature:( BYTE bClass, BYTE bSubClass, BYTE bProtocol, BYTE *pbClientDrv )
+_USB_FindDeviceLevelClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	2923;"	f	line:2923	signature:( void )
+_USB_FindEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3012;"	f	line:3012	signature:( BYTE endpoint )
+_USB_FindNextToken	D:\USB_Book\Microchip\USB\usb_host.c	3111;"	f	line:3111	signature:( void )
+_USB_FindServiceEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4027;"	f	line:4027	signature:( BYTE transferType )
+_USB_FreeConfigMemory	D:\USB_Book\Microchip\USB\usb_host.c	4153;"	f	line:4153	signature:( void )
+_USB_FreeMemory	D:\USB_Book\Microchip\USB\usb_host.c	4206;"	f	line:4206	signature:( void )
+_USB_InitControlRead	D:\USB_Book\Microchip\USB\usb_host.c	4261;"	f	line:4261	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitControlWrite	D:\USB_Book\Microchip\USB\usb_host.c	4314;"	f	line:4314	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitRead	D:\USB_Book\Microchip\USB\usb_host.c	4383;"	f	line:4383	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_InitWrite	D:\USB_Book\Microchip\USB\usb_host.c	4450;"	f	line:4450	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_MSD_CBW	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	254;"	s	line:254	file:
+_USB_MSD_CSW	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	280;"	s	line:280	file:
+_USB_MSD_DEVICE_INFO	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	216;"	s	line:216	file:
+_USB_NotifyClients	D:\USB_Book\Microchip\USB\usb_host.c	4506;"	f	line:4506	signature:( BYTE address, USB_EVENT event, void *data, unsigned int size )
+_USB_ParseConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	4576;"	f	line:4576	signature:( void )
+_USB_ResetDATA0	D:\USB_Book\Microchip\USB\usb_host.c	4914;"	f	line:4914	signature:( BYTE endpoint )
+_USB_SendToken	D:\USB_Book\Microchip\USB\usb_host.c	4974;"	f	line:4974	signature:( BYTE endpoint, BYTE tokenType )
+_USB_SetBDT	D:\USB_Book\Microchip\USB\usb_host.c	5049;"	f	line:5049	signature:( BYTE token )
+_USB_TransferInProgress	D:\USB_Book\Microchip\USB\usb_host.c	5205;"	f	line:5205	signature:( void )
+_status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	g	line:2208	file:
+_usb_config_h_	D:\USB_Book\USB_MP3_Player2\usb_config.h	33;"	d	line:33
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	2584;"	l	line:2584
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3590;"	l	line:3590
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3722;"	l	line:3722
+a	D:\USB_Book\Microchip\MDD File System\FSIO.c	3795;"	l	line:3795
+aChar	D:\USB_Book\Microchip\MDD File System\FSIO.c	6948;"	l	line:6948
+abs::(a)(((a)>0)?(a):-(a))	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	157;"	d	line:157	file:
+amountfound	D:\USB_Book\Microchip\MDD File System\FSIO.c	2583;"	l	line:2583
+ap	D:\USB_Book\Microchip\MDD File System\FSIO.c	8859;"	l	line:8859
+attempts	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	340;"	l	line:340
+attemptsCSW	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	244;"	m	line:244	struct:_USB_MSD_DEVICE_INFO	file:
+attrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	417;"	l	line:417
+b	D:\USB_Book\Microchip\MDD File System\FSIO.c	2586;"	l	line:2586
+b1	D:\USB_Book\USB_MP3_Player2\VS1011.c	33;"	l	line:33
+b2	D:\USB_Book\USB_MP3_Player2\VS1011.c	33;"	l	line:33
+bAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4578;"	l	line:4578
+bCBWCBLength	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	269;"	m	line:269	struct:_USB_MSD_CBW	file:
+bCBWLUN	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	268;"	m	line:268	struct:_USB_MSD_CBW	file:
+bDescriptorType	D:\USB_Book\Microchip\USB\usb_host.c	4579;"	l	line:4579
+bHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	2585;"	l	line:2585
+bInterfaceNumber	D:\USB_Book\Microchip\USB\usb_host.c	4580;"	l	line:4580
+bLength	D:\USB_Book\Microchip\USB\usb_host.c	4581;"	l	line:4581
+bMaxPower	D:\USB_Book\Microchip\USB\usb_host.c	4584;"	l	line:4584
+bNumEndpoints	D:\USB_Book\Microchip\USB\usb_host.c	4582;"	l	line:4582
+bNumInterfaces	D:\USB_Book\Microchip\USB\usb_host.c	4583;"	l	line:4583
+bfClearDataIN	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	230;"	m	line:230	struct:_USB_MSD_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfClearDataOUT	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	231;"	m	line:231	struct:_USB_MSD_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfDirection	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	228;"	m	line:228	struct:_USB_MSD_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfDirection	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	264;"	m	line:264	struct:_USB_MSD_CBW::<anonymous>::<anonymous>	file:
+bfReset	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	229;"	m	line:229	struct:_USB_MSD_DEVICE_INFO::<anonymous>::<anonymous>	file:
+blockData	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	218;"	m	line:218	struct:_USB_MSD_DEVICE_INFO	file:
+bmCBWflags	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	267;"	m	line:267	struct:_USB_MSD_CBW	file:
+btn	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	251;"	l	line:251
+buf	D:\USB_Book\Microchip\MDD File System\FSIO.c	9264;"	l	line:9264
+buf	D:\USB_Book\Microchip\MDD File System\FSIO.c	9270;"	l	line:9270
+bufferEnd	D:\USB_Book\Microchip\MDD File System\FSIO.c	6941;"	l	line:6941
+bufferOverflow	D:\USB_Book\Microchip\MDD File System\FSIO.c	6943;"	l	line:6943
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	570;"	l	line:570
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	341;"	l	line:341
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	476;"	l	line:476
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	544;"	l	line:544
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	655;"	l	line:655
+byteCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	794;"	l	line:794
+bytesTransferred	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	242;"	m	line:242	struct:_USB_MSD_DEVICE_INFO	file:
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	2997;"	l	line:2997
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+c	D:\USB_Book\Microchip\MDD File System\FSIO.c	8901;"	l	line:8901
+c2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2207;"	l	line:2207
+c2	D:\USB_Book\Microchip\MDD File System\FSIO.c	723;"	l	line:723
+ccls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2140;"	l	line:2140
+ccls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2307;"	l	line:2307
+character	D:\USB_Book\Microchip\MDD File System\FSIO.c	3591;"	l	line:3591
+character	D:\USB_Book\Microchip\MDD File System\FSIO.c	421;"	l	line:421
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	280;"	p	line:280	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	286;"	p	line:286	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+chdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	6518;"	f	line:6518	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+clientDriverID	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	220;"	m	line:220	struct:_USB_MSD_DEVICE_INFO	file:
+clus	D:\USB_Book\Microchip\MDD File System\FSIO.c	3797;"	l	line:3797
+cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2306;"	l	line:2306
+cluster	D:\USB_Book\Microchip\MDD File System\FSIO.c	2518;"	l	line:2518
+commandBlock	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	342;"	l	line:342
+commandBlock	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	545;"	l	line:545
+commandBlock	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	656;"	l	line:656
+commandBlock	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	795;"	l	line:795
+compareAttrib	D:\USB_Book\Microchip\MDD File System\FSIO.c	417;"	l	line:417
+copyU1STATbits	D:\USB_Book\Microchip\USB\usb_host.c	5487;"	l	line:5487
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5092;"	l	line:5092
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5513;"	l	line:5513
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5915;"	l	line:5915
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5953;"	l	line:5953
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	5991;"	l	line:5991
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	6032;"	l	line:6032
+count	D:\USB_Book\Microchip\MDD File System\FSIO.c	8902;"	l	line:8902
+countConfigurations	D:\USB_Book\Microchip\USB\usb_host.c	170;"	v	line:170	file:
+curcls	D:\USB_Book\Microchip\MDD File System\FSIO.c	2997;"	l	line:2997
+curcls	D:\USB_Book\Microchip\MDD File System\FSIO.c	3066;"	l	line:3066
+curclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	6945;"	l	line:6945
+curent	D:\USB_Book\Microchip\MDD File System\FSIO.c	6524;"	l	line:6524
+currentAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4592;"	l	line:4592
+currentConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	4593;"	l	line:4593
+currentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4594;"	l	line:4594
+currentInterface	D:\USB_Book\Microchip\USB\usb_host.c	4595;"	l	line:4595
+currentPacketSize	D:\USB_Book\Microchip\USB\usb_host.c	5051;"	l	line:5051
+cval	D:\USB_Book\Microchip\MDD File System\FSIO.c	8917;"	l	line:8917
+cwd	D:\USB_Book\Microchip\MDD File System\FSIO.c	136;"	v	line:136
+cwdptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	137;"	v	line:137
+d	D:\USB_Book\Microchip\MDD File System\FSIO.c	1488;"	l	line:1488
+d	D:\USB_Book\Microchip\MDD File System\FSIO.c	6076;"	l	line:6076
+d0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2796;"	l	line:2796
+d1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2796;"	l	line:2796
+dCBWDataTransferLength	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	258;"	m	line:258	struct:_USB_MSD_CBW	file:
+dCBWSignature	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	256;"	m	line:256	struct:_USB_MSD_CBW	file:
+dCBWTag	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	243;"	m	line:243	struct:_USB_MSD_DEVICE_INFO	file:
+dCBWTag	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	257;"	m	line:257	struct:_USB_MSD_CBW	file:
+dCBWTagNext	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	345;"	v	line:345	file:
+dCSWDataResidue	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	284;"	m	line:284	struct:_USB_MSD_CSW	file:
+dCSWSignature	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	282;"	m	line:282	struct:_USB_MSD_CSW	file:
+dCSWStatus	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	285;"	m	line:285	struct:_USB_MSD_CSW	file:
+dCSWTag	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	283;"	m	line:283	struct:_USB_MSD_CSW	file:
+data	D:\USB_Book\Microchip\USB\usb_host.c	3169;"	l	line:3169
+data	D:\USB_Book\Microchip\USB\usb_host.c	3193;"	l	line:3193
+data	D:\USB_Book\Microchip\USB\usb_host.c	3256;"	l	line:3256
+data	D:\USB_Book\Microchip\USB\usb_host.c	3280;"	l	line:3280
+data	D:\USB_Book\Microchip\USB\usb_host.c	3343;"	l	line:3343
+data	D:\USB_Book\Microchip\USB\usb_host.c	3367;"	l	line:3367
+data	D:\USB_Book\Microchip\USB\usb_host.c	3475;"	l	line:3475
+data	D:\USB_Book\Microchip\USB\usb_host.c	3515;"	l	line:3515
+data	D:\USB_Book\Microchip\USB\usb_host.c	3574;"	l	line:3574
+data	D:\USB_Book\Microchip\USB\usb_host.c	3613;"	l	line:3613
+data	D:\USB_Book\Microchip\USB\usb_host.c	3685;"	l	line:3685
+data	D:\USB_Book\Microchip\USB\usb_host.c	3709;"	l	line:3709
+data	D:\USB_Book\Microchip\USB\usb_host.c	3754;"	l	line:3754
+data	D:\USB_Book\Microchip\USB\usb_host.c	3778;"	l	line:3778
+data	D:\USB_Book\Microchip\USB\usb_host.c	3854;"	l	line:3854
+data	D:\USB_Book\Microchip\USB\usb_host.c	3878;"	l	line:3878
+data	D:\USB_Book\Microchip\USB\usb_host.c	3917;"	l	line:3917
+data	D:\USB_Book\Microchip\USB\usb_host.c	3941;"	l	line:3941
+dataBufferPointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	1496;"	l	line:1496
+day	D:\USB_Book\Microchip\MDD File System\FSIO.c	3490;"	l	line:3490
+defaultArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	6892;"	v	line:6892
+defaultString	D:\USB_Book\Microchip\MDD File System\FSIO.c	6420;"	v	line:6420
+delay_ms	D:\USB_Book\USB_MP3_Player2\VS1011.c	176;"	f	line:176	signature:(int msec)
+delay_ms	D:\USB_Book\USB_MP3_Player2\VS1011.h	33;"	p	line:33	signature:(int msec)
+delay_us	D:\USB_Book\USB_MP3_Player2\VS1011.c	165;"	f	line:165	signature:(int usec)
+delay_us	D:\USB_Book\USB_MP3_Player2\VS1011.h	32;"	p	line:32	signature:(int usec)
+deltax	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	161;"	l	line:161
+deltay	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	161;"	l	line:161
+descriptor	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1296;"	l	line:1296
+dest	D:\USB_Book\Microchip\MDD File System\FSIO.c	4672;"	l	line:4672
+device	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1297;"	l	line:1297
+deviceAddress	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	219;"	m	line:219	struct:_USB_MSD_DEVICE_INFO	file:
+deviceAddress	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	118;"	v	line:118	file:
+deviceAttached	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	26;"	v	line:26
+deviceInfoMSD	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	346;"	v	line:346	file:
+digit_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	9258;"	l	line:9258
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2303;"	l	line:2303
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2520;"	l	line:2520
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2587;"	l	line:2587
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	2702;"	l	line:2702
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3364;"	l	line:3364
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3589;"	l	line:3589
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3721;"	l	line:3721
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3794;"	l	line:3794
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	3900;"	l	line:3900
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	5007;"	l	line:5007
+dir	D:\USB_Book\Microchip\MDD File System\FSIO.c	7795;"	l	line:7795
+dirCleared	D:\USB_Book\Microchip\MDD File System\FSIO.c	130;"	v	line:130
+dirEntryPtr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7794;"	l	line:7794
+dirclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	7195;"	l	line:7195
+dirptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7196;"	l	line:7196
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	1489;"	l	line:1489
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	3064;"	l	line:3064
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	3798;"	l	line:3798
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	4715;"	l	line:4715
+disk	D:\USB_Book\Microchip\MDD File System\FSIO.c	725;"	l	line:725
+dot	D:\USB_Book\Microchip\MDD File System\FSIO.c	7797;"	l	line:7797
+dotdot	D:\USB_Book\Microchip\MDD File System\FSIO.c	7797;"	l	line:7797
+dotdotPath	D:\USB_Book\Microchip\MDD File System\FSIO.c	7391;"	l	line:7391
+dotdotname	D:\USB_Book\Microchip\MDD File System\FSIO.c	8101;"	l	line:8101
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2136;"	l	line:2136
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2304;"	l	line:2304
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	2996;"	l	line:2996
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5094;"	l	line:5094
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5292;"	l	line:5292
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5378;"	l	line:5378
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	5749;"	l	line:5749
+dsk	D:\USB_Book\Microchip\MDD File System\FSIO.c	602;"	l	line:602
+endpointDATA	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	239;"	m	line:239	struct:_USB_MSD_DEVICE_INFO	file:
+endpointIN	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1302;"	l	line:1302
+endpointIN	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	237;"	m	line:237	struct:_USB_MSD_DEVICE_INFO	file:
+endpointOUT	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1303;"	l	line:1303
+endpointOUT	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	238;"	m	line:238	struct:_USB_MSD_DEVICE_INFO	file:
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	6525;"	l	line:6525
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	6949;"	l	line:6949
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	7888;"	l	line:7888
+entry	D:\USB_Book\Microchip\MDD File System\FSIO.c	8092;"	l	line:8092
+entryptr	D:\USB_Book\Microchip\MDD File System\FSIO.c	7889;"	l	line:7889
+ep	D:\USB_Book\Microchip\USB\usb_host.c	1087;"	l	line:1087
+ep	D:\USB_Book\Microchip\USB\usb_host.c	231;"	l	line:231
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2474;"	l	line:2474
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2542;"	l	line:2542
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2711;"	l	line:2711
+ep	D:\USB_Book\Microchip\USB\usb_host.c	805;"	l	line:805
+eraseDir	D:\USB_Book\Microchip\MDD File System\FSIO.c	274;"	p	line:274	file:	signature:(char * path)
+eraseDir	D:\USB_Book\Microchip\MDD File System\FSIO.c	8434;"	f	line:8434	signature:(char * path)
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	1030;"	l	line:1030
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2459;"	l	line:2459
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2517;"	l	line:2517
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	2701;"	l	line:2701
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	3362;"	l	line:3362
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	4716;"	l	line:4716
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	4793;"	l	line:4793
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	5095;"	l	line:5095
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	5381;"	l	line:5381
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	605;"	l	line:605
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	724;"	l	line:724
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	810;"	l	line:810
+error	D:\USB_Book\Microchip\MDD File System\FSIO.c	885;"	l	line:885
+error	D:\USB_Book\Microchip\USB\usb_host.c	4585;"	l	line:4585
+error	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	161;"	l	line:161
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1299;"	l	line:1299
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1464;"	l	line:1464
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1978;"	l	line:1978
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	221;"	m	line:221	struct:_USB_MSD_DEVICE_INFO	file:
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	571;"	l	line:571
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	343;"	l	line:343
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	477;"	l	line:477
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	546;"	l	line:546
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	657;"	l	line:657
+errorCode	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	796;"	l	line:796
+f	D:\USB_Book\Microchip\MDD File System\FSIO.c	8526;"	l	line:8526
+f	D:\USB_Book\Microchip\MDD File System\FSIO.c	8657;"	l	line:8657
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	2519;"	l	line:2519
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3358;"	l	line:3358
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3899;"	l	line:3899
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	4062;"	l	line:4062
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	418;"	l	line:418
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	5006;"	l	line:5006
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	6946;"	l	line:6946
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	7194;"	l	line:7194
+fHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	8529;"	l	line:8529
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	332;"	l	line:332
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	3360;"	l	line:3360
+fIndex	D:\USB_Book\Microchip\MDD File System\FSIO.c	4059;"	l	line:4059
+fatsize	D:\USB_Book\Microchip\MDD File System\FSIO.c	1491;"	l	line:1491
+filePtr	D:\USB_Book\Microchip\MDD File System\FSIO.c	4057;"	l	line:4057
+filesize	D:\USB_Book\Microchip\MDD File System\FSIO.c	5098;"	l	line:5098
+final	D:\USB_Book\Microchip\MDD File System\FSIO.c	4063;"	l	line:4063
+flags	D:\USB_Book\Microchip\MDD File System\FSIO.c	8908;"	l	line:8908
+flags	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	234;"	m	line:234	struct:_USB_MSD_DEVICE_INFO	file:
+flushData	D:\USB_Book\Microchip\MDD File System\FSIO.c	254;"	p	line:254	file:	signature:(void)
+flushData	D:\USB_Book\Microchip\MDD File System\FSIO.c	5289;"	f	line:5289	signature:(void)
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	4358;"	l	line:4358
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8091;"	l	line:8091
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8527;"	l	line:8527
+fo	D:\USB_Book\Microchip\MDD File System\FSIO.c	8658;"	l	line:8658
+gBufferOwner	D:\USB_Book\Microchip\MDD File System\FSIO.c	118;"	v	line:118
+gBufferZeroed	D:\USB_Book\Microchip\MDD File System\FSIO.c	123;"	v	line:123
+gDataBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	143;"	v	line:143
+gDataBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	149;"	v	line:149
+gDiskData	D:\USB_Book\Microchip\MDD File System\FSIO.c	156;"	v	line:156
+gFATBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	145;"	v	line:145
+gFATBuffer	D:\USB_Book\Microchip\MDD File System\FSIO.c	150;"	v	line:150
+gFileArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	102;"	v	line:102
+gFileSlotOpen	D:\USB_Book\Microchip\MDD File System\FSIO.c	103;"	v	line:103
+gFileTemp	D:\USB_Book\Microchip\MDD File System\FSIO.c	133;"	v	line:133
+gLastDataSectorRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	119;"	v	line:119
+gLastFATSectorRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	116;"	v	line:116
+gNeedDataWrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	120;"	v	line:120
+gNeedFATWrite	D:\USB_Book\Microchip\MDD File System\FSIO.c	117;"	v	line:117
+gTimeAccDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	111;"	v	line:111
+gTimeCrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	110;"	v	line:110
+gTimeCrtMS	D:\USB_Book\Microchip\MDD File System\FSIO.c	108;"	v	line:108
+gTimeCrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	109;"	v	line:109
+gTimeWrtDate	D:\USB_Book\Microchip\MDD File System\FSIO.c	113;"	v	line:113
+gTimeWrtTime	D:\USB_Book\Microchip\MDD File System\FSIO.c	112;"	v	line:112
+goodHandle	D:\USB_Book\Microchip\MDD File System\FSIO.c	3899;"	l	line:3899
+handle	D:\USB_Book\Microchip\MDD File System\FSIO.c	7796;"	l	line:7796
+handle	D:\USB_Book\Microchip\MDD File System\FSIO.c	8093;"	l	line:8093
+handle2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8094;"	l	line:8094
+have_precision	D:\USB_Book\Microchip\MDD File System\FSIO.c	8911;"	l	line:8911
+hiByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4871;"	l	line:4871
+hiWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4905;"	l	line:4905
+hours	D:\USB_Book\Microchip\MDD File System\FSIO.c	3488;"	l	line:3488
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	3233;"	l	line:3233
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	5598;"	l	line:5598
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6523;"	l	line:6523
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	6947;"	l	line:6947
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7193;"	l	line:7193
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7382;"	l	line:7382
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7798;"	l	line:7798
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	7886;"	l	line:7886
+i	D:\USB_Book\Microchip\MDD File System\FSIO.c	8660;"	l	line:8660
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1014;"	l	line:1014
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1089;"	l	line:1089
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1217;"	l	line:1217
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1301;"	l	line:1301
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1466;"	l	line:1466
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	389;"	l	line:389
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	501;"	l	line:501
+i	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	572;"	l	line:572
+i	D:\USB_Book\Microchip\USB\usb_host.c	2871;"	l	line:2871
+i	D:\USB_Book\Microchip\USB\usb_host.c	2925;"	l	line:2925
+i	D:\USB_Book\Microchip\USB\usb_host.c	467;"	l	line:467
+i	D:\USB_Book\Microchip\USB\usb_host.c	521;"	l	line:521
+i	D:\USB_Book\Microchip\USB\usb_host.c	561;"	l	line:561
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	188;"	l	line:188	file:
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	234;"	l	line:234
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	251;"	l	line:251
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	364;"	l	line:364
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	36;"	v	line:36
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	378;"	l	line:378
+i	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	409;"	l	line:409
+i	D:\USB_Book\USB_MP3_Player2\VS1011.c	177;"	l	line:177
+i	D:\USB_Book\USB_MP3_Player2\VS1011.c	95;"	l	line:95
+i	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	132;"	l	line:132
+i	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	229;"	l	line:229
+illegalState	D:\USB_Book\Microchip\USB\usb_host.c	3113;"	l	line:3113
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	2458;"	l	line:2458
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	3590;"	l	line:3590
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	419;"	l	line:419
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	4791;"	l	line:4791
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	5674;"	l	line:5674
+index	D:\USB_Book\Microchip\MDD File System\FSIO.c	6947;"	l	line:6947
+index	D:\USB_Book\Microchip\USB\usb_host.c	4596;"	l	line:4596
+inquiryData	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	344;"	l	line:344
+inquiryData	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	797;"	l	line:797
+interface	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	236;"	m	line:236	struct:_USB_MSD_DEVICE_INFO	file:
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1303;"	l	line:1303
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1305;"	l	line:1305
+item	D:\USB_Book\Microchip\USB\usb_host.c	1301;"	l	line:1301
+itostring	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	362;"	f	line:362	signature:(char digit, unsigned int data, char *buffer)
+itostring	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	47;"	p	line:47	file:	signature:(char digit, unsigned int data, char *buffer)
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	1490;"	l	line:1490
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	3897;"	l	line:3897
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	5598;"	l	line:5598
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	6523;"	l	line:6523
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	6944;"	l	line:6944
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	7382;"	l	line:7382
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	8530;"	l	line:8530
+j	D:\USB_Book\Microchip\MDD File System\FSIO.c	8660;"	l	line:8660
+j	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	1090;"	l	line:1090
+j	D:\USB_Book\Microchip\USB\usb_host.c	468;"	l	line:468
+j	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	132;"	l	line:132
+j	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	229;"	l	line:229
+k	D:\USB_Book\Microchip\MDD File System\FSIO.c	3897;"	l	line:3897
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	5097;"	l	line:5097
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	5291;"	l	line:5291
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	604;"	l	line:604
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	6075;"	l	line:6075
+l	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+larg	D:\USB_Book\Microchip\MDD File System\FSIO.c	8919;"	l	line:8919
+larg	D:\USB_Book\Microchip\MDD File System\FSIO.c	8922;"	l	line:8922
+lcd_Char	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	227;"	f	line:227	signature:(char colum, char line, unsigned char letter, unsigned short Color1, unsigned short Color2)
+lcd_Char	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	44;"	p	line:44	signature:(char colum, char line, unsigned char letter, unsigned short Color1, unsigned short Color2)
+lcd_Circle	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	199;"	f	line:199	signature:(int x0, int y0, int r, unsigned short color)
+lcd_Circle	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	47;"	p	line:47	signature:(int x0, int y0, int r, unsigned short color)
+lcd_Clear	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	131;"	f	line:131	signature:(unsigned short Color)
+lcd_Clear	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	42;"	p	line:42	signature:(unsigned short Color)
+lcd_Init	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	50;"	f	line:50	signature:(void)
+lcd_Init	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	41;"	p	line:41	signature:(void)
+lcd_Line	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	158;"	f	line:158	signature:(short x0, short y0, short x1, short y1, unsigned short Color)
+lcd_Line	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	46;"	p	line:46	signature:(short x0, short y0, short x1, short y1, unsigned short Color)
+lcd_Pixel	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	146;"	f	line:146	signature:(short Xpos, short Ypos, unsigned short Color)
+lcd_Pixel	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	43;"	p	line:43	signature:(short Xpos, short Ypos, unsigned short Color)
+lcd_Str	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	257;"	f	line:257	signature:(char colum, char line, char *s, unsigned short Color1, unsigned short Color2)
+lcd_Str	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	45;"	p	line:45	signature:(char colum, char line, char *s, unsigned short Color1, unsigned short Color2)
+lcd_out	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	19;"	f	line:19	signature:(unsigned int index, unsigned int data)
+lcd_out	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.h	40;"	p	line:40	signature:(unsigned int index, unsigned int data)
+len	D:\USB_Book\Microchip\MDD File System\FSIO.c	5376;"	l	line:5376
+li	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+loByte	D:\USB_Book\Microchip\MDD File System\FSIO.c	4871;"	l	line:4871
+loWord	D:\USB_Book\Microchip\MDD File System\FSIO.c	4905;"	l	line:4905
+locate	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	409;"	l	line:409
+main	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	56;"	f	line:56	signature:(void)
+masterBootRecord	D:\USB_Book\Microchip\MDD File System\FSIO.c	1485;"	l	line:1485
+maxLUN	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	235;"	m	line:235	struct:_USB_MSD_DEVICE_INFO	file:
+mediaInfo	D:\USB_Book\Microchip\MDD File System\FSIO.c	1493;"	l	line:1493
+mediaInformation	D:\USB_Book\Microchip\MDD File System\FSIO.c	811;"	l	line:811
+mediaInformation	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	119;"	v	line:119	file:
+minsec	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+minutes	D:\USB_Book\Microchip\MDD File System\FSIO.c	3487;"	l	line:3487
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	277;"	p	line:277	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	283;"	p	line:283	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+mkdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	7377;"	f	line:7377	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+month	D:\USB_Book\Microchip\MDD File System\FSIO.c	3491;"	l	line:3491
+monthday	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+n	D:\USB_Book\Microchip\MDD File System\FSIO.c	8860;"	l	line:8860
+n	D:\USB_Book\Microchip\MDD File System\FSIO.c	8925;"	l	line:8925
+name	D:\USB_Book\Microchip\MDD File System\FSIO.c	2460;"	l	line:2460
+needRead	D:\USB_Book\Microchip\MDD File System\FSIO.c	5173;"	l	line:5173
+newEndpointInfo	D:\USB_Book\Microchip\USB\usb_host.c	4597;"	l	line:4597
+newInterfaceInfo	D:\USB_Book\Microchip\USB\usb_host.c	4598;"	l	line:4598
+newSettingInfo	D:\USB_Book\Microchip\USB\usb_host.c	4599;"	l	line:4599
+nextClusterIsLast	D:\USB_Book\Microchip\MDD File System\FSIO.c	121;"	v	line:121
+numCommandTries	D:\USB_Book\Microchip\USB\usb_host.c	171;"	v	line:171	file:
+numEnumerationTries	D:\USB_Book\Microchip\USB\usb_host.c	172;"	v	line:172	file:
+numTimerInterrupts	D:\USB_Book\Microchip\USB\usb_host.c	173;"	v	line:173	file:
+numofclus	D:\USB_Book\Microchip\MDD File System\FSIO.c	2309;"	l	line:2309
+numsector	D:\USB_Book\Microchip\MDD File System\FSIO.c	5748;"	l	line:5748
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2138;"	l	line:2138
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	2308;"	l	line:2308
+offset2	D:\USB_Book\Microchip\MDD File System\FSIO.c	5751;"	l	line:5751
+p	D:\USB_Book\Microchip\MDD File System\FSIO.c	6075;"	l	line:6075
+p	D:\USB_Book\Microchip\MDD File System\FSIO.c	6247;"	l	line:6247
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5052;"	l	line:5052
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5494;"	l	line:5494
+pCurrentConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	175;"	v	line:175
+pCurrentConfigurationNode	D:\USB_Book\Microchip\USB\usb_host.c	1267;"	l	line:1267	file:
+pCurrentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	174;"	v	line:174	file:
+pCurrentInterface	D:\USB_Book\Microchip\USB\usb_host.c	1268;"	l	line:1268
+pDesc	D:\USB_Book\Microchip\USB\usb_host.c	2926;"	l	line:2926
+pDeviceDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	176;"	v	line:176
+pEP0Data	D:\USB_Book\Microchip\USB\usb_host.c	177;"	v	line:177	file:
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3014;"	l	line:3014
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4029;"	l	line:4029
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4916;"	l	line:4916
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5207;"	l	line:5207
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5751;"	l	line:5751
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	667;"	l	line:667
+pExt	D:\USB_Book\Microchip\MDD File System\FSIO.c	5510;"	l	line:5510
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	3015;"	l	line:3015
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4030;"	l	line:4030
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4508;"	l	line:4508
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4921;"	l	line:4921
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5208;"	l	line:5208
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5752;"	l	line:5752
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	668;"	l	line:668
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	4922;"	l	line:4922
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	5209;"	l	line:5209
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	669;"	l	line:669
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	1269;"	l	line:1269
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	4208;"	l	line:4208
+pTempEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4157;"	l	line:4157
+pTempInterface	D:\USB_Book\Microchip\USB\usb_host.c	4155;"	l	line:4155
+pTempInterfaceList	D:\USB_Book\Microchip\USB\usb_host.c	4601;"	l	line:4601
+pTempSetting	D:\USB_Book\Microchip\USB\usb_host.c	4156;"	l	line:4156
+packetSize	D:\USB_Book\Microchip\USB\usb_host.c	5493;"	l	line:5493
+pointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	5377;"	l	line:5377
+pos	D:\USB_Book\Microchip\MDD File System\FSIO.c	5096;"	l	line:5096
+pos	D:\USB_Book\Microchip\MDD File System\FSIO.c	5380;"	l	line:5380
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1144;"	l	line:1144
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1271;"	l	line:1271
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	4600;"	l	line:4600
+precision	D:\USB_Book\Microchip\MDD File System\FSIO.c	8910;"	l	line:8910
+prefix_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	9259;"	l	line:9259
+prevHostState	D:\USB_Book\Microchip\USB\usb_host.c	181;"	v	line:181	file:
+ptr	D:\USB_Book\Microchip\USB\usb_host.c	4602;"	l	line:4602
+ptr0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2791;"	l	line:2791
+ptr1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2791;"	l	line:2791
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	6074;"	l	line:6074
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	6246;"	l	line:6246
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	9266;"	l	line:9266
+q	D:\USB_Book\Microchip\MDD File System\FSIO.c	9271;"	l	line:9271
+r	D:\USB_Book\Microchip\MDD File System\FSIO.c	603;"	l	line:603
+radix	D:\USB_Book\Microchip\MDD File System\FSIO.c	5675;"	l	line:5675
+ramstring	D:\USB_Book\Microchip\MDD File System\FSIO.c	8924;"	l	line:8924
+readCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	5382;"	l	line:5382
+recache	D:\USB_Book\Microchip\MDD File System\FSIO.c	131;"	v	line:131
+res	D:\USB_Book\Microchip\MDD File System\FSIO.c	4872;"	l	line:4872
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	2927;"	l	line:2927
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	4359;"	l	line:4359
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	4906;"	l	line:4906
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8436;"	l	line:8436
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8528;"	l	line:8528
+result	D:\USB_Book\Microchip\MDD File System\FSIO.c	8659;"	l	line:8659
+result	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	21;"	v	line:21
+returnPointer	D:\USB_Book\Microchip\MDD File System\FSIO.c	6940;"	l	line:6940
+returnState	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	223;"	m	line:223	struct:_USB_MSD_DEVICE_INFO	file:
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	278;"	p	line:278	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	284;"	p	line:284	file:	signature:(BYTE mode, char * ramptr, char * romptr, unsigned char rmsubdirs)
+rmdirhelper	D:\USB_Book\Microchip\MDD File System\FSIO.c	8085;"	f	line:8085	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+romstring	D:\USB_Book\Microchip\MDD File System\FSIO.c	8920;"	l	line:8920
+rptr	D:\USB_Book\USB_MP3_Player2\USB_MP3_Player2.c	25;"	v	line:25
+s_digits	D:\USB_Book\Microchip\MDD File System\FSIO.c	216;"	v	line:216	file:
+s_digits	D:\USB_Book\Microchip\MDD File System\FSIO.c	218;"	v	line:218	file:
+secCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	1486;"	l	line:1486
+sec_sel	D:\USB_Book\Microchip\MDD File System\FSIO.c	5379;"	l	line:5379
+seconds	D:\USB_Book\Microchip\MDD File System\FSIO.c	3486;"	l	line:3486
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	2139;"	l	line:2139
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	2305;"	l	line:2305
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	4946;"	l	line:4946
+sector	D:\USB_Book\Microchip\MDD File System\FSIO.c	7890;"	l	line:7890
+seek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5098;"	l	line:5098
+seek	D:\USB_Book\Microchip\MDD File System\FSIO.c	5379;"	l	line:5379
+sign_char	D:\USB_Book\Microchip\MDD File System\FSIO.c	9260;"	l	line:9260
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	4671;"	l	line:4671
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	7887;"	l	line:7887
+size	D:\USB_Book\Microchip\MDD File System\FSIO.c	8912;"	l	line:8912
+size2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8914;"	l	line:8914
+source	D:\USB_Book\Microchip\MDD File System\FSIO.c	4673;"	l	line:4673
+space_cnt	D:\USB_Book\Microchip\MDD File System\FSIO.c	8916;"	l	line:8916
+src	D:\USB_Book\Microchip\MDD File System\FSIO.c	5093;"	l	line:5093
+state	D:\USB_Book\Microchip\MDD File System\FSIO.c	419;"	l	line:419
+state	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	222;"	m	line:222	struct:_USB_MSD_DEVICE_INFO	file:
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2137;"	l	line:2137
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2208;"	l	line:2208
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	2582;"	l	line:2582
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	3592;"	l	line:3592
+status	D:\USB_Book\Microchip\MDD File System\FSIO.c	3796;"	l	line:3796
+status	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	390;"	l	line:390
+statusB	D:\USB_Book\Microchip\MDD File System\FSIO.c	420;"	l	line:420
+steep	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	160;"	l	line:160
+str_put_n_chars	D:\USB_Book\Microchip\MDD File System\FSIO.c	297;"	p	line:297	file:	signature:(FSFILE * handle, unsigned char n, char c)
+str_put_n_chars	D:\USB_Book\Microchip\MDD File System\FSIO.c	8816;"	f	line:8816	signature:(FSFILE * handle, unsigned char n, char c)
+stream	D:\USB_Book\Microchip\MDD File System\FSIO.c	5295;"	l	line:5295
+string	D:\USB_Book\Microchip\MDD File System\FSIO.c	3898;"	l	line:3898
+subDirDepth	D:\USB_Book\Microchip\MDD File System\FSIO.c	8095;"	l	line:8095
+szName	D:\USB_Book\Microchip\MDD File System\FSIO.c	5512;"	l	line:5512
+t	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	160;"	l	line:160
+t0	D:\USB_Book\Microchip\MDD File System\FSIO.c	2795;"	l	line:2795
+t1	D:\USB_Book\Microchip\MDD File System\FSIO.c	2795;"	l	line:2795
+temp	D:\USB_Book\Microchip\MDD File System\FSIO.c	5511;"	l	line:5511
+temp	D:\USB_Book\Microchip\MDD File System\FSIO.c	5748;"	l	line:5748
+temp	D:\USB_Book\Microchip\USB\usb_host.c	1270;"	l	line:1270
+temp	D:\USB_Book\Microchip\USB\usb_host.c	4976;"	l	line:4976
+temp1	D:\USB_Book\USB_MP3_Player2\VS1011.c	78;"	l	line:78
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	6531;"	l	line:6531
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	7387;"	l	line:7387
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	7980;"	v	line:7980
+tempArray	D:\USB_Book\Microchip\MDD File System\FSIO.c	8099;"	l	line:8099
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	6532;"	l	line:6532
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	6942;"	l	line:6942
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	7388;"	l	line:7388
+tempCWD	D:\USB_Book\Microchip\MDD File System\FSIO.c	8090;"	l	line:8090
+tempCWDobj	D:\USB_Book\Microchip\MDD File System\FSIO.c	132;"	v	line:132
+tempCWDobj2	D:\USB_Book\Microchip\MDD File System\FSIO.c	6530;"	l	line:6530
+tempCWDobj2	D:\USB_Book\Microchip\MDD File System\FSIO.c	8438;"	l	line:8438
+tempSector	D:\USB_Book\Microchip\MDD File System\FSIO.c	1357;"	l	line:1357
+tempString	D:\USB_Book\Microchip\MDD File System\FSIO.c	5599;"	l	line:5599
+tempindex	D:\USB_Book\Microchip\MDD File System\FSIO.c	6946;"	l	line:6946
+temppath	D:\USB_Book\Microchip\MDD File System\FSIO.c	6526;"	l	line:6526
+temppath	D:\USB_Book\Microchip\MDD File System\FSIO.c	7383;"	l	line:7383
+temppath2	D:\USB_Book\Microchip\MDD File System\FSIO.c	6528;"	l	line:6528
+temppath2	D:\USB_Book\Microchip\MDD File System\FSIO.c	7385;"	l	line:7385
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	1491;"	l	line:1491
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	3593;"	l	line:3593
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	421;"	l	line:421
+test	D:\USB_Book\Microchip\MDD File System\FSIO.c	5750;"	l	line:5750
+totalchars	D:\USB_Book\Microchip\MDD File System\FSIO.c	6939;"	l	line:6939
+transferComplete	D:\USB_Book\Microchip\USB\usb_host.c	2543;"	l	line:2543
+type	D:\USB_Book\Microchip\MDD File System\FSIO.c	886;"	l	line:886
+unitReadyCount	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd_scsi.c	798;"	l	line:798
+usbBusInfo	D:\USB_Book\Microchip\USB\usb_host.c	185;"	v	line:185	file:
+usbClientDrvTable	D:\USB_Book\USB_MP3_Player2\usb_config.c	53;"	v	line:53
+usbDeviceInfo	D:\USB_Book\Microchip\USB\usb_host.c	186;"	v	line:186	file:
+usbEventQueue	D:\USB_Book\Microchip\USB\usb_host.c	188;"	v	line:188	file:
+usbHostState	D:\USB_Book\Microchip\USB\usb_host.c	178;"	v	line:178	file:
+usbMediaInterfaceTable	D:\USB_Book\USB_MP3_Player2\usb_config.c	42;"	v	line:42
+usbOverrideHostState	D:\USB_Book\Microchip\USB\usb_host.c	179;"	v	line:179
+usbRootHubInfo	D:\USB_Book\Microchip\USB\usb_host.c	190;"	v	line:190	file:
+usbTPL	D:\USB_Book\USB_MP3_Player2\usb_config.c	66;"	v	line:66
+userData	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	240;"	m	line:240	struct:_USB_MSD_DEVICE_INFO	file:
+userDataLength	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	241;"	m	line:241	struct:_USB_MSD_DEVICE_INFO	file:
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9486;"	p	line:9486	file:	signature:(ap, long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9490;"	p	line:9490	file:	signature:(ap, short long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9494;"	p	line:9494	file:	signature:(ap, long long *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9498;"	p	line:9498	file:	signature:(ap, signed char *)
+va_arg	D:\USB_Book\Microchip\MDD File System\FSIO.c	9501;"	p	line:9501	file:	signature:(ap, int *)
+val	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	233;"	m	line:233	union:_USB_MSD_DEVICE_INFO::<anonymous>	file:
+val	D:\USB_Book\Microchip\USB\MSD Host Driver\usb_host_msd.c	266;"	m	line:266	union:_USB_MSD_CBW::<anonymous>	file:
+val	D:\USB_Book\USB_MP3_Player2\VS1011.c	112;"	l	line:112
+value	D:\USB_Book\Microchip\MDD File System\FSIO.c	3065;"	l	line:3065
+value	D:\USB_Book\Microchip\MDD File System\FSIO.c	3234;"	l	line:3234
+wTotalLength	D:\USB_Book\Microchip\USB\usb_host.c	4590;"	l	line:4590
+weekhour	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+width	D:\USB_Book\Microchip\MDD File System\FSIO.c	8909;"	l	line:8909
+writeCount	D:\USB_Book\Microchip\MDD File System\FSIO.c	5099;"	l	line:5099
+writeDotEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	273;"	p	line:273	file:	signature:(DISK * dsk, DWORD dotAddress, DWORD dotdotAddress)
+writeDotEntries	D:\USB_Book\Microchip\MDD File System\FSIO.c	7884;"	f	line:7884	signature:(DISK * disk, DWORD dotAddress, DWORD dotdotAddress)
+x	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	162;"	l	line:162
+x	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	201;"	l	line:201
+y	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	162;"	l	line:162
+y	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	202;"	l	line:202
+year	D:\USB_Book\Microchip\MDD File System\FSIO.c	2790;"	l	line:2790
+year	D:\USB_Book\Microchip\MDD File System\FSIO.c	3492;"	l	line:3492
+ystep	D:\USB_Book\USB_MP3_Player2\colorlcd_libYHY16.c	163;"	l	line:163

@@ -1,0 +1,7 @@
+Warning[2058] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 112 : call of function without prototype
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 279 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 282 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 286 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 288 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 295 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\prog\mplab_projects\PIC\IPSD2.X\main_CDC_I2C.c 297 : unexpected return value

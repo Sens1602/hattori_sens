@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Microchip" displayName="Microchip" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/Compiler.h</itemPath>
+        <itemPath>../../../../Microchip/Include/MDD File System/FSDefs.h</itemPath>
+        <itemPath>../../../../Microchip/Include/MDD File System/FSIO.h</itemPath>
+        <itemPath>../../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+        <itemPath>../../../../Microchip/USB/USB PIC24.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_ch9.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_common.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal.h</itemPath>
+        <itemPath>../../../../Microchip/USB/usb_hal_local.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal_pic24.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_host.h</itemPath>
+        <itemPath>../../../../Microchip/USB/usb_host_local.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_host_msd.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_host_msd_scsi.h</itemPath>
+      </logicalFolder>
+      <itemPath>../FSconfig.h</itemPath>
+      <itemPath>../HardwareProfile - PIC24F Starter Kit.h</itemPath>
+      <itemPath>../HardwareProfile - PIC24FJ256DA210 Development Board.h</itemPath>
+      <itemPath>../HardwareProfile - PIC24FJ256GB110 PIM.h</itemPath>
+      <itemPath>../HardwareProfile.h</itemPath>
+      <itemPath>../boot.h</itemPath>
+      <itemPath>../boot_config.h</itemPath>
+      <itemPath>../boot_hal.h</itemPath>
+      <itemPath>../boot_io.h</itemPath>
+      <itemPath>../boot_load.h</itemPath>
+      <itemPath>../boot_media.h</itemPath>
+      <itemPath>../usb_config.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <itemPath>../Bootloader Linker Files/PIC24FJ256DA210 Family/boot_msd_boot_p24FJ256DA210.gld</itemPath>
+      <itemPath>../Bootloader Linker Files/PIC24FJ256GB110 Family/boot_msd_boot_p24FJ256GB110.gld</itemPath>
+      <itemPath>../Bootloader Linker Files/PIC24FJ256GB210 Family/boot_msd_boot_p24FJ256GB210.gld</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Microchip" displayName="Microchip" projectFiles="true">
+        <itemPath>../../../../Microchip/MDD File System/FSIO.c</itemPath>
+        <itemPath>../../../../Microchip/USB/usb_host.c</itemPath>
+        <itemPath>../../../../Microchip/USB/MSD Host Driver/usb_host_msd.c</itemPath>
+        <itemPath>../../../../Microchip/USB/MSD Host Driver/usb_host_msd_scsi.c</itemPath>
+      </logicalFolder>
+      <itemPath>../boot_hal_pic24.c</itemPath>
+      <itemPath>../boot_io.c</itemPath>
+      <itemPath>../boot_load_hex.c</itemPath>
+      <itemPath>../boot_main.c</itemPath>
+      <itemPath>../boot_media_usb_msd.c</itemPath>
+      <itemPath>../usb_config.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="OtherFiles" displayName="Other Files" projectFiles="false">
+      <itemPath>../../Getting Started - Running the Host - Bootloaders - Thumbdrive Bootloader.htm</itemPath>
+      <itemPath>../../../../Microchip/Help/MCHPFSUSB Library Help.chm</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="PIC24FJ256GB110_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../Bootloader Linker Files/PIC24FJ256DA210 Family/boot_msd_boot_p24FJ256DA210.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../Bootloader Linker Files/PIC24FJ256GB210 Family/boot_msd_boot_p24FJ256GB210.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Microchip/Include/MDD File System;../../../../Microchip/Include/USB;../../../../Microchip/USB"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="large-data"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value="..;"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="2000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="extra-lib-directories"
+                  value="../Bootloader Linker Files/PIC24FJ256DA210 Family"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="legacy-libc" value="false"/>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC24FJ256DA210_Development_Board" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256DA210</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../Bootloader Linker Files/PIC24FJ256GB110 Family/boot_msd_boot_p24FJ256GB110.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../Bootloader Linker Files/PIC24FJ256GB210 Family/boot_msd_boot_p24FJ256GB210.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Microchip/Include/MDD File System;../../../../Microchip/Include/USB;../../../../Microchip/USB;"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="large-data"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value="..;"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="2000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="extra-lib-directories"
+                  value="../Bootloader Linker Files/PIC24FJ256DA210 Family;"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC24FJ256GB210_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB210</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../Bootloader Linker Files/PIC24FJ256DA210 Family/boot_msd_boot_p24FJ256DA210.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../Bootloader Linker Files/PIC24FJ256GB110 Family/boot_msd_boot_p24FJ256GB110.gld"
+            ex="true"
+            overriding="false">
+      </item>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../../../Microchip/Include/MDD File System;../../../../Microchip/Include/USB;../../../../Microchip/USB"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="large-data"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="2000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="extra-lib-directories"
+                  value="../Bootloader Linker Files/PIC24FJ256DA210 Family;"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

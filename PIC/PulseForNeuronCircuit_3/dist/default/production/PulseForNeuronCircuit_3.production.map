@@ -1,0 +1,61 @@
+MPLINK 5.00, LINKER
+Linker Error Map File - Created Thu Nov 03 13:24:06 2016
+
+*Warning* - This is only a partial map file due to a link time error.
+   Only sections which were allocated prior to the error are shown below.
+
+CODEPAGES:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+      page     0x0000     0x7fff           _entry_scn     0x0000     0x0006
+                                 REMAPPED_HIGH_INTERRUPT_VECTOR     0x0008     0x0006
+                                 REMAPPED_LOW_INTERRUPT_VECTOR     0x0018     0x0006
+                                               .cinit     0x001e     0x000e
+                                   .code_usb_device.o     0x002c     0x1274
+                                 .code_main_CDC_I2C.o     0x12a0     0x0682
+                                 .code_usb_function_cdc.o     0x1922     0x04dc
+
+    idlocs     0x0000     0x0007                                           
+
+    config     0x0000     0x000d .config_300000_main_CDC_I2C.o     0x0000     0x0001
+                                 .config_300001_main_CDC_I2C.o     0x0001     0x0001
+                                 .config_300002_main_CDC_I2C.o     0x0002     0x0001
+                                 .config_300003_main_CDC_I2C.o     0x0003     0x0001
+                                 .config_300005_main_CDC_I2C.o     0x0005     0x0001
+                                 .config_300006_main_CDC_I2C.o     0x0006     0x0001
+
+     devid     0xfffe     0xffff                                           
+
+    eedata     0x0000     0x00ff                                           
+
+
+SHAREBANKS:
+
+DATABANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+      gpr0     0x0060     0x00ff                                           
+
+      gpr1     0x0100     0x01ff                                           
+
+      gpr2     0x0200     0x02ff                                           
+
+      gpr3     0x0300     0x03ff               .stack     0x0300     0x0100
+
+      gpr4     0x0400     0x04ff              USB_BDT     0x0400     0x0040
+
+      gpr5     0x0500     0x05ff        USB_VARIABLES     0x0500     0x008f
+
+      gpr6     0x0600     0x06ff                                           
+
+      gpr7     0x0700     0x07ff                                           
+
+
+ACCESSBANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+ accessram     0x0000     0x005f                                           
+
+ accesssfr     0x0f60     0x0fff        SFR_UNBANKED0     0x0f66     0x009a
+
+

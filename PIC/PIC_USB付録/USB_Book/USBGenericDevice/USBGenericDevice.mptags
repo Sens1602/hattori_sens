@@ -1,0 +1,228 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ALL	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	24;"	e	line:24	file:
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	299;"	v	line:299
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	301;"	v	line:301
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	303;"	v	line:303
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	305;"	v	line:305
+BlinkUSBStatus	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	235;"	f	line:235	signature:(void)
+BlinkUSBStatus	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	43;"	p	line:43	file:	signature:(void)
+BothEP0OutUOWNsSet	D:\USB_Book\Microchip\USB\usb_device.c	270;"	v	line:270
+CHECK	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	22;"	e	line:22	file:
+CLOCK_FREQ::48000000	D:\USB_Book\USBGenericDevice\HardwareProfile.h	8;"	d	line:8
+CtrlTrfData	D:\USB_Book\Microchip\USB\usb_device.c	314;"	v	line:314
+INPUT_PIN::1	D:\USB_Book\USBGenericDevice\HardwareProfile.h	57;"	d	line:57
+INPacket	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	30;"	v	line:30
+OUTPUT_PIN::0	D:\USB_Book\USBGenericDevice\HardwareProfile.h	58;"	d	line:58
+OUTPacket	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	31;"	v	line:31
+POUT	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	23;"	e	line:23	file:
+ProcessIO	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	107;"	f	line:107	signature:(void)
+ProcessIO	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	44;"	p	line:44	file:	signature:(void)
+RESET	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	25;"	e	line:25	file:
+Remapped_High_ISR	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	47;"	f	line:47	signature:(void)
+Remapped_Low_ISR	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	52;"	f	line:52	signature:(void)
+RemoteWakeup	D:\USB_Book\Microchip\USB\usb_device.c	266;"	v	line:266
+SetupPkt	D:\USB_Book\Microchip\USB\usb_device.c	313;"	v	line:313
+TYPE_CMD	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	27;"	t	line:27	file:
+USBActiveConfiguration	D:\USB_Book\Microchip\USB\usb_device.c	255;"	v	line:255
+USBAdvancePingPongBuffer::(buffer)((BYTE_VAL*)buffer)->V	D:\USB_Book\Microchip\USB\usb_device.c	420;"	d	line:420	file:
+USBAlternateInterface	D:\USB_Book\Microchip\USB\usb_device.c	256;"	v	line:256
+USBBusIsSuspended	D:\USB_Book\Microchip\USB\usb_device.c	267;"	v	line:267
+USBCBCheckOtherReq	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	315;"	f	line:315	signature:(void)
+USBCBErrorHandler	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	309;"	f	line:309	signature:(void)
+USBCBInitEP	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	327;"	f	line:327	signature:(void)
+USBCBSendResume	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	335;"	f	line:335	signature:(void)
+USBCBSendResume	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	42;"	p	line:42	file:	signature:(void)
+USBCBStdSetDscHandler	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	321;"	f	line:321	signature:(void)
+USBCBSuspend	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	291;"	f	line:291	signature:(void)
+USBCBWakeFromSuspend	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	297;"	f	line:297	signature:(void)
+USBCB_SOF_Handler	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	303;"	f	line:303	signature:(void)
+USBCFG_H	D:\USB_Book\USBGenericDevice\usb_config.h	50;"	d	line:50
+USBCancelIO	D:\USB_Book\Microchip\USB\usb_device.c	2704;"	f	line:2704	signature:(BYTE endpoint)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	1415;"	f	line:1415	file:	signature:(void)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	372;"	p	line:372	file:	signature:(void)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2387;"	f	line:2387	file:	signature:(BYTE EPNum, BYTE direction)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	381;"	p	line:381	file:	signature:(BYTE EPNum, BYTE direction)
+USBCtrlEPAllowDataStage	D:\USB_Book\Microchip\USB\usb_device.c	1782;"	f	line:1782	signature:(void)
+USBCtrlEPAllowStatusStage	D:\USB_Book\Microchip\USB\usb_device.c	1712;"	f	line:1712	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	1099;"	f	line:1099	file:	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	369;"	p	line:369	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	1980;"	f	line:1980	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	374;"	p	line:374	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	1324;"	f	line:1324	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	371;"	p	line:371	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	1271;"	f	line:1271	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	380;"	p	line:380	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	2213;"	f	line:2213	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	376;"	p	line:376	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	1199;"	f	line:1199	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	370;"	p	line:370	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	2132;"	f	line:2132	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	375;"	p	line:375	file:	signature:(void)
+USBDeferINDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	277;"	v	line:277
+USBDeferOUTDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	278;"	v	line:278
+USBDeferStatusStagePacket	D:\USB_Book\Microchip\USB\usb_device.c	274;"	v	line:274
+USBDeviceAttach	D:\USB_Book\Microchip\USB\usb_device.c	2849;"	f	line:2849	signature:(void)
+USBDeviceDetach	D:\USB_Book\Microchip\USB\usb_device.c	2745;"	f	line:2745	signature:(void)
+USBDeviceInit	D:\USB_Book\Microchip\USB\usb_device.c	448;"	f	line:448	signature:(void)
+USBDeviceState	D:\USB_Book\Microchip\USB\usb_device.c	254;"	v	line:254
+USBDeviceTasks	D:\USB_Book\Microchip\USB\usb_device.c	570;"	f	line:570	signature:(void)
+USBDeviceTasks	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	39;"	p	line:39	file:	signature:(void)
+USBEnableEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2479;"	f	line:2479	signature:(BYTE ep, BYTE options)
+USBGEN_EP_NUM::1	D:\USB_Book\USBGenericDevice\usb_config.h	164;"	d	line:164
+USBGEN_EP_SIZE::64	D:\USB_Book\USBGenericDevice\usb_config.h	163;"	d	line:163
+USBGEN_H	D:\USB_Book\Microchip\Include\USB\usb_function_generic.h	95;"	d	line:95
+USBGenRead::(ep,data,len)USBRxOnePacket(ep	D:\USB_Book\Microchip\Include\USB\usb_function_generic.h	256;"	d	line:256
+USBGenWrite::(ep,data,len)USBTxOnePacket(ep	D:\USB_Book\Microchip\Include\USB\usb_function_generic.h	217;"	d	line:217
+USBGenericInHandle	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	34;"	v	line:34
+USBGenericOutHandle	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	33;"	v	line:33
+USBHALPingPongSetToEven::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	422;"	d	line:422	file:
+USBHALPingPongSetToOdd::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	421;"	d	line:421	file:
+USBStallEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2522;"	f	line:2522	signature:(BYTE ep, BYTE dir)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	384;"	p	line:384	file:	signature:(void)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	932;"	f	line:932	file:	signature:(void)
+USBStatusStageEnabledFlag1	D:\USB_Book\Microchip\USB\usb_device.c	275;"	v	line:275
+USBStatusStageEnabledFlag2	D:\USB_Book\Microchip\USB\usb_device.c	276;"	v	line:276
+USBStatusStageTimeoutCounter	D:\USB_Book\Microchip\USB\usb_device.c	273;"	v	line:273
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	1480;"	f	line:1480	file:	signature:(void)
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	379;"	p	line:379	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	1828;"	f	line:1828	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	373;"	p	line:373	file:	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	1895;"	f	line:1895	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	378;"	p	line:378	file:	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	2317;"	f	line:2317	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	377;"	p	line:377	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	383;"	p	line:383	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	975;"	f	line:975	file:	signature:(void)
+USBTransferOnePacket	D:\USB_Book\Microchip\USB\usb_device.c	2628;"	f	line:2628	signature:(BYTE ep,BYTE dir,BYTE* data,BYTE len)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	1032;"	f	line:1032	file:	signature:(void)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	382;"	p	line:382	file:	signature:(void)
+USB_BUS_SENSE	D:\USB_Book\Microchip\USB\usb_device.c	245;"	d	line:245	file:
+USB_BUS_SENSE::1	D:\USB_Book\Microchip\USB\usb_device.c	246;"	d	line:246	file:
+USB_BUS_SENSE::1	D:\USB_Book\USBGenericDevice\HardwareProfile.h	5;"	d	line:5
+USB_CD_Ptr	D:\USB_Book\USBGenericDevice\usb_descriptors.c	246;"	v	line:246
+USB_ENABLE_ALL_HANDLERS	D:\USB_Book\USBGenericDevice\usb_config.h	146;"	d	line:146
+USB_ENABLE_STATUS_STAGE_TIMEOUTS::	D:\USB_Book\USBGenericDevice\usb_config.h	119;"	d	line:119
+USB_EP0_BUFF_SIZE::8	D:\USB_Book\USBGenericDevice\usb_config.h	53;"	d	line:53
+USB_INTERRUPT	D:\USB_Book\USBGenericDevice\usb_config.h	83;"	d	line:83
+USB_MAX_EP_NUMBER::1	D:\USB_Book\USBGenericDevice\usb_config.h	61;"	d	line:61
+USB_MAX_NUM_INT::1	D:\USB_Book\USBGenericDevice\usb_config.h	60;"	d	line:60
+USB_NUM_STRING_DESCRIPTORS::3	D:\USB_Book\USBGenericDevice\usb_config.h	143;"	d	line:143
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\USBGenericDevice\usb_config.h	77;"	d	line:77
+USB_PULLUP_OPTION::USB_PULLUP_ENABLE	D:\USB_Book\USBGenericDevice\usb_config.h	86;"	d	line:86
+USB_SD_Ptr	D:\USB_Book\USBGenericDevice\usb_descriptors.c	251;"	v	line:251
+USB_SPEED_OPTION::USB_FULL_SPEED	D:\USB_Book\USBGenericDevice\usb_config.h	95;"	d	line:95
+USB_STATUS_STAGE_TIMEOUT::(BYTE)45	D:\USB_Book\USBGenericDevice\usb_config.h	135;"	d	line:135
+USB_SUPPORT_DEVICE	D:\USB_Book\USBGenericDevice\usb_config.h	141;"	d	line:141
+USB_TRANSCEIVER_OPTION::USB_INTERNAL_TRANSCEIVER	D:\USB_Book\USBGenericDevice\usb_config.h	89;"	d	line:89
+USB_USER_CONFIG_DESCRIPTOR::USB_CD_Ptr	D:\USB_Book\USBGenericDevice\usb_config.h	71;"	d	line:71
+USB_USER_CONFIG_DESCRIPTOR_INCLUDE::externROMBYTE*ROMUSB_CD_Ptr[]	D:\USB_Book\USBGenericDevice\usb_config.h	72;"	d	line:72
+USB_USER_DEVICE_DESCRIPTOR::&device_dsc	D:\USB_Book\USBGenericDevice\usb_config.h	66;"	d	line:66
+USB_USER_DEVICE_DESCRIPTOR_INCLUDE::externROMUSB_DEVICE_DESCRIPTOR	D:\USB_Book\USBGenericDevice\usb_config.h	67;"	d	line:67
+USB_USE_GEN	D:\USB_Book\USBGenericDevice\usb_config.h	158;"	d	line:158
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\Microchip\USB\usb_device.c	366;"	p	line:366	file:	signature:(USB_EVENT event, void *pdata, WORD size)
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	374;"	f	line:374	signature:(USB_EVENT event, void *pdata, WORD size)
+USTATcopy	D:\USB_Book\Microchip\USB\usb_device.c	268;"	v	line:268
+YourHighPriorityISRCode	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	40;"	p	line:40	file:	signature:(void)
+YourHighPriorityISRCode	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	59;"	f	line:59
+YourLowPriorityISRCode	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	41;"	p	line:41	file:	signature:(void)
+YourLowPriorityISRCode	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	64;"	f	line:64
+__USB_DESCRIPTORS_C	D:\USB_Book\USBGenericDevice\usb_descriptors.c	154;"	d	line:154	file:
+bDscType	D:\USB_Book\USBGenericDevice\usb_descriptors.c	229;"	m	line:229	file:
+bDscType	D:\USB_Book\USBGenericDevice\usb_descriptors.c	233;"	m	line:233	file:
+bDscType	D:\USB_Book\USBGenericDevice\usb_descriptors.c	240;"	m	line:240	file:
+bLength	D:\USB_Book\USBGenericDevice\usb_descriptors.c	229;"	m	line:229	file:
+bLength	D:\USB_Book\USBGenericDevice\usb_descriptors.c	233;"	m	line:233	file:
+bLength	D:\USB_Book\USBGenericDevice\usb_descriptors.c	240;"	m	line:240	file:
+blinkStatusValid	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	37;"	v	line:37
+byteToRead	D:\USB_Book\Microchip\USB\usb_device.c	2215;"	l	line:2215
+byteToSend	D:\USB_Book\Microchip\USB\usb_device.c	2134;"	l	line:2134
+configDescriptor1	D:\USB_Book\USBGenericDevice\usb_descriptors.c	189;"	v	line:189
+controlTransferState	D:\USB_Book\Microchip\USB\usb_device.c	262;"	v	line:262
+counter	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	36;"	v	line:36
+current_ep_data	D:\USB_Book\Microchip\USB\usb_device.c	1483;"	l	line:1483
+delay_count	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	337;"	l	line:337	file:
+device_dsc	D:\USB_Book\USBGenericDevice\usb_descriptors.c	170;"	v	line:170
+endpoint_number	D:\USB_Book\Microchip\USB\usb_device.c	269;"	v	line:269
+ep_data_in	D:\USB_Book\Microchip\USB\usb_device.c	271;"	v	line:271
+ep_data_out	D:\USB_Book\Microchip\USB\usb_device.c	272;"	v	line:272
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2389;"	l	line:2389
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2630;"	l	line:2630
+hid_report_in	D:\USB_Book\Microchip\USB\usb_device.c	322;"	v	line:322
+hid_report_out	D:\USB_Book\Microchip\USB\usb_device.c	321;"	v	line:321
+i	D:\USB_Book\Microchip\USB\usb_device.c	2216;"	l	line:2216
+i	D:\USB_Book\Microchip\USB\usb_device.c	2319;"	l	line:2319
+i	D:\USB_Book\Microchip\USB\usb_device.c	450;"	l	line:450
+i	D:\USB_Book\Microchip\USB\usb_device.c	580;"	l	line:580
+inPipes	D:\USB_Book\Microchip\USB\usb_device.c	263;"	v	line:263
+lastDTS	D:\USB_Book\Microchip\USB\usb_device.c	1326;"	l	line:1326
+led_count	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	237;"	l	line:237	file:
+mGetLED_1::mLED_1	D:\USB_Book\USBGenericDevice\HardwareProfile.h	14;"	d	line:14
+mGetLED_2::mLED_2	D:\USB_Book\USBGenericDevice\HardwareProfile.h	15;"	d	line:15
+mLED_1::LATCbits.LATC4	D:\USB_Book\USBGenericDevice\HardwareProfile.h	11;"	d	line:11
+mLED_1_Off::mLED_1=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	20;"	d	line:20
+mLED_1_On::mLED_1=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	17;"	d	line:17
+mLED_1_Toggle::mLED_1=!mLED_1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	23;"	d	line:23
+mLED_2::LATCbits.LATC5	D:\USB_Book\USBGenericDevice\HardwareProfile.h	12;"	d	line:12
+mLED_2_Off::mLED_2=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	21;"	d	line:21
+mLED_2_On::mLED_2=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	18;"	d	line:18
+mLED_2_Toggle::mLED_2=!mLED_2;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	24;"	d	line:24
+mLED_Both_Off::{mLED_1_Off;mLED_2_Off;}	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	241;"	d	line:241	file:
+mLED_Both_On::{mLED_1_On;mLED_2_On;}	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	242;"	d	line:242	file:
+mLED_Only_1_On::{mLED_1_On;mLED_2_Off;}	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	243;"	d	line:243	file:
+mLED_Only_2_On::{mLED_1_Off;mLED_2_On;}	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	244;"	d	line:244	file:
+mPIO_1::PORTCbits.RC5	D:\USB_Book\USBGenericDevice\HardwareProfile.h	45;"	d	line:45
+mPIO_2::PORTCbits.RC4	D:\USB_Book\USBGenericDevice\HardwareProfile.h	46;"	d	line:46
+mPIO_3::PORTCbits.RC3	D:\USB_Book\USBGenericDevice\HardwareProfile.h	47;"	d	line:47
+mPIO_4::PORTCbits.RC6	D:\USB_Book\USBGenericDevice\HardwareProfile.h	48;"	d	line:48
+mPIO_5::PORTCbits.RC7	D:\USB_Book\USBGenericDevice\HardwareProfile.h	49;"	d	line:49
+mPI_1::PORTBbits.RB4	D:\USB_Book\USBGenericDevice\HardwareProfile.h	51;"	d	line:51
+mPI_2::PORTBbits.RB5	D:\USB_Book\USBGenericDevice\HardwareProfile.h	52;"	d	line:52
+mPI_3::PORTBbits.RB6	D:\USB_Book\USBGenericDevice\HardwareProfile.h	53;"	d	line:53
+mPI_4::PORTBbits.RB7	D:\USB_Book\USBGenericDevice\HardwareProfile.h	54;"	d	line:54
+mPO_1::LATCbits.LATC5	D:\USB_Book\USBGenericDevice\HardwareProfile.h	27;"	d	line:27
+mPO_1_Off::mPO_1=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	39;"	d	line:39
+mPO_1_On::mPO_1=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	33;"	d	line:33
+mPO_2::LATCbits.LATC4	D:\USB_Book\USBGenericDevice\HardwareProfile.h	28;"	d	line:28
+mPO_2_Off::mPO_2=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	40;"	d	line:40
+mPO_2_On::mPO_2=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	34;"	d	line:34
+mPO_3::LATCbits.LATC3	D:\USB_Book\USBGenericDevice\HardwareProfile.h	29;"	d	line:29
+mPO_3_Off::mPO_3=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	41;"	d	line:41
+mPO_3_On::mPO_3=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	35;"	d	line:35
+mPO_4::LATCbits.LATC6	D:\USB_Book\USBGenericDevice\HardwareProfile.h	30;"	d	line:30
+mPO_4_Off::mPO_4=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	42;"	d	line:42
+mPO_4_On::mPO_4=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	36;"	d	line:36
+mPO_5::LATCbits.LATC7	D:\USB_Book\USBGenericDevice\HardwareProfile.h	31;"	d	line:31
+mPO_5_Off::mPO_5=0;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	43;"	d	line:43
+mPO_5_On::mPO_5=1;	D:\USB_Book\USBGenericDevice\HardwareProfile.h	37;"	d	line:37
+main	D:\USB_Book\USBGenericDevice\USBGenericDevice.c	70;"	f	line:70	signature:(void)
+msd_buffer	D:\USB_Book\Microchip\USB\usb_device.c	334;"	v	line:334
+msd_cbw	D:\USB_Book\Microchip\USB\usb_device.c	327;"	v	line:327
+msd_csw	D:\USB_Book\Microchip\USB\usb_device.c	328;"	v	line:328
+outPipes	D:\USB_Book\Microchip\USB\usb_device.c	264;"	v	line:264
+p	D:\USB_Book\Microchip\USB\usb_device.c	1482;"	l	line:1482
+p	D:\USB_Book\Microchip\USB\usb_device.c	1927;"	l	line:1927
+p	D:\USB_Book\Microchip\USB\usb_device.c	2481;"	l	line:2481
+p	D:\USB_Book\Microchip\USB\usb_device.c	2524;"	l	line:2524
+pBDTEntryEP0OutCurrent	D:\USB_Book\Microchip\USB\usb_device.c	257;"	v	line:257
+pBDTEntryEP0OutNext	D:\USB_Book\Microchip\USB\usb_device.c	258;"	v	line:258
+pBDTEntryIn	D:\USB_Book\Microchip\USB\usb_device.c	260;"	v	line:260
+pBDTEntryOut	D:\USB_Book\Microchip\USB\usb_device.c	259;"	v	line:259
+pDst	D:\USB_Book\Microchip\USB\usb_device.c	265;"	v	line:265
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	1386;"	p	line:1386	file:
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	2274;"	p	line:2274	file:
+sd000	D:\USB_Book\USBGenericDevice\usb_descriptors.c	229;"	v	line:229
+sd001	D:\USB_Book\USBGenericDevice\usb_descriptors.c	233;"	v	line:233
+sd002	D:\USB_Book\USBGenericDevice\usb_descriptors.c	240;"	v	line:240
+self_power::1	D:\USB_Book\USBGenericDevice\HardwareProfile.h	4;"	d	line:4
+setup_cnt	D:\USB_Book\Microchip\USB\usb_device.c	1128;"	l	line:1128
+shortPacketStatus	D:\USB_Book\Microchip\USB\usb_device.c	261;"	v	line:261
+string	D:\USB_Book\USBGenericDevice\usb_descriptors.c	229;"	m	line:229	file:
+string	D:\USB_Book\USBGenericDevice\usb_descriptors.c	233;"	m	line:233	file:
+string	D:\USB_Book\USBGenericDevice\usb_descriptors.c	240;"	m	line:240	file:

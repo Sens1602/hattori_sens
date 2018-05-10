@@ -1,0 +1,254 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	299;"	v	line:299
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	301;"	v	line:301
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	303;"	v	line:303
+BDT	D:\USB_Book\Microchip\USB\usb_device.c	305;"	v	line:305
+BaudRateGen	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	140;"	v	line:140
+BlinkUSBStatus	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	277;"	f	line:277	signature:(void)
+BlinkUSBStatus	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	51;"	p	line:51	file:	signature:(void)
+BothEP0OutUOWNsSet	D:\USB_Book\Microchip\USB\usb_device.c	270;"	v	line:270
+CDCDataInHandle	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	136;"	v	line:136
+CDCDataOutHandle	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	135;"	v	line:135
+CDCInitEP	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	301;"	f	line:301	signature:(void)
+CDCTxService	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	715;"	f	line:715	signature:(void)
+CLOCK_FREQ::48000000	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	25;"	d	line:25
+CtrlTrfData	D:\USB_Book\Microchip\USB\usb_device.c	314;"	v	line:314
+DDSdata	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	41;"	v	line:41
+FQ_UD::LATAbits.LATA5	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	47;"	d	line:47
+Freq	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	32;"	v	line:32
+GetSystemClock::CLOCK_FREQ	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	26;"	d	line:26
+INPUT_PIN::1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	21;"	d	line:21
+MsgTX	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	45;"	v	line:45
+OUTPUT_PIN::0	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	22;"	d	line:22
+Para	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	36;"	v	line:36
+Phase	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	39;"	m	line:39	file:
+ProcessIO	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	123;"	f	line:123	signature:(void)
+ProcessIO	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	53;"	p	line:53	file:	signature:(void)
+RST::LATAbits.LATA2	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	46;"	d	line:46
+Remapped_High_ISR	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	60;"	f	line:60	signature:(void)
+Remapped_Low_ISR	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	63;"	f	line:63	signature:(void)
+RemoteWakeup	D:\USB_Book\Microchip\USB\usb_device.c	266;"	v	line:266
+Result	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	35;"	v	line:35
+S_IN::LATAbits.LATA3	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	48;"	d	line:48
+SetupPkt	D:\USB_Book\Microchip\USB\usb_device.c	313;"	v	line:313
+USBActiveConfiguration	D:\USB_Book\Microchip\USB\usb_device.c	255;"	v	line:255
+USBAdvancePingPongBuffer::(buffer)((BYTE_VAL*)buffer)->V	D:\USB_Book\Microchip\USB\usb_device.c	420;"	d	line:420	file:
+USBAlternateInterface	D:\USB_Book\Microchip\USB\usb_device.c	256;"	v	line:256
+USBBusIsSuspended	D:\USB_Book\Microchip\USB\usb_device.c	267;"	v	line:267
+USBCBCheckOtherReq	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	390;"	f	line:390	signature:(void)
+USBCBEP0DataReceived	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	452;"	f	line:452	signature:(void)
+USBCBErrorHandler	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	384;"	f	line:384	signature:(void)
+USBCBInitEP	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	403;"	f	line:403	signature:(void)
+USBCBSendResume	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	410;"	f	line:410	signature:(void)
+USBCBSendResume	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	52;"	p	line:52	file:	signature:(void)
+USBCBStdSetDscHandler	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	397;"	f	line:397	signature:(void)
+USBCBSuspend	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	366;"	f	line:366	signature:(void)
+USBCBWakeFromSuspend	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	372;"	f	line:372	signature:(void)
+USBCB_SOF_Handler	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	378;"	f	line:378	signature:(void)
+USBCDCSetLineCoding	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	158;"	p	line:158	file:	signature:(void)
+USBCFG_H	D:\USB_Book\USBWinUSBGeneric\usb_config.h	50;"	d	line:50
+USBCancelIO	D:\USB_Book\Microchip\USB\usb_device.c	2704;"	f	line:2704	signature:(BYTE endpoint)
+USBCheckCDCRequest	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	185;"	f	line:185	signature:(void)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	1415;"	f	line:1415	file:	signature:(void)
+USBCheckStdRequest	D:\USB_Book\Microchip\USB\usb_device.c	372;"	p	line:372	file:	signature:(void)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2387;"	f	line:2387	file:	signature:(BYTE EPNum, BYTE direction)
+USBConfigureEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	381;"	p	line:381	file:	signature:(BYTE EPNum, BYTE direction)
+USBCtrlEPAllowDataStage	D:\USB_Book\Microchip\USB\usb_device.c	1782;"	f	line:1782	signature:(void)
+USBCtrlEPAllowStatusStage	D:\USB_Book\Microchip\USB\usb_device.c	1712;"	f	line:1712	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	1099;"	f	line:1099	file:	signature:(void)
+USBCtrlEPService	D:\USB_Book\Microchip\USB\usb_device.c	369;"	p	line:369	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	1980;"	f	line:1980	file:	signature:(void)
+USBCtrlEPServiceComplete	D:\USB_Book\Microchip\USB\usb_device.c	374;"	p	line:374	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	1324;"	f	line:1324	file:	signature:(void)
+USBCtrlTrfInHandler	D:\USB_Book\Microchip\USB\usb_device.c	371;"	p	line:371	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	1271;"	f	line:1271	file:	signature:(void)
+USBCtrlTrfOutHandler	D:\USB_Book\Microchip\USB\usb_device.c	380;"	p	line:380	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	2213;"	f	line:2213	file:	signature:(void)
+USBCtrlTrfRxService	D:\USB_Book\Microchip\USB\usb_device.c	376;"	p	line:376	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	1199;"	f	line:1199	file:	signature:(void)
+USBCtrlTrfSetupHandler	D:\USB_Book\Microchip\USB\usb_device.c	370;"	p	line:370	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	2132;"	f	line:2132	file:	signature:(void)
+USBCtrlTrfTxService	D:\USB_Book\Microchip\USB\usb_device.c	375;"	p	line:375	file:	signature:(void)
+USBDeferINDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	277;"	v	line:277
+USBDeferOUTDataStagePackets	D:\USB_Book\Microchip\USB\usb_device.c	278;"	v	line:278
+USBDeferStatusStagePacket	D:\USB_Book\Microchip\USB\usb_device.c	274;"	v	line:274
+USBDeviceAttach	D:\USB_Book\Microchip\USB\usb_device.c	2849;"	f	line:2849	signature:(void)
+USBDeviceDetach	D:\USB_Book\Microchip\USB\usb_device.c	2745;"	f	line:2745	signature:(void)
+USBDeviceInit	D:\USB_Book\Microchip\USB\usb_device.c	448;"	f	line:448	signature:(void)
+USBDeviceState	D:\USB_Book\Microchip\USB\usb_device.c	254;"	v	line:254
+USBDeviceTasks	D:\USB_Book\Microchip\USB\usb_device.c	570;"	f	line:570	signature:(void)
+USBEnableEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2479;"	f	line:2479	signature:(BYTE ep, BYTE options)
+USBGEN_EP_NUM::1	D:\USB_Book\USBWinUSBGeneric\usb_config.h	164;"	d	line:164
+USBGEN_EP_SIZE::64	D:\USB_Book\USBWinUSBGeneric\usb_config.h	163;"	d	line:163
+USBHALPingPongSetToEven::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	422;"	d	line:422	file:
+USBHALPingPongSetToOdd::(buffer){((BYTE_VAL*)buffer)->	D:\USB_Book\Microchip\USB\usb_device.c	421;"	d	line:421	file:
+USBStallEndpoint	D:\USB_Book\Microchip\USB\usb_device.c	2522;"	f	line:2522	signature:(BYTE ep, BYTE dir)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	384;"	p	line:384	file:	signature:(void)
+USBStallHandler	D:\USB_Book\Microchip\USB\usb_device.c	932;"	f	line:932	file:	signature:(void)
+USBStatusStageEnabledFlag1	D:\USB_Book\Microchip\USB\usb_device.c	275;"	v	line:275
+USBStatusStageEnabledFlag2	D:\USB_Book\Microchip\USB\usb_device.c	276;"	v	line:276
+USBStatusStageTimeoutCounter	D:\USB_Book\Microchip\USB\usb_device.c	273;"	v	line:273
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	1480;"	f	line:1480	file:	signature:(void)
+USBStdFeatureReqHandler	D:\USB_Book\Microchip\USB\usb_device.c	379;"	p	line:379	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	1828;"	f	line:1828	file:	signature:(void)
+USBStdGetDscHandler	D:\USB_Book\Microchip\USB\usb_device.c	373;"	p	line:373	file:	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	1895;"	f	line:1895	signature:(void)
+USBStdGetStatusHandler	D:\USB_Book\Microchip\USB\usb_device.c	378;"	p	line:378	file:	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	2317;"	f	line:2317	signature:(void)
+USBStdSetCfgHandler	D:\USB_Book\Microchip\USB\usb_device.c	377;"	p	line:377	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	383;"	p	line:383	file:	signature:(void)
+USBSuspend	D:\USB_Book\Microchip\USB\usb_device.c	975;"	f	line:975	file:	signature:(void)
+USBTransferOnePacket	D:\USB_Book\Microchip\USB\usb_device.c	2628;"	f	line:2628	signature:(BYTE ep,BYTE dir,BYTE* data,BYTE len)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	1032;"	f	line:1032	file:	signature:(void)
+USBWakeFromSuspend	D:\USB_Book\Microchip\USB\usb_device.c	382;"	p	line:382	file:	signature:(void)
+USB_BUS_SENSE	D:\USB_Book\Microchip\USB\usb_device.c	245;"	d	line:245	file:
+USB_BUS_SENSE::1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	18;"	d	line:18
+USB_BUS_SENSE::1	D:\USB_Book\Microchip\USB\usb_device.c	246;"	d	line:246	file:
+USB_BUS_SENSE::PORTAbits.RA1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	16;"	d	line:16
+USB_CDC_SET_LINE_CODING_HANDLER	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	154;"	p	line:154	file:
+USB_CD_Ptr	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	289;"	v	line:289
+USB_ENABLE_ALL_HANDLERS	D:\USB_Book\USBWinUSBGeneric\usb_config.h	146;"	d	line:146
+USB_ENABLE_STATUS_STAGE_TIMEOUTS::	D:\USB_Book\USBWinUSBGeneric\usb_config.h	119;"	d	line:119
+USB_EP0_BUFF_SIZE::8	D:\USB_Book\USBWinUSBGeneric\usb_config.h	53;"	d	line:53
+USB_INTERRUPT	D:\USB_Book\USBWinUSBGeneric\usb_config.h	83;"	d	line:83
+USB_MAX_EP_NUMBER::1	D:\USB_Book\USBWinUSBGeneric\usb_config.h	61;"	d	line:61
+USB_MAX_NUM_INT::1	D:\USB_Book\USBWinUSBGeneric\usb_config.h	60;"	d	line:60
+USB_NUM_STRING_DESCRIPTORS::3	D:\USB_Book\USBWinUSBGeneric\usb_config.h	143;"	d	line:143
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\USBWinUSBGeneric\usb_config.h	77;"	d	line:77
+USB_PULLUP_OPTION::USB_PULLUP_ENABLE	D:\USB_Book\USBWinUSBGeneric\usb_config.h	86;"	d	line:86
+USB_SD_Ptr	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	294;"	v	line:294
+USB_SPEED_OPTION::USB_FULL_SPEED	D:\USB_Book\USBWinUSBGeneric\usb_config.h	95;"	d	line:95
+USB_STATUS_STAGE_TIMEOUT::(BYTE)45	D:\USB_Book\USBWinUSBGeneric\usb_config.h	135;"	d	line:135
+USB_SUPPORT_DEVICE	D:\USB_Book\USBWinUSBGeneric\usb_config.h	141;"	d	line:141
+USB_TRANSCEIVER_OPTION::USB_INTERNAL_TRANSCEIVER	D:\USB_Book\USBWinUSBGeneric\usb_config.h	89;"	d	line:89
+USB_USER_CONFIG_DESCRIPTOR::USB_CD_Ptr	D:\USB_Book\USBWinUSBGeneric\usb_config.h	71;"	d	line:71
+USB_USER_CONFIG_DESCRIPTOR_INCLUDE::externROMBYTE*ROMUSB_CD_Ptr[]	D:\USB_Book\USBWinUSBGeneric\usb_config.h	72;"	d	line:72
+USB_USER_DEVICE_DESCRIPTOR::&device_dsc	D:\USB_Book\USBWinUSBGeneric\usb_config.h	66;"	d	line:66
+USB_USER_DEVICE_DESCRIPTOR_INCLUDE::externROMUSB_DEVICE_DESCRIPTOR	D:\USB_Book\USBWinUSBGeneric\usb_config.h	67;"	d	line:67
+USB_USE_GEN	D:\USB_Book\USBWinUSBGeneric\usb_config.h	158;"	d	line:158
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	460;"	f	line:460	signature:(USB_EVENT event, void *pdata, WORD size)
+USER_USB_CALLBACK_EVENT_HANDLER	D:\USB_Book\Microchip\USB\usb_device.c	366;"	p	line:366	file:	signature:(USB_EVENT event, void *pdata, WORD size)
+USTATcopy	D:\USB_Book\Microchip\USB\usb_device.c	268;"	v	line:268
+W_CLK::LATAbits.LATA4	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	45;"	d	line:45
+YourHighPriorityISRCode	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	49;"	p	line:49	file:
+YourHighPriorityISRCode	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	69;"	f	line:69
+YourLowPriorityISRCode	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	50;"	p	line:50	file:
+YourLowPriorityISRCode	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	73;"	f	line:73
+__USB_DESCRIPTORS_C	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	154;"	d	line:154	file:
+bDscType	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	271;"	m	line:271	file:
+bDscType	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	275;"	m	line:275	file:
+bDscType	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	282;"	m	line:282	file:
+bLength	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	271;"	m	line:271	file:
+bLength	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	275;"	m	line:275	file:
+bLength	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	282;"	m	line:282	file:
+blinkStatusValid	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	46;"	v	line:46
+byteToRead	D:\USB_Book\Microchip\USB\usb_device.c	2215;"	l	line:2215
+byteToSend	D:\USB_Book\Microchip\USB\usb_device.c	2134;"	l	line:2134
+byte_to_send	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	717;"	l	line:717
+cdc_data_rx	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	122;"	v	line:122
+cdc_data_tx	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	123;"	v	line:123
+cdc_mem_type	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	133;"	v	line:133
+cdc_notice	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	121;"	v	line:121
+cdc_rx_len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	127;"	v	line:127
+cdc_trf_state	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	129;"	v	line:129
+cdc_tx_len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	132;"	v	line:132
+configDescriptor1	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	185;"	v	line:185
+controlTransferState	D:\USB_Book\Microchip\USB\usb_device.c	262;"	v	line:262
+control_signal_bitmap	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	139;"	v	line:139
+current_ep_data	D:\USB_Book\Microchip\USB\usb_device.c	1483;"	l	line:1483
+delay_count	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	412;"	l	line:412	file:
+device_dsc	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	166;"	v	line:166
+dummy_encapsulated_cmd_response	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	151;"	v	line:151
+dummy_length::0x08	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	150;"	d	line:150	file:
+dumy	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	246;"	l	line:246
+dwBaud	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	348;"	l	line:348
+endpoint_number	D:\USB_Book\Microchip\USB\usb_device.c	269;"	v	line:269
+ep_data_in	D:\USB_Book\Microchip\USB\usb_device.c	271;"	v	line:271
+ep_data_out	D:\USB_Book\Microchip\USB\usb_device.c	272;"	v	line:272
+ftostring	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	244;"	f	line:244	signature:(int seisu, int shousu, float data, char *buffer)
+ftostring	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	56;"	p	line:56	file:	signature:(int seisu, int shousu, float data, char *buffer)
+getsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	370;"	f	line:370	signature:(char *buffer, BYTE len)
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2389;"	l	line:2389
+handle	D:\USB_Book\Microchip\USB\usb_device.c	2630;"	l	line:2630
+hid_report_in	D:\USB_Book\Microchip\USB\usb_device.c	322;"	v	line:322
+hid_report_out	D:\USB_Book\Microchip\USB\usb_device.c	321;"	v	line:321
+i	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	232;"	l	line:232
+i	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	246;"	l	line:246
+i	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	33;"	v	line:33
+i	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	718;"	l	line:718
+i	D:\USB_Book\Microchip\USB\usb_device.c	2216;"	l	line:2216
+i	D:\USB_Book\Microchip\USB\usb_device.c	2319;"	l	line:2319
+i	D:\USB_Book\Microchip\USB\usb_device.c	450;"	l	line:450
+i	D:\USB_Book\Microchip\USB\usb_device.c	580;"	l	line:580
+iPhase	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	40;"	m	line:40	file:
+inPipes	D:\USB_Book\Microchip\USB\usb_device.c	263;"	v	line:263
+input_buffer	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	43;"	v	line:43
+itostring	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	230;"	f	line:230	signature:(char digit, unsigned int data, char *buffer)
+itostring	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	54;"	p	line:54	file:	signature:(char digit, unsigned int data, char *buffer)
+j	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	33;"	v	line:33
+lastDTS	D:\USB_Book\Microchip\USB\usb_device.c	1326;"	l	line:1326
+led_count	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	279;"	l	line:279	file:
+len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	516;"	l	line:516
+len	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	613;"	l	line:613
+line_coding	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	124;"	v	line:124
+logData0	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	42;"	v	line:42
+logData1	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	42;"	v	line:42
+mGetLED_1::mLED_1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	41;"	d	line:41
+mGetLED_2::mLED_2	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	42;"	d	line:42
+mLED_1::LATBbits.LATB1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	29;"	d	line:29
+mLED_1_Off::mLED_1=0;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	35;"	d	line:35
+mLED_1_On::mLED_1=1;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	32;"	d	line:32
+mLED_1_Toggle::mLED_1=!mLED_1;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	38;"	d	line:38
+mLED_2::LATBbits.LATB0	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	30;"	d	line:30
+mLED_2_Off::mLED_2=0;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	36;"	d	line:36
+mLED_2_On::mLED_2=1;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	33;"	d	line:33
+mLED_2_Toggle::mLED_2=!mLED_2;	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	39;"	d	line:39
+mLED_Both_Off::{mLED_1_Off;mLED_2_Off;}	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	284;"	d	line:284	file:
+mLED_Both_On::{mLED_1_On;mLED_2_On;}	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	285;"	d	line:285	file:
+mLED_Only_1_On::{mLED_1_On;mLED_2_Off;}	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	286;"	d	line:286	file:
+mLED_Only_2_On::{mLED_1_Off;mLED_2_On;}	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	287;"	d	line:287	file:
+main	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	78;"	f	line:78	signature:(void)
+mask	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	34;"	v	line:34
+msd_buffer	D:\USB_Book\Microchip\USB\usb_device.c	334;"	v	line:334
+msd_cbw	D:\USB_Book\Microchip\USB\usb_device.c	327;"	v	line:327
+msd_csw	D:\USB_Book\Microchip\USB\usb_device.c	328;"	v	line:328
+mySetLineCodingHandler	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	340;"	f	line:340	signature:(void)
+outPipes	D:\USB_Book\Microchip\USB\usb_device.c	264;"	v	line:264
+output_buffer	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	44;"	v	line:44
+p	D:\USB_Book\Microchip\USB\usb_device.c	1482;"	l	line:1482
+p	D:\USB_Book\Microchip\USB\usb_device.c	1927;"	l	line:1927
+p	D:\USB_Book\Microchip\USB\usb_device.c	2481;"	l	line:2481
+p	D:\USB_Book\Microchip\USB\usb_device.c	2524;"	l	line:2524
+pBDTEntryEP0OutCurrent	D:\USB_Book\Microchip\USB\usb_device.c	257;"	v	line:257
+pBDTEntryEP0OutNext	D:\USB_Book\Microchip\USB\usb_device.c	258;"	v	line:258
+pBDTEntryIn	D:\USB_Book\Microchip\USB\usb_device.c	260;"	v	line:260
+pBDTEntryOut	D:\USB_Book\Microchip\USB\usb_device.c	259;"	v	line:259
+pCDCDst	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	131;"	v	line:131
+pCDCSrc	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	130;"	v	line:130
+pData	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	517;"	l	line:517
+pData	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	614;"	l	line:614
+pDst	D:\USB_Book\Microchip\USB\usb_device.c	265;"	v	line:265
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	1386;"	p	line:1386	file:
+pFunc	D:\USB_Book\Microchip\USB\usb_device.c	2274;"	p	line:2274	file:
+putUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	441;"	f	line:441	signature:(char *data, BYTE length)
+putrsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	611;"	f	line:611	signature:(const ROM char *data)
+putsUSBUSART	D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c	514;"	f	line:514	signature:(char *data)
+sd000	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	271;"	v	line:271
+sd001	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	275;"	v	line:275
+sd002	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	282;"	v	line:282
+self_power::1	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	10;"	d	line:10
+self_power::PORTAbits.RA2	D:\USB_Book\FreqAnalizerV2\HardwareProfile.h	8;"	d	line:8
+serial_out	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	195;"	f	line:195	signature:(float data)
+serial_out	D:\USB_Book\FreqAnalizerV2\FreqAnalizerV2.c	55;"	p	line:55	file:	signature:(float data)
+setup_cnt	D:\USB_Book\Microchip\USB\usb_device.c	1128;"	l	line:1128
+shortPacketStatus	D:\USB_Book\Microchip\USB\usb_device.c	261;"	v	line:261
+string	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	271;"	m	line:271	file:
+string	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	275;"	m	line:275	file:
+string	D:\USB_Book\FreqAnalizerV2\usb_descriptors.c	282;"	m	line:282	file:

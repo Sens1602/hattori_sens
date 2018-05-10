@@ -1,0 +1,3 @@
+Error[1027] F:\prog\mplab_projects\PulseForNeuronCircuit_2\malloc.c 49 : unable to locate 'alloc.h'
+Error[1027] F:\prog\mplab_projects\PulseForNeuronCircuit_2\malloc.c 50 : unable to locate 'heap.h'
+Error[1027] F:\prog\mplab_projects\PulseForNeuronCircuit_2\malloc.c 51 : unable to locate 'heap_config.h'

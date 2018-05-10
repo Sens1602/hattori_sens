@@ -1,0 +1,33 @@
+﻿2011/04/16 22:15:50 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\USB_Book_PC\PIO_PC_Host\PIO_PC_Host\PIO_PC_Host.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Release\PIO_PC_Host.unsuccessfulbuild" を作成しています。
+       GenerateTargetFrameworkMonikerAttribute:
+       すべての出力ファイルが入力ファイルに対して最新なので、ターゲット "GenerateTargetFrameworkMonikerAttribute" を省略します。
+       ClCompile:
+         すべての出力が最新のものです。
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\PIO_PC_Host.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt PIO_PC_Host.cpp /clr:nostdlib 
+         PIO_PC_Host.cpp
+         すべての出力が最新のものです。
+       CoreResGen:
+         "C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Release\PIO_PC_Host.Form1.resources
+         リソース ファイル "Form1.resX" を "Release\PIO_PC_Host.Form1.resources" に処理しています。
+       ResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\USB_Book_PC\PIO_PC_Host\Release\PIO_PC_Host.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\PIO_PC_Host.Form1.resources /MANIFEST /ManifestFile:"Release\PIO_PC_Host.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\USB_Book_PC\PIO_PC_Host\Release\PIO_PC_Host.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\PIO_PC_Host.obj
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         PIO_PC_Host.vcxproj -> D:\USB_Book_PC\PIO_PC_Host\Release\PIO_PC_Host.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\USB_Book_PC\PIO_PC_Host\Release\PIO_PC_Host.exe;#1" /manifest Release\PIO_PC_Host.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "Release\PIO_PC_Host.unsuccessfulbuild" を削除しています。
+         "Release\PIO_PC_Host.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "D:\USB_Book_PC\PIO_PC_Host\PIO_PC_Host\PIO_PC_Host.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:07.81

@@ -1,0 +1,14 @@
+D:\USB_Book\GPS_Logger3\GPSLogger3.c
+D:\USB_Book\GPS_Logger3\i2c_lib2.c
+D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.c
+D:\USB_Book\GPS_Logger3\usb_descriptors.c
+D:\USB_Book\Microchip\MDD File System\FSIO.c
+D:\USB_Book\Microchip\USB\usb_device.c
+D:\USB_Book\Microchip\USB\MSD Device Driver\usb_function_msd.c
+D:\USB_Book\Microchip\MDD File System\SD-SPI.c
+D:\USB_Book\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+D:\USB_Book\GPS_Logger3\usb_config.h
+D:\USB_Book\GPS_Logger3\FSconfig.h
+D:\USB_Book\GPS_Logger3\HardwareProfile.h
+D:\USB_Book\GPS_Logger3\i2c_lib2.h
+D:\USB_Book\GPS_Logger3\lcd_i2c_lib2.h

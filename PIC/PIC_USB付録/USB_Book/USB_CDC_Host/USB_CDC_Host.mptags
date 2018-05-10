@@ -1,0 +1,407 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ALLOW_GLOBAL_VID_AND_PID	D:\USB_Book\Microchip\USB\usb_host.c	104;"	d	line:104	file:
+ALLOW_MULTIPLE_BULK_TRANSACTIONS_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	113;"	d	line:113	file:
+APIdMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	52;"	v	line:52
+APPL_STATE	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	30;"	t	line:30	file:
+AtchMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	43;"	v	line:43
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	144;"	v	line:144	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	150;"	v	line:150	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	157;"	v	line:157	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	146;"	d	line:146	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	152;"	d	line:152	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	159;"	d	line:159	file:
+BDT_IN_ODD::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	160;"	d	line:160	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	147;"	d	line:147	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	153;"	d	line:153	file:
+BDT_OUT::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	161;"	d	line:161	file:
+BDT_OUT_ODD::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	154;"	d	line:154	file:
+BDT_OUT_ODD::(&BDT[3])	D:\USB_Book\Microchip\USB\usb_host.c	162;"	d	line:162	file:
+BLACK::0x00	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	35;"	d	line:35
+BLUE::0x03	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	36;"	d	line:36
+Buffer	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	12;"	v	line:12
+CDC_CONTROL_SIGNAL_Buffer	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	249;"	v	line:249
+CDC_DEV_LINE_CODING_Buffer	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	247;"	v	line:247
+CDC_LINE_CODING_Buffer	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	248;"	v	line:248
+CDCdeviceAddress	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	253;"	v	line:253
+CYAN::0x1F	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	39;"	d	line:39
+Class	D:\USB_Book\Microchip\USB\usb_host.c	4586;"	l	line:4586
+Clear	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	82;"	f	line:82	signature:(void)
+Clear	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	12;"	p	line:12	signature:(void)
+ClearBox	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	96;"	f	line:96	signature:(unsigned int color)
+ClearBox	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	13;"	p	line:13	signature:(unsigned int color)
+ClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	4589;"	l	line:4589
+CrntMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	47;"	v	line:47
+DEMO_INITIALIZE	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	24;"	e	line:24	enum:_APPL_STATE	file:
+DEVICE_CONNECTED	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	26;"	e	line:26	enum:_APPL_STATE	file:
+DEVICE_NOT_CONNECTED	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	25;"	e	line:25	enum:_APPL_STATE	file:
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3495;"	p	line:3495	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_READ, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3594;"	p	line:3594	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_WRITE, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+DtchMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	44;"	v	line:44
+EnumMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	48;"	v	line:48
+Error	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	39;"	v	line:39
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4517;"	p	line:4517	file:
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4524;"	p	line:4524	file:
+FALSE::0	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	26;"	d	line:26
+Fosc::32	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	28;"	d	line:28
+GET_IN_DATA	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	28;"	e	line:28	enum:_APPL_STATE	file:
+GInit	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	20;"	f	line:20	signature:(void)
+GInit	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	8;"	p	line:8	signature:(void)
+GRAY::0x7F	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	43;"	d	line:43
+GREEN::0x1C	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	37;"	d	line:37
+GetAD	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	241;"	f	line:241	signature:(unsigned int chn)
+GetAD	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	22;"	p	line:22	signature:(unsigned int chn)
+GetInstructionClock::(GetSystemClock/2)	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	9;"	d	line:9
+GetPeripheralClock::(GetSystemClock)	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	8;"	d	line:8
+GetScreen	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	195;"	f	line:195	signature:(void)
+GetScreen	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	20;"	p	line:20	signature:(void)
+GetSystemClock::32000000UL	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	7;"	d	line:7
+HSIZE::320	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	29;"	d	line:29
+HeadMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	54;"	v	line:54
+HubnMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	46;"	v	line:46
+IDLE	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	27;"	e	line:27	enum:_APPL_STATE	file:
+IN_Buf	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	37;"	v	line:37
+InitMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	49;"	v	line:49
+MAGENTA::0xE3	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	41;"	d	line:41
+MARK_RESET_RECOVERY::(0x0E)	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	184;"	d	line:184	file:
+MAX_ALLOWED_CURRENT::(500)	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	32;"	d	line:32	file:
+MAX_IN_BYTES::64	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	33;"	d	line:33	file:
+MAX_OUT_BYTES::64	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	34;"	d	line:34	file:
+MILLISECONDS_PER_TICK::10	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	12;"	d	line:12
+MaxColum::20	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	32;"	d	line:32
+MaxLine::15	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	31;"	d	line:31
+NEXT_STATE::0x0010	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	126;"	d	line:126	file:
+NEXT_SUBSTATE::0x0001	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	127;"	d	line:127	file:
+NUM_TPL_ENTRIES::2	D:\USB_Book\USB_CDC_Host\usb_config.h	61;"	d	line:61
+NsptMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	45;"	v	line:45
+NumRcvd	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	39;"	v	line:39
+ONE_CONTROL_TRANSACTION_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	109;"	d	line:109	file:
+OUT_Buf	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	38;"	v	line:38
+OutmMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	50;"	v	line:50
+PTR_HOST_CONTROL_LINE_BUFFER::(&CDC_CONTROL_SIGNAL_Buffer)	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	262;"	d	line:262	file:
+PTR_HOST_LINE_CODING_BUFFER::(&CDC_LINE_CODING_Buffer)	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	261;"	d	line:261	file:
+Process	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	23;"	p	line:23	signature:(void)
+Process	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	102;"	f	line:102	signature:(void)
+Protocol	D:\USB_Book\Microchip\USB\usb_host.c	4588;"	l	line:4588
+PutBox	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	142;"	f	line:142	signature:(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned int color)
+PutBox	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	19;"	p	line:19	signature:(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned int color)
+PutCha	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	107;"	f	line:107	signature:(unsigned int colum, unsigned int line, unsigned char ascii, unsigned char fgcolor, unsigned char bkcolor)
+PutCha	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	17;"	p	line:17	signature:(unsigned int colum, unsigned int line, unsigned char ascii, unsigned char fgcolor, unsigned char bkcolor)
+PutCmd	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	73;"	f	line:73	signature:(unsigned int low, unsigned int high)
+PutCmd	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	14;"	p	line:14	signature:(unsigned int low, unsigned int high)
+PutStr	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	122;"	f	line:122	signature:(unsigned int colum, unsigned int line, const unsigned char *mesg, unsigned char fgcolor, unsigned char bkcolor)
+PutStr	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	18;"	p	line:18	signature:(unsigned int colum, unsigned int line, const unsigned char *mesg, unsigned char fgcolor, unsigned char bkcolor)
+RED::0xE0	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	38;"	d	line:38
+RestMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	53;"	v	line:53
+SEND_OUT_DATA	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	29;"	e	line:29	enum:_APPL_STATE	file:
+SPIInit	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	157;"	f	line:157	signature:(void)
+SPIInit	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	9;"	p	line:9	signature:(void)
+STATE_CDC_RESET_RECOVERY::0x0030	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	150;"	d	line:150	file:
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	130;"	d	line:130	file:
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	161;"	d	line:161	file:
+STATE_HOLDING::0x000A	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	175;"	d	line:175	file:
+STATE_HOLDING::0x0040	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	155;"	d	line:155	file:
+STATE_INITIALIZE_DEVICE::0x0001	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	163;"	d	line:163	file:
+STATE_INITIALIZE_DEVICE::0x0010	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	132;"	d	line:132	file:
+STATE_MASK::0x00F0	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	123;"	d	line:123	file:
+STATE_READ_REQ_WAIT::0x0006	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	169;"	d	line:169	file:
+STATE_RESET_COMPLETE::0x0009	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	173;"	d	line:173	file:
+STATE_RUNNING::0x0005	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	168;"	d	line:168	file:
+STATE_RUNNING::0x0020	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	143;"	d	line:143	file:
+STATE_WAIT_FOR_GET_LINE_CODING::0x0002	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	164;"	d	line:164	file:
+STATE_WAIT_FOR_RESET::0x0008	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	172;"	d	line:172	file:
+STATE_WAIT_FOR_SET_CONTROL_LINE_STATE::0x0004	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	166;"	d	line:166	file:
+STATE_WAIT_FOR_SET_LINE_CODING::0x0003	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	165;"	d	line:165	file:
+STATE_WRITE_REQ_WAIT::0x0007	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	170;"	d	line:170	file:
+SUBSTATE_DEVICE_ENUMERATED::0x0001	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	134;"	d	line:134	file:
+SUBSTATE_GET_LINE_CODING::0x0002	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	135;"	d	line:135	file:
+SUBSTATE_MASK::0x000F	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	124;"	d	line:124	file:
+SUBSTATE_READ_REQ_WAIT::0x0002	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	146;"	d	line:146	file:
+SUBSTATE_RESET_COMPLETE::0x0002	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	153;"	d	line:153	file:
+SUBSTATE_SEND_READ_REQ::0x0001	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	145;"	d	line:145	file:
+SUBSTATE_SEND_RESET::0x0000	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	151;"	d	line:151	file:
+SUBSTATE_SEND_WRITE_REQ::0x0003	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	147;"	d	line:147	file:
+SUBSTATE_SET_CONTROL_LINE_STATE::0x0006	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	139;"	d	line:139	file:
+SUBSTATE_SET_LINE_CODING::0x0004	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	137;"	d	line:137	file:
+SUBSTATE_WAITING_FOR_REQ::0x0000	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	144;"	d	line:144	file:
+SUBSTATE_WAIT_FOR_ENUMERATION::0x0000	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	133;"	d	line:133	file:
+SUBSTATE_WAIT_FOR_GET_LINE_CODING::0x0003	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	136;"	d	line:136	file:
+SUBSTATE_WAIT_FOR_RESET::0x0001	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	152;"	d	line:152	file:
+SUBSTATE_WAIT_FOR_SET_CONTROL_LINE_STATE::0x0007	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	140;"	d	line:140	file:
+SUBSTATE_WAIT_FOR_SET_LINE_CODING::0x0005	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	138;"	d	line:138	file:
+SUBSTATE_WRITE_REQ_WAIT::0x0004	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	148;"	d	line:148	file:
+SendSPI	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	180;"	f	line:180	signature:(unsigned char reg, unsigned int cmd)
+SendSPI	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	16;"	p	line:16	signature:(unsigned char reg, unsigned int cmd)
+SetupScreen	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	255;"	f	line:255	signature:(void)
+SetupScreen	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	21;"	p	line:21	signature:(void)
+SpecMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	51;"	v	line:51
+State	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	36;"	v	line:36
+StrtMsg	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	42;"	v	line:42
+SubClass	D:\USB_Book\Microchip\USB\usb_host.c	4587;"	l	line:4587
+TIMER_PERIOD::20	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	14;"	d	line:14
+TIMER_PRESCALER::TIMER_PRESCALER_8	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	13;"	d	line:13
+TRUE::1	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	25;"	d	line:25
+U1STAT_ODD_MASK::0x04	D:\USB_Book\Microchip\USB\usb_host.c	5279;"	d	line:5279	file:
+U1STAT_TX_MASK::0x08	D:\USB_Book\Microchip\USB\usb_host.c	5278;"	d	line:5278	file:
+USBHostCDCDeviceStatus	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	363;"	f	line:363	signature:( BYTE deviceAddress )
+USBHostCDCEventHandler	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1117;"	f	line:1117	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USBHostCDCInitAddress	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	308;"	f	line:308	signature:( BYTE address, DWORD flags, BYTE clientDriverID )
+USBHostCDCInitialize	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1405;"	f	line:1405	signature:( BYTE address, DWORD flags, BYTE clientDriverID )
+USBHostCDCResetDevice	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	460;"	f	line:460	signature:( BYTE deviceAddress )
+USBHostCDCTasks	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	526;"	f	line:526	signature:( void )
+USBHostCDCTransfer	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	929;"	f	line:929	signature:( BYTE deviceAddress,BYTE request , BYTE direction, BYTE interfaceNum, WORD size, BYTE *data , BYTE endpointDATA)
+USBHostCDCTransferIsComplete	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1053;"	f	line:1053	signature:( BYTE deviceAddress, BYTE *errorCode, BYTE *byteCount )
+USBHostCDC_ApiDeviceDetect	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	246;"	f	line:246	signature:( void )
+USBHostCDC_ApiTransferIsComplete	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	219;"	f	line:219	signature:(BYTE* errorCodeDriver, BYTE* byteCount )
+USBHostCDC_Api_ACM_Request	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	297;"	f	line:297	signature:(BYTE requestType, BYTE size, BYTE* data)
+USBHostCDC_Api_Get_IN_Data	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	140;"	f	line:140	signature:(BYTE no_of_bytes, BYTE* data)
+USBHostCDC_Api_Send_OUT_Data	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	179;"	f	line:179	signature:(WORD no_of_bytes, BYTE* data)
+USBHostCDC_Init_CDC_Buffers	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1720;"	f	line:1720	signature:(void)
+USBHostCDC_Init_CDC_Buffers	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	216;"	p	line:216	file:	signature:(void)
+USBHostClearEndpointErrors	D:\USB_Book\Microchip\USB\usb_host.c	229;"	f	line:229	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostDeviceSpecificClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	298;"	f	line:298	signature:( BYTE deviceAddress )
+USBHostDeviceStatus	D:\USB_Book\Microchip\USB\usb_host.c	342;"	f	line:342	signature:( BYTE deviceAddress )
+USBHostInit	D:\USB_Book\Microchip\USB\usb_host.c	399;"	f	line:399	signature:( unsigned long flags )
+USBHostIsochronousBuffersCreate	D:\USB_Book\Microchip\USB\usb_host.c	465;"	f	line:465	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers, WORD bufferSize )
+USBHostIsochronousBuffersDestroy	D:\USB_Book\Microchip\USB\usb_host.c	519;"	f	line:519	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIsochronousBuffersReset	D:\USB_Book\Microchip\USB\usb_host.c	559;"	f	line:559	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIssueDeviceRequest	D:\USB_Book\Microchip\USB\usb_host.c	634;"	f	line:634	signature:( BYTE deviceAddress, BYTE bmRequestType, BYTE bRequest, WORD wValue, WORD wIndex, WORD wLength, BYTE *data, BYTE dataDirection, BYTE clientDriverID )
+USBHostRead	D:\USB_Book\Microchip\USB\usb_host.c	803;"	f	line:803	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *pData, DWORD size )
+USBHostResetDevice	D:\USB_Book\Microchip\USB\usb_host.c	891;"	f	line:891	signature:( BYTE deviceAddress )
+USBHostResumeDevice	D:\USB_Book\Microchip\USB\usb_host.c	935;"	f	line:935	signature:( BYTE deviceAddress )
+USBHostSetDeviceConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	1013;"	f	line:1013	signature:( BYTE deviceAddress, BYTE configuration )
+USBHostSetNAKTimeout	D:\USB_Book\Microchip\USB\usb_host.c	1085;"	f	line:1085	signature:( BYTE deviceAddress, BYTE endpoint, WORD flags, WORD timeoutCount )
+USBHostShutdown	D:\USB_Book\Microchip\USB\usb_host.c	1132;"	f	line:1132	signature:( void )
+USBHostSuspendDevice	D:\USB_Book\Microchip\USB\usb_host.c	1209;"	f	line:1209	signature:( BYTE deviceAddress )
+USBHostTasks	D:\USB_Book\Microchip\USB\usb_host.c	1265;"	f	line:1265	signature:( void )
+USBHostTerminateTransfer	D:\USB_Book\Microchip\USB\usb_host.c	2472;"	f	line:2472	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostTransferIsComplete	D:\USB_Book\Microchip\USB\usb_host.c	2539;"	f	line:2539	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *errorCode, DWORD *byteCount )
+USBHostVbusEvent	D:\USB_Book\Microchip\USB\usb_host.c	2632;"	f	line:2632	signature:(USB_EVENT vbusEvent, BYTE hubAddress, BYTE portNumber)
+USBHostWrite	D:\USB_Book\Microchip\USB\usb_host.c	2709;"	f	line:2709	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *data, DWORD size )
+USBInitialize::(x)	D:\USB_Book\USB_CDC_Host\usb_config.h	89;"	d	line:89
+USBTasks::	D:\USB_Book\USB_CDC_Host\usb_config.h	84;"	d	line:84
+USB_ApplicationEventHandler	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	186;"	f	line:186	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USB_CDC_BAUDRATE_SUPPORTED::19200UL	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	189;"	d	line:189	file:
+USB_CDC_BAUDRATE_SUPPORTED::19200ul	D:\USB_Book\USB_CDC_Host\usb_config.h	74;"	d	line:74
+USB_CDC_NO_OF_DATA_BITS::8	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	201;"	d	line:201	file:
+USB_CDC_NO_OF_DATA_BITS::8	D:\USB_Book\USB_CDC_Host\usb_config.h	75;"	d	line:75
+USB_CDC_PARITY_TYPE::0	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	193;"	d	line:193	file:
+USB_CDC_PARITY_TYPE::0	D:\USB_Book\USB_CDC_Host\usb_config.h	76;"	d	line:76
+USB_CDC_RESET::(0xFF)	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	183;"	d	line:183	file:
+USB_CDC_STOP_BITS::0	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	197;"	d	line:197	file:
+USB_CDC_STOP_BITS::0	D:\USB_Book\USB_CDC_Host\usb_config.h	77;"	d	line:77
+USB_FREE::(ptr)free(ptr)	D:\USB_Book\Microchip\USB\usb_host.c	84;"	d	line:84	file:
+USB_FREE_AND_CLEAR::(ptr){USB_FREE(ptr);ptr=NULL;}	D:\USB_Book\Microchip\USB\usb_host.c	87;"	d	line:87	file:
+USB_HOST_APP_EVENT_HANDLER::USB_ApplicationEventHandler	D:\USB_Book\USB_CDC_Host\usb_config.h	69;"	d	line:69
+USB_INITIAL_VBUS_CURRENT::(100/2)	D:\USB_Book\USB_CDC_Host\usb_config.h	67;"	d	line:67
+USB_INSERT_TIME::(250+1)	D:\USB_Book\USB_CDC_Host\usb_config.h	68;"	d	line:68
+USB_MALLOC::(size)malloc(size)	D:\USB_Book\Microchip\USB\usb_host.c	80;"	d	line:80	file:
+USB_MAX_CDC_DEVICES::1	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	108;"	d	line:108	file:
+USB_MAX_CDC_DEVICES::1	D:\USB_Book\USB_CDC_Host\usb_config.h	73;"	d	line:73
+USB_NUM_BULK_NAKS::20000	D:\USB_Book\USB_CDC_Host\usb_config.h	66;"	d	line:66
+USB_NUM_CONTROL_NAKS::200	D:\USB_Book\USB_CDC_Host\usb_config.h	62;"	d	line:62
+USB_NUM_INTERRUPT_NAKS::3	D:\USB_Book\USB_CDC_Host\usb_config.h	64;"	d	line:64
+USB_PING_PONG_MODE	D:\USB_Book\Microchip\USB\usb_host.c	137;"	d	line:137	file:
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\Microchip\USB\usb_host.c	138;"	d	line:138	file:
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\USB_CDC_Host\usb_config.h	57;"	d	line:57
+USB_SUPPORT_BULK_TRANSFERS	D:\USB_Book\USB_CDC_Host\usb_config.h	65;"	d	line:65
+USB_SUPPORT_HOST	D:\USB_Book\USB_CDC_Host\usb_config.h	53;"	d	line:53
+USB_SUPPORT_INTERRUPT_TRANSFERS	D:\USB_Book\USB_CDC_Host\usb_config.h	63;"	d	line:63
+USB_TRANSACTION_RETRY_ATTEMPTS::20	D:\USB_Book\Microchip\USB\usb_host.c	126;"	d	line:126	file:
+VSIZE::240	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	30;"	d	line:30
+WHITE::0xFF	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	42;"	d	line:42
+WriteSPI	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	169;"	f	line:169	signature:(unsigned char data)
+WriteSPI	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	15;"	p	line:15	signature:(unsigned char data)
+Xold	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	15;"	v	line:15
+Xpos	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	39;"	v	line:39
+Xset	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	15;"	v	line:15
+YELLOW::0xFC	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	40;"	d	line:40
+Yold	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	15;"	v	line:15
+Ypos	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	39;"	v	line:39
+Yset	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	15;"	v	line:15
+_APPL_STATE	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	23;"	g	line:23	file:
+_HARDWARE_PROFILE_H_	D:\USB_Book\USB_CDC_Host\HardwareProfile.h	3;"	d	line:3
+_USB1Interrupt	D:\USB_Book\Microchip\USB\usb_host.c	5282;"	f	line:5282	signature:( void )
+_USBHostCDC_ResetStateJump	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1658;"	f	line:1658	signature:( BYTE i )
+_USBHostCDC_ResetStateJump	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	215;"	p	line:215	file:	signature:( BYTE i )
+_USBHostCDC_SetNextState::{deviceInfoCDC[i].state=(devic	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	226;"	d	line:226	file:
+_USBHostCDC_SetNextSubState::{deviceInfoCDC[i].state+=NEXT_	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	227;"	d	line:227	file:
+_USBHostCDC_TerminateTransfer::(error){	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	231;"	d	line:231	file:
+_USBHostCDC_TerminateTransfer::(error){	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	237;"	d	line:237	file:
+_USB_CONFIG_VERSION_BUILD::0	D:\USB_Book\USB_CDC_Host\usb_config.h	49;"	d	line:49
+_USB_CONFIG_VERSION_DOT::1	D:\USB_Book\USB_CDC_Host\usb_config.h	48;"	d	line:48
+_USB_CONFIG_VERSION_MAJOR::2	D:\USB_Book\USB_CDC_Host\usb_config.h	46;"	d	line:46
+_USB_CONFIG_VERSION_MINOR::7	D:\USB_Book\USB_CDC_Host\usb_config.h	47;"	d	line:47
+_USB_CheckCommandAndEnumerationAttempts	D:\USB_Book\Microchip\USB\usb_host.c	2803;"	f	line:2803	signature:( void )
+_USB_FindClassDriver	D:\USB_Book\Microchip\USB\usb_host.c	2869;"	f	line:2869	signature:( BYTE bClass, BYTE bSubClass, BYTE bProtocol, BYTE *pbClientDrv )
+_USB_FindDeviceLevelClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	2923;"	f	line:2923	signature:( void )
+_USB_FindEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3012;"	f	line:3012	signature:( BYTE endpoint )
+_USB_FindNextToken	D:\USB_Book\Microchip\USB\usb_host.c	3111;"	f	line:3111	signature:( void )
+_USB_FindServiceEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4027;"	f	line:4027	signature:( BYTE transferType )
+_USB_FreeConfigMemory	D:\USB_Book\Microchip\USB\usb_host.c	4153;"	f	line:4153	signature:( void )
+_USB_FreeMemory	D:\USB_Book\Microchip\USB\usb_host.c	4206;"	f	line:4206	signature:( void )
+_USB_InitControlRead	D:\USB_Book\Microchip\USB\usb_host.c	4261;"	f	line:4261	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitControlWrite	D:\USB_Book\Microchip\USB\usb_host.c	4314;"	f	line:4314	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitRead	D:\USB_Book\Microchip\USB\usb_host.c	4383;"	f	line:4383	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_InitWrite	D:\USB_Book\Microchip\USB\usb_host.c	4450;"	f	line:4450	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_NotifyClients	D:\USB_Book\Microchip\USB\usb_host.c	4506;"	f	line:4506	signature:( BYTE address, USB_EVENT event, void *data, unsigned int size )
+_USB_ParseConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	4576;"	f	line:4576	signature:( void )
+_USB_ResetDATA0	D:\USB_Book\Microchip\USB\usb_host.c	4914;"	f	line:4914	signature:( BYTE endpoint )
+_USB_SendToken	D:\USB_Book\Microchip\USB\usb_host.c	4974;"	f	line:4974	signature:( BYTE endpoint, BYTE tokenType )
+_USB_SetBDT	D:\USB_Book\Microchip\USB\usb_host.c	5049;"	f	line:5049	signature:( BYTE token )
+_USB_TransferInProgress	D:\USB_Book\Microchip\USB\usb_host.c	5205;"	f	line:5205	signature:( void )
+_count	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	14;"	v	line:14
+_usb_config_h_	D:\USB_Book\USB_CDC_Host\usb_config.h	33;"	d	line:33
+bAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4578;"	l	line:4578
+bDescriptorType	D:\USB_Book\Microchip\USB\usb_host.c	4579;"	l	line:4579
+bInterfaceNumber	D:\USB_Book\Microchip\USB\usb_host.c	4580;"	l	line:4580
+bLength	D:\USB_Book\Microchip\USB\usb_host.c	4581;"	l	line:4581
+bMaxPower	D:\USB_Book\Microchip\USB\usb_host.c	4584;"	l	line:4584
+bNumEndpoints	D:\USB_Book\Microchip\USB\usb_host.c	4582;"	l	line:4582
+bNumInterfaces	D:\USB_Book\Microchip\USB\usb_host.c	4583;"	l	line:4583
+byteCount	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1124;"	l	line:1124
+byteCount	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	529;"	l	line:529
+copyU1STATbits	D:\USB_Book\Microchip\USB\usb_host.c	5487;"	l	line:5487
+countConfigurations	D:\USB_Book\Microchip\USB\usb_host.c	170;"	v	line:170	file:
+currentAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4592;"	l	line:4592
+currentConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	4593;"	l	line:4593
+currentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4594;"	l	line:4594
+currentInterface	D:\USB_Book\Microchip\USB\usb_host.c	4595;"	l	line:4595
+currentPacketSize	D:\USB_Book\Microchip\USB\usb_host.c	5051;"	l	line:5051
+data	D:\USB_Book\Microchip\USB\usb_host.c	3169;"	l	line:3169
+data	D:\USB_Book\Microchip\USB\usb_host.c	3193;"	l	line:3193
+data	D:\USB_Book\Microchip\USB\usb_host.c	3256;"	l	line:3256
+data	D:\USB_Book\Microchip\USB\usb_host.c	3280;"	l	line:3280
+data	D:\USB_Book\Microchip\USB\usb_host.c	3343;"	l	line:3343
+data	D:\USB_Book\Microchip\USB\usb_host.c	3367;"	l	line:3367
+data	D:\USB_Book\Microchip\USB\usb_host.c	3475;"	l	line:3475
+data	D:\USB_Book\Microchip\USB\usb_host.c	3515;"	l	line:3515
+data	D:\USB_Book\Microchip\USB\usb_host.c	3574;"	l	line:3574
+data	D:\USB_Book\Microchip\USB\usb_host.c	3613;"	l	line:3613
+data	D:\USB_Book\Microchip\USB\usb_host.c	3685;"	l	line:3685
+data	D:\USB_Book\Microchip\USB\usb_host.c	3709;"	l	line:3709
+data	D:\USB_Book\Microchip\USB\usb_host.c	3754;"	l	line:3754
+data	D:\USB_Book\Microchip\USB\usb_host.c	3778;"	l	line:3778
+data	D:\USB_Book\Microchip\USB\usb_host.c	3854;"	l	line:3854
+data	D:\USB_Book\Microchip\USB\usb_host.c	3878;"	l	line:3878
+data	D:\USB_Book\Microchip\USB\usb_host.c	3917;"	l	line:3917
+data	D:\USB_Book\Microchip\USB\usb_host.c	3941;"	l	line:3941
+delay_ms	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	282;"	f	line:282	signature:(int msec)
+delay_ms	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	10;"	p	line:10	signature:(int msec)
+delay_us	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	273;"	f	line:273	signature:(int usec)
+delay_us	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.h	11;"	p	line:11	signature:(int usec)
+descriptor	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1407;"	l	line:1407
+device	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1411;"	l	line:1411
+deviceInfoCDC	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	251;"	v	line:251
+displayOnce	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	40;"	v	line:40
+dot	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	83;"	l	line:83
+dumy	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	170;"	l	line:170
+endpointIN	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1412;"	l	line:1412
+endpointINsize	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1409;"	l	line:1409
+endpointOUT	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1413;"	l	line:1413
+endpointOUTsize	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1410;"	l	line:1410
+ep	D:\USB_Book\Microchip\USB\usb_host.c	1087;"	l	line:1087
+ep	D:\USB_Book\Microchip\USB\usb_host.c	231;"	l	line:231
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2474;"	l	line:2474
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2542;"	l	line:2542
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2711;"	l	line:2711
+ep	D:\USB_Book\Microchip\USB\usb_host.c	805;"	l	line:805
+error	D:\USB_Book\Microchip\USB\usb_host.c	4585;"	l	line:4585
+errorCode	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1123;"	l	line:1123
+errorCode	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1661;"	l	line:1661
+errorCode	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	530;"	l	line:530
+errorCode	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	933;"	l	line:933
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1055;"	l	line:1055
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1120;"	l	line:1120
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1408;"	l	line:1408
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	365;"	l	line:365
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	462;"	l	line:462
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	531;"	l	line:531
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	931;"	l	line:931
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	142;"	l	line:142
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	181;"	l	line:181
+i	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	299;"	l	line:299
+i	D:\USB_Book\Microchip\USB\usb_host.c	2871;"	l	line:2871
+i	D:\USB_Book\Microchip\USB\usb_host.c	2925;"	l	line:2925
+i	D:\USB_Book\Microchip\USB\usb_host.c	467;"	l	line:467
+i	D:\USB_Book\Microchip\USB\usb_host.c	521;"	l	line:521
+i	D:\USB_Book\Microchip\USB\usb_host.c	561;"	l	line:561
+i	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	274;"	l	line:274
+i	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	283;"	l	line:283
+i	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	103;"	l	line:103
+illegalState	D:\USB_Book\Microchip\USB\usb_host.c	3113;"	l	line:3113
+index	D:\USB_Book\Microchip\USB\usb_host.c	4596;"	l	line:4596
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1303;"	l	line:1303
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1305;"	l	line:1305
+item	D:\USB_Book\Microchip\USB\usb_host.c	1301;"	l	line:1301
+j	D:\USB_Book\Microchip\USB\usb_host.c	468;"	l	line:468
+line	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	83;"	l	line:83
+main	D:\USB_Book\USB_CDC_Host\USB_CDC_Host.c	58;"	f	line:58	signature:(void)
+newEndpointInfo	D:\USB_Book\Microchip\USB\usb_host.c	4597;"	l	line:4597
+newInterfaceInfo	D:\USB_Book\Microchip\USB\usb_host.c	4598;"	l	line:4598
+newSettingInfo	D:\USB_Book\Microchip\USB\usb_host.c	4599;"	l	line:4599
+numCommandTries	D:\USB_Book\Microchip\USB\usb_host.c	171;"	v	line:171	file:
+numEnumerationTries	D:\USB_Book\Microchip\USB\usb_host.c	172;"	v	line:172	file:
+numTimerInterrupts	D:\USB_Book\Microchip\USB\usb_host.c	173;"	v	line:173	file:
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5052;"	l	line:5052
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5494;"	l	line:5494
+pCurrentConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	175;"	v	line:175
+pCurrentConfigurationNode	D:\USB_Book\Microchip\USB\usb_host.c	1267;"	l	line:1267	file:
+pCurrentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	174;"	v	line:174	file:
+pCurrentInterface	D:\USB_Book\Microchip\USB\usb_host.c	1268;"	l	line:1268
+pDesc	D:\USB_Book\Microchip\USB\usb_host.c	2926;"	l	line:2926
+pDeviceDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	176;"	v	line:176
+pEP0Data	D:\USB_Book\Microchip\USB\usb_host.c	177;"	v	line:177	file:
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3014;"	l	line:3014
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4029;"	l	line:4029
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4916;"	l	line:4916
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5207;"	l	line:5207
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5751;"	l	line:5751
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	667;"	l	line:667
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	3015;"	l	line:3015
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4030;"	l	line:4030
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4508;"	l	line:4508
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4921;"	l	line:4921
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5208;"	l	line:5208
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5752;"	l	line:5752
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	668;"	l	line:668
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	4922;"	l	line:4922
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	5209;"	l	line:5209
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	669;"	l	line:669
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	1269;"	l	line:1269
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	4208;"	l	line:4208
+pTempEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4157;"	l	line:4157
+pTempInterface	D:\USB_Book\Microchip\USB\usb_host.c	4155;"	l	line:4155
+pTempInterfaceList	D:\USB_Book\Microchip\USB\usb_host.c	4601;"	l	line:4601
+pTempSetting	D:\USB_Book\Microchip\USB\usb_host.c	4156;"	l	line:4156
+packetSize	D:\USB_Book\Microchip\USB\usb_host.c	5493;"	l	line:5493
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1144;"	l	line:1144
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1271;"	l	line:1271
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	4600;"	l	line:4600
+prevHostState	D:\USB_Book\Microchip\USB\usb_host.c	181;"	v	line:181	file:
+ptr	D:\USB_Book\Microchip\USB\usb_host.c	4602;"	l	line:4602
+ptr	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	13;"	v	line:13
+return_val	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc_interface.c	300;"	l	line:300
+status	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	366;"	l	line:366
+temp	D:\USB_Book\Microchip\USB\usb_host.c	1270;"	l	line:1270
+temp	D:\USB_Book\Microchip\USB\usb_host.c	4976;"	l	line:4976
+temp	D:\USB_Book\USB_CDC_Host\DALCD_Lib1.c	143;"	l	line:143
+transferComplete	D:\USB_Book\Microchip\USB\usb_host.c	2543;"	l	line:2543
+transfer_data	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1119;"	l	line:1119
+usbBusInfo	D:\USB_Book\Microchip\USB\usb_host.c	185;"	v	line:185	file:
+usbClientDrvTable	D:\USB_Book\USB_CDC_Host\usb_config.c	41;"	v	line:41
+usbDeviceInfo	D:\USB_Book\Microchip\USB\usb_host.c	186;"	v	line:186	file:
+usbEventQueue	D:\USB_Book\Microchip\USB\usb_host.c	188;"	v	line:188	file:
+usbHostState	D:\USB_Book\Microchip\USB\usb_host.c	178;"	v	line:178	file:
+usbOverrideHostState	D:\USB_Book\Microchip\USB\usb_host.c	179;"	v	line:179
+usbRootHubInfo	D:\USB_Book\Microchip\USB\usb_host.c	190;"	v	line:190	file:
+usbTPL	D:\USB_Book\USB_CDC_Host\usb_config.c	60;"	v	line:60
+validCommInterface	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1414;"	l	line:1414
+validDataInterface	D:\USB_Book\Microchip\USB\CDC Host Driver\usb_host_cdc.c	1415;"	l	line:1415
+wTotalLength	D:\USB_Book\Microchip\USB\usb_host.c	4590;"	l	line:4590

@@ -1,0 +1,551 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ALLOW_GLOBAL_VID_AND_PID	D:\USB_Book\Microchip\USB\usb_host.c	104;"	d	line:104	file:
+ALLOW_MULTIPLE_BULK_TRANSACTIONS_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	113;"	d	line:113	file:
+AN_state	D:\USB_Book\HIDHost2\HIDHost2.c	74;"	v	line:74
+AP_STATE	D:\USB_Book\HIDHost2\HIDHost2.c	37;"	t	line:37	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	144;"	v	line:144	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	150;"	v	line:150	file:
+BDT	D:\USB_Book\Microchip\USB\usb_host.c	157;"	v	line:157	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	146;"	d	line:146	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	152;"	d	line:152	file:
+BDT_IN::(&BDT[0])	D:\USB_Book\Microchip\USB\usb_host.c	159;"	d	line:159	file:
+BDT_IN_ODD::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	160;"	d	line:160	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	147;"	d	line:147	file:
+BDT_OUT::(&BDT[1])	D:\USB_Book\Microchip\USB\usb_host.c	153;"	d	line:153	file:
+BDT_OUT::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	161;"	d	line:161	file:
+BDT_OUT_ODD::(&BDT[2])	D:\USB_Book\Microchip\USB\usb_host.c	154;"	d	line:154	file:
+BDT_OUT_ODD::(&BDT[3])	D:\USB_Book\Microchip\USB\usb_host.c	162;"	d	line:162	file:
+BLACK::0x00	D:\USB_Book\HIDHost2\DALCD_Lib1.h	35;"	d	line:35
+BLUE::0x03	D:\USB_Book\HIDHost2\DALCD_Lib1.h	36;"	d	line:36
+Btn	D:\USB_Book\HIDHost2\HIDHost2.c	60;"	v	line:60
+Buffer	D:\USB_Book\HIDHost2\DALCD_Lib1.c	12;"	v	line:12
+Button	D:\USB_Book\HIDHost2\HIDHost2.c	65;"	v	line:65
+CYAN::0x1F	D:\USB_Book\HIDHost2\DALCD_Lib1.h	39;"	d	line:39
+CheckBtn	D:\USB_Book\HIDHost2\HIDHost2.c	404;"	f	line:404	signature:(int x, int y)
+CheckBtn	D:\USB_Book\HIDHost2\HIDHost2.c	47;"	p	line:47	file:	signature:(int x, int y)
+Class	D:\USB_Book\Microchip\USB\usb_host.c	4586;"	l	line:4586
+Clear	D:\USB_Book\HIDHost2\DALCD_Lib1.c	82;"	f	line:82	signature:(void)
+Clear	D:\USB_Book\HIDHost2\DALCD_Lib1.h	12;"	p	line:12	signature:(void)
+ClearBox	D:\USB_Book\HIDHost2\DALCD_Lib1.c	96;"	f	line:96	signature:(unsigned int color)
+ClearBox	D:\USB_Book\HIDHost2\DALCD_Lib1.h	13;"	p	line:13	signature:(unsigned int color)
+ClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	4589;"	l	line:4589
+DEMO_INITIALIZE	D:\USB_Book\HIDHost2\HIDHost2.c	27;"	e	line:27	file:
+DEVICE_CONNECTED	D:\USB_Book\HIDHost2\HIDHost2.c	29;"	e	line:29	file:
+DEVICE_NOT_CONNECTED	D:\USB_Book\HIDHost2\HIDHost2.c	28;"	e	line:28	file:
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3495;"	p	line:3495	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_READ, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+DataEventHandler	D:\USB_Book\Microchip\USB\usb_host.c	3594;"	p	line:3594	file:	signature:( usbDeviceInfo.deviceAddress, EVENT_DATA_ISOC_WRITE, ((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->buffers[((ISOCHRONOUS_DATA *)(pCurrentEndpoint->pUserData))->currentBufferUSB].pBuffer, pCurrentEndpoint->dataCount )
+Display_Menu	D:\USB_Book\HIDHost2\HIDHost2.c	367;"	f	line:367	signature:(void)
+Display_Menu	D:\USB_Book\HIDHost2\HIDHost2.c	46;"	p	line:46	file:	signature:(void)
+ErrorDriver	D:\USB_Book\HIDHost2\HIDHost2.c	58;"	v	line:58
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4517;"	p	line:4517	file:
+EventHandler	D:\USB_Book\Microchip\USB\usb_host.c	4524;"	p	line:4524	file:
+FALSE::0	D:\USB_Book\HIDHost2\DALCD_Lib1.h	26;"	d	line:26
+Flag	D:\USB_Book\HIDHost2\HIDHost2.c	60;"	v	line:60
+Font	D:\USB_Book\HIDHost2\ASCII16dot2.h	5;"	v	line:5
+Fosc::32	D:\USB_Book\HIDHost2\DALCD_Lib1.h	28;"	d	line:28
+GInit	D:\USB_Book\HIDHost2\DALCD_Lib1.c	20;"	f	line:20	signature:(void)
+GInit	D:\USB_Book\HIDHost2\DALCD_Lib1.h	8;"	p	line:8	signature:(void)
+GRAY::0x7F	D:\USB_Book\HIDHost2\DALCD_Lib1.h	43;"	d	line:43
+GREEN::0x1C	D:\USB_Book\HIDHost2\DALCD_Lib1.h	37;"	d	line:37
+GetAD	D:\USB_Book\HIDHost2\DALCD_Lib1.c	241;"	f	line:241	signature:(unsigned int chn)
+GetAD	D:\USB_Book\HIDHost2\DALCD_Lib1.h	22;"	p	line:22	signature:(unsigned int chn)
+GetInstructionClock::(GetSystemClock/2)	D:\USB_Book\HIDHost2\HardwareProfile.h	7;"	d	line:7
+GetPeripheralClock::(GetSystemClock)	D:\USB_Book\HIDHost2\HardwareProfile.h	6;"	d	line:6
+GetScreen	D:\USB_Book\HIDHost2\DALCD_Lib1.c	195;"	f	line:195	signature:(void)
+GetScreen	D:\USB_Book\HIDHost2\DALCD_Lib1.h	20;"	p	line:20	signature:(void)
+GetSystemClock::32000000UL	D:\USB_Book\HIDHost2\HardwareProfile.h	5;"	d	line:5
+HID_GET_POT_VALUE_REPORT	D:\USB_Book\HIDHost2\HIDHost2.c	33;"	e	line:33	file:
+HID_GET_POT_VALUE_REPORT_WAIT	D:\USB_Book\HIDHost2\HIDHost2.c	34;"	e	line:34	file:
+HID_GET_SWITCH_STATE_REPORT	D:\USB_Book\HIDHost2\HIDHost2.c	35;"	e	line:35	file:
+HID_GET_SWITCH_STATE_REPORT_WAIT	D:\USB_Book\HIDHost2\HIDHost2.c	36;"	e	line:36	file:
+HID_MAX_DATA_FIELD_SIZE::8	D:\USB_Book\HIDHost2\usb_config.h	72;"	d	line:72
+HID_SEND_OUT_REPORT	D:\USB_Book\HIDHost2\HIDHost2.c	31;"	e	line:31	file:
+HID_SEND_OUT_REPORT_WAIT	D:\USB_Book\HIDHost2\HIDHost2.c	32;"	e	line:32	file:
+HIDparserError	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	234;"	m	line:234	struct:_USB_HID_DEVICE_INFO	file:
+HSIZE::320	D:\USB_Book\HIDHost2\DALCD_Lib1.h	29;"	d	line:29
+ID	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	230;"	m	line:230	struct:_USB_HID_DEVICE_INFO	file:
+IDLE	D:\USB_Book\HIDHost2\HIDHost2.c	30;"	e	line:30	file:
+INPUT_PIN::1	D:\USB_Book\HIDHost2\HardwareProfile.h	10;"	d	line:10
+LED_state	D:\USB_Book\HIDHost2\HIDHost2.c	72;"	v	line:72
+MAGENTA::0xE3	D:\USB_Book\HIDHost2\DALCD_Lib1.h	41;"	d	line:41
+MARK_RESET_RECOVERY::(0x0E)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	191;"	d	line:191	file:
+MAX_ALLOWED_CURRENT::(500)	D:\USB_Book\HIDHost2\HIDHost2.c	40;"	d	line:40	file:
+MaxColum::20	D:\USB_Book\HIDHost2\DALCD_Lib1.h	32;"	d	line:32
+MaxLine::15	D:\USB_Book\HIDHost2\DALCD_Lib1.h	31;"	d	line:31
+MsgScrn	D:\USB_Book\HIDHost2\HIDHost2.c	68;"	v	line:68
+NEXT_STATE::0x0010	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	132;"	d	line:132	file:
+NEXT_SUBSTATE::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	133;"	d	line:133	file:
+NUM_TPL_ENTRIES::1	D:\USB_Book\HIDHost2\usb_config.h	61;"	d	line:61
+NumOfBytesRcvd	D:\USB_Book\HIDHost2\HIDHost2.c	59;"	v	line:59
+ONE_CONTROL_TRANSACTION_PER_FRAME	D:\USB_Book\Microchip\USB\usb_host.c	109;"	d	line:109	file:
+OUTPUT_PIN::0	D:\USB_Book\HIDHost2\HardwareProfile.h	11;"	d	line:11
+Ondo	D:\USB_Book\HIDHost2\HIDHost2.c	61;"	v	line:61
+Process	D:\USB_Book\HIDHost2\HIDHost2.c	156;"	f	line:156	signature:(void)
+Process	D:\USB_Book\HIDHost2\HIDHost2.c	45;"	p	line:45	file:	signature:(void)
+Protocol	D:\USB_Book\Microchip\USB\usb_host.c	4588;"	l	line:4588
+PutBox	D:\USB_Book\HIDHost2\DALCD_Lib1.c	142;"	f	line:142	signature:(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned int color)
+PutBox	D:\USB_Book\HIDHost2\DALCD_Lib1.h	19;"	p	line:19	signature:(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned int color)
+PutCha	D:\USB_Book\HIDHost2\DALCD_Lib1.c	107;"	f	line:107	signature:(unsigned int colum, unsigned int line, unsigned char ascii, unsigned char fgcolor, unsigned char bkcolor)
+PutCha	D:\USB_Book\HIDHost2\DALCD_Lib1.h	17;"	p	line:17	signature:(unsigned int colum, unsigned int line, unsigned char ascii, unsigned char fgcolor, unsigned char bkcolor)
+PutCmd	D:\USB_Book\HIDHost2\DALCD_Lib1.c	73;"	f	line:73	signature:(unsigned int low, unsigned int high)
+PutCmd	D:\USB_Book\HIDHost2\DALCD_Lib1.h	14;"	p	line:14	signature:(unsigned int low, unsigned int high)
+PutStr	D:\USB_Book\HIDHost2\DALCD_Lib1.c	122;"	f	line:122	signature:(unsigned int colum, unsigned int line, const unsigned char *mesg, unsigned char fgcolor, unsigned char bkcolor)
+PutStr	D:\USB_Book\HIDHost2\DALCD_Lib1.h	18;"	p	line:18	signature:(unsigned int colum, unsigned int line, const unsigned char *mesg, unsigned char fgcolor, unsigned char bkcolor)
+RED::0xE0	D:\USB_Book\HIDHost2\DALCD_Lib1.h	38;"	d	line:38
+SPIInit	D:\USB_Book\HIDHost2\DALCD_Lib1.c	157;"	f	line:157	signature:(void)
+SPIInit	D:\USB_Book\HIDHost2\DALCD_Lib1.h	9;"	p	line:9	signature:(void)
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	136;"	d	line:136	file:
+STATE_DETACHED::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	169;"	d	line:169	file:
+STATE_GET_REPORT_DSC::0x0020	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	143;"	d	line:143	file:
+STATE_HID_RESET_RECOVERY::0x0040	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	159;"	d	line:159	file:
+STATE_HOLDING::0x0009	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	182;"	d	line:182	file:
+STATE_HOLDING::0x0060	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	163;"	d	line:163	file:
+STATE_INITIALIZE_DEVICE::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	171;"	d	line:171	file:
+STATE_INITIALIZE_DEVICE::0x0010	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	138;"	d	line:138	file:
+STATE_MASK::0x00F0	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	129;"	d	line:129	file:
+STATE_PARSING_COMPLETE::0x0003	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	173;"	d	line:173	file:
+STATE_READ_REQ_WAIT::0x0005	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	176;"	d	line:176	file:
+STATE_RESET_COMPLETE::0x0008	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	180;"	d	line:180	file:
+STATE_RUNNING::0x0004	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	175;"	d	line:175	file:
+STATE_RUNNING::0x0030	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	150;"	d	line:150	file:
+STATE_WAIT_FOR_REPORT_DSC::0x0002	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	172;"	d	line:172	file:
+STATE_WAIT_FOR_RESET::0x0007	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	179;"	d	line:179	file:
+STATE_WRITE_REQ_WAIT::0x0006	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	177;"	d	line:177	file:
+SUBSTATE_DEVICE_ENUMERATED::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	140;"	d	line:140	file:
+SUBSTATE_GET_REPORT_DSC_COMPLETE::0x0002	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	146;"	d	line:146	file:
+SUBSTATE_MASK::0x000F	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	130;"	d	line:130	file:
+SUBSTATE_PARSE_REPORT_DSC::0x0003	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	147;"	d	line:147	file:
+SUBSTATE_PARSING_COMPLETE::0x0004	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	148;"	d	line:148	file:
+SUBSTATE_READ_REQ_DONE::0x0003	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	154;"	d	line:154	file:
+SUBSTATE_READ_REQ_WAIT::0x0002	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	153;"	d	line:153	file:
+SUBSTATE_SEND_GET_REPORT_DSC::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	144;"	d	line:144	file:
+SUBSTATE_SEND_READ_REQ::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	152;"	d	line:152	file:
+SUBSTATE_SEND_RESET::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	160;"	d	line:160	file:
+SUBSTATE_SEND_WRITE_REQ::0x0004	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	155;"	d	line:155	file:
+SUBSTATE_WAITING_FOR_REQ::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	151;"	d	line:151	file:
+SUBSTATE_WAIT_FOR_ENUMERATION::0x0000	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	139;"	d	line:139	file:
+SUBSTATE_WAIT_FOR_REPORT_DSC::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	145;"	d	line:145	file:
+SUBSTATE_WAIT_FOR_RESET::0x0001	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	161;"	d	line:161	file:
+SUBSTATE_WRITE_REQ_DONE::0x0006	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	157;"	d	line:157	file:
+SUBSTATE_WRITE_REQ_WAIT::0x0005	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	156;"	d	line:156	file:
+SW_state	D:\USB_Book\HIDHost2\HIDHost2.c	73;"	v	line:73
+SendSPI	D:\USB_Book\HIDHost2\DALCD_Lib1.c	180;"	f	line:180	signature:(unsigned char reg, unsigned int cmd)
+SendSPI	D:\USB_Book\HIDHost2\DALCD_Lib1.h	16;"	p	line:16	signature:(unsigned char reg, unsigned int cmd)
+SetupScreen	D:\USB_Book\HIDHost2\DALCD_Lib1.c	255;"	f	line:255	signature:(void)
+SetupScreen	D:\USB_Book\HIDHost2\DALCD_Lib1.h	21;"	p	line:21	signature:(void)
+State	D:\USB_Book\HIDHost2\HIDHost2.c	39;"	v	line:39
+SubClass	D:\USB_Book\Microchip\USB\usb_host.c	4587;"	l	line:4587
+TRUE::1	D:\USB_Book\HIDHost2\DALCD_Lib1.h	25;"	d	line:25
+U1STAT_ODD_MASK::0x04	D:\USB_Book\Microchip\USB\usb_host.c	5279;"	d	line:5279	file:
+U1STAT_TX_MASK::0x08	D:\USB_Book\Microchip\USB\usb_host.c	5278;"	d	line:5278	file:
+USBHID_ReportDecriptor_Dump	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1123;"	f	line:1123	signature:(void)
+USBHostClearEndpointErrors	D:\USB_Book\Microchip\USB\usb_host.c	229;"	f	line:229	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostDeviceSpecificClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	298;"	f	line:298	signature:( BYTE deviceAddress )
+USBHostDeviceStatus	D:\USB_Book\Microchip\USB\usb_host.c	342;"	f	line:342	signature:( BYTE deviceAddress )
+USBHostHIDDeviceDetect	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	376;"	f	line:376	signature:( BYTE deviceAddress )
+USBHostHIDDeviceStatus	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	426;"	f	line:426	signature:( BYTE deviceAddress )
+USBHostHIDEventHandler	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1540;"	f	line:1540	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USBHostHIDInitialize	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1881;"	f	line:1881	signature:( BYTE address, DWORD flags, BYTE clientDriverID )
+USBHostHIDResetDevice	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	527;"	f	line:527	signature:( BYTE deviceAddress )
+USBHostHIDResetDeviceWithWait	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	587;"	f	line:587	signature:( BYTE deviceAddress )
+USBHostHIDTasks	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	639;"	f	line:639	signature:( void )
+USBHostHIDTerminateTransfer	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	970;"	f	line:970	signature:( BYTE deviceAddress, BYTE direction, BYTE interfaceNum )
+USBHostHIDTransfer	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1038;"	f	line:1038	signature:( BYTE deviceAddress, BYTE direction, BYTE interfaceNum, WORD reportid, WORD size, BYTE *data)
+USBHostHIDTransferIsComplete	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1182;"	f	line:1182	signature:( BYTE deviceAddress, BYTE *errorCode, BYTE *byteCount )
+USBHostHID_ApiFindBit	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1248;"	f	line:1248	signature:(WORD usagePage,WORD usage,HIDReportTypeEnum type,BYTE* Report_ID, BYTE* Report_Length, BYTE* Start_Bit)
+USBHostHID_ApiFindValue	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1326;"	f	line:1326	signature:(WORD usagePage,WORD usage,HIDReportTypeEnum type,BYTE* Report_ID, BYTE* Report_Length,BYTE* Start_Bit, BYTE* Bit_Length)
+USBHostHID_ApiGetCurrentInterfaceNum	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1394;"	f	line:1394	signature:(void)
+USBHostHID_ApiImportData	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1426;"	f	line:1426	signature:(BYTE *report, WORD reportLength, HID_USER_DATA_SIZE *buffer, HID_DATA_DETAILS *pDataDetails)
+USBHostHID_HasUsage	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1030;"	f	line:1030	signature:(HID_REPORTITEM *reportItem,WORD usagePage, WORD usage,WORD *pindex,BYTE* count)
+USBHostInit	D:\USB_Book\Microchip\USB\usb_host.c	399;"	f	line:399	signature:( unsigned long flags )
+USBHostIsochronousBuffersCreate	D:\USB_Book\Microchip\USB\usb_host.c	465;"	f	line:465	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers, WORD bufferSize )
+USBHostIsochronousBuffersDestroy	D:\USB_Book\Microchip\USB\usb_host.c	519;"	f	line:519	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIsochronousBuffersReset	D:\USB_Book\Microchip\USB\usb_host.c	559;"	f	line:559	signature:( ISOCHRONOUS_DATA * isocData, BYTE numberOfBuffers )
+USBHostIssueDeviceRequest	D:\USB_Book\Microchip\USB\usb_host.c	634;"	f	line:634	signature:( BYTE deviceAddress, BYTE bmRequestType, BYTE bRequest, WORD wValue, WORD wIndex, WORD wLength, BYTE *data, BYTE dataDirection, BYTE clientDriverID )
+USBHostRead	D:\USB_Book\Microchip\USB\usb_host.c	803;"	f	line:803	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *pData, DWORD size )
+USBHostResetDevice	D:\USB_Book\Microchip\USB\usb_host.c	891;"	f	line:891	signature:( BYTE deviceAddress )
+USBHostResumeDevice	D:\USB_Book\Microchip\USB\usb_host.c	935;"	f	line:935	signature:( BYTE deviceAddress )
+USBHostSetDeviceConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	1013;"	f	line:1013	signature:( BYTE deviceAddress, BYTE configuration )
+USBHostSetNAKTimeout	D:\USB_Book\Microchip\USB\usb_host.c	1085;"	f	line:1085	signature:( BYTE deviceAddress, BYTE endpoint, WORD flags, WORD timeoutCount )
+USBHostShutdown	D:\USB_Book\Microchip\USB\usb_host.c	1132;"	f	line:1132	signature:( void )
+USBHostSuspendDevice	D:\USB_Book\Microchip\USB\usb_host.c	1209;"	f	line:1209	signature:( BYTE deviceAddress )
+USBHostTasks	D:\USB_Book\Microchip\USB\usb_host.c	1265;"	f	line:1265	signature:( void )
+USBHostTerminateTransfer	D:\USB_Book\Microchip\USB\usb_host.c	2472;"	f	line:2472	signature:( BYTE deviceAddress, BYTE endpoint )
+USBHostTransferIsComplete	D:\USB_Book\Microchip\USB\usb_host.c	2539;"	f	line:2539	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *errorCode, DWORD *byteCount )
+USBHostVbusEvent	D:\USB_Book\Microchip\USB\usb_host.c	2632;"	f	line:2632	signature:(USB_EVENT vbusEvent, BYTE hubAddress, BYTE portNumber)
+USBHostWrite	D:\USB_Book\Microchip\USB\usb_host.c	2709;"	f	line:2709	signature:( BYTE deviceAddress, BYTE endpoint, BYTE *data, DWORD size )
+USBInitialize::(x)	D:\USB_Book\HIDHost2\usb_config.h	86;"	d	line:86
+USBTasks::	D:\USB_Book\HIDHost2\usb_config.h	81;"	d	line:81
+USB_ApplicationEventHandler	D:\USB_Book\HIDHost2\HIDHost2.c	482;"	f	line:482	signature:( BYTE address, USB_EVENT event, void *data, DWORD size )
+USB_FREE::(ptr)free(ptr)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	280;"	d	line:280	file:
+USB_FREE::(ptr)free(ptr)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	92;"	d	line:92	file:
+USB_FREE::(ptr)free(ptr)	D:\USB_Book\Microchip\USB\usb_host.c	84;"	d	line:84	file:
+USB_FREE_AND_CLEAR::(ptr){USB_FREE(ptr);ptr=NULL;}	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	283;"	d	line:283	file:
+USB_FREE_AND_CLEAR::(ptr){USB_FREE(ptr);ptr=NULL;}	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	95;"	d	line:95	file:
+USB_FREE_AND_CLEAR::(ptr){USB_FREE(ptr);ptr=NULL;}	D:\USB_Book\Microchip\USB\usb_host.c	87;"	d	line:87	file:
+USB_HID_DEVICE_INFO	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	256;"	t	line:256	file:
+USB_HID_ENABLE_TRANSFER_EVENT	D:\USB_Book\HIDHost2\usb_config.h	73;"	d	line:73
+USB_HID_FEATURE_REPORT::(0x00)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	203;"	d	line:203	file:
+USB_HID_GET_IDLE::(0x02)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	195;"	d	line:195	file:
+USB_HID_GET_PROTOCOL::(0x03)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	196;"	d	line:196	file:
+USB_HID_GET_REPORT::(0x01)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	194;"	d	line:194	file:
+USB_HID_INPUT_REPORT::(0x01)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	201;"	d	line:201	file:
+USB_HID_INTERFACE_DETAILS	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	223;"	t	line:223	file:
+USB_HID_OUTPUT_REPORT::(0x02)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	202;"	d	line:202	file:
+USB_HID_RESET::(0xFF)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	190;"	d	line:190	file:
+USB_HID_SET_IDLE::(0x0A)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	198;"	d	line:198	file:
+USB_HID_SET_PROTOCOL::(0x0B)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	199;"	d	line:199	file:
+USB_HID_SET_REPORT::(0x09)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	197;"	d	line:197	file:
+USB_HOST_APP_EVENT_HANDLER::USB_ApplicationEventHandler	D:\USB_Book\HIDHost2\usb_config.h	67;"	d	line:67
+USB_INITIAL_VBUS_CURRENT::(100/2)	D:\USB_Book\HIDHost2\usb_config.h	65;"	d	line:65
+USB_INSERT_TIME::(250+1)	D:\USB_Book\HIDHost2\usb_config.h	66;"	d	line:66
+USB_MALLOC::(size)malloc(size)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	276;"	d	line:276	file:
+USB_MALLOC::(size)malloc(size)	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	88;"	d	line:88	file:
+USB_MALLOC::(size)malloc(size)	D:\USB_Book\Microchip\USB\usb_host.c	80;"	d	line:80	file:
+USB_MAX_HID_DEVICES::1	D:\USB_Book\HIDHost2\usb_config.h	71;"	d	line:71
+USB_MAX_HID_DEVICES::1	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	114;"	d	line:114	file:
+USB_NUM_CONTROL_NAKS::100	D:\USB_Book\HIDHost2\usb_config.h	62;"	d	line:62
+USB_NUM_INTERRUPT_NAKS::3	D:\USB_Book\HIDHost2\usb_config.h	64;"	d	line:64
+USB_PING_PONG_MODE	D:\USB_Book\Microchip\USB\usb_host.c	137;"	d	line:137	file:
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\HIDHost2\usb_config.h	57;"	d	line:57
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	D:\USB_Book\Microchip\USB\usb_host.c	138;"	d	line:138	file:
+USB_SUPPORT_HOST	D:\USB_Book\HIDHost2\usb_config.h	53;"	d	line:53
+USB_SUPPORT_INTERRUPT_TRANSFERS	D:\USB_Book\HIDHost2\usb_config.h	63;"	d	line:63
+USB_TRANSACTION_RETRY_ATTEMPTS::20	D:\USB_Book\Microchip\USB\usb_host.c	126;"	d	line:126	file:
+VSIZE::240	D:\USB_Book\HIDHost2\DALCD_Lib1.h	30;"	d	line:30
+Volt	D:\USB_Book\HIDHost2\HIDHost2.c	61;"	v	line:61
+WHITE::0xFF	D:\USB_Book\HIDHost2\DALCD_Lib1.h	42;"	d	line:42
+WriteSPI	D:\USB_Book\HIDHost2\DALCD_Lib1.c	169;"	f	line:169	signature:(unsigned char data)
+WriteSPI	D:\USB_Book\HIDHost2\DALCD_Lib1.h	15;"	p	line:15	signature:(unsigned char data)
+Xold	D:\USB_Book\HIDHost2\DALCD_Lib1.c	15;"	v	line:15
+Xset	D:\USB_Book\HIDHost2\DALCD_Lib1.c	15;"	v	line:15
+YELLOW::0xFC	D:\USB_Book\HIDHost2\DALCD_Lib1.h	40;"	d	line:40
+Yold	D:\USB_Book\HIDHost2\DALCD_Lib1.c	15;"	v	line:15
+Yset	D:\USB_Book\HIDHost2\DALCD_Lib1.c	15;"	v	line:15
+_HARDWARE_PROFILE_H_	D:\USB_Book\HIDHost2\HardwareProfile.h	2;"	d	line:2
+_T3Interrupt	D:\USB_Book\HIDHost2\HIDHost2.c	127;"	f	line:127	signature:(void)
+_USB1Interrupt	D:\USB_Book\Microchip\USB\usb_host.c	5282;"	f	line:5282	signature:( void )
+_USBHostHID_ConvertDataToSigned	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	107;"	p	line:107	file:	signature:(HID_ITEM_INFO* item)
+_USBHostHID_ConvertDataToSigned	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	981;"	f	line:981	file:	signature:(HID_ITEM_INFO* item)
+_USBHostHID_FreeRptDecriptorDataMem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	2159;"	f	line:2159	signature:(BYTE deviceAddress)
+_USBHostHID_FreeRptDecriptorDataMem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	266;"	p	line:266	file:	signature:(BYTE deviceAddress)
+_USBHostHID_InitDeviceRptInfo	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	103;"	p	line:103	file:	signature:(void)
+_USBHostHID_InitDeviceRptInfo	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	750;"	f	line:750	file:	signature:(void)
+_USBHostHID_LockDevice::(x){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	288;"	d	line:288	file:
+_USBHostHID_Parse_Collection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	104;"	p	line:104	file:	signature:(HID_ITEM_INFO* ptrItem)
+_USBHostHID_Parse_Collection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	808;"	f	line:808	file:	signature:(HID_ITEM_INFO* ptrItem)
+_USBHostHID_Parse_EndCollection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	105;"	p	line:105	file:	signature:(HID_ITEM_INFO* ptrItem)
+_USBHostHID_Parse_EndCollection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	857;"	f	line:857	file:	signature:(HID_ITEM_INFO* ptrItem)
+_USBHostHID_Parse_Report	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	348;"	p	line:348	file:	signature:(BYTE*, WORD, WORD, BYTE)
+_USBHostHID_Parse_Report	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	148;"	f	line:148	signature:(BYTE* hidReportDescriptor , WORD lengthOfDescriptor , WORD pollRate, BYTE interfaceNum)
+_USBHostHID_Parse_ReportType	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	106;"	p	line:106	file:	signature:(HID_ITEM_INFO* item)
+_USBHostHID_Parse_ReportType	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	896;"	f	line:896	file:	signature:(HID_ITEM_INFO* item)
+_USBHostHID_ResetStateJump	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	2210;"	f	line:2210	signature:( BYTE i )
+_USBHostHID_ResetStateJump	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	267;"	p	line:267	file:	signature:( BYTE i )
+_USBHostHID_SetNextState::{deviceInfoHID[i].state=(devic	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	292;"	d	line:292	file:
+_USBHostHID_SetNextSubState::{deviceInfoHID[i].state+=NEXT_	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	293;"	d	line:293	file:
+_USBHostHID_TerminateReadTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	297;"	d	line:297	file:
+_USBHostHID_TerminateReadTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	308;"	d	line:308	file:
+_USBHostHID_TerminateReadTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	318;"	d	line:318	file:
+_USBHostHID_TerminateWriteTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	301;"	d	line:301	file:
+_USBHostHID_TerminateWriteTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	313;"	d	line:313	file:
+_USBHostHID_TerminateWriteTransfer::(error){	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	322;"	d	line:322	file:
+_USB_CONFIG_VERSION_BUILD::0	D:\USB_Book\HIDHost2\usb_config.h	49;"	d	line:49
+_USB_CONFIG_VERSION_DOT::1	D:\USB_Book\HIDHost2\usb_config.h	48;"	d	line:48
+_USB_CONFIG_VERSION_MAJOR::2	D:\USB_Book\HIDHost2\usb_config.h	46;"	d	line:46
+_USB_CONFIG_VERSION_MINOR::7	D:\USB_Book\HIDHost2\usb_config.h	47;"	d	line:47
+_USB_CheckCommandAndEnumerationAttempts	D:\USB_Book\Microchip\USB\usb_host.c	2803;"	f	line:2803	signature:( void )
+_USB_FindClassDriver	D:\USB_Book\Microchip\USB\usb_host.c	2869;"	f	line:2869	signature:( BYTE bClass, BYTE bSubClass, BYTE bProtocol, BYTE *pbClientDrv )
+_USB_FindDeviceLevelClientDriver	D:\USB_Book\Microchip\USB\usb_host.c	2923;"	f	line:2923	signature:( void )
+_USB_FindEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3012;"	f	line:3012	signature:( BYTE endpoint )
+_USB_FindNextToken	D:\USB_Book\Microchip\USB\usb_host.c	3111;"	f	line:3111	signature:( void )
+_USB_FindServiceEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4027;"	f	line:4027	signature:( BYTE transferType )
+_USB_FreeConfigMemory	D:\USB_Book\Microchip\USB\usb_host.c	4153;"	f	line:4153	signature:( void )
+_USB_FreeMemory	D:\USB_Book\Microchip\USB\usb_host.c	4206;"	f	line:4206	signature:( void )
+_USB_HID_DEVICE_INFO	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	228;"	s	line:228	file:
+_USB_HID_INTERFACE_DETAILS	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	214;"	s	line:214	file:
+_USB_InitControlRead	D:\USB_Book\Microchip\USB\usb_host.c	4261;"	f	line:4261	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitControlWrite	D:\USB_Book\Microchip\USB\usb_host.c	4314;"	f	line:4314	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pControlData, WORD controlSize, BYTE *pData, WORD size )
+_USB_InitRead	D:\USB_Book\Microchip\USB\usb_host.c	4383;"	f	line:4383	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_InitWrite	D:\USB_Book\Microchip\USB\usb_host.c	4450;"	f	line:4450	signature:( USB_ENDPOINT_INFO *pEndpoint, BYTE *pData, WORD size )
+_USB_NotifyClients	D:\USB_Book\Microchip\USB\usb_host.c	4506;"	f	line:4506	signature:( BYTE address, USB_EVENT event, void *data, unsigned int size )
+_USB_ParseConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	4576;"	f	line:4576	signature:( void )
+_USB_ResetDATA0	D:\USB_Book\Microchip\USB\usb_host.c	4914;"	f	line:4914	signature:( BYTE endpoint )
+_USB_SendToken	D:\USB_Book\Microchip\USB\usb_host.c	4974;"	f	line:4974	signature:( BYTE endpoint, BYTE tokenType )
+_USB_SetBDT	D:\USB_Book\Microchip\USB\usb_host.c	5049;"	f	line:5049	signature:( BYTE token )
+_USB_TransferInProgress	D:\USB_Book\Microchip\USB\usb_host.c	5205;"	f	line:5205	signature:( void )
+_count	D:\USB_Book\HIDHost2\DALCD_Lib1.c	14;"	v	line:14
+_usb_config_h_	D:\USB_Book\HIDHost2\usb_config.h	33;"	d	line:33
+assignMem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	153;"	l	line:153
+bAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4578;"	l	line:4578
+bDescriptorType	D:\USB_Book\Microchip\USB\usb_host.c	4579;"	l	line:4579
+bInterfaceNumber	D:\USB_Book\Microchip\USB\usb_host.c	4580;"	l	line:4580
+bLength	D:\USB_Book\Microchip\USB\usb_host.c	4581;"	l	line:4581
+bMaxPower	D:\USB_Book\Microchip\USB\usb_host.c	4584;"	l	line:4584
+bNumEndpoints	D:\USB_Book\Microchip\USB\usb_host.c	4582;"	l	line:4582
+bNumInterfaces	D:\USB_Book\Microchip\USB\usb_host.c	4583;"	l	line:4583
+bfClearDataIN	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	241;"	m	line:241	struct:_USB_HID_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfClearDataOUT	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	242;"	m	line:242	struct:_USB_HID_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfDirection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	239;"	m	line:239	struct:_USB_HID_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bfReset	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	240;"	m	line:240	struct:_USB_HID_DEVICE_INFO::<anonymous>::<anonymous>	file:
+bits	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	900;"	l	line:900
+breportDataCollected	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	243;"	m	line:243	struct:_USB_HID_DEVICE_INFO::<anonymous>::<anonymous>	file:
+btn	D:\USB_Book\HIDHost2\HIDHost2.c	406;"	l	line:406
+byteCount	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	589;"	l	line:589
+byteCount	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	642;"	l	line:642
+bytesTransferred	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	253;"	m	line:253	struct:_USB_HID_DEVICE_INFO	file:
+collectionLocal	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	155;"	l	line:155
+copyU1STATbits	D:\USB_Book\Microchip\USB\usb_host.c	5487;"	l	line:5487
+count	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1255;"	l	line:1255
+count	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1332;"	l	line:1332
+countConfigurations	D:\USB_Book\Microchip\USB\usb_host.c	170;"	v	line:170	file:
+countsLeft	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1037;"	l	line:1037
+currentAlternateSetting	D:\USB_Book\Microchip\USB\usb_host.c	4592;"	l	line:4592
+currentConfiguration	D:\USB_Book\Microchip\USB\usb_host.c	4593;"	l	line:4593
+currentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4594;"	l	line:4594
+currentInterface	D:\USB_Book\Microchip\USB\usb_host.c	4595;"	l	line:4595
+currentPacketSize	D:\USB_Book\Microchip\USB\usb_host.c	5051;"	l	line:5051
+currentRptDescPtr	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	152;"	l	line:152
+data	D:\USB_Book\HIDHost2\HIDHost2.c	55;"	v	line:55
+data	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1428;"	l	line:1428
+data	D:\USB_Book\Microchip\USB\usb_host.c	3169;"	l	line:3169
+data	D:\USB_Book\Microchip\USB\usb_host.c	3193;"	l	line:3193
+data	D:\USB_Book\Microchip\USB\usb_host.c	3256;"	l	line:3256
+data	D:\USB_Book\Microchip\USB\usb_host.c	3280;"	l	line:3280
+data	D:\USB_Book\Microchip\USB\usb_host.c	3343;"	l	line:3343
+data	D:\USB_Book\Microchip\USB\usb_host.c	3367;"	l	line:3367
+data	D:\USB_Book\Microchip\USB\usb_host.c	3475;"	l	line:3475
+data	D:\USB_Book\Microchip\USB\usb_host.c	3515;"	l	line:3515
+data	D:\USB_Book\Microchip\USB\usb_host.c	3574;"	l	line:3574
+data	D:\USB_Book\Microchip\USB\usb_host.c	3613;"	l	line:3613
+data	D:\USB_Book\Microchip\USB\usb_host.c	3685;"	l	line:3685
+data	D:\USB_Book\Microchip\USB\usb_host.c	3709;"	l	line:3709
+data	D:\USB_Book\Microchip\USB\usb_host.c	3754;"	l	line:3754
+data	D:\USB_Book\Microchip\USB\usb_host.c	3778;"	l	line:3778
+data	D:\USB_Book\Microchip\USB\usb_host.c	3854;"	l	line:3854
+data	D:\USB_Book\Microchip\USB\usb_host.c	3878;"	l	line:3878
+data	D:\USB_Book\Microchip\USB\usb_host.c	3917;"	l	line:3917
+data	D:\USB_Book\Microchip\USB\usb_host.c	3941;"	l	line:3941
+dataByte	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	173;"	l	line:173
+dataByte	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	983;"	l	line:983
+delay_ms	D:\USB_Book\HIDHost2\DALCD_Lib1.c	282;"	f	line:282	signature:(int msec)
+delay_ms	D:\USB_Book\HIDHost2\DALCD_Lib1.h	10;"	p	line:10	signature:(int msec)
+delay_us	D:\USB_Book\HIDHost2\DALCD_Lib1.c	273;"	f	line:273	signature:(int usec)
+delay_us	D:\USB_Book\HIDHost2\DALCD_Lib1.h	11;"	p	line:11	signature:(int usec)
+descriptor	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1883;"	l	line:1883
+device	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1889;"	l	line:1889
+deviceInfoHID	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	332;"	v	line:332	file:
+deviceRptInfo	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	115;"	v	line:115
+device_adc_pot_value	D:\USB_Book\HIDHost2\HIDHost2.c	51;"	v	line:51
+device_send_command	D:\USB_Book\HIDHost2\HIDHost2.c	54;"	v	line:54
+device_switch_state	D:\USB_Book\HIDHost2\HIDHost2.c	53;"	v	line:53
+displayOnce	D:\USB_Book\HIDHost2\HIDHost2.c	56;"	v	line:56
+display_data	D:\USB_Book\HIDHost2\HIDHost2.c	69;"	v	line:69
+dot	D:\USB_Book\HIDHost2\DALCD_Lib1.c	83;"	l	line:83
+driverSupported	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	247;"	m	line:247	struct:_USB_HID_DEVICE_INFO	file:
+dumy	D:\USB_Book\HIDHost2\DALCD_Lib1.c	170;"	l	line:170
+dumy	D:\USB_Book\HIDHost2\HIDHost2.c	443;"	l	line:443
+endpoint	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	973;"	l	line:973
+endpointDATA	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	255;"	m	line:255	struct:_USB_HID_DEVICE_INFO	file:
+endpointIN	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1887;"	l	line:1887
+endpointIN	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	219;"	m	line:219	struct:_USB_HID_INTERFACE_DETAILS	file:
+endpointMaxDataSize	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	218;"	m	line:218	struct:_USB_HID_INTERFACE_DETAILS	file:
+endpointOUT	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1888;"	l	line:1888
+endpointOUT	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	220;"	m	line:220	struct:_USB_HID_INTERFACE_DETAILS	file:
+endpointPollInterval	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	222;"	m	line:222	struct:_USB_HID_INTERFACE_DETAILS	file:
+ep	D:\USB_Book\Microchip\USB\usb_host.c	1087;"	l	line:1087
+ep	D:\USB_Book\Microchip\USB\usb_host.c	231;"	l	line:231
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2474;"	l	line:2474
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2542;"	l	line:2542
+ep	D:\USB_Book\Microchip\USB\usb_host.c	2711;"	l	line:2711
+ep	D:\USB_Book\Microchip\USB\usb_host.c	805;"	l	line:805
+error	D:\USB_Book\Microchip\USB\usb_host.c	4585;"	l	line:4585
+errorCode	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1041;"	l	line:1041
+errorCode	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	2212;"	l	line:2212
+errorCode	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	248;"	m	line:248	struct:_USB_HID_DEVICE_INFO	file:
+errorCode	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	590;"	l	line:590
+errorCode	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	643;"	l	line:643
+error_counter_hid	D:\USB_Book\HIDHost2\HIDHost2.c	50;"	v	line:50
+extendMask	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1431;"	l	line:1431
+flags	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	246;"	m	line:246	struct:_USB_HID_DEVICE_INFO	file:
+ftostring	D:\USB_Book\HIDHost2\HIDHost2.c	43;"	p	line:43	file:	signature:(int seisu, int shousu, float data, unsigned char *buffer)
+ftostring	D:\USB_Book\HIDHost2\HIDHost2.c	440;"	f	line:440	signature:(int seisu, int shousu, float data, unsigned char *buffer)
+header	D:\USB_Book\HIDHost2\HIDHost2.c	361;"	v	line:361
+header2	D:\USB_Book\HIDHost2\HIDHost2.c	363;"	v	line:363
+header3	D:\USB_Book\HIDHost2\HIDHost2.c	364;"	v	line:364
+hidUsageItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1032;"	l	line:1032
+hid_interface_number	D:\USB_Book\HIDHost2\HIDHost2.c	52;"	v	line:52
+i	D:\USB_Book\HIDHost2\DALCD_Lib1.c	274;"	l	line:274
+i	D:\USB_Book\HIDHost2\DALCD_Lib1.c	283;"	l	line:283
+i	D:\USB_Book\HIDHost2\HIDHost2.c	368;"	l	line:368
+i	D:\USB_Book\HIDHost2\HIDHost2.c	406;"	l	line:406
+i	D:\USB_Book\HIDHost2\HIDHost2.c	427;"	l	line:427
+i	D:\USB_Book\HIDHost2\HIDHost2.c	442;"	l	line:442
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1040;"	l	line:1040
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1184;"	l	line:1184
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1436;"	l	line:1436
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1542;"	l	line:1542
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1886;"	l	line:1886
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	2162;"	l	line:2162
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	378;"	l	line:378
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	428;"	l	line:428
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	529;"	l	line:529
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	644;"	l	line:644
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	972;"	l	line:972
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1038;"	l	line:1038
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1130;"	l	line:1130
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	172;"	l	line:172
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	811;"	l	line:811
+i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	860;"	l	line:860
+i	D:\USB_Book\Microchip\USB\usb_host.c	2871;"	l	line:2871
+i	D:\USB_Book\Microchip\USB\usb_host.c	2925;"	l	line:2925
+i	D:\USB_Book\Microchip\USB\usb_host.c	467;"	l	line:467
+i	D:\USB_Book\Microchip\USB\usb_host.c	521;"	l	line:521
+i	D:\USB_Book\Microchip\USB\usb_host.c	561;"	l	line:561
+iR	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1251;"	l	line:1251
+iR	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1331;"	l	line:1331
+illegalState	D:\USB_Book\Microchip\USB\usb_host.c	3113;"	l	line:3113
+index	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1252;"	l	line:1252
+index	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1329;"	l	line:1329
+index	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	984;"	l	line:984
+index	D:\USB_Book\Microchip\USB\usb_host.c	4596;"	l	line:4596
+interface	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	252;"	m	line:252	struct:_USB_HID_DEVICE_INFO	file:
+interfaceNumber	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	221;"	m	line:221	struct:_USB_HID_INTERFACE_DETAILS	file:
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1303;"	l	line:1303
+interrupt_mask	D:\USB_Book\Microchip\USB\usb_host.c	1305;"	l	line:1305
+item	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	170;"	l	line:170
+item	D:\USB_Book\Microchip\USB\usb_host.c	1301;"	l	line:1301
+itemListPtrs	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	116;"	v	line:116
+itostring	D:\USB_Book\HIDHost2\HIDHost2.c	425;"	f	line:425	signature:(char digit, unsigned int data, unsigned char *buffer)
+itostring	D:\USB_Book\HIDHost2\HIDHost2.c	44;"	p	line:44	file:	signature:(char digit, unsigned int data, unsigned char *buffer)
+j	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1129;"	l	line:1129
+j	D:\USB_Book\Microchip\USB\usb_host.c	468;"	l	line:468
+lastByte	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1435;"	l	line:1435
+lcollection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1125;"	l	line:1125
+lcollection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	810;"	l	line:810
+lcollection	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	859;"	l	line:859
+ldataSize	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	174;"	l	line:174
+ldesignatorItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	163;"	l	line:163
+len_to_be_parsed	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	151;"	l	line:151
+lhidError	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	168;"	l	line:168
+line	D:\USB_Book\HIDHost2\DALCD_Lib1.c	83;"	l	line:83
+lreport	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1126;"	l	line:1126
+lreport	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	159;"	l	line:159
+lreport	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	899;"	l	line:899
+lreportIndex	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	160;"	l	line:160
+lreportItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1127;"	l	line:1127
+lreportItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	898;"	l	line:898
+lstringItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	164;"	l	line:164
+lusageItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1128;"	l	line:1128
+lusageItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	165;"	l	line:165
+mLED_1::LATDbits.LATD2	D:\USB_Book\HIDHost2\HardwareProfile.h	14;"	d	line:14
+mLED_1_Off::mLED_1=0;	D:\USB_Book\HIDHost2\HardwareProfile.h	19;"	d	line:19
+mLED_1_On::mLED_1=1;	D:\USB_Book\HIDHost2\HardwareProfile.h	16;"	d	line:16
+mLED_1_Toggle::mLED_1=!mLED_1;	D:\USB_Book\HIDHost2\HardwareProfile.h	22;"	d	line:22
+mLED_2::LATDbits.LATD6	D:\USB_Book\HIDHost2\HardwareProfile.h	15;"	d	line:15
+mLED_2_Off::mLED_2=0;	D:\USB_Book\HIDHost2\HardwareProfile.h	20;"	d	line:20
+mLED_2_On::mLED_2=1;	D:\USB_Book\HIDHost2\HardwareProfile.h	17;"	d	line:17
+mLED_2_Toggle::mLED_2=!mLED_2;	D:\USB_Book\HIDHost2\HardwareProfile.h	23;"	d	line:23
+main	D:\USB_Book\HIDHost2\HIDHost2.c	77;"	f	line:77	signature:(void)
+mask	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1430;"	l	line:1430
+newEndpointInfo	D:\USB_Book\Microchip\USB\usb_host.c	4597;"	l	line:4597
+newInterfaceInfo	D:\USB_Book\Microchip\USB\usb_host.c	4598;"	l	line:4598
+newSettingInfo	D:\USB_Book\Microchip\USB\usb_host.c	4599;"	l	line:4599
+next	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	216;"	m	line:216	struct:_USB_HID_INTERFACE_DETAILS	file:
+noOfInterfaces	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	251;"	m	line:251	struct:_USB_HID_DEVICE_INFO	file:
+numCommandTries	D:\USB_Book\Microchip\USB\usb_host.c	171;"	v	line:171	file:
+numEnumerationTries	D:\USB_Book\Microchip\USB\usb_host.c	172;"	v	line:172	file:
+numTimerInterrupts	D:\USB_Book\Microchip\USB\usb_host.c	173;"	v	line:173	file:
+numofinterfaces	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1890;"	l	line:1890
+onPage	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1035;"	l	line:1035
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5052;"	l	line:5052
+pBDT	D:\USB_Book\Microchip\USB\usb_host.c	5494;"	l	line:5494
+pCurrInterfaceDetails	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	334;"	v	line:334	file:
+pCurrentConfigurationDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	175;"	v	line:175
+pCurrentConfigurationNode	D:\USB_Book\Microchip\USB\usb_host.c	1267;"	l	line:1267	file:
+pCurrentEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	174;"	v	line:174	file:
+pCurrentInterface	D:\USB_Book\Microchip\USB\usb_host.c	1268;"	l	line:1268
+pDesc	D:\USB_Book\Microchip\USB\usb_host.c	2926;"	l	line:2926
+pDeviceDescriptor	D:\USB_Book\Microchip\USB\usb_host.c	176;"	v	line:176
+pEP0Data	D:\USB_Book\Microchip\USB\usb_host.c	177;"	v	line:177	file:
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	3014;"	l	line:3014
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4029;"	l	line:4029
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4916;"	l	line:4916
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5207;"	l	line:5207
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	5751;"	l	line:5751
+pEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	667;"	l	line:667
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	3015;"	l	line:3015
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4030;"	l	line:4030
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4508;"	l	line:4508
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	4921;"	l	line:4921
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5208;"	l	line:5208
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	5752;"	l	line:5752
+pInterface	D:\USB_Book\Microchip\USB\usb_host.c	668;"	l	line:668
+pInterfaceDetails	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	333;"	v	line:333	file:
+pNewInterfaceDetails	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1892;"	l	line:1892
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	4922;"	l	line:4922
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	5209;"	l	line:5209
+pSetting	D:\USB_Book\Microchip\USB\usb_host.c	669;"	l	line:669
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	1269;"	l	line:1269
+pTemp	D:\USB_Book\Microchip\USB\usb_host.c	4208;"	l	line:4208
+pTempEndpoint	D:\USB_Book\Microchip\USB\usb_host.c	4157;"	l	line:4157
+pTempInterface	D:\USB_Book\Microchip\USB\usb_host.c	4155;"	l	line:4155
+pTempInterfaceList	D:\USB_Book\Microchip\USB\usb_host.c	4601;"	l	line:4601
+pTempSetting	D:\USB_Book\Microchip\USB\usb_host.c	4156;"	l	line:4156
+packetSize	D:\USB_Book\Microchip\USB\usb_host.c	5493;"	l	line:5493
+parsedDataMem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	117;"	v	line:117
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1144;"	l	line:1144
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	1271;"	l	line:1271
+powerRequest	D:\USB_Book\Microchip\USB\usb_host.c	4600;"	l	line:4600
+prevHostState	D:\USB_Book\Microchip\USB\usb_host.c	181;"	v	line:181	file:
+ptempInterface	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	2161;"	l	line:2161
+ptr	D:\USB_Book\HIDHost2\DALCD_Lib1.c	13;"	v	line:13
+ptr	D:\USB_Book\Microchip\USB\usb_host.c	4602;"	l	line:4602
+reportId	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	231;"	m	line:231	struct:_USB_HID_DEVICE_INFO	file:
+reportIndex	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1253;"	l	line:1253
+reportIndex	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1330;"	l	line:1330
+reportItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1254;"	l	line:1254
+reportItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1333;"	l	line:1333
+reportLocal	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	156;"	l	line:156
+reportSize	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	254;"	m	line:254	struct:_USB_HID_DEVICE_INFO	file:
+returnState	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	250;"	m	line:250	struct:_USB_HID_DEVICE_INFO	file:
+rptDescriptor	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	233;"	m	line:233	struct:_USB_HID_DEVICE_INFO	file:
+rptDescriptorfound	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1885;"	l	line:1885
+signBit	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1429;"	l	line:1429
+sizeOfRptDescriptor	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	217;"	m	line:217	struct:_USB_HID_INTERFACE_DETAILS	file:
+sizeRequired	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	150;"	l	line:150
+start	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1432;"	l	line:1432
+startBit	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1434;"	l	line:1434
+startBit	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1471;"	l	line:1471
+startByte	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1433;"	l	line:1433
+state	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	249;"	m	line:249	struct:_USB_HID_DEVICE_INFO	file:
+status	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	429;"	l	line:429
+temp	D:\USB_Book\HIDHost2\DALCD_Lib1.c	143;"	l	line:143
+temp	D:\USB_Book\HIDHost2\HIDHost2.c	57;"	v	line:57
+temp	D:\USB_Book\Microchip\USB\usb_host.c	1270;"	l	line:1270
+temp	D:\USB_Book\Microchip\USB\usb_host.c	4976;"	l	line:4976
+temp_i	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1891;"	l	line:1891
+transferComplete	D:\USB_Book\Microchip\USB\usb_host.c	2543;"	l	line:2543
+transferEventData	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	337;"	v	line:337	file:
+usageIndex	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1033;"	l	line:1033
+usageItem	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1036;"	l	line:1036
+usages	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid_parser.c	1034;"	l	line:1034
+usbBusInfo	D:\USB_Book\Microchip\USB\usb_host.c	185;"	v	line:185	file:
+usbClientDrvTable	D:\USB_Book\HIDHost2\usb_config.c	41;"	v	line:41
+usbDeviceInfo	D:\USB_Book\Microchip\USB\usb_host.c	186;"	v	line:186	file:
+usbEventQueue	D:\USB_Book\Microchip\USB\usb_host.c	188;"	v	line:188	file:
+usbHostState	D:\USB_Book\Microchip\USB\usb_host.c	178;"	v	line:178	file:
+usbOverrideHostState	D:\USB_Book\Microchip\USB\usb_host.c	179;"	v	line:179
+usbRootHubInfo	D:\USB_Book\Microchip\USB\usb_host.c	190;"	v	line:190	file:
+usbTPL	D:\USB_Book\HIDHost2\usb_config.c	54;"	v	line:54
+userData	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	232;"	m	line:232	struct:_USB_HID_DEVICE_INFO	file:
+val	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	245;"	m	line:245	union:_USB_HID_DEVICE_INFO::<anonymous>	file:
+validConfiguration	D:\USB_Book\Microchip\USB\HID Host Driver\usb_host_hid.c	1884;"	l	line:1884
+wTotalLength	D:\USB_Book\Microchip\USB\usb_host.c	4590;"	l	line:4590
