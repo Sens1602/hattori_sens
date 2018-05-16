@@ -1,0 +1,2 @@
+Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\usb_descriptors.c 12 : unable to locate 'usb.h'
+Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\usb_descriptors.c 13 : unable to locate 'usb_function_cdc.h'
