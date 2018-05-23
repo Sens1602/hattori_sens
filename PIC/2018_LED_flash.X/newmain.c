@@ -1,12 +1,12 @@
 /********************************************************************
- ƒpƒ‹ƒXˆó‰Â‰ñ˜H(Š®¬”Å)
+ ãƒ‘ãƒ«ã‚¹å°å¯å›è·¯(å®Œæˆç‰ˆ)
 ********************************************************************/
-/**ƒwƒbƒ_ƒtƒ@ƒCƒ‹*************/
+/**ãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«*************/
 #include "usb_function_cdc.h"
 #include "GenericTypeDefs.h"
 #include "Compiler.h"
 #include "usb_config.h"
-//#include "usb_device.h"
+#include "usb_device.h"
 #include "usb.h"
 #include "HardwareProfile.h"
 #include "p18f2553.h"
@@ -20,14 +20,14 @@
 
 #define Nop() {_asm nop _endasm}
 
-/**ƒRƒ“ƒtƒBƒOƒŒ[ƒVƒ‡ƒ“***********************/
-//pragmaQl@http://chitose6thplant.web.fc2.com/pic18f/2550/pragma_config2550.htm
-//I2CQl@http://www.maroon.dti.ne.jp/koten-kairo/works/dsPIC/i2c3.html
+/**ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³***********************/
+//pragmaå‚è€ƒã€€http://chitose6thplant.web.fc2.com/pic18f/2550/pragma_config2550.htm
+//I2Cå‚è€ƒã€€http://www.maroon.dti.ne.jp/koten-kairo/works/dsPIC/i2c3.html
 #pragma config FOSC = HSPLL_HS    
-#pragma config PLLDIV = 2               //ƒZƒ‰ƒƒbƒN8MHz
-#pragma config CPUDIV = OSC1_PLL2       //2•ªü‚ÅCPU48MHz
-#pragma config VREGEN = ON              //USB—pƒŒƒMƒ…ƒŒ[ƒ^ON
-#pragma config USBDIV =2                //2•ªü‚ÅUSBƒNƒƒbƒN¶¬
+#pragma config PLLDIV = 2               //ã‚»ãƒ©ãƒ­ãƒƒã‚¯8MHz
+#pragma config CPUDIV = OSC1_PLL2       //2åˆ†å‘¨ã§CPU48MHz
+#pragma config VREGEN = ON              //USBç”¨ãƒ¬ã‚®ãƒ¥ãƒ¬ãƒ¼ã‚¿ON
+#pragma config USBDIV =2                //2åˆ†å‘¨ã§USBã‚¯ãƒ­ãƒƒã‚¯ç”Ÿæˆ
 #pragma config FCMEN = OFF
 #pragma config IESO = OFF
 #pragma config PWRT = ON
@@ -39,10 +39,10 @@
 #pragma config LVP = OFF
 #pragma config XINST = OFF
 #pragma config DEBUG = OFF
-#pragma config PBADEN = ON       //ƒ|[ƒgB‚ğƒfƒtƒHƒ‹ƒg‚ÅƒfƒWƒ^ƒ‹
-//#pragma config ICPRT = OFF              //H
+#pragma config PBADEN = ON       //ãƒãƒ¼ãƒˆBã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ãƒ‡ã‚¸ã‚¿ãƒ«
+//#pragma config ICPRT = OFF              //ï¼Ÿ
 
-/** ƒOƒ[ƒoƒ‹•Ï”’è‹` ************/
+/** ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å®šç¾© ************/
 #pragma udata
 unsigned char USB_Out_Buf[CDC_DATA_OUT_EP_SIZE];
 unsigned char USB_In_Buf[CDC_DATA_IN_EP_SIZE];
@@ -63,7 +63,7 @@ int state = 0;
 unsigned int counter3;
 int dummy;
 
-/**ŠÖ”ƒvƒƒgƒ^ƒCƒsƒ“ƒOéŒ¾ *******************/
+/**é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ”ãƒ³ã‚°å®£è¨€ *******************/
 void YourHighPriorityISRCode();
 void YourLowPriorityISRCode();
 void USB_CDC_Process();
@@ -72,7 +72,7 @@ void Delay_ms(int tm);
 void Delay_us(int tm);
 
 
-/*** Š„‚è‚İƒxƒNƒ^’è‹`***/
+/*** å‰²ã‚Šè¾¼ã¿ãƒ™ã‚¯ã‚¿å®šç¾©***/
 #pragma code REMAPPED_HIGH_INTERRUPT_VECTOR = 0x08
 void Remapped_High_ISR (void){
      _asm goto YourHighPriorityISRCode _endasm
@@ -83,7 +83,7 @@ void Remapped_Low_ISR (void){
 }
 	
 #pragma code
-/****Š„‚è‚İˆ—ŠÖ”***/
+/****å‰²ã‚Šè¾¼ã¿å‡¦ç†é–¢æ•°***/
 #pragma interrupt YourHighPriorityISRCode
 void YourHighPriorityISRCode(){    
         #if defined(USB_INTERRUPT)
@@ -96,35 +96,35 @@ void YourLowPriorityISRCode()
 }	
 #pragma code
 
-/*********** ƒƒCƒ“ŠÖ” **************************/
+/*********** ãƒ¡ã‚¤ãƒ³é–¢æ•° **************************/
 void main(void){  
 
     counter2 = 0;
     counter3 = 0;
-    //”­MˆÀ’è‘Ò‚¿
+    //ç™ºä¿¡å®‰å®šå¾…ã¡
     while(counter2 < 1000){
         //Nop();
         counter2++;
     }
     counter2 = 0;
 
-    //ƒsƒ“İ’è
-  	TRISA = 0b00000000;				//RAAADC—p“ü—Í
-	TRISB = 0b00110000;				//
+    //ãƒ”ãƒ³è¨­å®š
+  	TRISA = 0b00000000;				//RAã€ADCç”¨å…¥åŠ›
+	TRISB = 0b00010000;				//
 	TRISC = 0b00000000;				//
 
-    //USBƒoƒbƒtƒ@ƒNƒŠƒA
+    //USBãƒãƒƒãƒ•ã‚¡ã‚¯ãƒªã‚¢
 	for (i=0; i<sizeof(USB_Out_Buf); i++){
 		USB_In_Buf[i] = 0;
         USB_Out_Buf[i] = 0;
     }
-	lastTransmission = 0;		// ƒnƒ“ƒhƒ‹ƒNƒŠƒA
-    USBDeviceInit();			// USB‰Šú‰»
-    USBDeviceAttach();			// USBŠ„‚è‚İ‹–‰Â
+	lastTransmission = 0;		// ãƒãƒ³ãƒ‰ãƒ«ã‚¯ãƒªã‚¢
+    USBDeviceInit();			// USBåˆæœŸåŒ–
+    USBDeviceAttach();			// USBå‰²ã‚Šè¾¼ã¿è¨±å¯
       
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-            USBDeviceAttach();// USBŠ„‚è‚İ‹–‰Â				
+            USBDeviceAttach();// USBå‰²ã‚Šè¾¼ã¿è¨±å¯				
         if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)) {
             USB_CDC_Process();
         } 
@@ -182,7 +182,7 @@ void USB_CDC_Process(){
     }else if(state == 3){
         if(USBUSARTIsTxTrfReady()){
             if(cflg == 0){
-                //ƒtƒH[ƒ}ƒbƒg
+                //ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
                 if(USB_In_Buf[0] < '0' ) cflg = 2;
                 if(USB_In_Buf[0] > '9' ) cflg = 2;
                 if(USB_In_Buf[1] < '0' ) cflg = 2;
@@ -395,81 +395,82 @@ void USB_CDC_Process(){
     CDCTxService();
     
     if(ssflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;     
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;     
             Delay_s(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_s(lt);
 
     }else if(smsflg){
 
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_s(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_ms(lt);
             
     }else if(susflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_s(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_us(lt);
             
     }else if(mssflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_ms(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_s(lt);
         
     }else if(msmsflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_ms(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_ms(lt);
         
     }else if(msusflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_ms(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_us(lt);
         
            
     }else if(ussflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_us(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_s(lt);
         
     }else if(usmsflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 0;
             Delay_us(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 1;
             Delay_ms(lt);        
         
     }else if(ususflg){
-            PORTCbits.RC6 = 1;
-            PORTCbits.RC7 = 0;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 1;
             Delay_us(ht);
-            PORTCbits.RC6 = 0;
-            PORTCbits.RC7 = 1;
+            PORTBbits.RB5 = 1;
+            PORTAbits.RA1 = 1;
             Delay_us(lt);        
         
     }else{
-        PORTCbits.RC6 = 0;
+            PORTBbits.RB5 = 0;
+            PORTAbits.RA1 = 0;
     }
 }
 

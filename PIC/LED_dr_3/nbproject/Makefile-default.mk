@@ -99,7 +99,7 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o.d 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descriptors.o   usb_descriptors.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descriptors.o   usb_descriptors.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -107,7 +107,7 @@ ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o: ../i_PSD_program/Microchip/USB/
 	@${MKDIR} "${OBJECTDIR}/_ext/2106573380" 
 	@${RM} ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o   "../i_PSD_program/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o   "../i_PSD_program/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -115,7 +115,7 @@ ${OBJECTDIR}/_ext/1848812489/usb_device.o: ../i_PSD_program/Microchip/USB/usb_de
 	@${MKDIR} "${OBJECTDIR}/_ext/1848812489" 
 	@${RM} ${OBJECTDIR}/_ext/1848812489/usb_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1848812489/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1848812489/usb_device.o   ../i_PSD_program/Microchip/USB/usb_device.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1848812489/usb_device.o   ../i_PSD_program/Microchip/USB/usb_device.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1848812489/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1848812489/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -123,7 +123,7 @@ ${OBJECTDIR}/main_CDC_I2C.o: main_CDC_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main_CDC_I2C.o.d 
 	@${RM} ${OBJECTDIR}/main_CDC_I2C.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main_CDC_I2C.o   main_CDC_I2C.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main_CDC_I2C.o   main_CDC_I2C.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/main_CDC_I2C.o 
 	@${FIXDEPS} "${OBJECTDIR}/main_CDC_I2C.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -132,7 +132,7 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o.d 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descriptors.o   usb_descriptors.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descriptors.o   usb_descriptors.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -140,7 +140,7 @@ ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o: ../i_PSD_program/Microchip/USB/
 	@${MKDIR} "${OBJECTDIR}/_ext/2106573380" 
 	@${RM} ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o   "../i_PSD_program/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o   "../i_PSD_program/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/2106573380/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -148,7 +148,7 @@ ${OBJECTDIR}/_ext/1848812489/usb_device.o: ../i_PSD_program/Microchip/USB/usb_de
 	@${MKDIR} "${OBJECTDIR}/_ext/1848812489" 
 	@${RM} ${OBJECTDIR}/_ext/1848812489/usb_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1848812489/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1848812489/usb_device.o   ../i_PSD_program/Microchip/USB/usb_device.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1848812489/usb_device.o   ../i_PSD_program/Microchip/USB/usb_device.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1848812489/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1848812489/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -156,7 +156,7 @@ ${OBJECTDIR}/main_CDC_I2C.o: main_CDC_I2C.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main_CDC_I2C.o.d 
 	@${RM} ${OBJECTDIR}/main_CDC_I2C.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"../../../../../Apps/Microchip/Microchip/Include/USB" -I"../../../../../Apps/Microchip/Microchip/Include" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main_CDC_I2C.o   main_CDC_I2C.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main_CDC_I2C.o   main_CDC_I2C.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/main_CDC_I2C.o 
 	@${FIXDEPS} "${OBJECTDIR}/main_CDC_I2C.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -167,11 +167,11 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" -l"C:/Program Files (x86)/Microchip/mplabc18/v3.47/lib"  -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" -l"C:/Program Files (x86)/Microchip/mplabc18/v3.47/lib" -l"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/lib"  -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" -l"C:/Program Files (x86)/Microchip/mplabc18/v3.47/lib"  -z__MPLAB_BUILD=1  -u_CRUNTIME -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" -l"C:/Program Files (x86)/Microchip/mplabc18/v3.47/lib" -l"../../../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/lib"  -z__MPLAB_BUILD=1  -u_CRUNTIME -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/LED_dr_3.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 endif
 
 

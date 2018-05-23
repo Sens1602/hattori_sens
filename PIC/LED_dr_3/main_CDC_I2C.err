@@ -1,4 +1,2 @@
 Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\main_CDC_I2C.c 5 : unable to locate 'usb_function_cdc.h'
-Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\main_CDC_I2C.c 7 : unable to locate 'Compiler.h'
-Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\main_CDC_I2C.c 9 : unable to locate 'usb_device.h'
 Error[1027] C:\Users\Hattori\Documents\github\hattori_sens\PIC\LED_dr_3\main_CDC_I2C.c 10 : unable to locate 'usb.h'

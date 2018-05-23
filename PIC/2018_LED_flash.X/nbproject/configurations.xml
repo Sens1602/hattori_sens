@@ -4,10 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>HardwareProfile.h</itemPath>
       <itemPath>usb_config.h</itemPath>
-      <itemPath>../i_PSD_program/Microchip/Include/USB/usb_function_cdc.h</itemPath>
-      <itemPath>../i_PSD_program/Microchip/Include/USB/usb.h</itemPath>
+      <itemPath>HardwareProfile.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,10 +14,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>newmain.c</itemPath>
       <itemPath>usb_descriptors.c</itemPath>
-      <itemPath>../i_PSD_program/Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
-      <itemPath>../i_PSD_program/Microchip/USB/usb_device.c</itemPath>
-      <itemPath>main_CDC_I2C.c</itemPath>
+      <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
+      <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -28,10 +26,8 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>../../Microchip/USB</Elem>
-    <Elem>../../Microchip/Include/USB</Elem>
     <Elem>.</Elem>
-    <Elem>../../../../Downloads</Elem>
+    <Elem>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -89,7 +85,7 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="..\..\..\..\..\..\..\Program Files (x86)\Microchip\mplabc18\v3.47\h;C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB"/>
+                  value="C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include\USB;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -97,18 +93,10 @@
         <property key="verbose" value="false"/>
         <property key="warning-level" value="2"/>
       </C18>
-      <C18-AS>
-        <property key="cross.reference.file" value=""/>
-        <property key="default.radix" value="HEX"/>
-        <property key="enable.case.sensitivity" value="true"/>
-        <property key="hex.output.format" value="INHX32"/>
-        <property key="preprocessor.macros" value=""/>
-        <property key="warning.level" value="0"/>
-      </C18-AS>
       <C18-LD>
         <property key="cod-file" value="false"/>
         <property key="extra-lib-directories"
-                  value="C:\Program Files (x86)\Microchip\mplabc18\v3.47\lib;..\..\..\..\..\..\..\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
+                  value="..\..\..\..\..\..\..\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </C18-LD>
