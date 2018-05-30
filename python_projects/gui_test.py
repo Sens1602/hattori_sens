@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1493, 993)
+        self.centralWidget = QtWidgets.QWidget(MainWindow)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.centralWidget.sizePolicy().hasHeightForWidth())
+        self.centralWidget.setSizePolicy(sizePolicy)
+        self.centralWidget.setObjectName("centralWidget")
+        self.splitter = QtWidgets.QSplitter(self.centralWidget)
+        self.splitter.setGeometry(QtCore.QRect(0, 0, 1481, 941))
+        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setObjectName("splitter")
+        self.treeWidget = QtWidgets.QTreeWidget(self.splitter)
+        self.treeWidget.setAutoScrollMargin(22)
+        self.treeWidget.setObjectName("treeWidget")
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
+        item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
+        self.tabWidget = QtWidgets.QTabWidget(self.splitter)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.tabWidget.addTab(self.tab_2, "")
+        MainWindow.setCentralWidget(self.centralWidget)
+        self.mainToolBar = QtWidgets.QToolBar(MainWindow)
+        self.mainToolBar.setObjectName("mainToolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.mainToolBar)
+        self.statusBar = QtWidgets.QStatusBar(MainWindow)
+        self.statusBar.setObjectName("statusBar")
+        MainWindow.setStatusBar(self.statusBar)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 1493, 26))
+        self.menuBar.setObjectName("menuBar")
+        self.menukanopero = QtWidgets.QMenu(self.menuBar)
+        self.menukanopero.setObjectName("menukanopero")
+        MainWindow.setMenuBar(self.menuBar)
+        self.menuBar.addAction(self.menukanopero.menuAction())
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(1)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "KHpsd"))
+        self.treeWidget.headerItem().setText(0, _translate("MainWindow", "VX1"))
+        self.treeWidget.headerItem().setText(1, _translate("MainWindow", "VX2"))
+        self.treeWidget.headerItem().setText(2, _translate("MainWindow", "VY1"))
+        self.treeWidget.headerItem().setText(3, _translate("MainWindow", "VY2"))
+        self.treeWidget.headerItem().setText(4, _translate("MainWindow", "X"))
+        self.treeWidget.headerItem().setText(5, _translate("MainWindow", "Y"))
+        __sortingEnabled = self.treeWidget.isSortingEnabled()
+        self.treeWidget.setSortingEnabled(False)
+        self.treeWidget.topLevelItem(0).setText(0, _translate("MainWindow", "1"))
+        self.treeWidget.topLevelItem(0).setText(1, _translate("MainWindow", "2"))
+        self.treeWidget.topLevelItem(0).setText(2, _translate("MainWindow", "3"))
+        self.treeWidget.topLevelItem(0).setText(3, _translate("MainWindow", "4"))
+        self.treeWidget.topLevelItem(0).setText(4, _translate("MainWindow", "5"))
+        self.treeWidget.topLevelItem(0).setText(5, _translate("MainWindow", "6"))
+        self.treeWidget.topLevelItem(1).setText(0, _translate("MainWindow", "1"))
+        self.treeWidget.topLevelItem(1).setText(1, _translate("MainWindow", "2"))
+        self.treeWidget.topLevelItem(1).setText(2, _translate("MainWindow", "3"))
+        self.treeWidget.topLevelItem(1).setText(3, _translate("MainWindow", "4"))
+        self.treeWidget.topLevelItem(1).setText(4, _translate("MainWindow", "5"))
+        self.treeWidget.topLevelItem(1).setText(5, _translate("MainWindow", "6"))
+        self.treeWidget.topLevelItem(2).setText(0, _translate("MainWindow", "1"))
+        self.treeWidget.topLevelItem(2).setText(1, _translate("MainWindow", "2"))
+        self.treeWidget.topLevelItem(2).setText(2, _translate("MainWindow", "3"))
+        self.treeWidget.topLevelItem(2).setText(3, _translate("MainWindow", "4"))
+        self.treeWidget.topLevelItem(2).setText(4, _translate("MainWindow", "5"))
+        self.treeWidget.topLevelItem(2).setText(5, _translate("MainWindow", "6"))
+        self.treeWidget.setSortingEnabled(__sortingEnabled)
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "For terminal outputs"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Relative story displacement"))
+        self.menukanopero.setTitle(_translate("MainWindow", "kanopero"))
+
