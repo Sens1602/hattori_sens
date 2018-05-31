@@ -6,102 +6,108 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1490</width>
-    <height>997</height>
+    <width>1545</width>
+    <height>1025</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QSplitter" name="splitter">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1481</width>
-      <height>941</height>
+      <width>1531</width>
+      <height>971</height>
      </rect>
     </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <widget class="QTreeWidget" name="treeWidget">
-     <column>
-      <property name="text">
-       <string>VX1</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>VX2</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>VY1</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>VY2</string>
-      </property>
-     </column>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
-      <property name="text">
-       <string>1</string>
-      </property>
-      <property name="text">
-       <string>2</string>
-      </property>
-      <property name="text">
-       <string>3</string>
-      </property>
-      <property name="text">
-       <string>4</string>
-      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QTreeWidget" name="treeWidget">
+        <column>
+         <property name="text">
+          <string>VX1</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>VX2</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>VY1</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>VY2</string>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
      </item>
-     <item>
-      <property name="text">
-       <string>1</string>
-      </property>
-      <property name="text">
-       <string>2</string>
-      </property>
-      <property name="text">
-       <string>3</string>
-      </property>
-      <property name="text">
-       <string>4</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>1</string>
-      </property>
-      <property name="text">
-       <string>2</string>
-      </property>
-      <property name="text">
-       <string>3</string>
-      </property>
-      <property name="text">
-       <string>4</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QTabWidget" name="tabWidget">
-     <widget class="QWidget" name="tab">
-      <attribute name="title">
-       <string>Tab 1</string>
-      </attribute>
-     </widget>
-     <widget class="QWidget" name="tab_2">
-      <attribute name="title">
-       <string>Tab 2</string>
-      </attribute>
-     </widget>
-    </widget>
+    </layout>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -118,8 +124,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1490</width>
-     <height>26</height>
+     <width>1545</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menukanopero">

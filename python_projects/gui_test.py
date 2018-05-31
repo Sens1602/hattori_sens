@@ -7,6 +7,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5 import NavigationToolbar2QT as NavigationToolbar
+import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
+import numpy as np
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -52,6 +57,18 @@ class Ui_MainWindow(object):
         MainWindow.setMenuBar(self.menuBar)
         self.menuBar.addAction(self.menukanopero.menuAction())
 
+        #　追記
+        layout_main = QtWidgets.QHBoxLayout()
+        layout_main.addWidget(self.splitter)
+        self.centralWidget.setLayout(layout_main)
+
+        self.glaph = PlotCanvas(None, width=5, height=5)
+        #navi = NavigationToolbar(self.glaph, self)
+        layout_glaph = QtWidgets.QVBoxLayout()
+        layout_glaph.addWidget(self.glaph)
+        #layout_glaph.addWidget(navi)
+        self.tab.setLayout(layout_glaph)
+
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -90,3 +107,106 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Relative story displacement"))
         self.menukanopero.setTitle(_translate("MainWindow", "kanopero"))
 
+class PlotCanvas(FigureCanvas):
+
+    def __init__(self, parent=None, width=10, height=8, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+
+        FigureCanvas.__init__(self, fig)
+        self.setParent(parent)
+
+        FigureCanvas.setSizePolicy(self,
+                                   QtWidgets.QSizePolicy.Expanding,
+                                   QtWidgets.QSizePolicy.Expanding)
+        FigureCanvas.updateGeometry(self)
+        self.plot_init()
+
+    def plot_init(self):
+        self.dt = 0.05
+        self.t = np.arange(0, 10000, self.dt)
+        self.steps = len(self.t)
+        self.x = -1.6 * np.ones(self.steps)
+        self.y = 0 * np.ones(self.steps)
+        self.z = 0 * np.ones(self.steps)
+        self.m = 0 * np.ones(self.steps)
+        self.h = 0 * np.ones(self.steps)
+        self.ica = 0 * np.ones(self.steps)
+
+        self.a = 1
+        self.b = 3.3
+        self.c = 1
+        self.d = 5
+        self.r = 0.01
+        self.s = 4
+        self.i = 0
+        self.xr = -2.5
+        self.gcmp = 0
+        self.delay = 0
+
+        self.ax = self.figure.add_subplot(211)
+        self.ax.set_title('N0')
+        plt.title('Hindmarsh-Rose model')
+        self.ax2 = self.figure.add_subplot(212)
+
+        self.tmp_a = self.a
+        self.tmp_b = self.b
+        self.tmp_c = self.c
+        self.tmp_d = self.d
+        self.tmp_r = self.r
+        self.tmp_s = self.s
+        self.tmp_xr = self.xr
+        self.tmp_i = self.i
+        self.tmp_gcmp = self.gcmp
+        self.tmp_delay = self.delay
+
+        self.plot(self.a, self.b, self.c, self.d, self.r, self.s, self.xr,
+                  self.i, self.gcmp, self.delay)
+
+    def plot(self, a, b, c, d, r, s, xr, i, gcmp, delay):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+        self.r = r
+        self.s = s
+        self.xr = xr
+        self.i = i
+        self.gcmp = gcmp
+        self.delay = delay
+        self.n = 0
+        self.iext = np.zeros(self.steps)
+        for j in range(int(500 / self.dt), int(2000 / self.dt)):
+            self.iext[j] = i
+
+        for i in range(0, self.steps - 1):
+            self.ica[i] = (self.m[i] ** 2) * self.h[i]
+            self.k1x = (self.y[i] - self.a * self.x[i] ** 3 + self.b * self.x[i] ** 2 -
+                        self.z[i] + self.iext[i] + self.gcmp * self.ica[i] +
+                        self.n)
+
+            self.k1y = (self.c - self.d * self.x[i] ** 2 - self.y[i])
+            self.k1z = (self.r * (self.s * (self.x[i] - self.xr) - self.z[i]))
+
+            self.m_inf = 1 / (1 + np.exp(-(self.x[i] + 1.5) / 0.25))
+            self.h_inf = 1 / (1 + np.exp(-(self.x[i] + 2.3) / 0.17))
+            self.t_m = 0.612 + (1 / (np.exp(-(self.x[i] + 4) / 0.5) + np.exp((self.x[i] + 0.42) / 0.5))) * 20
+            if self.x[i] > -2.1:
+                self.t_h = 28 + (np.exp(-(self.x[i] + 0.6) / 0.26)) * 20
+            else:
+                self.t_h = (np.exp((self.x[i] + 15) / 2.2)) * 20
+
+            self.dm = -1 * (self.m[i] - self.m_inf) / self.t_m
+            self.dh = -1 * (self.h[i] - self.h_inf) / self.t_h
+            self.dn = -0.5 * self.n + np.random.randn() * self.delay
+
+            self.x[i + 1] = self.x[i] + self.k1x * self.dt
+            self.y[i + 1] = self.y[i] + self.k1y * self.dt
+            self.z[i + 1] = self.z[i] + self.k1z * self.dt
+            self.m[i + 1] = self.m[i] + self.dm * self.dt
+            self.h[i + 1] = self.h[i] + self.dh * self.dt
+            self.n += (self.dn * self.dt)
+
+        self.line, = self.ax.plot(self.t, self.x)
+        self.line2, = self.ax2.plot(self.t, self.ica)
+
+        self.draw()
