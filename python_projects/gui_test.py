@@ -42,6 +42,7 @@ class Ui_MainWindow(object):
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.tabWidget.addTab(self.tab, "")
+        self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.tabWidget.addTab(self.tab_2, "")
@@ -64,8 +65,12 @@ class Ui_MainWindow(object):
         layout_main = QtWidgets.QHBoxLayout()
         layout_main.addWidget(self.splitter)
         self.centralWidget.setLayout(layout_main)
-
+        #　追記
         self.glaph = PlotCanvas(None, width=5, height=5)
+        self.t = [0 for i in range(100)]
+        self.vx1 = [0 for i in range(100)]
+        self.time = 0
+        self.line, = self.glaph.ax.plot(self.t, self.vx1)
         #navi = NavigationToolbar(self.glaph, self)
         layout_glaph = QtWidgets.QVBoxLayout()
         layout_glaph.addWidget(self.glaph)
@@ -76,31 +81,56 @@ class Ui_MainWindow(object):
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        self.serial_thread = threading.Thread(target=self.serial_connect)
-        self.serial_thread.start()
+        #self.serial_thread = threading.Thread(target=self.serial_monitor)
+        #self.serial_thread.start()
+
+        #　追記
+        self.timer = QtCore.QTimer()
+        self.timer.timeout.connect(self.serial_monitor)
+        self.timer.start(50)
 
 
-    def serial_connect(self):
+    def serial_monitor(self):
         ser = sr.Serial("COM2", 9600)
-        while(1):
-            data_b = ser.read(9)
-            print(data_b)
-            bytes_list = list(data_b)
+        data_b = ser.read(9)
+        print(data_b)
+        bytes_list = list(data_b)
+        self.line.remove()
 
-            raw_vx1 = bytes_list[0]*256+bytes_list[1]
-            raw_vx2 = bytes_list[2]*256+bytes_list[3]
-            raw_vy1 = bytes_list[4]*256+bytes_list[5]
-            raw_vy2 = bytes_list[6]*256+bytes_list[7]
-            vx1 = 5 * raw_vx1 / 4096
-            vx2 = 5 * raw_vx2 / 4096
-            vy1 = 5 * raw_vy1 / 4096
-            vy2 = 5 * raw_vy2 / 4096
-            x = ((vx2+vy1) - (vx1+vy2))/(vx1+vx2+vy1+vy2)
-            y = ((vx2+vy2) - (vx1+vy1))/(vx1+vx2+vy1+vy2)
 
-            data_set = [vx1, vx2, vy1, vy2, x, y]
-            print(data_set)
-            sleep(0.01)
+        raw_vx1 = bytes_list[0]*256+bytes_list[1]
+        raw_vx2 = bytes_list[2]*256+bytes_list[3]
+        raw_vy1 = bytes_list[4]*256+bytes_list[5]
+        raw_vy2 = bytes_list[6]*256+bytes_list[7]
+        vx1 = 5 * raw_vx1 / 4096
+        vx2 = 5 * raw_vx2 / 4096
+        vy1 = 5 * raw_vy1 / 4096
+        vy2 = 5 * raw_vy2 / 4096
+        x = ((vx2+vy1) - (vx1+vy2))/(vx1+vx2+vy1+vy2)
+        y = ((vx2+vy2) - (vx1+vy1))/(vx1+vx2+vy1+vy2)
+
+        data_set = [vx1, vx2, vy1, vy2, x, y]
+        print(data_set)
+
+        self.treeWidget.topLevelItem(0).setText(0, str(vx1))
+        self.treeWidget.topLevelItem(0).setText(1, str(vx2))
+        self.treeWidget.topLevelItem(0).setText(2, str(vy1))
+        self.treeWidget.topLevelItem(0).setText(3, str(vy2))
+        self.treeWidget.topLevelItem(0).setText(4, str(x))
+        self.treeWidget.topLevelItem(0).setText(5, str(y))
+
+        print(self.t)
+        self.time += 1
+        self.t.append(self.time)
+        self.t.pop(0)
+        self.vx1.append(vx1)
+        self.vx1.pop(0)
+
+        self.line, = self.glaph.ax.plot(self.t, self.vx1)
+        self.glaph.ax.set_xlim(self.t[0], self.t[99])
+        plt.draw()
+
+        plt.pause(0.1)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -151,91 +181,11 @@ class PlotCanvas(FigureCanvas):
         self.plot_init()
 
     def plot_init(self):
-        self.dt = 0.05
-        self.t = np.arange(0, 10000, self.dt)
-        self.steps = len(self.t)
-        self.x = -1.6 * np.ones(self.steps)
-        self.y = 0 * np.ones(self.steps)
-        self.z = 0 * np.ones(self.steps)
-        self.m = 0 * np.ones(self.steps)
-        self.h = 0 * np.ones(self.steps)
-        self.ica = 0 * np.ones(self.steps)
 
-        self.a = 1
-        self.b = 3.3
-        self.c = 1
-        self.d = 5
-        self.r = 0.01
-        self.s = 4
-        self.i = 0
-        self.xr = -2.5
-        self.gcmp = 0
-        self.delay = 0
 
         self.ax = self.figure.add_subplot(211)
-        self.ax.set_title('N0')
+        self.ax.set_title('VX1')
         plt.title('Hindmarsh-Rose model')
         self.ax2 = self.figure.add_subplot(212)
-
-        self.tmp_a = self.a
-        self.tmp_b = self.b
-        self.tmp_c = self.c
-        self.tmp_d = self.d
-        self.tmp_r = self.r
-        self.tmp_s = self.s
-        self.tmp_xr = self.xr
-        self.tmp_i = self.i
-        self.tmp_gcmp = self.gcmp
-        self.tmp_delay = self.delay
-
-        self.plot(self.a, self.b, self.c, self.d, self.r, self.s, self.xr,
-                  self.i, self.gcmp, self.delay)
-
-    def plot(self, a, b, c, d, r, s, xr, i, gcmp, delay):
-        self.a = a
-        self.b = b
-        self.c = c
-        self.d = d
-        self.r = r
-        self.s = s
-        self.xr = xr
-        self.i = i
-        self.gcmp = gcmp
-        self.delay = delay
-        self.n = 0
-        self.iext = np.zeros(self.steps)
-        for j in range(int(500 / self.dt), int(2000 / self.dt)):
-            self.iext[j] = i
-
-        for i in range(0, self.steps - 1):
-            self.ica[i] = (self.m[i] ** 2) * self.h[i]
-            self.k1x = (self.y[i] - self.a * self.x[i] ** 3 + self.b * self.x[i] ** 2 -
-                        self.z[i] + self.iext[i] + self.gcmp * self.ica[i] +
-                        self.n)
-
-            self.k1y = (self.c - self.d * self.x[i] ** 2 - self.y[i])
-            self.k1z = (self.r * (self.s * (self.x[i] - self.xr) - self.z[i]))
-
-            self.m_inf = 1 / (1 + np.exp(-(self.x[i] + 1.5) / 0.25))
-            self.h_inf = 1 / (1 + np.exp(-(self.x[i] + 2.3) / 0.17))
-            self.t_m = 0.612 + (1 / (np.exp(-(self.x[i] + 4) / 0.5) + np.exp((self.x[i] + 0.42) / 0.5))) * 20
-            if self.x[i] > -2.1:
-                self.t_h = 28 + (np.exp(-(self.x[i] + 0.6) / 0.26)) * 20
-            else:
-                self.t_h = (np.exp((self.x[i] + 15) / 2.2)) * 20
-
-            self.dm = -1 * (self.m[i] - self.m_inf) / self.t_m
-            self.dh = -1 * (self.h[i] - self.h_inf) / self.t_h
-            self.dn = -0.5 * self.n + np.random.randn() * self.delay
-
-            self.x[i + 1] = self.x[i] + self.k1x * self.dt
-            self.y[i + 1] = self.y[i] + self.k1y * self.dt
-            self.z[i + 1] = self.z[i] + self.k1z * self.dt
-            self.m[i + 1] = self.m[i] + self.dm * self.dt
-            self.h[i + 1] = self.h[i] + self.dh * self.dt
-            self.n += (self.dn * self.dt)
-
-        self.line, = self.ax.plot(self.t, self.x)
-        self.line2, = self.ax2.plot(self.t, self.ica)
-
+        self.ax2.set_title('VX2')
         self.draw()
