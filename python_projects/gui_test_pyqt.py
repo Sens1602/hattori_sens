@@ -71,43 +71,67 @@ class Ui_MainWindow(object):
 
         #　glaph
         self.counter = 0
+        self.tree_counter = 0
         self.times = np.arange(0, 1000)
         self.vx1 = np.zeros(len(self.times))
         self.vx2 = np.zeros(len(self.times))
         self.vy1 = np.zeros(len(self.times))
         self.vy2 = np.zeros(len(self.times))
 
-        self.glaph = pg.GraphicsWindow(title="kanopero")
-        self.p1 = self.glaph.addPlot(title="Vx1")
-        self.glaph.nextRow()
-        self.p2 = self.glaph.addPlot(title="Vx2")
-        self.glaph.nextRow()
-        self.p3 = self.glaph.addPlot(title="Vx3")
-        self.glaph.nextRow()
-        self.p4 = self.glaph.addPlot(title="Vx4")
+        # four terminal voltage
+        self.glaph_tab = pg.GraphicsWindow(title="four terminal voltage")
+        self.p1 = self.glaph_tab.addPlot(title="Vx1")
+        self.glaph_tab.nextRow()
+        self.p2 = self.glaph_tab.addPlot(title="Vx2")
+        self.glaph_tab.nextRow()
+        self.p3 = self.glaph_tab.addPlot(title="Vx3")
+        self.glaph_tab.nextRow()
+        self.p4 = self.glaph_tab.addPlot(title="Vx4")
 
         self.curve1 = self.p1.plot(self.times, self.vx1)
         self.curve2 = self.p2.plot(self.times, self.vx2)
         self.curve3 = self.p3.plot(self.times, self.vy1)
         self.curve4 = self.p4.plot(self.times, self.vy2)
 
-        layout_glaph = QtWidgets.QVBoxLayout()
-        layout_glaph.addWidget(self.glaph)
-        self.tab.setLayout(layout_glaph)
+        # top line
+        self.p1_vline = pg.InfiniteLine(angle=90, movable=False)
+        self.p2_vline = pg.InfiniteLine(angle=90, movable=False)
+        self.p3_vline = pg.InfiniteLine(angle=90, movable=False)
+        self.p4_vline = pg.InfiniteLine(angle=90, movable=False)
+        self.p1.addItem(self.p1_vline, ignoreBounds=True)
+        self.p2.addItem(self.p2_vline, ignoreBounds=True)
+        self.p3.addItem(self.p3_vline, ignoreBounds=True)
+        self.p4.addItem(self.p4_vline, ignoreBounds=True)
+
+        layout_glaph_tab = QtWidgets.QVBoxLayout()
+        layout_glaph_tab.addWidget(self.glaph_tab)
+        self.tab.setLayout(layout_glaph_tab)
+
+        # relative story displacement
+        self.glaph_tab2 = pg.GraphicsWindow(title="relative story displacement")
+        self.p0 = self.glaph_tab2.addPlot(title="X-Y")
+        self.p0.showGrid(x=True, y=True)
+
+
+        self.curve0 = self.p0.plot([0], [0])
+
+        layout_glaph_tab2 = QtWidgets.QVBoxLayout()
+        layout_glaph_tab2.addWidget(self.glaph_tab2)
+        self.tab_2.setLayout(layout_glaph_tab2)
+
+        # serial communication
+        self.ser = sr.Serial("COM2", 9600)
+        self.timer = QtCore.QTimer()
+        self.timer.timeout.connect(self.serial_monitor)
+        self.timer.start(20)
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        #　serial communication
-        self.ser = sr.Serial("COM2", 9600)
-        self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.serial_monitor)
-        self.timer.start(1)
 
     def serial_monitor(self):
         data_b = self.ser.read(9)
-        print(data_b)
         bytes_list = list(data_b)
 
         raw_vx1 = bytes_list[0]*256+bytes_list[1]
@@ -122,19 +146,37 @@ class Ui_MainWindow(object):
         self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
 
         data_set = [self.vx1[self.counter], self.vx2[self.counter], self.vy1[self.counter], self.vy2[self.counter], self.x, self.y]
-        print(data_set)
 
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(0, str(self.vx1[self.counter]))
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(1, str(self.vx2[self.counter]))
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(2, str(self.vy1[self.counter]))
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(3, str(self.vy2[self.counter]))
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(4, str(self.x))
+        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(5, str(self.y))
+        """
         self.treeWidget.topLevelItem(0).setText(0, str(self.vx1[self.counter]))
-        self.treeWidget.topLevelItem(0).setText(1, str(self.vx2[self.counter]))
+        self.treeWidget.topLevelItem(2).setText(1, str(self.vx2[self.counter]))
         self.treeWidget.topLevelItem(0).setText(2, str(self.vy1[self.counter]))
         self.treeWidget.topLevelItem(0).setText(3, str(self.vy2[self.counter]))
         self.treeWidget.topLevelItem(0).setText(4, str(self.x))
         self.treeWidget.topLevelItem(0).setText(5, str(self.y))
+        """
 
         self.curve1.setData(self.times, self.vx1)
         self.curve2.setData(self.times, self.vx2)
         self.curve3.setData(self.times, self.vy1)
         self.curve4.setData(self.times, self.vy2)
+        self.curve0.setData([self.x], [self.y])
+
+
+        self.p1_vline.setPos(self.counter)
+        self.p2_vline.setPos(self.counter)
+        self.p3_vline.setPos(self.counter)
+        self.p4_vline.setPos(self.counter)
+
+        self.tree_counter += 1
+        if self.tree_counter == 3:
+            self.tree_counter = 0
 
         self.counter += 1
         if self.counter == len(self.times):
