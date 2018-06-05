@@ -10,8 +10,9 @@ sinx = 0
 
 # initialize matplotlib
 plt.ion()
-plt.figure()
-li, = plt.plot(times, sinxs)
+fig = plt.figure()
+ax = fig.add_subplot(111)
+li, = ax.plot(times, sinxs)
 
 plt.ylim(-1,1)
 plt.xlabel("time")
@@ -30,7 +31,7 @@ while 1 :
 
     li.set_xdata(times)
     li.set_ydata(sinxs)
-    plt.xlim(min(times), max(times))
+    ax.set_xlim(min(times), max(times))
     plt.draw()
 
     plt.pause(0.01)

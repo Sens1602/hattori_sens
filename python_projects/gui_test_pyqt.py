@@ -68,31 +68,42 @@ class Ui_MainWindow(object):
         layout_main = QtWidgets.QHBoxLayout()
         layout_main.addWidget(self.splitter)
         self.centralWidget.setLayout(layout_main)
-        #　追記
-        self.glaph = PlotCanvas(None, width=5, height=5)
-        self.times = [0 for i in range(100)]
-        self.vx1 = [0 for i in range(100)]
-        self.time = 0
-        self.sinx = 0
 
-        self.line, = self.glaph.ax.plot(self.times, self.vx1)
-        #navi = NavigationToolbar(self.glaph, self)
+        #　glaph
+        self.counter = 0
+        self.times = np.arange(0, 1000)
+        self.vx1 = np.zeros(len(self.times))
+        self.vx2 = np.zeros(len(self.times))
+        self.vy1 = np.zeros(len(self.times))
+        self.vy2 = np.zeros(len(self.times))
+
+        self.glaph = pg.GraphicsWindow(title="kanopero")
+        self.p1 = self.glaph.addPlot(title="Vx1")
+        self.glaph.nextRow()
+        self.p2 = self.glaph.addPlot(title="Vx2")
+        self.glaph.nextRow()
+        self.p3 = self.glaph.addPlot(title="Vx3")
+        self.glaph.nextRow()
+        self.p4 = self.glaph.addPlot(title="Vx4")
+
+        self.curve1 = self.p1.plot(self.times, self.vx1)
+        self.curve2 = self.p2.plot(self.times, self.vx2)
+        self.curve3 = self.p3.plot(self.times, self.vy1)
+        self.curve4 = self.p4.plot(self.times, self.vy2)
+
         layout_glaph = QtWidgets.QVBoxLayout()
         layout_glaph.addWidget(self.glaph)
-        #layout_glaph.addWidget(navi)
         self.tab.setLayout(layout_glaph)
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        #　追記
+        #　serial communication
         self.ser = sr.Serial("COM2", 9600)
-
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.serial_monitor)
-        self.timer.start(50)
-
+        self.timer.start(1)
 
     def serial_monitor(self):
         data_b = self.ser.read(9)
@@ -103,38 +114,31 @@ class Ui_MainWindow(object):
         raw_vx2 = bytes_list[2]*256+bytes_list[3]
         raw_vy1 = bytes_list[4]*256+bytes_list[5]
         raw_vy2 = bytes_list[6]*256+bytes_list[7]
-        vx1 = 5 * raw_vx1 / 4096
-        vx2 = 5 * raw_vx2 / 4096
-        vy1 = 5 * raw_vy1 / 4096
-        vy2 = 5 * raw_vy2 / 4096
-        x = ((vx2+vy1) - (vx1+vy2))/(vx1+vx2+vy1+vy2)
-        y = ((vx2+vy2) - (vx1+vy1))/(vx1+vx2+vy1+vy2)
+        self.vx1[self.counter] = 5 * raw_vx1 / 4096
+        self.vx2[self.counter] = 5 * raw_vx2 / 4096
+        self.vy1[self.counter] = 5 * raw_vy1 / 4096
+        self.vy2[self.counter] = 5 * raw_vy2 / 4096
+        self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
+        self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
 
-        data_set = [vx1, vx2, vy1, vy2, x, y]
+        data_set = [self.vx1[self.counter], self.vx2[self.counter], self.vy1[self.counter], self.vy2[self.counter], self.x, self.y]
         print(data_set)
 
-        self.treeWidget.topLevelItem(0).setText(0, str(vx1))
-        self.treeWidget.topLevelItem(0).setText(1, str(vx2))
-        self.treeWidget.topLevelItem(0).setText(2, str(vy1))
-        self.treeWidget.topLevelItem(0).setText(3, str(vy2))
-        self.treeWidget.topLevelItem(0).setText(4, str(x))
-        self.treeWidget.topLevelItem(0).setText(5, str(y))
+        self.treeWidget.topLevelItem(0).setText(0, str(self.vx1[self.counter]))
+        self.treeWidget.topLevelItem(0).setText(1, str(self.vx2[self.counter]))
+        self.treeWidget.topLevelItem(0).setText(2, str(self.vy1[self.counter]))
+        self.treeWidget.topLevelItem(0).setText(3, str(self.vy2[self.counter]))
+        self.treeWidget.topLevelItem(0).setText(4, str(self.x))
+        self.treeWidget.topLevelItem(0).setText(5, str(self.y))
 
+        self.curve1.setData(self.times, self.vx1)
+        self.curve2.setData(self.times, self.vx2)
+        self.curve3.setData(self.times, self.vy1)
+        self.curve4.setData(self.times, self.vy2)
 
-        self.time += 0.1
-        self.times.append(self.time)
-        self.times.pop(0)
-        self.sinx = math.sin(self.time)
-        self.vx1.append(self.sinx)
-        self.vx1.pop(0)
-
-        #self.line.set_xdata(self.times)
-        #self.line.set_ydata(self.vx1)
-        self.glaph.ax.set_xlim(min(self.times), max(self.times))
-        self.glaph.ax.set_ylim(-2, 2)
-        print(self.times)
-        plt.draw()
-        plt.pause(0.01)
+        self.counter += 1
+        if self.counter == len(self.times):
+            self.counter = 0
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
