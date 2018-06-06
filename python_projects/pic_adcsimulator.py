@@ -46,6 +46,6 @@ if __name__ == '__main__':
         main.counter += 1
         if main.counter >= main.t_len:
             main.counter = 0
-        sleep(0.01)
+        sleep(0.1)
 
     sys.exit()

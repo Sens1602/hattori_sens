@@ -132,7 +132,7 @@ class Ui_MainWindow(object):
 
 
     def serial_monitor(self):
-        data_b = self.ser.read(128)
+        data_b = self.ser.read(36)
         print(data_b)
         bytes_list = list(data_b)
         print(bytes_list)
