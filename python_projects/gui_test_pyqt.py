@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.centralWidget.setLayout(layout_main)
 
         #　glaph
-        self.view_data_len = 100
+        self.view_data_len = 50
         self.counter = 0
         self.tree_counter = 0
         self.times = np.arange(0, 1000)
@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
         self.ser.flushInput()
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.serial_monitor)
-        self.timer.start(50)
+        self.timer.start(100)
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
@@ -132,54 +132,52 @@ class Ui_MainWindow(object):
 
 
     def serial_monitor(self):
-        data_b = self.ser.read(36)
+        print(self.counter)
+        data_b = self.ser.read(18)
         print(data_b)
-        bytes_list = list(data_b)
-        print(bytes_list)
         raw_vx1 = []
         raw_vx2 = []
         raw_vy1 = []
         raw_vy2 = []
 
-        for i in range(len(data_b)-9):
-            if data_b[i] == 0:
-                raw_vx1.append(data_b[i+1] * 256 + data_b[i+2])
-                raw_vx2.append(data_b[i+3] * 256 + data_b[i+4])
-                raw_vy1.append(data_b[i+5] * 256 + data_b[i+6])
-                raw_vy2.append(data_b[i+7] * 256 + data_b[i+8])
-        self.vx1[self.counter] = 5 * raw_vx1[0] / 4096
-        self.vx2[self.counter] = 5 * raw_vx2[0] / 4096
-        self.vy1[self.counter] = 5 * raw_vy1[0] / 4096
-        self.vy2[self.counter] = 5 * raw_vy2[0] / 4096
-        self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
-        self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
+        for i in [0, 9]:
+            raw_vx1.append((data_b[i]<<8) + data_b[i+1])
+            raw_vx2.append((data_b[i+2]<<8) + data_b[i+3])
+            raw_vy1.append((data_b[i+4]<<8) + data_b[i+5])
+            raw_vy2.append((data_b[i+6]<<8) + data_b[i+7])
+            print((data_b[i]<<8) + data_b[i+1])
 
-        if self.tree_counter == self.view_data_len-1:
+        for i in [0, 1]:
+            self.vx1[self.counter] = 5 * raw_vx1[0] / 4096
+            self.vx2[self.counter] = 5 * raw_vx2[0] / 4096
+            self.vy1[self.counter] = 5 * raw_vy1[0] / 4096
+            self.vy2[self.counter] = 5 * raw_vy2[0] / 4096
+            self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
+            self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
+
             self.treeWidget.takeTopLevelItem(0)
             self.item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(0, str(self.vx1[self.counter]))
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(1, str(self.vx2[self.counter]))
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(2, str(self.vy1[self.counter]))
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(3, str(self.vy2[self.counter]))
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(4, str(self.x))
-        self.treeWidget.topLevelItem(int(self.tree_counter)).setText(5, str(self.y))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(0, str(self.vx1[self.counter]))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(1, str(self.vx2[self.counter]))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(2, str(self.vy1[self.counter]))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(3, str(self.vy2[self.counter]))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(4, str(self.x))
+            self.treeWidget.topLevelItem(self.view_data_len-1).setText(5, str(self.y))
 
-        self.curve1.setData(self.times, self.vx1)
-        self.curve2.setData(self.times, self.vx2)
-        self.curve3.setData(self.times, self.vy1)
-        self.curve4.setData(self.times, self.vy2)
-        self.curve0.setData([self.x], [self.y])
+            self.curve1.setData(self.times, self.vx1)
+            self.curve2.setData(self.times, self.vx2)
+            self.curve3.setData(self.times, self.vy1)
+            self.curve4.setData(self.times, self.vy2)
+            self.curve0.setData([self.x], [self.y])
 
-        self.p1_vline.setPos(self.counter)
-        self.p2_vline.setPos(self.counter)
-        self.p3_vline.setPos(self.counter)
-        self.p4_vline.setPos(self.counter)
+            self.p1_vline.setPos(self.counter)
+            self.p2_vline.setPos(self.counter)
+            self.p3_vline.setPos(self.counter)
+            self.p4_vline.setPos(self.counter)
 
-        if self.tree_counter < self.view_data_len-1:
-            self.tree_counter += 1
-        self.counter += 1
-        if self.counter == len(self.times):
-            self.counter = 0
+            self.counter += 1
+            if self.counter == len(self.times):
+                self.counter = 0
 
 
     def retranslateUi(self, MainWindow):
