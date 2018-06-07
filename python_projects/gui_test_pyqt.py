@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import QTimer
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5 import NavigationToolbar2QT as NavigationToolbar
 import matplotlib.pyplot as plt
@@ -18,8 +19,15 @@ from time import sleep
 import math
 import pyqtgraph as pg
 from pyqtgraph.Qt import QtGui, QtCore
+import pandas as pd
+import datetime
+
+save_path = "E:/simulation/"
+
 
 class Ui_MainWindow(object):
+    timer: QTimer
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(3200, 1600)
@@ -126,6 +134,19 @@ class Ui_MainWindow(object):
         self.timer.timeout.connect(self.serial_monitor)
         self.timer.start(100)
 
+        # save
+        d = datetime.datetime.today()
+        self.filename = (str(d.year) + '_' + str(d.month) + '_' +
+                         str(d.day) + '_' + str(d.hour) + '_' +
+                         str(d.minute) + '_' + str(d.second) + ".csv")
+        df_init = pd.DataFrame({'vx1 [V]':np.array([0]),
+                                'vx2 [V]':np.array([0]),
+                                'vy1 [V]':np.array([0]),
+                                'vy2 [V]':np.array([0]),
+                                'x':np.array([0]),
+                                'y':np.array([0])})
+        df_init.to_csv(save_path + self.filename)
+
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -133,25 +154,26 @@ class Ui_MainWindow(object):
 
     def serial_monitor(self):
         print(self.counter)
-        data_b = self.ser.read(18)
+        data_b = self.ser.read(9)
         print(data_b)
         raw_vx1 = []
         raw_vx2 = []
         raw_vy1 = []
         raw_vy2 = []
+        num_data_set = [x for x in range(0, len(data_b), 9)]
+        print(list(data_b))
 
-        for i in [0, 9]:
+        for i in num_data_set:
             raw_vx1.append((data_b[i]<<8) + data_b[i+1])
             raw_vx2.append((data_b[i+2]<<8) + data_b[i+3])
             raw_vy1.append((data_b[i+4]<<8) + data_b[i+5])
             raw_vy2.append((data_b[i+6]<<8) + data_b[i+7])
-            print((data_b[i]<<8) + data_b[i+1])
 
-        for i in [0, 1]:
-            self.vx1[self.counter] = 5 * raw_vx1[0] / 4096
-            self.vx2[self.counter] = 5 * raw_vx2[0] / 4096
-            self.vy1[self.counter] = 5 * raw_vy1[0] / 4096
-            self.vy2[self.counter] = 5 * raw_vy2[0] / 4096
+        for i in range(0, len(num_data_set)):
+            self.vx1[self.counter] = 5 * raw_vx1[i] / 4096
+            self.vx2[self.counter] = 5 * raw_vx2[i] / 4096
+            self.vy1[self.counter] = 5 * raw_vy1[i] / 4096
+            self.vy2[self.counter] = 5 * raw_vy2[i] / 4096
             self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
             self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
 
@@ -175,6 +197,15 @@ class Ui_MainWindow(object):
             self.p3_vline.setPos(self.counter)
             self.p4_vline.setPos(self.counter)
 
+            df = pd.DataFrame(columns =
+                              [self.vx1[self.counter],
+                               self.vx2[self.counter],
+                               self.vy1[self.counter],
+                               self.vy2[self.counter],
+                               self.x,
+                               self.y])
+            df.to_csv(save_path + self.filename, mode="a")
+
             self.counter += 1
             if self.counter == len(self.times):
                 self.counter = 0
@@ -197,20 +228,6 @@ class Ui_MainWindow(object):
         self.treeWidget.topLevelItem(0).setText(3, _translate("MainWindow", "0"))
         self.treeWidget.topLevelItem(0).setText(4, _translate("MainWindow", "0"))
         self.treeWidget.topLevelItem(0).setText(5, _translate("MainWindow", "0"))
-        """
-        self.treeWidget.topLevelItem(1).setText(0, _translate("MainWindow", "1"))
-        self.treeWidget.topLevelItem(1).setText(1, _translate("MainWindow", "2"))
-        self.treeWidget.topLevelItem(1).setText(2, _translate("MainWindow", "3"))
-        self.treeWidget.topLevelItem(1).setText(3, _translate("MainWindow", "4"))
-        self.treeWidget.topLevelItem(1).setText(4, _translate("MainWindow", "5"))
-        self.treeWidget.topLevelItem(1).setText(5, _translate("MainWindow", "6"))
-        self.treeWidget.topLevelItem(2).setText(0, _translate("MainWindow", "1"))
-        self.treeWidget.topLevelItem(2).setText(1, _translate("MainWindow", "2"))
-        self.treeWidget.topLevelItem(2).setText(2, _translate("MainWindow", "3"))
-        self.treeWidget.topLevelItem(2).setText(3, _translate("MainWindow", "4"))
-        self.treeWidget.topLevelItem(2).setText(4, _translate("MainWindow", "5"))
-        self.treeWidget.topLevelItem(2).setText(5, _translate("MainWindow", "6"))
-        """
         self.treeWidget.setSortingEnabled(__sortingEnabled)
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "For terminal outputs"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Relative story displacement"))
