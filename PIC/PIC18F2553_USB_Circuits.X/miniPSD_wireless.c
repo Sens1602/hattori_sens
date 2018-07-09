@@ -14,7 +14,8 @@
 #include "stdlib.h"
 #include "timers.h"
 #include "adc.h"
-
+#include "usart.h"
+#include "delays.h"
 /**configration***********************/
 //pragma　http://chitose6thplant.web.fc2.com/pic18f/2550/pragma_config2550.htm
 //I2C　http://www.maroon.dti.ne.jp/koten-kairo/works/dsPIC/i2c3.html
@@ -53,6 +54,13 @@ unsigned long counter;
 int b;
 char temp;
 
+//RN4020 commands
+char usart_buf[64] ;
+char text[] = "kanopero";
+char echo = '+';
+char echo2[] = "+\r";
+char config_2[] = "SF,1\r";
+
 /**function prototype *******************/
 void YourHighPriorityISRCode();
 void YourLowPriorityISRCode();
@@ -60,6 +68,9 @@ unsigned int WI2C( unsigned char control,
             unsigned char address, unsigned char data);
 unsigned int RI2C(unsigned char control, unsigned char address);
 void Calc();
+void Delay_s(int tm);
+void Delay_ms(int tm);
+void Delay_us(int tm);
 
 /*** interrupt vector***/
 #pragma code REMAPPED_HIGH_INTERRUPT_VECTOR = 0x08
@@ -75,25 +86,26 @@ void Remapped_Low_ISR (void){
 /****interrupt function***/
 #pragma interrupt YourHighPriorityISRCode
 void YourHighPriorityISRCode(){
+    if(INTCONbits.TMR0IF){ //割り込み要因がTimer1割り込みなら        
+        INTCONbits.TMR0IF = 0; //フラグクリア 
+        WriteTimer0(35416);//タイマセット
+        //デバイス接続確認
+        if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
+            USBDeviceAttach();// USB割り込み許可			
+        // 処理実行
+        if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
+            //Calc();//データ取得、送信
+ 
+            while(!USBUSARTIsTxTrfReady()) CDCTxService();//これで取りこぼしせず送れるが何故かはまだ不明      
+            putUSBUSART(usart_buf, 10);
+            CDCTxService();
+
+        }      
+    }
         
-        if(INTCONbits.TMR0IF){ //割り込み要因がTimer1割り込みなら
-            
-            INTCONbits.TMR0IF = 0; //フラグクリア 
-            WriteTimer0(35416);//タイマセット
-            //デバイス接続確認
-            if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-                USBDeviceAttach();// USB割り込み許可			
-            // 処理実行
-            if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
-                Calc();//データ取得、送信
-            }      
-        }
-        
-        #if defined(USB_INTERRUPT)
-            USBDeviceTasks();
-         //PORTCbits.RC6 ^= 1;
-         //Devicetasks周期確認用
-        #endif
+    #if defined(USB_INTERRUPT)
+        USBDeviceTasks();
+    #endif
 }
 #pragma interruptlow YourLowPriorityISRCode
 void YourLowPriorityISRCode()
@@ -109,47 +121,86 @@ void main(void){
     }
 
     TRISA = 0b11111111;
-    TRISB = 0b00110000;
-    TRISC = 0b00000000;
+    TRISB = 0b00010000;
+    TRISC = 0b10000000;
+    memset( usart_buf , '\0' , strlen(usart_buf) );
     
     //USB buffer clear
 	for (i=0; i<sizeof(USB_Out_Buf); i++){
 		USB_Out_Buf[i] = 0;
     }
     lastTransmission = 0;		// handle clear
-    USBDeviceInit();			// USB initialize
+
 
     //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
-
+    //USART configration
+    OpenUSART(USART_TX_INT_OFF & USART_RX_INT_OFF &
+                       USART_ASYNCH_MODE & USART_EIGHT_BIT &
+                       USART_CONT_RX & USART_BRGH_HIGH, 25);
     //I2C configration
     //SSPADD = ((Fosc/4) / Fscl) - 1
+    /*
     OpenI2C(MASTER, SLEW_ON);   // master mode
     SSPADD = 29;                //I2C400kHz?
     err = WI2C(0b11010000, 0x24, 0x0D);//slave clock configration
-
+    
     //MPU initialize
     //accel, gylo wake to sleep
+    
     err = WI2C(0b11010000, 0x6B, 0x00);   
     err = WI2C(0b11010000, 0x37, 0x02);
     //magnetic sensor 16bit ADC mode
     err = WI2C(0b00011000, 0x0A, 0x16);//100Hz mode
-   
+   */
+
+    
+    PORTBbits.RB5 = 0;
+    PORTCbits.RC2 = 0; 
+    Delay_s(5);   
+    //bluetooth initialize
+    PORTBbits.RB5 = 1;
+    PORTCbits.RC2 = 0; 
+    Delay_s(2);  
+    //putcUSART(echo);
+    putsUSART(config_2);
+    while(!DataRdyUSART());
+    PORTBbits.RB5 = 0;
+    PORTCbits.RC2 = 1; 
+    Delay_s(2);
+/*
+    usart_buf[0] = getcUSART();
+    usart_buf[1] = getcUSART();
+    usart_buf[2] = getcUSART();
+    usart_buf[3] = getcUSART();
+    usart_buf[4] = getcUSART();
+    usart_buf[5] = getcUSART();
+ */   
+    getsUSART(usart_buf, 2);
+    /*
+    getsUSART(usart_buf[4], 1);
+    getsUSART(usart_buf[5], 1);
+    */
+    PORTBbits.RB5 = 1;
+    PORTCbits.RC2 = 1;     
+    
+    USBDeviceInit();			// USB initialize
+    
     //timer configration
     //18F2553は1命令4クロック
     //1命令時間:1/(48MHz/4) = 0.166)
     //5ms(200Hz)ほしいので、5000/0.1666 = 30120…欲しいカウント数)
     //65536 - 30120 ≒ 35416
-    T0CON = 0b10000000;//タイマ0,8ビット,プリスケーラ1:2
+    T0CON = 0b10000100;//タイマ0,8ビット,プリスケーラ1:2
     WriteTimer0(35416);//タイマセット
     INTCONbits.GIE = 1;//割り込み機能有効
     INTCONbits.TMR0IE = 1;//TMR0割り込み許可
-        
     
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-        USBDeviceAttach();				// USB割り込み許可			
+        USBDeviceAttach();				// USB割り込み許可
+
         // 処理実行
         /*
         if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
@@ -405,7 +456,51 @@ void Calc(){
     CDCTxService();
         
 }
+void Delay_s(int tm){
+    for(i=0; i<tm; i++){	
+        //1s
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(100);
+        Delay10KTCYx(80);
+    }
+}
 
+void Delay_ms(int tm){
+    for(i=0; i<tm; i++){
+        //1ms
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);
+        Delay10TCYx(100);  
+        Delay10TCYx(36);  
+    }    
+}
+
+void Delay_us(int tm){
+    int tmus = tm / 3;
+    for(i=0; i<tmus; i++){	
+        //1us
+        Delay1TCY();
+        Delay1TCY();
+        Delay1TCY();
+        Delay1TCY();
+        Delay1TCY();
+        Delay1TCY(); 
+        Delay1TCY(); 
+    }    
+}
 /***********************************************************
 * ?????????
 *

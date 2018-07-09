@@ -75,25 +75,22 @@ void Remapped_Low_ISR (void){
 /****interrupt function***/
 #pragma interrupt YourHighPriorityISRCode
 void YourHighPriorityISRCode(){
+    if(INTCONbits.TMR0IF){ //割り込み要因がTimer1割り込みなら        
+        INTCONbits.TMR0IF = 0; //フラグクリア 
+        WriteTimer0(35416);//タイマセット
+        //デバイス接続確認
+        if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
+            USBDeviceAttach();// USB割り込み許可			
+        // 処理実行
+        if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
+            Calc();//データ取得、送信
+            PORTCbits.RC6 ^= 1;
+        }      
+    }
         
-        if(INTCONbits.TMR0IF){ //割り込み要因がTimer1割り込みなら
-            
-            INTCONbits.TMR0IF = 0; //フラグクリア 
-            WriteTimer0(35416);//タイマセット
-            //デバイス接続確認
-            if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-                USBDeviceAttach();// USB割り込み許可			
-            // 処理実行
-            if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
-                Calc();//データ取得、送信
-            }      
-        }
-        
-        #if defined(USB_INTERRUPT)
-            USBDeviceTasks();
-         //PORTCbits.RC6 ^= 1;
-         //Devicetasks周期確認用
-        #endif
+    #if defined(USB_INTERRUPT)
+        USBDeviceTasks();
+    #endif
 }
 #pragma interruptlow YourLowPriorityISRCode
 void YourLowPriorityISRCode()
@@ -103,43 +100,43 @@ void YourLowPriorityISRCode()
 
 /****main function***/
 void main(void){  
-
-    //発信安定待ち
+    //wait for oscillation stability
     for(i=0; i<100; i++){
         Nop(); 
     }
-    
-    //ピン設定
- 	TRISA = 0b11111111;				//RA、ADC用入力
-	TRISB = 0b00110000;				//
-	TRISC = 0b00000000;				//
 
-    //USBバッファクリア
+    TRISA = 0b11111111;
+    TRISB = 0b00110000;
+    TRISC = 0b00000000;
+    
+    //USB buffer clear
 	for (i=0; i<sizeof(USB_Out_Buf); i++){
 		USB_Out_Buf[i] = 0;
     }
-	lastTransmission = 0;		// ハンドルクリア
-    USBDeviceInit();			// USB初期化
+    lastTransmission = 0;		// handle clear
+    USBDeviceInit();			// USB initialize
 
-    //ADC設定
-　　//8TADだとアクイジション時間が足りない
+    //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
-        
-    //I2C設定
-    //SSPADD = ((Fosc/4) / Fscl) - 1
-    OpenI2C(MASTER, SLEW_ON);   //マスターモード
-    SSPADD = 29;                //I2C400kHz?_後ほど勉強
-    err = WI2C(0b11010000, 0x24, 0x0D);//スレーブ側クロック設定
 
-    //センサ初期化設定
-    //加速度＿ジャイロスリープモード解除
+    //I2C configration
+    //SSPADD = ((Fosc/4) / Fscl) - 1
+    
+    OpenI2C(MASTER, SLEW_ON);   // master mode
+    SSPADD = 29;                //I2C400kHz?
+    err = WI2C(0b11010000, 0x24, 0x0D);//slave clock configration
+    
+    //MPU initialize
+    //accel, gylo wake to sleep
+    
     err = WI2C(0b11010000, 0x6B, 0x00);   
     err = WI2C(0b11010000, 0x37, 0x02);
-    //磁気センサ16bitAD変換実行
-    err = WI2C(0b00011000, 0x0A, 0x16);//100Hzモード
+    //magnetic sensor 16bit ADC mode
+    err = WI2C(0b00011000, 0x0A, 0x16);//100Hz mode
    
-    //タイマ設定
+    
+    //timer configration
     //18F2553は1命令4クロック
     //1命令時間:1/(48MHz/4) = 0.166)
     //5ms(200Hz)ほしいので、5000/0.1666 = 30120…欲しいカウント数)
@@ -151,14 +148,14 @@ void main(void){
         
     
     while(1){  
-            /*最速用
-            if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-                USBDeviceAttach();				// USB割り込み許可			
-            // 処理実行
-            if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
-                Calc();
-            }  
-            */     
+        if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
+        USBDeviceAttach();				// USB割り込み許可			
+        // 処理実行
+        /*
+        if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
+            Calc();
+        }  
+        */     
     }
 }
 
