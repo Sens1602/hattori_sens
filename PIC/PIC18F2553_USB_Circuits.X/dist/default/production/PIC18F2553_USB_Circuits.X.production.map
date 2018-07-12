@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Mon Jul 09 12:41:03 2018
+Linker Map File - Created Thu Jul 12 16:05:40 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -11,74 +11,74 @@ REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
 REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x00000e
        .code_usb_device.o       code   0x00002c    program   0x001274
- .code_miniPSD_wireless.o       code   0x0012a0    program   0x000a56
- .code_usb_function_cdc.o       code   0x001cf6    program   0x0004dc
-.romdata_usb_descriptors.o    romdata   0x0021d2    program   0x0000a9
-      .romdata_i2c_writ.o    romdata   0x00227b    program   0x000000
-      .idata_i2c_writ.o_i    romdata   0x00227b    program   0x000000
-      .romdata_adcsetch.o    romdata   0x00227b    program   0x000000
-      .idata_adcsetch.o_i    romdata   0x00227b    program   0x000000
-         .romdata_uopen.o    romdata   0x00227b    program   0x000000
-         .idata_uopen.o_i    romdata   0x00227b    program   0x000000
-       .romdata_adcopen.o    romdata   0x00227b    program   0x000000
-       .idata_adcopen.o_i    romdata   0x00227b    program   0x000000
-      .romdata_i2c_idle.o    romdata   0x00227b    program   0x000000
-      .idata_i2c_idle.o_i    romdata   0x00227b    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x00227b    program   0x000000
-      .idata_fxd3232u.o_i    romdata   0x00227b    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x00227b    program   0x000000
-       .idata_t0write.o_i    romdata   0x00227b    program   0x000000
-       .romdata_t0write.o    romdata   0x00227b    program   0x000000
-        .idata___init.o_i    romdata   0x00227b    program   0x000000
-        .romdata_uwrite.o    romdata   0x00227b    program   0x000000
-        .idata_uwrite.o_i    romdata   0x00227b    program   0x000000
-        .romdata___init.o    romdata   0x00227b    program   0x000000
-         .romdata_uputs.o    romdata   0x00227b    program   0x000000
-         .idata_ugets.o_i    romdata   0x00227b    program   0x000000
-         .romdata_ugets.o    romdata   0x00227b    program   0x000000
-         .idata_uread.o_i    romdata   0x00227b    program   0x000000
-         .romdata_uread.o    romdata   0x00227b    program   0x000000
-         .idata_udefs.o_i    romdata   0x00227b    program   0x000000
-         .romdata_udefs.o    romdata   0x00227b    program   0x000000
-         .idata_uputs.o_i    romdata   0x00227b    program   0x000000
-         .idata_c018i.o_i    romdata   0x00227b    program   0x000000
-         .romdata_c018i.o    romdata   0x00227b    program   0x000000
-.idata_usb_descriptors.o_i    romdata   0x00227b    program   0x000000
-.idata_usb_function_cdc.o_i    romdata   0x00227b    program   0x000000
-.romdata_usb_function_cdc.o    romdata   0x00227b    program   0x000000
-    .idata_usb_device.o_i    romdata   0x00227b    program   0x000000
-    .romdata_usb_device.o    romdata   0x00227b    program   0x000000
-.romdata_miniPSD_wireless.o    romdata   0x00227b    program   0x000000
-             .stringtable    romdata   0x00227b    program   0x000000
-       .idata_adcbusy.o_i    romdata   0x00227b    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x00227b    program   0x000000
-       .romdata_adcconv.o    romdata   0x00227b    program   0x000000
-       .romdata_adcbusy.o    romdata   0x00227b    program   0x000000
-       .idata_adcconv.o_i    romdata   0x00227b    program   0x000000
-            .code_c018i.o       code   0x00227c    program   0x000000
-               _cinit_scn       code   0x00227c    program   0x00009e
-            .code_udefs.o       code   0x00227c    program   0x000000
-  .code_usb_descriptors.o       code   0x00227c    program   0x000000
-            .code_uopen.o       code   0x00231a    program   0x00008a
-         .code_i2c_writ.o       code   0x0023a4    program   0x000072
-          .code_adcopen.o       code   0x002416    program   0x00006e
-            .code_ugets.o       code   0x002484    program   0x00005e
-                   STRING       code   0x0024e2    program   0x000050
-                     PROG       code   0x002532    program   0x00004c
-            .code_uputs.o       code   0x00257e    program   0x00004c
-         .code_fxd3232u.o       code   0x0025ca    program   0x000048
-            .code_uread.o       code   0x002612    program   0x00003e
-          .code_t0write.o       code   0x002650    program   0x000038
-             D10KTCYXCODE       code   0x002688    program   0x00002e
-           .code_uwrite.o       code   0x0026b6    program   0x00002e
-         .code_adcsetch.o       code   0x0026e4    program   0x00002e
-         .code_fxd1616u.o       code   0x002712    program   0x00002c
-                    .code       code   0x00273e    program   0x000020
-             _startup_scn       code   0x00275e    program   0x00001c
-              D10TCYXCODE       code   0x00277a    program   0x000016
-         .code_i2c_idle.o       code   0x002790    program   0x00000e
-          .code_adcconv.o       code   0x00279e    program   0x000004
-.idata_miniPSD_wireless.o_i    romdata   0x0027a2    program   0x000013
+ .code_miniPSD_wireless.o       code   0x0012a0    program   0x000afa
+ .code_usb_function_cdc.o       code   0x001d9a    program   0x0004dc
+.romdata_usb_descriptors.o    romdata   0x002276    program   0x0000a9
+       .idata_adcbusy.o_i    romdata   0x00231f    program   0x000000
+       .romdata_adcbusy.o    romdata   0x00231f    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x00231f    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x00231f    program   0x000000
+       .idata_adcopen.o_i    romdata   0x00231f    program   0x000000
+       .romdata_adcopen.o    romdata   0x00231f    program   0x000000
+         .idata_uopen.o_i    romdata   0x00231f    program   0x000000
+      .idata_i2c_writ.o_i    romdata   0x00231f    program   0x000000
+      .romdata_i2c_writ.o    romdata   0x00231f    program   0x000000
+       .romdata_t0write.o    romdata   0x00231f    program   0x000000
+         .romdata_ugets.o    romdata   0x00231f    program   0x000000
+         .idata_uread.o_i    romdata   0x00231f    program   0x000000
+         .idata_udefs.o_i    romdata   0x00231f    program   0x000000
+        .romdata_uputrs.o    romdata   0x00231f    program   0x000000
+        .idata_uwrite.o_i    romdata   0x00231f    program   0x000000
+        .romdata_uwrite.o    romdata   0x00231f    program   0x000000
+         .idata_c018i.o_i    romdata   0x00231f    program   0x000000
+         .romdata_c018i.o    romdata   0x00231f    program   0x000000
+    .idata_usb_device.o_i    romdata   0x00231f    program   0x000000
+    .romdata_usb_device.o    romdata   0x00231f    program   0x000000
+            .code_c018i.o       code   0x002320    program   0x000000
+  .code_usb_descriptors.o       code   0x002320    program   0x000000
+               _cinit_scn       code   0x002320    program   0x00009e
+            .code_uopen.o       code   0x0023be    program   0x00008a
+         .code_i2c_writ.o       code   0x002448    program   0x000072
+          .code_adcopen.o       code   0x0024ba    program   0x00006e
+           .code_uputrs.o       code   0x002528    program   0x000064
+            .code_ugets.o       code   0x00258c    program   0x00005e
+                     PROG       code   0x0025ea    program   0x00004c
+         .code_fxd3232u.o       code   0x002636    program   0x000048
+            .code_uread.o       code   0x00267e    program   0x00003e
+          .code_t0write.o       code   0x0026bc    program   0x000038
+                   STRING       code   0x0026f4    program   0x000034
+             D10KTCYXCODE       code   0x002728    program   0x00002e
+           .code_uwrite.o       code   0x002756    program   0x00002e
+         .code_adcsetch.o       code   0x002784    program   0x00002e
+         .code_fxd1616u.o       code   0x0027b2    program   0x00002c
+             .stringtable    romdata   0x0027de    program   0x000021
+.idata_usb_function_cdc.o_i    romdata   0x0027ff    program   0x000000
+        .romdata___init.o    romdata   0x0027ff    program   0x000000
+         .idata_ugets.o_i    romdata   0x0027ff    program   0x000000
+        .idata___init.o_i    romdata   0x0027ff    program   0x000000
+         .romdata_udefs.o    romdata   0x0027ff    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x0027ff    program   0x000000
+.romdata_usb_function_cdc.o    romdata   0x0027ff    program   0x000000
+       .idata_t0write.o_i    romdata   0x0027ff    program   0x000000
+        .idata_uputrs.o_i    romdata   0x0027ff    program   0x000000
+         .romdata_uread.o    romdata   0x0027ff    program   0x000000
+       .idata_adcconv.o_i    romdata   0x0027ff    program   0x000000
+       .romdata_adcconv.o    romdata   0x0027ff    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x0027ff    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x0027ff    program   0x000000
+      .idata_i2c_idle.o_i    romdata   0x0027ff    program   0x000000
+      .romdata_i2c_idle.o    romdata   0x0027ff    program   0x000000
+.romdata_miniPSD_wireless.o    romdata   0x0027ff    program   0x000000
+      .romdata_adcsetch.o    romdata   0x0027ff    program   0x000000
+      .idata_adcsetch.o_i    romdata   0x0027ff    program   0x000000
+         .romdata_uopen.o    romdata   0x0027ff    program   0x000000
+                    .code       code   0x002800    program   0x000020
+            .code_udefs.o       code   0x002800    program   0x000000
+             _startup_scn       code   0x002820    program   0x00001c
+              D10TCYXCODE       code   0x00283c    program   0x000016
+         .code_i2c_idle.o       code   0x002852    program   0x00000e
+          .code_adcconv.o       code   0x002860    program   0x000004
+.idata_miniPSD_wireless.o_i    romdata   0x002864    program   0x000034
 .config_300000_miniPSD_wireless.o    romdata   0x300000    program   0x000001
 .config_300001_miniPSD_wireless.o    romdata   0x300001    program   0x000001
 .config_300002_miniPSD_wireless.o    romdata   0x300002    program   0x000001
@@ -89,51 +89,51 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                  .tmpdata      udata   0x000010       data   0x000008
                 DELAYDAT2      udata   0x000018       data   0x000001
                 DELAYDAT1      udata   0x000019       data   0x000001
-.udata_miniPSD_wireless.o      udata   0x000100       data   0x0000ec
-.idata_miniPSD_wireless.o      idata   0x0001ec       data   0x000013
-           .udata_udefs.o      udata   0x0001ff       data   0x000001
+.udata_usb_function_cdc.o      udata   0x000060       data   0x000019
                    .stack      udata   0x000300       data   0x000100
                   USB_BDT      udata   0x000400       data   0x000040
+.udata_miniPSD_wireless.o      udata   0x000440       data   0x0000ac
+           .udata_c018i.o      udata   0x0004ec       data   0x00000a
             USB_VARIABLES      udata   0x000500       data   0x00008f
       .udata_usb_device.o      udata   0x00058f       data   0x000034
-.udata_usb_function_cdc.o      udata   0x0005c3       data   0x000019
-           .udata_c018i.o      udata   0x0005dc       data   0x00000a
-        .idata_adcsetch.o      idata   0x0005e6       data   0x000000
-        .udata_i2c_writ.o      udata   0x0005e6       data   0x000000
-        .idata_i2c_writ.o      idata   0x0005e6       data   0x000000
-         .udata_t0write.o      udata   0x0005e6       data   0x000000
-         .idata_t0write.o      idata   0x0005e6       data   0x000000
-          .udata___init.o      udata   0x0005e6       data   0x000000
-          .idata___init.o      idata   0x0005e6       data   0x000000
-           .udata_ugets.o      udata   0x0005e6       data   0x000000
-           .idata_ugets.o      idata   0x0005e6       data   0x000000
-           .udata_uread.o      udata   0x0005e6       data   0x000000
-           .idata_uread.o      idata   0x0005e6       data   0x000000
-           .idata_c018i.o      idata   0x0005e6       data   0x000000
-           .idata_udefs.o      idata   0x0005e6       data   0x000000
-           .udata_uputs.o      udata   0x0005e6       data   0x000000
-           .idata_uputs.o      idata   0x0005e6       data   0x000000
-          .udata_uwrite.o      udata   0x0005e6       data   0x000000
-          .idata_uwrite.o      idata   0x0005e6       data   0x000000
-      .idata_usb_device.o      idata   0x0005e6       data   0x000000
-.idata_usb_function_cdc.o      idata   0x0005e6       data   0x000000
-         .udata_adcbusy.o      udata   0x0005e6       data   0x000000
-         .idata_adcbusy.o      idata   0x0005e6       data   0x000000
-         .udata_adcconv.o      udata   0x0005e6       data   0x000000
-         .idata_adcconv.o      idata   0x0005e6       data   0x000000
- .idata_usb_descriptors.o      idata   0x0005e6       data   0x000000
- .udata_usb_descriptors.o      udata   0x0005e6       data   0x000000
-        .udata_fxd1616u.o      udata   0x0005e6       data   0x000000
-        .idata_fxd1616u.o      idata   0x0005e6       data   0x000000
-        .udata_fxd3232u.o      udata   0x0005e6       data   0x000000
-        .idata_fxd3232u.o      idata   0x0005e6       data   0x000000
-        .udata_i2c_idle.o      udata   0x0005e6       data   0x000000
-        .idata_i2c_idle.o      idata   0x0005e6       data   0x000000
-         .udata_adcopen.o      udata   0x0005e6       data   0x000000
-         .idata_adcopen.o      idata   0x0005e6       data   0x000000
-           .udata_uopen.o      udata   0x0005e6       data   0x000000
-           .idata_uopen.o      idata   0x0005e6       data   0x000000
-        .udata_adcsetch.o      udata   0x0005e6       data   0x000000
+.idata_miniPSD_wireless.o      idata   0x0005c3       data   0x000034
+           .udata_udefs.o      udata   0x0005f7       data   0x000001
+        .udata_adcsetch.o      udata   0x0005f8       data   0x000000
+        .idata_adcsetch.o      idata   0x0005f8       data   0x000000
+        .udata_i2c_writ.o      udata   0x0005f8       data   0x000000
+        .idata_i2c_writ.o      idata   0x0005f8       data   0x000000
+         .udata_t0write.o      udata   0x0005f8       data   0x000000
+         .idata_t0write.o      idata   0x0005f8       data   0x000000
+          .udata___init.o      udata   0x0005f8       data   0x000000
+          .idata___init.o      idata   0x0005f8       data   0x000000
+           .udata_ugets.o      udata   0x0005f8       data   0x000000
+           .idata_ugets.o      idata   0x0005f8       data   0x000000
+           .udata_uread.o      udata   0x0005f8       data   0x000000
+           .idata_uread.o      idata   0x0005f8       data   0x000000
+           .idata_udefs.o      idata   0x0005f8       data   0x000000
+          .udata_uputrs.o      udata   0x0005f8       data   0x000000
+          .idata_uputrs.o      idata   0x0005f8       data   0x000000
+          .udata_uwrite.o      udata   0x0005f8       data   0x000000
+          .idata_uwrite.o      idata   0x0005f8       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0005f8       data   0x000000
+.idata_usb_function_cdc.o      idata   0x0005f8       data   0x000000
+      .idata_usb_device.o      idata   0x0005f8       data   0x000000
+         .udata_adcbusy.o      udata   0x0005f8       data   0x000000
+         .idata_adcbusy.o      idata   0x0005f8       data   0x000000
+         .udata_adcconv.o      udata   0x0005f8       data   0x000000
+         .idata_adcconv.o      idata   0x0005f8       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0005f8       data   0x000000
+           .idata_c018i.o      idata   0x0005f8       data   0x000000
+        .udata_fxd1616u.o      udata   0x0005f8       data   0x000000
+        .idata_fxd1616u.o      idata   0x0005f8       data   0x000000
+        .udata_fxd3232u.o      udata   0x0005f8       data   0x000000
+        .idata_fxd3232u.o      idata   0x0005f8       data   0x000000
+        .udata_i2c_idle.o      udata   0x0005f8       data   0x000000
+        .idata_i2c_idle.o      idata   0x0005f8       data   0x000000
+         .udata_adcopen.o      udata   0x0005f8       data   0x000000
+         .idata_adcopen.o      idata   0x0005f8       data   0x000000
+           .udata_uopen.o      udata   0x0005f8       data   0x000000
+           .idata_uopen.o      idata   0x0005f8       data   0x000000
             SFR_UNBANKED0      udata   0x000f66       data   0x00009a
 
 
@@ -141,11 +141,12 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00227a      
-                            0x00227c    0x0027b4      
+                            0x000000    0x00231e      
+                            0x002320    0x0027fe      
+                            0x002800    0x002897      
                             0x300000    0x300003      
                             0x300005    0x300006      
-            10170 out of 33048 program addresses used, program memory utilization is 30%
+            10396 out of 33048 program addresses used, program memory utilization is 31%
 
 
 
@@ -153,47 +154,47 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
                   BusyADC   0x00000e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
-                CDCInitEP   0x001d96    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             CDCTxService   0x002084    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                     Calc   0x001648    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-               ConvertADC   0x00279e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
-                   D10K_1   0x002694    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0026a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x002692    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x00278a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x002782    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   D1616S   0x002554    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x002562    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x00255e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x002574    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x002544    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-             Delay10KTCYx   0x002688    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x00277a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                 Delay_ms   0x001a1c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                  Delay_s   0x00198a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 Delay_us   0x001ad6    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 FXD1616S   0x002532    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x002712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD3232U   0x0025ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  IdleI2C   0x002790    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
-                  OpenADC   0x002416    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                OpenUSART   0x00231a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                     RI2C   0x001580    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                ReadUSART   0x002612    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+                CDCInitEP   0x001e3a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             CDCTxService   0x002128    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                     Calc   0x0016ec    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               ConvertADC   0x002860    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
+                   D10K_1   0x002734    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002740    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x00284c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002844    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   D1616S   0x00260c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x00261a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002616    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00262c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x0025fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+             Delay10KTCYx   0x002728    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x00283c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                 Delay_ms   0x001ac0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  Delay_s   0x001a2e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 Delay_us   0x001b7a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 FXD1616S   0x0025ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x0027b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x002636    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  IdleI2C   0x002852    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
+                  OpenADC   0x0024ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                OpenUSART   0x0023be    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                     RI2C   0x001624    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                ReadUSART   0x00267e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
         Remapped_High_ISR   0x000008    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
          Remapped_Low_ISR   0x000018    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-               SetChanADC   0x0026e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-       USBCBCheckOtherReq   0x001c10    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-        USBCBErrorHandler   0x001c0e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              USBCBInitEP   0x001c16    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-          USBCBSendResume   0x001c1a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-    USBCBStdSetDscHandler   0x001c14    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-             USBCBSuspend   0x001c08    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-     USBCBWakeFromSuspend   0x001c0a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-        USBCB_SOF_Handler   0x001c0c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-       USBCDCEventHandler   0x001dfe    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+               SetChanADC   0x002784    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
+       USBCBCheckOtherReq   0x001cb4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+        USBCBErrorHandler   0x001cb2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              USBCBInitEP   0x001cba    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+          USBCBSendResume   0x001cbe    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+    USBCBStdSetDscHandler   0x001cb8    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+             USBCBSuspend   0x001cac    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+     USBCBWakeFromSuspend   0x001cae    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+        USBCB_SOF_Handler   0x001cb0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+       USBCDCEventHandler   0x001ea2    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
               USBCancelIO   0x0011b8    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-       USBCheckCDCRequest   0x001cf6    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+       USBCheckCDCRequest   0x001d9a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
        USBCheckStdRequest   0x000552    program     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
      USBConfigureEndpoint   0x000ed0    program     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
   USBCtrlEPAllowDataStage   0x000922    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
@@ -219,45 +220,33 @@ USBCtrlEPAllowStatusStage   0x000880    program     extern C:\Box Sync\Personal\
                USBSuspend   0x0002d4    program     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
      USBTransferOnePacket   0x0010c6    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
        USBWakeFromSuspend   0x0002fe    program     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-               USB_CD_Ptr   0x002273    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-               USB_SD_Ptr   0x002275    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     WI2C   0x0014f2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 WriteI2C   0x0023a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
-              WriteTimer0   0x002650    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-               WriteUSART   0x0026b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+               USB_CD_Ptr   0x002317    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+               USB_SD_Ptr   0x002319    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x001d06    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     WI2C   0x001596    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 WriteI2C   0x002448    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
+              WriteTimer0   0x0026bc    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               WriteUSART   0x002756    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
   YourHighPriorityISRCode   0x0012a0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-   YourLowPriorityISRCode   0x001398    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              _2jContinue   0x002502    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x00250c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-       _D10KTCYXCODE_0010   0x002698    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0026a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x002784    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x002786    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x002788    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-          ___for_lbl00011   0x0013c8    program     static                          
-          ___for_lbl00012   0x0013ce    program     static                          
-          ___for_lbl00013   0x0013be    program     static                          
-          ___for_lbl00014   0x001434    program     static                          
-          ___for_lbl00015   0x00143a    program     static                          
-          ___for_lbl00016   0x001412    program     static                          
-          ___for_lbl00138   0x001b40    program     static                          
-          ___for_lbl00139   0x001b46    program     static                          
-          ___for_lbl00140   0x001b0c    program     static                          
-           ___if_lbl00021   0x0014ee    program     static                          
-       ___return_lbl00000   0x002610    program     static                          
-       ___return_lbl00000   0x00273c    program     static                          
-       ___return_lbl00000   0x000004    program     static                          
+   YourLowPriorityISRCode   0x0013b2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              _2jContinue   0x002714    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x00271e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+       _D10KTCYXCODE_0010   0x002738    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002744    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x002846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00284a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+          ___for_lbl00145   0x001be4    program     static                          
+          ___for_lbl00146   0x001bea    program     static                          
+          ___for_lbl00147   0x001bb0    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x002778    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x00267c    program     static                          
+       ___return_lbl00000   0x0027dc    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00002   0x002318    program     static                          
-       ___return_lbl00010   0x0014f0    program     static                          
-       ___return_lbl00137   0x001b46    program     static                          
-        ___while_lbl00017   0x00149a    program     static                          
-        ___while_lbl00018   0x00149e    program     static                          
-        ___while_lbl00019   0x0014e4    program     static                          
-        ___while_lbl00020   0x0014f0    program     static                          
+       ___return_lbl00001   0x00283a    program     static                          
+       ___return_lbl00002   0x0023bc    program     static                          
+       ___return_lbl00144   0x001bea    program     static                          
                __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
@@ -265,44 +254,45 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
                __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-              __tmplbl_59   0x001b28    program     static                          
-            __zero_memory   0x00273e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                _do_cinit   0x00227c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               __string_3   0x0027fa    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_4   0x0027ee    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_5   0x0027e2    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_6   0x0027de    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              __tmplbl_70   0x001bcc    program     static                          
+            __zero_memory   0x002800    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                _do_cinit   0x002320    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x00260c    program     static                          
-                 _startup   0x00275e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x002754    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-        configDescriptor1   0x0021e4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                copy_loop   0x0022ee    program     static                          
-            copy_one_byte   0x0022f4    program     static                          
-               device_dsc   0x0021d2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                     done   0x002318    program     static                          
-             done_copying   0x002302    program     static                          
-                  endloop   0x002738    program     static                          
-                getsUSART   0x002484    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
-             getsUSBUSART   0x001e88    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                     jEnd   0x002530    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x002514    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x002526    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x0024f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     loop   0x0025d8    program     static                          
-                     loop   0x00271c    program     static                          
-                     loop   0x00276e    program     static                          
-                   loop_h   0x00274c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_l   0x002756    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     main   0x0013ba    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                   memset   0x0024e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-   mySetLineCodingHandler   0x001b5a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              putUSBUSART   0x001f48    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-            putrsUSBUSART   0x001ffe    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                putsUSART   0x00257e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uputs.c
-             putsUSBUSART   0x001f7a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                    sd000   0x002227    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                    sd001   0x00222b    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                    sd002   0x00225f    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                   strlen   0x002516    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     test   0x002296    program     static                          
-               zero_block   0x00274c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   _false   0x002678    program     static                          
+                 _startup   0x002820    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x002816    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+        configDescriptor1   0x002288    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                copy_loop   0x002392    program     static                          
+            copy_one_byte   0x002398    program     static                          
+               device_dsc   0x002276    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                     done   0x0023bc    program     static                          
+             done_copying   0x0023a6    program     static                          
+                  endloop   0x0027d8    program     static                          
+                getsUSART   0x00258c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
+             getsUSBUSART   0x001f2c    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                     jEnd   0x002726    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x002708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     loop   0x002644    program     static                          
+                     loop   0x0027bc    program     static                          
+                     loop   0x002830    program     static                          
+                   loop_h   0x00280e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_l   0x002818    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     main   0x0013d4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                   memset   0x0026f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+   mySetLineCodingHandler   0x001bfe    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              putUSBUSART   0x001fec    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+               putrsUSART   0x002528    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uputrs.c
+            putrsUSBUSART   0x0020a2    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             putsUSBUSART   0x00201e    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                    sd000   0x0022cb    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                    sd001   0x0022cf    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                    sd002   0x002303    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                     test   0x00233a    program     static                          
+               zero_block   0x00280e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -318,7 +308,7 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       BDT   0x000400       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              BaudRateGen   0x0005d0       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+              BaudRateGen   0x00006d       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
        BothEP0OutUOWNsSet   0x0005b6       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
                    CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -334,10 +324,11 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
                     CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-          CDCDataInHandle   0x0005cd       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-         CDCDataOutHandle   0x0005cb       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+          CDCDataInHandle   0x00006a       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+         CDCDataOutHandle   0x000068       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                       CR   0x0005ea       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               CtrlTrfData   0x000438       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
@@ -536,7 +527,7 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
                   UIEbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-             USART_Status   0x0001ff       data     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
+             USART_Status   0x0005f7       data     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
    USBActiveConfiguration   0x000590       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
     USBAlternateInterface   0x000591       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
         USBBusIsSuspended   0x0005b3       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
@@ -547,8 +538,8 @@ USBDeferStatusStagePacket   0x0005be       data     extern C:\Box Sync\Personal\
 USBStatusStageEnabledFlag1   0x0005bf       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
 USBStatusStageEnabledFlag2   0x0005c0       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
 USBStatusStageTimeoutCounter   0x0005bd       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-               USB_In_Buf   0x000140       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              USB_Out_Buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               USB_In_Buf   0x000480       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              USB_Out_Buf   0x000440       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                     USTAT   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 USTATcopy   0x0005b4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
@@ -575,53 +566,58 @@ USBStatusStageTimeoutCounter   0x0005bd       data     extern C:\Box Sync\Person
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
                   __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                  __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                   __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
                   __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                        b   0x0001a7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                        b   0x0004e7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
               cdc_data_rx   0x000508       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
               cdc_data_tx   0x000548       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             cdc_mem_type   0x0005ca       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             cdc_mem_type   0x000067       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                cdc_notice   0x000500       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-               cdc_rx_len   0x0005c3       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-            cdc_trf_state   0x0005c4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-               cdc_tx_len   0x0005c9       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                 config_2   0x0001f9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               cdc_rx_len   0x000060       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+            cdc_trf_state   0x000061       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+               cdc_tx_len   0x000066       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                character   0x0005e9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 config_2   0x0005f1       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
      controlTransferState   0x0005a3       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-    control_signal_bitmap   0x0005cf       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  counter   0x0001a3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                curr_byte   0x0005df       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0005e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0005e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              delay_count   0x0001ea       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                     echo   0x0001f5       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                    echo2   0x0001f6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+    control_signal_bitmap   0x00006c       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                  counter   0x0004e3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                curr_byte   0x0004ef       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0004f1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0004f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              delay_count   0x0004ea       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+dummy_encapsulated_cmd_response   0x000071       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                     echo   0x0005ed       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    echo2   0x0005ee       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
           endpoint_number   0x0005b5       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
                ep_data_in   0x0005b7       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
               ep_data_out   0x0005ba       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                      err   0x000183       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                        i   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                      err   0x0004c3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                        i   0x0004c2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                   inPipes   0x0005a4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-         lastTransmission   0x000180       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    junon   0x0005e2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                   junon2   0x0005e7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    kanon   0x0005d3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+         lastTransmission   0x0004c0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
               line_coding   0x000588       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                  outPipes   0x0005a9       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                   outbuf   0x000185       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                   outbuf   0x0004c5       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
    pBDTEntryEP0OutCurrent   0x000592       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
       pBDTEntryEP0OutNext   0x000594       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
               pBDTEntryIn   0x00059c       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
              pBDTEntryOut   0x000596       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                  pCDCDst   0x0005c7       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  pCDCSrc   0x0005c5       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                  pCDCDst   0x000064       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                  pCDCSrc   0x000062       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                      pDst   0x0005b0       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                     prom   0x0005dc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                    pinon   0x0005dc       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     prom   0x0004ec       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
         shortPacketStatus   0x0005a2       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-                     temp   0x0001a9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     text   0x0001ec       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                usart_buf   0x0001aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     temp   0x0004e9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                usart_buf   0x0005c3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+            usart_counter   0x0005eb       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
 
 
 
@@ -663,116 +659,105 @@ USBCtrlEPAllowStatusStage   0x000880    program     extern C:\Box Sync\Personal\
           USBDeviceDetach   0x001268    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
           USBDeviceAttach   0x001272    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
   YourHighPriorityISRCode   0x0012a0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-   YourLowPriorityISRCode   0x001398    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     main   0x0013ba    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-          ___for_lbl00013   0x0013be    program     static                          
-          ___for_lbl00011   0x0013c8    program     static                          
-          ___for_lbl00012   0x0013ce    program     static                          
-          ___for_lbl00016   0x001412    program     static                          
-          ___for_lbl00014   0x001434    program     static                          
-          ___for_lbl00015   0x00143a    program     static                          
-        ___while_lbl00017   0x00149a    program     static                          
-        ___while_lbl00018   0x00149e    program     static                          
-        ___while_lbl00019   0x0014e4    program     static                          
-           ___if_lbl00021   0x0014ee    program     static                          
-        ___while_lbl00020   0x0014f0    program     static                          
-       ___return_lbl00010   0x0014f0    program     static                          
-                     WI2C   0x0014f2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     RI2C   0x001580    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     Calc   0x001648    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                  Delay_s   0x00198a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 Delay_ms   0x001a1c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 Delay_us   0x001ad6    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-          ___for_lbl00140   0x001b0c    program     static                          
-              __tmplbl_59   0x001b28    program     static                          
-          ___for_lbl00138   0x001b40    program     static                          
-          ___for_lbl00139   0x001b46    program     static                          
-       ___return_lbl00137   0x001b46    program     static                          
-   mySetLineCodingHandler   0x001b5a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-             USBCBSuspend   0x001c08    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-     USBCBWakeFromSuspend   0x001c0a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-        USBCB_SOF_Handler   0x001c0c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-        USBCBErrorHandler   0x001c0e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-       USBCBCheckOtherReq   0x001c10    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-    USBCBStdSetDscHandler   0x001c14    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              USBCBInitEP   0x001c16    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-          USBCBSendResume   0x001c1a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-       USBCheckCDCRequest   0x001cf6    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                CDCInitEP   0x001d96    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-       USBCDCEventHandler   0x001dfe    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             getsUSBUSART   0x001e88    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-              putUSBUSART   0x001f48    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             putsUSBUSART   0x001f7a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-            putrsUSBUSART   0x001ffe    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             CDCTxService   0x002084    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-               device_dsc   0x0021d2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-        configDescriptor1   0x0021e4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                    sd000   0x002227    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                    sd001   0x00222b    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                    sd002   0x00225f    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-               USB_CD_Ptr   0x002273    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-               USB_SD_Ptr   0x002275    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
-                _do_cinit   0x00227c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x002296    program     static                          
-                copy_loop   0x0022ee    program     static                          
-            copy_one_byte   0x0022f4    program     static                          
-             done_copying   0x002302    program     static                          
-       ___return_lbl00002   0x002318    program     static                          
-                     done   0x002318    program     static                          
-                OpenUSART   0x00231a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                 WriteI2C   0x0023a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
-                  OpenADC   0x002416    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                getsUSART   0x002484    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
-                   memset   0x0024e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x0024f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _2jContinue   0x002502    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x00250c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x002514    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   strlen   0x002516    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x002526    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x002530    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                 FXD1616S   0x002532    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x002544    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x002554    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x00255e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x002562    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x002574    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                putsUSART   0x00257e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uputs.c
-                 FXD3232U   0x0025ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x0025d8    program     static                          
-                   _false   0x00260c    program     static                          
-       ___return_lbl00000   0x002610    program     static                          
-                ReadUSART   0x002612    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
-              WriteTimer0   0x002650    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-             Delay10KTCYx   0x002688    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x002692    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x002694    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x002698    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0026a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0026a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-               WriteUSART   0x0026b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
-               SetChanADC   0x0026e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-                 FXD1616U   0x002712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x00271c    program     static                          
-                  endloop   0x002738    program     static                          
-       ___return_lbl00000   0x00273c    program     static                          
-            __zero_memory   0x00273e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               zero_block   0x00274c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_h   0x00274c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                compare_l   0x002754    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_l   0x002756    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 _startup   0x00275e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00276e    program     static                          
-       ___return_lbl00001   0x002778    program     static                          
-              Delay10TCYx   0x00277a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x002782    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x002784    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x002786    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x002788    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x00278a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                  IdleI2C   0x002790    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
-               ConvertADC   0x00279e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
+   YourLowPriorityISRCode   0x0013b2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     main   0x0013d4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     WI2C   0x001596    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     RI2C   0x001624    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     Calc   0x0016ec    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  Delay_s   0x001a2e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 Delay_ms   0x001ac0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 Delay_us   0x001b7a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+          ___for_lbl00147   0x001bb0    program     static                          
+              __tmplbl_70   0x001bcc    program     static                          
+          ___for_lbl00145   0x001be4    program     static                          
+          ___for_lbl00146   0x001bea    program     static                          
+       ___return_lbl00144   0x001bea    program     static                          
+   mySetLineCodingHandler   0x001bfe    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+             USBCBSuspend   0x001cac    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+     USBCBWakeFromSuspend   0x001cae    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+        USBCB_SOF_Handler   0x001cb0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+        USBCBErrorHandler   0x001cb2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+       USBCBCheckOtherReq   0x001cb4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+    USBCBStdSetDscHandler   0x001cb8    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              USBCBInitEP   0x001cba    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+          USBCBSendResume   0x001cbe    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x001d06    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+       USBCheckCDCRequest   0x001d9a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                CDCInitEP   0x001e3a    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+       USBCDCEventHandler   0x001ea2    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             getsUSBUSART   0x001f2c    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+              putUSBUSART   0x001fec    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             putsUSBUSART   0x00201e    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+            putrsUSBUSART   0x0020a2    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             CDCTxService   0x002128    program     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+               device_dsc   0x002276    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+        configDescriptor1   0x002288    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                    sd000   0x0022cb    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                    sd001   0x0022cf    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                    sd002   0x002303    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+               USB_CD_Ptr   0x002317    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+               USB_SD_Ptr   0x002319    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\usb_descriptors.c
+                _do_cinit   0x002320    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x00233a    program     static                          
+                copy_loop   0x002392    program     static                          
+            copy_one_byte   0x002398    program     static                          
+             done_copying   0x0023a6    program     static                          
+       ___return_lbl00002   0x0023bc    program     static                          
+                     done   0x0023bc    program     static                          
+                OpenUSART   0x0023be    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                 WriteI2C   0x002448    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
+                  OpenADC   0x0024ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+               putrsUSART   0x002528    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uputrs.c
+                getsUSART   0x00258c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
+                 FXD1616S   0x0025ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x0025fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x00260c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002616    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x00261a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00262c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD3232U   0x002636    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x002644    program     static                          
+                   _false   0x002678    program     static                          
+       ___return_lbl00000   0x00267c    program     static                          
+                ReadUSART   0x00267e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+              WriteTimer0   0x0026bc    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+                   memset   0x0026f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x002708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x002714    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x00271e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x002726    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+             Delay10KTCYx   0x002728    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x002734    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x002738    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002740    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002744    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+               WriteUSART   0x002756    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+               SetChanADC   0x002784    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
+                 FXD1616U   0x0027b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x0027bc    program     static                          
+                  endloop   0x0027d8    program     static                          
+       ___return_lbl00000   0x0027dc    program     static                          
+               __string_6   0x0027de    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_5   0x0027e2    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_4   0x0027ee    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               __string_3   0x0027fa    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+            __zero_memory   0x002800    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               zero_block   0x00280e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_h   0x00280e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                compare_l   0x002816    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_l   0x002818    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 _startup   0x002820    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x002830    program     static                          
+       ___return_lbl00001   0x00283a    program     static                          
+              Delay10TCYx   0x00283c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002844    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x002846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00284a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x00284c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                  IdleI2C   0x002852    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
+               ConvertADC   0x002860    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
                __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
@@ -780,16 +765,16 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
                __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
                      SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                  __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -800,33 +785,42 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x001c62    program     extern C:\Users\Hattor
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                    __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                  __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
                   __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
                   __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
                   __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  __tmp_0   0x000010       data     static C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
+                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
             DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
             DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-              USB_Out_Buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-               USB_In_Buf   0x000140       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-         lastTransmission   0x000180       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                        i   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                      err   0x000183       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                   outbuf   0x000185       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                  counter   0x0001a3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                        b   0x0001a7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     temp   0x0001a9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                usart_buf   0x0001aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-              delay_count   0x0001ea       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     text   0x0001ec       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                     echo   0x0001f5       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                    echo2   0x0001f6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-                 config_2   0x0001f9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
-             USART_Status   0x0001ff       data     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
+               cdc_rx_len   0x000060       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+            cdc_trf_state   0x000061       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                  pCDCSrc   0x000062       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+                  pCDCDst   0x000064       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+               cdc_tx_len   0x000066       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+             cdc_mem_type   0x000067       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+         CDCDataOutHandle   0x000068       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+          CDCDataInHandle   0x00006a       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+    control_signal_bitmap   0x00006c       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+              BaudRateGen   0x00006d       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
+dummy_encapsulated_cmd_response   0x000071       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                       BDT   0x000400       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
                  SetupPkt   0x000430       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
               CtrlTrfData   0x000438       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
+              USB_Out_Buf   0x000440       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+               USB_In_Buf   0x000480       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+         lastTransmission   0x0004c0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                        i   0x0004c2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                      err   0x0004c3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                   outbuf   0x0004c5       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                  counter   0x0004e3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                        b   0x0004e7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     temp   0x0004e9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+              delay_count   0x0004ea       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     prom   0x0004ec       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0004ef       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0004f1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0004f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                cdc_notice   0x000500       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
               cdc_data_rx   0x000508       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
               cdc_data_tx   0x000548       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
@@ -856,58 +850,55 @@ USBStatusStageEnabledFlag1   0x0005bf       data     extern C:\Box Sync\Personal
 USBStatusStageEnabledFlag2   0x0005c0       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
 USBDeferINDataStagePackets   0x0005c1       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
 USBDeferOUTDataStagePackets   0x0005c2       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\usb_device.c
-               cdc_rx_len   0x0005c3       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-            cdc_trf_state   0x0005c4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  pCDCSrc   0x0005c5       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                  pCDCDst   0x0005c7       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-               cdc_tx_len   0x0005c9       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-             cdc_mem_type   0x0005ca       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-         CDCDataOutHandle   0x0005cb       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-          CDCDataInHandle   0x0005cd       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-    control_signal_bitmap   0x0005cf       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-              BaudRateGen   0x0005d0       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\USB\CDC Device Driver\usb_function_cdc.c
-                     prom   0x0005dc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x0005df       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0005e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0005e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    UFRML   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                usart_buf   0x0005c3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    kanon   0x0005d3       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    pinon   0x0005dc       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    junon   0x0005e2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                   junon2   0x0005e7       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                character   0x0005e9       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                       CR   0x0005ea       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+            usart_counter   0x0005eb       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                     echo   0x0005ed       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                    echo2   0x0005ee       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+                 config_2   0x0005f1       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c
+             USART_Status   0x0005f7       data     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
                 UFRMLbits   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    UFRML   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UFRMHbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   UIEbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     UEIR   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEIRbits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEIEbits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     UEIR   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEIE   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEIEbits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     USTAT   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UCON   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UCONbits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UADDRbits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UADDR   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UADDRbits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UCFGbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UCFG   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP0bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP0   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP0bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP1   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP1bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP2   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP2bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP3bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP4bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP5bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP6bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP6   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP6bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP7   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP8   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP9   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -916,54 +907,54 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                 UEP10bits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP11bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP11   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP12bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP13bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP14   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP15   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -971,8 +962,8 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -981,34 +972,34 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                     T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   CCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               CCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
              ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -1024,8 +1015,8 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
               SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -1036,18 +1027,18 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                  RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -1057,8 +1048,8 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                  POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -1066,8 +1057,8 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                  POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -1080,16 +1071,16 @@ dummy_encapsulated_cmd_response   0x0005d4       data     extern C:\Box Sync\Per
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                        PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm

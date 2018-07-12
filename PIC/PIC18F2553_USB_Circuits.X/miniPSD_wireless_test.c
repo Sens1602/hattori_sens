@@ -61,12 +61,11 @@ char pinon[] = "pippi";
 char junon[] = "cool";
 char junon2[2] = {'j', 'u'};
 char character = 'a';
-char CR = '\r';
 int usart_counter = 0;
 
 char echo = '+';
-char echo2[3] = {'+', '\r', '\n'};
-char config_2[] = {'S', 'F', ',', '1', '\r', '\n'};
+char echo2[] = "+\r";
+char config_2[] = "SF,1\r";
 
 /**function prototype *******************/
 void YourHighPriorityISRCode();
@@ -114,13 +113,7 @@ void YourHighPriorityISRCode(){
         if(RCSTAbits.OERR || RCSTAbits.FERR){
             RCSTA = 0;
             RCSTA = 0x90;
-        }   
-        /*
-        while(DataRdyUSART()){
-            usart_buf[usart_counter] = ReadUSART();
-            usart_counter ++;
-        }
-         */
+        }     
         PIR1bits.RCIF = 0;
     }
         
@@ -136,71 +129,20 @@ void YourLowPriorityISRCode()
 
 /****main function***/
 void main(void){  
+    //wait for oscillation stability
+    Delay_s(1);
 
     TRISA = 0b11111111;
     TRISB = 0b00010000;
     TRISC = 0b10000000;
     //memset( usart_buf , '\0' , strlen(usart_buf) );
-
-    //First of all, establish communication with the RN 4020 !
-    //USART configration
-    OpenUSART(USART_TX_INT_OFF & USART_RX_INT_ON &
-                       USART_ASYNCH_MODE & USART_EIGHT_BIT &
-                       USART_CONT_RX & USART_BRGH_HIGH, 25);
-    PIR1bits.RCIF = 0;  //usart rx int flag clear
-    PIE1bits.RCIE = 1;  //enable usart rx int
-    INTCONbits.PEIE = 1;// enable peripheral int?
-
-    //受信バッファ2バイトしかない
-    //コールバック受け取ろうとするとハマるから諦めよう
-    PORTCbits.RC2 = 0; 
-    PORTCbits.RC1 = 0;
     
-    //[CMD\r\n]
-    getsUSART(usart_buf, 5);
-    Delay_s(1);
-    
-    putrsUSART("SF,1");
-    Delay_s(1);
-    if(RCSTAbits.OERR || RCSTAbits.FERR){
-        RCSTA = 0;
-        RCSTA = 0x90;
-    }  
-    PORTCbits.RC2 = 0; 
-    PORTCbits.RC1 = 1;      
- 
-    putrsUSART("SS,30000000");
-    Delay_s(1);
-    if(RCSTAbits.OERR || RCSTAbits.FERR){
-        RCSTA = 0;
-        RCSTA = 0x90;
-    }  
-    PORTCbits.RC2 = 1; 
-    PORTCbits.RC1 = 0;      
+    //USB buffer clear
+	for (i=0; i<sizeof(USB_Out_Buf); i++){
+		USB_Out_Buf[i] = 0;
+    }
+    lastTransmission = 0;		// handle clear
 
-    putrsUSART("SR,32000000");
-    Delay_s(1);
-    if(RCSTAbits.OERR || RCSTAbits.FERR){
-        RCSTA = 0;
-        RCSTA = 0x90;
-    }  
-    PORTCbits.RC2 = 1; 
-    PORTCbits.RC1 = 1;      
-
-    putrsUSART("R,1");
-    Delay_s(1);
-    if(RCSTAbits.OERR || RCSTAbits.FERR){
-        RCSTA = 0;
-        RCSTA = 0x90;
-    }  
-    PORTCbits.RC2 = 0; 
-    PORTCbits.RC1 = 0;      
-    
-    Delay_s(1);
-    PORTCbits.RC2 = 1; 
-    PORTCbits.RC1 = 1;      
-
-    
     //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
@@ -221,15 +163,39 @@ void main(void){
     err = WI2C(0b00011000, 0x0A, 0x16);//100Hz mode
    */
     
-    //USB buffer clear
-    for (i=0; i<sizeof(USB_Out_Buf); i++){
-		USB_Out_Buf[i] = 0;
-    }
-    lastTransmission = 0;		// handle clear
+    //USART configration
 
+    OpenUSART(USART_TX_INT_OFF & USART_RX_INT_ON &
+                       USART_ASYNCH_MODE & USART_EIGHT_BIT &
+                       USART_CONT_RX & USART_BRGH_HIGH, 25);
+    PIR1bits.RCIF = 0;  //usart rx int flag clear
+    PIE1bits.RCIE = 1;  //enable usart rx int
+    INTCONbits.PEIE = 1;// enable peripheral int?
     
+    //受信バッファ2バイトしかない！！！       
+    PORTCbits.RC2 = 0; 
+    PORTCbits.RC1 = 0;      
+    //getsUSART(usart_buf, 2);
+    //RCSTA = 0;
+    //RCSTA = 0x90;    
+    //putsUSART(pinnon);
+    putsUSART(kanon);
+    getsUSART(usart_buf, 2);
+    RCSTA = 0;
+    RCSTA = 0x90;    
+    putsUSART(pinon);
+    getsUSART(usart_buf+2, 2);    
+    RCSTA = 0;
+    RCSTA = 0x90;    
+    putsUSART(junon);
+    getsUSART(usart_buf+4, 2);    
+    
+    Delay_s(2);
+    PORTCbits.RC2 = RCSTAbits.OERR; 
+    PORTCbits.RC1 = RCSTAbits.FERR;      
+
     USBDeviceInit();			// USB initialize
-   
+    
     //timer configration
     //18F2553は1命令4クロック
     //1命令時間:1/(48MHz/4) = 0.166)
