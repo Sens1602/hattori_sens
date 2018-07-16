@@ -66,7 +66,11 @@ int usart_counter = 0;
 
 char echo = '+';
 char echo2[3] = {'+', '\r', '\n'};
-char config_2[] = {'S', 'F', ',', '1', '\r', '\n'};
+char cmd0[] = {'R', ',', '1', '\r', '\n'};
+char cmd1[6] = {'S', 'F', ',', '1', '\r', '\n'};
+char cmd2[] = {'S', 'S', ',', '0', '0', '8', '0', '0', '0', '0', '0',  '\r', '\n'};
+char cmd3[] = {'S', 'R', ',', '3', '2', '0', '0', '0', '0', '0', '0',  '\r', '\n'};
+char cmd4[] = {'S','H','W',',','2','A','2','B',',','4','B','4','1','4','E','4','F','5','0','4','5','5','2','4','F', '\r', '\n'};
 
 /**function prototype *******************/
 void YourHighPriorityISRCode();
@@ -105,8 +109,10 @@ void YourHighPriorityISRCode(){
             //Calc();//データ取得、送信
  
             while(!USBUSARTIsTxTrfReady()) CDCTxService();//これで取りこぼしせず送れるが何故かはまだ不明      
-            putUSBUSART(usart_buf, 16);
+            putrsUSBUSART("R,1\r\n");
             CDCTxService();
+            putsUSART(cmd0);
+
 
         }
      //USART Rx 
@@ -144,12 +150,14 @@ void main(void){
 
     //First of all, establish communication with the RN 4020 !
     //USART configration
-    OpenUSART(USART_TX_INT_OFF & USART_RX_INT_ON &
+    OpenUSART(USART_TX_INT_OFF & USART_RX_INT_OFF &
                        USART_ASYNCH_MODE & USART_EIGHT_BIT &
                        USART_CONT_RX & USART_BRGH_HIGH, 25);
+    /*
     PIR1bits.RCIF = 0;  //usart rx int flag clear
     PIE1bits.RCIE = 1;  //enable usart rx int
     INTCONbits.PEIE = 1;// enable peripheral int?
+    */
 
     //受信バッファ2バイトしかない
     //コールバック受け取ろうとするとハマるから諦めよう
@@ -158,49 +166,106 @@ void main(void){
     
     //[CMD\r\n]
     getsUSART(usart_buf, 5);
-    Delay_s(1);
+    Delay_s(2);
+//delay入れるとおかしくなる？
+//途中でヌル0になってる？
+    for(i=0; i<strlen(cmd0); i++){
+        WriteUSART(cmd0[i]);
+    }
+    RCSTAbits.CREN = 0;
+    RCSTAbits.CREN = 1;    
+    Delay_s(5);
+    //putsUSART(echo2);
+    for(i=0; i<strlen(cmd1); i++){
+        WriteUSART(cmd1[i]);
+    }
+    RCSTAbits.CREN = 0;
+    RCSTAbits.CREN = 1;    
+    for(i=0; i<strlen(cmd0); i++){
+        WriteUSART(cmd0[i]);
+    }
+    RCSTAbits.CREN = 0;
+    RCSTAbits.CREN = 1;
     
-    putrsUSART("SF,1");
-    Delay_s(1);
+    PORTCbits.RC2 = RCSTAbits.OERR; 
+    PORTCbits.RC1 = RCSTAbits.FERR;
+    
+    /*
+    putsUSART(cmd1);
     if(RCSTAbits.OERR || RCSTAbits.FERR){
         RCSTA = 0;
         RCSTA = 0x90;
-    }  
+    }
+   
+    Delay_s(5);
     PORTCbits.RC2 = 0; 
     PORTCbits.RC1 = 1;      
- 
-    putrsUSART("SS,30000000");
+     * 
+    putrsUSART("SS,00800000\r");
     Delay_s(1);
     if(RCSTAbits.OERR || RCSTAbits.FERR){
         RCSTA = 0;
         RCSTA = 0x90;
-    }  
+    } 
     PORTCbits.RC2 = 1; 
     PORTCbits.RC1 = 0;      
 
-    putrsUSART("SR,32000000");
+    putrsUSART("SR,32000000\r");
     Delay_s(1);
     if(RCSTAbits.OERR || RCSTAbits.FERR){
         RCSTA = 0;
         RCSTA = 0x90;
-    }  
+    }
     PORTCbits.RC2 = 1; 
     PORTCbits.RC1 = 1;      
 
-    putrsUSART("R,1");
-    Delay_s(1);
+    putrsUSART("R,1\r");
+    Delay_s(5);
     if(RCSTAbits.OERR || RCSTAbits.FERR){
         RCSTA = 0;
         RCSTA = 0x90;
-    }  
-    PORTCbits.RC2 = 0; 
-    PORTCbits.RC1 = 0;      
+    }
+    PORTCbits.RC2 = 1; 
+    PORTCbits.RC1 = 1;      
+    
+        putrsUSART("R,1\r");
+    Delay_s(5);
+    if(RCSTAbits.OERR || RCSTAbits.FERR){
+        RCSTA = 0;
+        RCSTA = 0x90;
+    }
+    PORTCbits.RC2 = 1; 
+    PORTCbits.RC1 = 1;      
+    
+        putrsUSART("R,1\r");
+    Delay_s(5);
+    if(RCSTAbits.OERR || RCSTAbits.FERR){
+        RCSTA = 0;
+        RCSTA = 0x90;
+    }
+    PORTCbits.RC2 = 1; 
+    PORTCbits.RC1 = 1;      
+    
+    putsUSART(cmd0);
+    Delay_s(5);
+    if(RCSTAbits.OERR || RCSTAbits.FERR){
+        RCSTA = 0;
+        RCSTA = 0x90;
+    }
+    PORTCbits.RC2 = 1; 
+    PORTCbits.RC1 = 1;      
+
+    Delay_s(5);
+    //waite for connecting...
+    while(RCSTAbits.OERR || RCSTAbits.FERR){
+    };
+    RCSTA = 0;
+    RCSTA = 0x90;
     
     Delay_s(1);
     PORTCbits.RC2 = 1; 
     PORTCbits.RC1 = 1;      
-
-    
+    */
     //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
@@ -227,7 +292,6 @@ void main(void){
     }
     lastTransmission = 0;		// handle clear
 
-    
     USBDeviceInit();			// USB initialize
    
     //timer configration
@@ -235,7 +299,7 @@ void main(void){
     //1命令時間:1/(48MHz/4) = 0.166)
     //5ms(200Hz)ほしいので、5000/0.1666 = 30120…欲しいカウント数)
     //65536 - 30120 ≒ 35416
-    T0CON = 0b10000100;//タイマ0,8ビット,プリスケーラ1:2
+    T0CON = 0b10000111;//タイマ0,8ビット,プリスケーラ1:2
     WriteTimer0(35416);//タイマセット
     INTCONbits.GIE = 1;//割り込み機能有効
     INTCONbits.TMR0IE = 1;//TMR0割り込み許可

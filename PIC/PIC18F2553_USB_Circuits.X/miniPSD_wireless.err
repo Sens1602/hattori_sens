@@ -1,10 +1,6 @@
-Warning[2066] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 162 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 171 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 180 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 189 : type qualifier mismatch in assignment
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 334 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 336 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 324 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 326 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 329 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 331 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 337 : unexpected return value
 Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 339 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 341 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 347 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_USB_Circuits.X\miniPSD_wireless.c 349 : unexpected return value
