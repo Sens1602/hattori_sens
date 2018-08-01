@@ -1,16 +1,17 @@
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
-from picpsd_gui import Ui_MainWindow
+from picpsd_gui2 import Ui_MainWindow
 
 class Test(QMainWindow):
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, port= "COM0"):
         super(Test, self).__init__(parent)
+        self.port = port
         self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+        self.ui.setupUi(self, self.port)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    window = Test()
+    window = Test(port="COM15")
     window.show()
     sys.exit(app.exec_())

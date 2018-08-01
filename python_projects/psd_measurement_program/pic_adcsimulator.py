@@ -14,7 +14,7 @@ counter2 = 0
 
 class Main():
     def __init__(self):
-        self.ser = s.Serial("COM3", 9600)
+        self.ser = s.Serial("COM10", 9600)
         print(self.ser.name)
         self.counter = 0
         self.t = np.arange(0, 6.28, 0.05)
@@ -29,7 +29,7 @@ if __name__ == '__main__':
         vy1 = int((np.sin(main.t[main.counter]+np.pi)+1)*2048)
         vy2 = int((np.sin(main.t[main.counter]+3*np.pi/2)+1)*2048)
 
-        data = vx1.to_bytes(2, "big") + vx2.to_bytes(2, "big") + vy1.to_bytes(2, "big") + vy2.to_bytes(2, "big") + b"\xff"
+        data =  b"\x74" + b"\x6f" + b"\x70" + vx1.to_bytes(2, "big") + vx2.to_bytes(2, "big") + vy1.to_bytes(2, "big") + vy2.to_bytes(2, "big")
         main.ser.write(data)
         print(data)
         print(counter2)
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         main.counter += 1
         if main.counter >= main.t_len:
             main.counter = 0
-        sleep(0.02)
+        #sleep(0.02)
         counter2 += 1
 
     sys.exit()
