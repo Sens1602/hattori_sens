@@ -22,15 +22,15 @@ from pyqtgraph.Qt import QtGui, QtCore
 import pandas as pd
 import datetime
 
-save_path = "E:/simulation/"
+save_path = "C:/simulation/"
 
 
 class Ui_MainWindow(object):
     timer: QTimer
 
-    def setupUi(self, MainWindow):
+    def setupUi(self, MainWindow, port):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(3200, 1600)
+        MainWindow.resize(1800, 900)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -76,10 +76,10 @@ class Ui_MainWindow(object):
         self.centralWidget.setLayout(layout_main)
 
         #　glaph
-        self.view_data_len = 50
+        self.view_data_len = 30
         self.counter = 0
         self.tree_counter = 0
-        self.times = np.arange(0, 1000)
+        self.times = np.arange(0, 500)
         self.vx1 = np.zeros(len(self.times))
         self.vx2 = np.zeros(len(self.times))
         self.vy1 = np.zeros(len(self.times))
@@ -91,13 +91,16 @@ class Ui_MainWindow(object):
         # four terminal voltage
         self.glaph_tab = pg.GraphicsWindow(title="four terminal voltage")
         self.p1 = self.glaph_tab.addPlot(title="Vx1")
+        #self.p1.setXRange(0,5)
         self.glaph_tab.nextRow()
         self.p2 = self.glaph_tab.addPlot(title="Vx2")
+        #self.p2.setXRange(0, 5)
         self.glaph_tab.nextRow()
         self.p3 = self.glaph_tab.addPlot(title="Vx3")
+        #self.p3.setXRange(0, 5)
         self.glaph_tab.nextRow()
         self.p4 = self.glaph_tab.addPlot(title="Vx4")
-
+        #self.p4.setXRange(0, 5)
         self.curve1 = self.p1.plot(self.times, self.vx1)
         self.curve2 = self.p2.plot(self.times, self.vx2)
         self.curve3 = self.p3.plot(self.times, self.vy1)
@@ -128,11 +131,14 @@ class Ui_MainWindow(object):
         self.tab_2.setLayout(layout_glaph_tab2)
 
         # serial communication
-        self.ser = sr.Serial("COM2", 9600)
+        self.port = port
+        self.ser = sr.Serial(str(self.port), 9600)
         self.ser.flushInput()
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.serial_monitor)
-        self.timer.start(100)
+        self.timer.start()
+        self.read_data_length = 108
+        self.unit_data_set = int(self.read_data_length / 9)
 
         # save
         d = datetime.datetime.today()
@@ -153,27 +159,15 @@ class Ui_MainWindow(object):
 
 
     def serial_monitor(self):
-        print(self.counter)
-        data_b = self.ser.read(9)
-        print(data_b)
-        raw_vx1 = []
-        raw_vx2 = []
-        raw_vy1 = []
-        raw_vy2 = []
-        num_data_set = [x for x in range(0, len(data_b), 9)]
-        print(list(data_b))
+        #self.ser.flushInput()
+        data_b = self.ser.read(self.read_data_length)
+        #print(data_b)
 
-        for i in num_data_set:
-            raw_vx1.append((data_b[i]<<8) + data_b[i+1])
-            raw_vx2.append((data_b[i+2]<<8) + data_b[i+3])
-            raw_vy1.append((data_b[i+4]<<8) + data_b[i+5])
-            raw_vy2.append((data_b[i+6]<<8) + data_b[i+7])
-
-        for i in range(0, len(num_data_set)):
-            self.vx1[self.counter] = 5 * raw_vx1[i] / 4096
-            self.vx2[self.counter] = 5 * raw_vx2[i] / 4096
-            self.vy1[self.counter] = 5 * raw_vy1[i] / 4096
-            self.vy2[self.counter] = 5 * raw_vy2[i] / 4096
+        for i in range(0, self.unit_data_set):
+            self.vx1[self.counter] = 5 * ((data_b[i*9]<<8) + data_b[i*9+1]) / 4096
+            self.vx2[self.counter] = 5 * ((data_b[i*9+2]<<8) + data_b[i*9+3]) / 4096
+            self.vy1[self.counter] = 5 * ((data_b[i*9+4]<<8) + data_b[i*9+5]) / 4096
+            self.vy2[self.counter] = 5 * ((data_b[i*9+6]<<8) + data_b[i*9+7]) / 4096
             self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
             self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
 
@@ -210,6 +204,12 @@ class Ui_MainWindow(object):
             if self.counter == len(self.times):
                 self.counter = 0
 
+        """
+        self.p1.setYRange(0, 5)
+        self.p2.setYRange(0, 5)
+        self.p3.setYRange(0, 5)
+        self.p4.setYRange(0, 5)
+        """
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

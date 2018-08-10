@@ -22,27 +22,16 @@ void print_usage(char *argv0){
 	int dummy;
 
 	//MPUの設定
-	double accel_range = 2.0;	//±2g
-	double rot_range = 250.0;		//±
-	double mag_range = 4800.0;		//±
-	double psd_range = 3.3;
+	double psd_range = 5.0;
 	int start_position = 0;
-	int amount = 28;//データ量（バイト）
-	int ax, ay, az;//加速度データ取得
-	int rx, ry, rz;//角速度データ取得
-	int mx, my, mz;//地磁気データ取得
+	int amount = 9;//データ量（バイト）
 	int p1, p2, p3, p4;//PSDデータ取得
 
 	//関数のプロトタイプ
-	double accel(int a1, int a2);
-	double rot(int a1, int a2);
-	double mag(int a1, int a2);
 	double psd(int a1, int a2);
 	double calc(int a1, int a2);
 	int getFlag(int a);
 	long calc_d(int a1, int a2);
-
-
 
 int main(int argc, char *argv[]){
 	//com用
@@ -54,8 +43,6 @@ int main(int argc, char *argv[]){
 	//char outbuf[4096][4096];
 	char *str = (char *)malloc(sizeof(char) * 1000);
 	char *temp = (char *)malloc(sizeof(char) * 100);
-	
-	
 
 	//書き込み用（ログ）
 	FILE *wfp;
@@ -109,24 +96,11 @@ int main(int argc, char *argv[]){
 		if(n > 0){
 			lc_counter = 0;
 			sprintf(str, "%d,", n);
-			ax = start_position;
-			ay = ax + 2;
-			az = ay + 2;
-			rx = az + 2;
-			ry = rx + 2;
-			rz = ry + 2;
-			mx = rz + 2;
-			my = mx + 2;
-			mz = my + 2;
-			p1 = mz + 2;
+			p1 = start_position;
 			p2 = p1 + 2;
 			p3 = p2 + 2;
 			p4 = p3 + 2;
-			/*if(n != 12){
-				printf("now n = %d\n", n);
-				sleep(1);
-			}*/
-			//buf[n] = 0; /* always put a "null" at the end of a string! */
+			
 			for(i=0; i < n; i++){
 				sprintf(temp, "");
 				if(i != 0 && i % amount*(lc_counter+1) == 0){
@@ -134,53 +108,16 @@ int main(int argc, char *argv[]){
 					printf("%s\n", str);
 					sprintf(str, "%d,",n);
 					lc_counter++;
-					ax += amount;
-					ay = ax + 2;
-					az = ay + 2;
-					rx = az + 2;
-					ry = rx + 2;
-					rz = ry + 2;
-					mx = rz + 2;
-					my = mx + 2;
-					mz = my + 2;
-					p1 = mz + 2;
+					p1 += amount
 					p2 = p1 + 2;
 					p3 = p2 + 2;
 					p4 = p3 + 2;
 				}
-				//printf("i=%d\tax = %d\n", i, ax);
-			
-				flag = getFlag(i);
-				if(flag > 0){
-					if(flag == 1){
-						sprintf(temp, "%.5f,", (accel(buf[i], buf[i+1])));
-						sprintf(str, "%s%s", str, temp);
-						i++;
-						continue;	
-					}else if(flag == 2){
-						sprintf(temp, "%.5f,", (rot(buf[i], buf[i+1])));
-						sprintf(str, "%s%s", str, temp);
-						i++;
-						continue;
-					}else if(flag == 3){
-						sprintf(temp, "%.5f,", (mag(buf[i], buf[i+1])));
-						sprintf(str, "%s%s", str, temp);
-						i++;
-						continue;
-					} else if(flag == 4){
-					    sprintf(temp, "%.5f,", (psd(buf[i], buf[i+1])));
-						sprintf(str, "%s%s", str, temp);
-						i++;
-						continue;
-					}
-				}else{
-					//sprintf(temp, "%d,", buf[i]);
-					//sprintf(str, "%s%s", str, temp);
-					
-					//ibuf[i] = (int)buf[i];
-					//printf("buf[%d] = %d\r\n", i, buf[i]);
-				}
-				//printf("%s\n", str);
+
+				sprintf(temp, "%.5f,", (psd(buf[i], buf[i+1])));
+				printf(str, "%s%s", str, temp);
+				i++;
+
 			}
 			fprintf(wfp, "%s\n", str);
 			printf("%s\n", str);
@@ -194,66 +131,14 @@ int main(int argc, char *argv[]){
 					return -1;
 				}
 			}
-			
-			//printf("received %i bytes: %s\n", n, (char *)buf);		
 		}
 	}
 	fclose(wfp);
 		
 }
 
-int getFlag(int a){
-	if(a == ax || a == ay || a == az){
-		return 1;
-	}else if(a == rx || a == ry || a == rz){
-		return 2;
-	}else if(a == mx || a == my || a == mz){
-		return 3;
-	}else if(a == p1 || a == p2 || a == p3 || a == p4){
-		return 4;
-	}else{
-		return 0;
-	}
-}
-
-double accel(int a1, int a2){
-	double a;
-	a = a1*256 + a2;
-	if(a1 <= 127){
-		a = a / (256.0 * 256.0) * 2.0 * accel_range;
-	}else{
-		a = (-(256.0 * 256.0 - a)) / (256.0 * 256.0) * 2.0 * accel_range;
-	}
-	return a;
-}
-
-double rot(int a1, int a2){
-	double a;
-	a = a1*256 + a2;
-	if(a1 <= 127){
-		a = a / (256.0 * 256.0) * 2.0 * rot_range;
-	}else{
-		a = (-(256.0 * 256.0 - a)) / (256.0 * 256.0) * 2.0 * rot_range;
-	}
-	return a;
-}
-
-double mag(int a1, int a2){
-	double a;
-	a = a1*256 + a2;
-	if(a1 <= 127){
-		a = a / (256.0 * 256.0) * 2.0 * mag_range;
-	}else{
-		a = (-(256.0 * 256.0 - a)) / (256.0 * 256.0) * 2.0 * mag_range;
-	}
-	return a;
-}
-	
 double psd(int a1, int a2){
-	double a;
-	a = a1*256 + a2;
-	a = a / 4095 * psd_range;
-	return a;
+	return psd_range * (a1*256 + a2) / 4095;
 }
 
 double calc(int a1, int a2){
