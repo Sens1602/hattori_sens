@@ -84,6 +84,15 @@ unsigned int gylo_h_y;
 unsigned int gylo_l_y;
 unsigned int gylo_h_z;
 unsigned int gylo_l_z;
+unsigned int psd_h_x1;
+unsigned int psd_l_x1;
+unsigned int psd_h_x2;
+unsigned int psd_l_x2;
+unsigned int psd_h_y1;
+unsigned int psd_l_y1;
+unsigned int psd_h_y2;
+unsigned int psd_l_y2;
+
 char bt_accel_h_x[];
 char bt_accel_l_x[];
 char bt_accel_h_y[];
@@ -96,6 +105,14 @@ char bt_gylo_h_y[];
 char bt_gylo_l_y[];
 char bt_gylo_h_z[];
 char bt_gylo_l_z[];
+char bt_psd_h_x1[];
+char bt_psd_l_x1[];
+char bt_psd_h_x2[];
+char bt_psd_l_x2[];
+char bt_psd_h_y1[];
+char bt_psd_l_y1[];
+char bt_psd_h_y2[];
+char bt_psd_l_y2[];
 
 /**function prototype *******************/
 void YourHighPriorityISRCode();
@@ -132,45 +149,77 @@ void YourHighPriorityISRCode(){
         PORTCbits.RC2 ^= 1;
         ProcessIO();
         
-        sprintf(bt_accel_h_x, "%x", accel_h_x);
-        sprintf(bt_accel_l_x, "%x", accel_l_x);      
-        sprintf(bt_accel_h_y, "%x", accel_h_y);        
-        sprintf(bt_accel_l_y, "%x", accel_l_y);        
-        sprintf(bt_accel_h_z, "%x", accel_h_z);
-        sprintf(bt_accel_l_z, "%x", accel_l_z);      
-        sprintf(bt_gylo_h_x, "%x", gylo_h_x);
-        sprintf(bt_gylo_l_x, "%x", gylo_l_x);      
-        sprintf(bt_gylo_h_y, "%x", gylo_h_y);        
-        sprintf(bt_gylo_l_y, "%x", gylo_l_y);        
-        sprintf(bt_gylo_h_z, "%x", gylo_h_z);
-        sprintf(bt_gylo_l_z, "%x", gylo_l_z);      
+        sprintf(bt_accel_h_x, "%02x", accel_h_x);
+        sprintf(bt_accel_l_x, "%02x", accel_l_x);      
+        sprintf(bt_accel_h_y, "%02x", accel_h_y);        
+        sprintf(bt_accel_l_y, "%02x", accel_l_y);        
+        sprintf(bt_accel_h_z, "%02x", accel_h_z);
+        sprintf(bt_accel_l_z, "%02x", accel_l_z);      
+        sprintf(bt_gylo_h_x, "%02x", gylo_h_x);
+        sprintf(bt_gylo_l_x, "%02x", gylo_l_x);      
+        sprintf(bt_gylo_h_y, "%02x", gylo_h_y);        
+        sprintf(bt_gylo_l_y, "%02x", gylo_l_y);        
+        sprintf(bt_gylo_h_z, "%02x", gylo_h_z);
+        sprintf(bt_gylo_l_z, "%02x", gylo_l_z);      
+        sprintf(bt_psd_h_x1, "%02x", psd_h_x1);      
+        sprintf(bt_psd_l_x1, "%02x", psd_l_x1);      
+        sprintf(bt_psd_h_x2, "%02x", psd_h_x2);
+        sprintf(bt_psd_l_x2, "%02x", psd_l_x2);
+        sprintf(bt_psd_h_y1, "%02x", psd_h_y1);      
+        sprintf(bt_psd_l_y1, "%02x", psd_l_y1);      
+        sprintf(bt_psd_h_y2, "%02x", psd_h_y2);
+        sprintf(bt_psd_l_y2, "%02x", psd_l_y2);
         
-        
-        cmd7[9] = bt_accel_h_x[0];
-        cmd7[10] = bt_accel_h_x[1];
-        cmd7[11] = bt_accel_l_x[0];
-        cmd7[12] = bt_accel_l_x[1];
-        cmd7[13] = bt_accel_h_y[0];
-        cmd7[14] = bt_accel_h_y[1];
-        cmd7[15] = bt_accel_l_y[0];
-        cmd7[16] = bt_accel_l_y[1];
-        cmd7[17] = bt_accel_h_z[0];
-        cmd7[18] = bt_accel_h_z[1];
-        cmd7[19] = bt_accel_l_z[0];
-        cmd7[20] = bt_accel_l_z[1];
-        cmd7[21] = bt_gylo_h_x[0];
-        cmd7[22] = bt_gylo_h_x[1];
-        cmd7[23] = bt_gylo_l_x[0];
-        cmd7[24] = bt_gylo_l_x[1];
-        cmd7[25] = bt_gylo_h_y[0];
-        cmd7[26] = bt_gylo_h_y[1];
-        cmd7[27] = bt_gylo_l_y[0];
-        cmd7[28] = bt_gylo_l_y[1];
-        cmd7[29] = bt_gylo_h_z[0];
-        cmd7[30] = bt_gylo_h_z[1];
-        cmd7[31] = bt_gylo_l_z[0];
-        cmd7[32] = bt_gylo_l_z[1];
+        cmd7[9] = 'F';
+        cmd7[10] = 'F';
+        cmd7[11] = 'F';
+        cmd7[12] = 'F';
+        cmd7[13] = bt_accel_h_x[0];
+        cmd7[14] = bt_accel_h_x[1];
+        cmd7[15] = bt_accel_l_x[0];
+        cmd7[16] = bt_accel_l_x[1];
+        cmd7[17] = bt_accel_h_y[0];
+        cmd7[18] = bt_accel_h_y[1];
+        cmd7[19] = bt_accel_l_y[0];
+        cmd7[20] = bt_accel_l_y[1];
+        cmd7[21] = bt_accel_h_z[0];
+        cmd7[22] = bt_accel_h_z[1];
+        cmd7[23] = bt_accel_l_z[0];
+        cmd7[24] = bt_accel_l_z[1];
+        cmd7[25] = bt_gylo_h_x[0];
+        cmd7[26] = bt_gylo_h_x[1];
+        cmd7[27] = bt_gylo_l_x[0];
+        cmd7[28] = bt_gylo_l_x[1];
+        cmd7[29] = bt_gylo_h_y[0];
+        cmd7[30] = bt_gylo_h_y[1];
+        cmd7[31] = bt_gylo_l_y[0];
+        cmd7[32] = bt_gylo_l_y[1];
+        cmd7[33] = bt_gylo_h_z[0];
+        cmd7[34] = bt_gylo_h_z[1];
+        cmd7[35] = bt_gylo_l_z[0];
+        cmd7[36] = bt_gylo_l_z[1];
+        send_command((char *)cmd7);  
 
+        cmd7[9] = '0';
+        cmd7[10] = '0';
+        cmd7[11] = '0';
+        cmd7[12] = '0';        
+        cmd7[13] = bt_psd_h_x1[0];
+        cmd7[14] = bt_psd_h_x1[1];
+        cmd7[15] = bt_psd_l_x1[0];
+        cmd7[16] = bt_psd_l_x1[1];
+        cmd7[17] = bt_psd_h_x2[0];
+        cmd7[18] = bt_psd_h_x2[1];
+        cmd7[19] = bt_psd_l_x2[0];
+        cmd7[20] = bt_psd_l_x2[1];
+        cmd7[21] = bt_psd_h_y1[0];
+        cmd7[22] = bt_psd_h_y1[1];       
+        cmd7[23] = bt_psd_l_y1[0];
+        cmd7[24] = bt_psd_l_y1[1];
+        cmd7[25] = bt_psd_h_y2[0];
+        cmd7[26] = bt_psd_h_y2[1];
+        cmd7[27] = bt_psd_l_y2[0];
+        cmd7[28] = bt_psd_l_y2[1];
         send_command((char *)cmd7);  
         
     }    
@@ -187,7 +236,7 @@ void main(void){
 
     
     TRISA = 0b11111111;
-    TRISB = 0b00010000;
+    TRISB = 0b00011100;
     TRISC = 0b10000000;
     PORTCbits.RC2 = 0; 
     PORTCbits.RC1 = 0;
@@ -383,32 +432,135 @@ void ProcessIO(){
     StopI2C();                                 // ???????
     PIR1bits.SSPIF = 0;                        // SSPIF???
      
-//--------------PSD???AD??----------------
+//--------------psd four terminal ad conversion----------------
+    
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 = (unsigned int) ADRESH;
+    psd_l_x1 = (unsigned int)ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 = (unsigned int)ADRESH;
+    psd_l_x2 = (unsigned int)ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 = (unsigned int)ADRESH;
+    psd_l_y1 = (unsigned int)ADRESL;
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 = (unsigned int)ADRESH;
+    psd_l_y2 = (unsigned int)ADRESL;
+    
     /*
     SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
-    outbuf[18] = ADRESH;//??8???
-    outbuf[19] = ADRESL;//??8???
+    psd_h_x1 += ADRESH;
+    psd_l_x1 += ADRESL;
     
-    SetChanADC(ADC_CH1);
+    SetChanADC(ADC_CH8);
     ConvertADC();
     while(BusyADC()); 
-    outbuf[20] = ADRESH;//??8???
-    outbuf[21] = ADRESL;//??8???
+    psd_h_x2 += ADRESH;
+    psd_l_x2 += ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;
+    psd_l_y1 += ADRESL;
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;
+    psd_l_y2 += ADRESL;
+    
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 += ADRESH;
+    psd_l_x1 += ADRESL;
+    
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 += ADRESH;
+    psd_l_x2 += ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;
+    psd_l_y1 += ADRESL;
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;
+    psd_l_y2 += ADRESL;
 
-    SetChanADC(ADC_CH2);
+    SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
-    outbuf[22] = ADRESH;//??8???
-    outbuf[23] = ADRESL;//??8???
+    psd_h_x1 += ADRESH;
+    psd_l_x1 += ADRESL;
     
-    SetChanADC(ADC_CH3);
+    SetChanADC(ADC_CH8);
     ConvertADC();
     while(BusyADC()); 
-    outbuf[24] = ADRESH;//??8???
-    outbuf[25] = ADRESL;//??8???
-   */
+    psd_h_x2 += ADRESH;
+    psd_l_x2 += ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;
+    psd_l_y1 += ADRESL;
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;
+    psd_l_y2 += ADRESL;
+
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 += ADRESH;
+    psd_l_x1 += ADRESL;
+    
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 += ADRESH;
+    psd_l_x2 += ADRESL;
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;
+    psd_l_y1 += ADRESL;
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;
+    psd_l_y2 += ADRESL;
+   
+     psd_h_x1 = (int) (psd_h_x1/5.0);
+     psd_h_x2 = (int) (psd_h_x2/5.0);
+     psd_h_y1 = (int) (psd_h_y1/5.0);
+     psd_h_y2 = (int) (psd_h_y2/5.0);
+        */
+
 }
 
 void send_command(char* src)
