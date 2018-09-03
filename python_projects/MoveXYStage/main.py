@@ -16,7 +16,7 @@ from time import sleep
 
 def main():
     #通信準備
-    stage = XYStage(11)
+    stage = XYStage(13)
 
     #メイン動作部
     #速度設定
@@ -27,10 +27,12 @@ def main():
     #機械原点検出(初期化)
     #stage.DetectOrigin()
 
+    # 絶対移動 500パルスで1mm
+    #stage.SetAbsCoordinates(0, 0)
+    #print("test")
+
     #相対移動 500パルスで1mm
-    #stage.SetAbsCoordinates(10000, 0)
-    
-    #絶対移動 500パルスで1mm
+
     #stage.SetRelCoordinates(0, 0)
 
     """
@@ -40,7 +42,7 @@ def main():
     * @param pich 1/500 mm
     * @param deltatime s
     """
-    stage.PSDCalibration(25000, 25000, 5000, 3)
+    stage.PSDCalibration(25000, 25000, 500, 3)
     stage.fin()
     
 if __name__ == '__main__':
