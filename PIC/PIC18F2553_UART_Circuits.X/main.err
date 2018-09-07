@@ -1,27 +1,7 @@
-Warning[2058] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 150 : call of function without prototype
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 152 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 153 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 154 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 155 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 156 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 157 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 158 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 159 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 160 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 161 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 162 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 163 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 164 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 165 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 166 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 167 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 168 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 169 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 170 : type qualifier mismatch in assignment
-Warning[2066] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 171 : type qualifier mismatch in assignment
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 330 : unexpected return value
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 332 : unexpected return value
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 335 : unexpected return value
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 337 : unexpected return value
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 343 : unexpected return value
-Warning[2052] C:\Users\Hattori\MPLABXProjects\PIC18F2553_UART_Circuits.X\main.c 345 : unexpected return value
+Warning[2058] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 161 : call of function without prototype
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 358 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 360 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 363 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 365 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 371 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c 373 : unexpected return value

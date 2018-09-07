@@ -17,7 +17,7 @@
       <itemPath>usb_descriptors.c</itemPath>
       <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
       <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c</itemPath>
-      <itemPath>miniPSD_wireless.c</itemPath>
+      <itemPath>miniPSD_wired.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -50,16 +50,6 @@ char temp;
 
 //RN4020 commands
 char usart_buf[16]  = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-char kanon[] = "kanopero";
-char pinon[] = "pippi";
-char junon[] = "cool";
-char junon2[2] = {'j', 'u'};
-char character = 'a';
-char CR = '\r';
-int usart_counter = 0;
-
-char echo = '+';
-char echo2[3] = {'+', '\r'};
 char cmd0[] = {'R', ',', '1', '\r'};
 char cmd1[] = {'S', 'F', ',', '1', '\r'};
 char cmd2[] = {'S', 'S', ',', '4', '0', '0', '0', '0', '0', '0', '1',  '\r'};
@@ -68,9 +58,7 @@ char cmd4[] = {'P', 'Z',  '\r'};
 char cmd5[] = {'P', 'S', ',', '0', '1', '0', '2', '0', '3', '0', '4', '0', '5', '0', '6', '0', '7', '0', '8', '0', '9', '0', '0', '0', 'A', '0', 'B', '0', 'C', '0', 'D', '0', 'E', '0', 'F',  '\r'};
 char cmd6[] = {'P', 'C', ',', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'F', 'F', ',','1','0',',','2','0', '\r'};
 char cmd7[] = {'S', 'H', 'W', ',', '0', '0', '0', 'B', ',', 'a', 'a', 'b', 'b', 'c', 'c', 'd', 'd', 'e', 'e', 'f', 'f', '0', '0', '1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8', '9', '9', '0', '0', 'a', 'a', 'b', 'b', 'c', 'c', '\r'};
-
-char bufbuf[];
-char bt_data_buf[30];
+char cmdX[] = {'S', 'B', ',', '4', '\r'};
 
 unsigned int accel_h_x;
 unsigned int accel_l_x;
@@ -93,26 +81,47 @@ unsigned int psd_l_y1;
 unsigned int psd_h_y2;
 unsigned int psd_l_y2;
 
-char bt_accel_h_x[];
-char bt_accel_l_x[];
-char bt_accel_h_y[];
-char bt_accel_l_y[];
-char bt_accel_h_z[];
-char bt_accel_l_z[];
-char bt_gylo_h_x[];
-char bt_gylo_l_x[];
-char bt_gylo_h_y[];
-char bt_gylo_l_y[];
-char bt_gylo_h_z[];
-char bt_gylo_l_z[];
-char bt_psd_h_x1[];
-char bt_psd_l_x1[];
-char bt_psd_h_x2[];
-char bt_psd_l_x2[];
-char bt_psd_h_y1[];
-char bt_psd_l_y1[];
-char bt_psd_h_y2[];
-char bt_psd_l_y2[];
+char bt_accel_h_x[3];
+char bt_accel_l_x[3];
+char bt_accel_h_y[3];
+char bt_accel_l_y[3];
+char bt_accel_h_z[3];
+char bt_accel_l_z[3];
+char bt_gylo_h_x[3];
+char bt_gylo_l_x[3];
+char bt_gylo_h_y[3];
+char bt_gylo_l_y[3];
+char bt_gylo_h_z[3];
+char bt_gylo_l_z[3];
+char bt_psd_h_x1[3];
+char bt_psd_l_x1[3];
+char bt_psd_h_x2[3];
+char bt_psd_l_x2[3];
+char bt_psd_h_y1[3];
+char bt_psd_l_y1[3];
+char bt_psd_h_y2[3];
+char bt_psd_l_y2[3];
+
+char *ptr_accel_h_x;
+char *ptr_accel_l_x;
+char *ptr_accel_h_y;
+char *ptr_accel_l_y;
+char *ptr_accel_h_z;
+char *ptr_accel_l_z;
+char *ptr_gylo_h_x;
+char *ptr_gylo_l_x;
+char *ptr_gylo_h_y;
+char *ptr_gylo_l_y;
+char *ptr_gylo_h_z;
+char *ptr_gylo_l_z;
+char *ptr_psd_h_x1;
+char *ptr_psd_l_x1;
+char *ptr_psd_h_x2;
+char *ptr_psd_l_x2;
+char *ptr_psd_h_y1;
+char *ptr_psd_l_y1;
+char *ptr_psd_h_y2;
+char *ptr_psd_l_y2;
 
 /**function prototype *******************/
 void YourHighPriorityISRCode();
@@ -126,6 +135,8 @@ unsigned int RI2C(unsigned char control, unsigned char address);
 void Delay_s(int tm);
 void Delay_ms(int tm);
 void Delay_us(int tm);
+void binary_to_ascii(int a, char *text);
+
 
 /*** interrupt vector***/
 #pragma code REMAPPED_HIGH_INTERRUPT_VECTOR = 0x08
@@ -149,27 +160,27 @@ void YourHighPriorityISRCode(){
         PORTCbits.RC2 ^= 1;
         ProcessIO();
         
-        sprintf(bt_accel_h_x, "%02x", accel_h_x);
-        sprintf(bt_accel_l_x, "%02x", accel_l_x);      
-        sprintf(bt_accel_h_y, "%02x", accel_h_y);        
-        sprintf(bt_accel_l_y, "%02x", accel_l_y);        
-        sprintf(bt_accel_h_z, "%02x", accel_h_z);
-        sprintf(bt_accel_l_z, "%02x", accel_l_z);      
-        sprintf(bt_gylo_h_x, "%02x", gylo_h_x);
-        sprintf(bt_gylo_l_x, "%02x", gylo_l_x);      
-        sprintf(bt_gylo_h_y, "%02x", gylo_h_y);        
-        sprintf(bt_gylo_l_y, "%02x", gylo_l_y);        
-        sprintf(bt_gylo_h_z, "%02x", gylo_h_z);
-        sprintf(bt_gylo_l_z, "%02x", gylo_l_z);      
-        sprintf(bt_psd_h_x1, "%02x", psd_h_x1);      
-        sprintf(bt_psd_l_x1, "%02x", psd_l_x1);      
-        sprintf(bt_psd_h_x2, "%02x", psd_h_x2);
-        sprintf(bt_psd_l_x2, "%02x", psd_l_x2);
-        sprintf(bt_psd_h_y1, "%02x", psd_h_y1);      
-        sprintf(bt_psd_l_y1, "%02x", psd_l_y1);      
-        sprintf(bt_psd_h_y2, "%02x", psd_h_y2);
-        sprintf(bt_psd_l_y2, "%02x", psd_l_y2);
-        
+        binary_to_ascii(accel_h_x, ptr_accel_h_x);
+        binary_to_ascii(accel_l_x, ptr_accel_l_x);
+        binary_to_ascii(accel_h_y, ptr_accel_h_y);
+        binary_to_ascii(accel_l_y, ptr_accel_l_y);
+        binary_to_ascii(accel_h_z, ptr_accel_h_z);
+        binary_to_ascii(accel_l_z, ptr_accel_l_z);
+        binary_to_ascii(gylo_h_x, ptr_gylo_h_x);
+        binary_to_ascii(gylo_l_x, ptr_gylo_l_x);
+        binary_to_ascii(gylo_h_y, ptr_gylo_h_y);
+        binary_to_ascii(gylo_l_y, ptr_gylo_l_y);
+        binary_to_ascii(gylo_h_z, ptr_gylo_h_z);
+        binary_to_ascii(gylo_l_z, ptr_gylo_l_z);
+        binary_to_ascii(psd_h_x1, ptr_psd_h_x1);
+        binary_to_ascii(psd_l_x1, ptr_psd_l_x1);
+        binary_to_ascii(psd_h_x2, ptr_psd_h_x2);
+        binary_to_ascii(psd_l_x2, ptr_psd_l_x2);
+        binary_to_ascii(psd_h_y1, ptr_psd_h_y1);
+        binary_to_ascii(psd_l_y1, ptr_psd_l_y1);
+        binary_to_ascii(psd_h_y2, ptr_psd_h_y2);
+        binary_to_ascii(psd_l_y2, ptr_psd_l_y2);
+
         cmd7[9] = 'F';
         cmd7[10] = 'F';
         cmd7[11] = 'F';
@@ -240,11 +251,31 @@ void main(void){
     TRISC = 0b10000000;
     PORTCbits.RC2 = 0; 
     PORTCbits.RC1 = 0;
-    //memset( usart_buf , '\0' , strlen(usart_buf) );
+    
+    ptr_accel_h_x = bt_accel_h_x;
+    ptr_accel_l_x = bt_accel_l_x;
+    ptr_accel_h_y = bt_accel_h_y;
+    ptr_accel_l_y = bt_accel_l_y;
+    ptr_accel_h_z = bt_accel_h_z;
+    ptr_accel_l_z = bt_accel_l_z;
+    ptr_gylo_h_x = bt_gylo_h_x;
+    ptr_gylo_l_x = bt_gylo_l_x;
+    ptr_gylo_h_y = bt_gylo_h_y;
+    ptr_gylo_l_y = bt_gylo_l_y;
+    ptr_gylo_h_z = bt_gylo_h_z;
+    ptr_gylo_l_z = bt_gylo_l_z;
+    ptr_psd_h_x1 = bt_psd_h_x1;
+    ptr_psd_l_x1 = bt_psd_l_x1;
+    ptr_psd_h_x2 = bt_psd_h_x2;
+    ptr_psd_l_x2 = bt_psd_l_x2;
+    ptr_psd_h_y1 = bt_psd_h_y1;
+    ptr_psd_l_y1 = bt_psd_l_y1;
+    ptr_psd_h_y2 = bt_psd_h_y2;
+    ptr_psd_l_y2 = bt_psd_l_y2;
+
 
     //First of all, establish communication with the RN 4020 !
     //USART configration
-
     OpenUSART(USART_TX_INT_OFF & USART_RX_INT_OFF &
                        USART_ASYNCH_MODE & USART_EIGHT_BIT &
                        USART_CONT_RX & USART_BRGH_HIGH, 25);
@@ -281,13 +312,10 @@ void main(void){
     PORTCbits.RC2 = 1; 
     PORTCbits.RC1 = 0;
     Delay_s(1); 
-    
+        
     send_command((char *)cmd0);
-    Delay_s(5); 
+    Delay_s(5);   
     
-    //PORTCbits.RC2 = RCSTAbits.OERR; 
-    //PORTCbits.RC1 = RCSTAbits.FERR;
-
     //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
@@ -311,7 +339,7 @@ void main(void){
     //1????:1/(48MHz/4) = 0.166)
     //5ms(200Hz)??????5000/0.1666 = 30120?????????)
     //65536 - 30120 ? 35416
-    T0CON = 0b10000000;//???0,8???,??????1:2
+    T0CON = 0b10000010;//???0,8???,??????1:2
     WriteTimer0(35416);//??????
     INTCONbits.GIE = 1;//????????
     INTCONbits.TMR0IE = 1;//TMR0??????
@@ -437,7 +465,7 @@ void ProcessIO(){
     SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
-    psd_h_x1 = (unsigned int) ADRESH;
+    psd_h_x1 = (unsigned int)ADRESH;
     psd_l_x1 = (unsigned int)ADRESL;
     
     SetChanADC(ADC_CH9);
@@ -458,7 +486,7 @@ void ProcessIO(){
     psd_h_y2 = (unsigned int)ADRESH;
     psd_l_y2 = (unsigned int)ADRESL;
     
-    /*
+    
     SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
@@ -559,8 +587,26 @@ void ProcessIO(){
      psd_h_x2 = (int) (psd_h_x2/5.0);
      psd_h_y1 = (int) (psd_h_y1/5.0);
      psd_h_y2 = (int) (psd_h_y2/5.0);
-        */
 
+}
+
+void binary_to_ascii(int a, char *text){
+    int high = (a & 0b11110000)>>4;
+    int low = (a & 0b00001111);
+
+    if(high < 10){
+        high += 48;
+    }else{
+        high += 55;
+    }
+    if(low < 10){
+        low += 48;
+    }else{
+        low += 55;
+    }
+    
+    *text = high;
+    *(text+1) = low;
 }
 
 void send_command(char* src)

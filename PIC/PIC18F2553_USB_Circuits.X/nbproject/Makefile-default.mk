@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" miniPSD_wireless.c
+SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" miniPSD_wired.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wireless.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d ${OBJECTDIR}/_ext/1821828070/usb_device.o.d ${OBJECTDIR}/miniPSD_wireless.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wired.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d ${OBJECTDIR}/_ext/1821828070/usb_device.o.d ${OBJECTDIR}/miniPSD_wired.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wireless.o
+OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wired.o
 
 # Source Files
-SOURCEFILES=usb_descriptors.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c miniPSD_wireless.c
+SOURCEFILES=usb_descriptors.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c miniPSD_wired.c
 
 
 CFLAGS=
@@ -125,13 +125,13 @@ ${OBJECTDIR}/_ext/1821828070/usb_device.o: ../../../../../../../Box\ Sync/Person
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1821828070/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1821828070/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/miniPSD_wireless.o: miniPSD_wireless.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/miniPSD_wireless.o.d 
-	@${RM} ${OBJECTDIR}/miniPSD_wireless.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wireless.o   miniPSD_wireless.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wireless.o 
-	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wireless.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	@${RM} ${OBJECTDIR}/miniPSD_wired.o.d 
+	@${RM} ${OBJECTDIR}/miniPSD_wired.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wired.o   miniPSD_wired.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wired.o 
+	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wired.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
@@ -158,13 +158,13 @@ ${OBJECTDIR}/_ext/1821828070/usb_device.o: ../../../../../../../Box\ Sync/Person
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1821828070/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1821828070/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/miniPSD_wireless.o: miniPSD_wireless.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/miniPSD_wireless.o.d 
-	@${RM} ${OBJECTDIR}/miniPSD_wireless.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wireless.o   miniPSD_wireless.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wireless.o 
-	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wireless.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	@${RM} ${OBJECTDIR}/miniPSD_wired.o.d 
+	@${RM} ${OBJECTDIR}/miniPSD_wired.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wired.o   miniPSD_wired.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wired.o 
+	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wired.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

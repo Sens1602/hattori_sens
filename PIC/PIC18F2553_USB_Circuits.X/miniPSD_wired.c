@@ -53,6 +53,13 @@ unsigned long counter;
 int b;
 char temp;
 
+unsigned int accel_h_x;
+unsigned int accel_l_x;
+char bt_accel_h_x[3];
+char bt_accel_l_x[3];
+char *ptr_accel_h_x;
+char *ptr_accel_l_x;
+
 /**function prototype *******************/
 void YourHighPriorityISRCode();
 void YourLowPriorityISRCode();
@@ -60,6 +67,8 @@ unsigned int WI2C( unsigned char control,
             unsigned char address, unsigned char data);
 unsigned int RI2C(unsigned char control, unsigned char address);
 void Calc();
+void binary_to_ascii(int a, char *text);
+
 
 /*** interrupt vector***/
 #pragma code REMAPPED_HIGH_INTERRUPT_VECTOR = 0x08
@@ -84,7 +93,7 @@ void YourHighPriorityISRCode(){
         // 処理実行
         if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
             Calc();//データ取得、送信
-            PORTCbits.RC6 ^= 1;
+            PORTCbits.RC2 ^= 1;
         }      
     }
         
@@ -106,8 +115,11 @@ void main(void){
     }
 
     TRISA = 0b11111111;
-    TRISB = 0b00110000;
+    TRISB = 0b00011100;
     TRISC = 0b00000000;
+    
+    ptr_accel_h_x = bt_accel_h_x;
+    ptr_accel_l_x = bt_accel_l_x;
     
     //USB buffer clear
 	for (i=0; i<sizeof(USB_Out_Buf); i++){
@@ -115,6 +127,7 @@ void main(void){
     }
     lastTransmission = 0;		// handle clear
     USBDeviceInit();			// USB initialize
+    PORTCbits.RC2 = 0;
 
     //ADC configration
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
@@ -126,7 +139,7 @@ void main(void){
     OpenI2C(MASTER, SLEW_ON);   // master mode
     SSPADD = 29;                //I2C400kHz?
     err = WI2C(0b11010000, 0x24, 0x0D);//slave clock configration
-    
+      
     //MPU initialize
     //accel, gylo wake to sleep
     
@@ -146,7 +159,7 @@ void main(void){
     INTCONbits.GIE = 1;//割り込み機能有効
     INTCONbits.TMR0IE = 1;//TMR0割り込み許可
         
-    
+    PORTCbits.RC2 = 1;
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
         USBDeviceAttach();				// USB割り込み許可			
@@ -228,10 +241,6 @@ unsigned int RI2C(unsigned char control, unsigned char address){
 
 //データ取得
 void Calc(){
-    
-    //周期確認用
-    PORTCbits.RC6 ^= 1;
-
 //----------------加速度,ジャイロ-----------------
     IdleI2C();                                 // アイドル確認
     StartI2C();                                // start 出力・終了待ち
@@ -362,31 +371,31 @@ void Calc(){
     
      
 //--------------PSD増幅後AD変換----------------
-    
+    /*
     SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
     outbuf[18] = ADRESH;//上位8ビット
     outbuf[19] = ADRESL;//下位8ビット
     
-    SetChanADC(ADC_CH1);
+    SetChanADC(ADC_CH8);
     ConvertADC();
     while(BusyADC()); 
     outbuf[20] = ADRESH;//上位8ビット
     outbuf[21] = ADRESL;//下位8ビット
 
-    SetChanADC(ADC_CH2);
+    SetChanADC(ADC_CH9);
     ConvertADC();
     while(BusyADC()); 
     outbuf[22] = ADRESH;//上位8ビット
     outbuf[23] = ADRESL;//下位8ビット
     
-    SetChanADC(ADC_CH3);
+    SetChanADC(ADC_CH11);
     ConvertADC();
     while(BusyADC()); 
     outbuf[24] = ADRESH;//上位8ビット
     outbuf[25] = ADRESL;//下位8ビット
-   
+   */
     //デバッグ用
     //outbuf[18] = 256;
     //outbuf[19] = 0;
@@ -400,10 +409,48 @@ void Calc(){
     outbuf[26] = '\r';
     outbuf[27] = '\n';
        
-    while(!USBUSARTIsTxTrfReady()) CDCTxService();//これで取りこぼしせず送れるが何故かはまだ不明      
+       
+    accel_h_x = outbuf[0];
+    accel_l_x = outbuf[1];
+    
+    binary_to_ascii(accel_h_x, ptr_accel_h_x);
+    binary_to_ascii(accel_l_x, ptr_accel_l_x);
+    /* do not run !!!!!! (compiler bug?)
+    sprintf(bt_accel_h_x, "%02x", accel_h_x);
+    sprintf(bt_accel_l_x, "%02x", accel_l_x);  
+    */
+    
+    outbuf[2] = 0;
+    outbuf[3] = bt_accel_h_x[0];
+    outbuf[4] = bt_accel_h_x[1];
+    outbuf[5] = 0;
+    outbuf[6] = bt_accel_l_x[0];
+    outbuf[7] = bt_accel_l_x[1];
+    outbuf[8] = 0;
+    
+    //while(!USBUSARTIsTxTrfReady()) CDCTxService();//これで取りこぼしせず送れるが何故かはまだ不明      
     putUSBUSART(outbuf, 28);
     CDCTxService();
         
+}
+
+void binary_to_ascii(int a, char *text){
+    int high = (a & 0b11110000)>>4;
+    int low = (a & 0b00001111);
+
+    if(high < 10){
+        high += 48;
+    }else{
+        high += 55;
+    }
+    if(low < 10){
+        low += 48;
+    }else{
+        low += 55;
+    }
+    
+    *text = high;
+    *(text+1) = low;
 }
 
 /***********************************************************

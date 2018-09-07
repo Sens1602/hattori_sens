@@ -72,6 +72,8 @@ char cmd2[] = {'S', 'S', ',', '0', '0', '8', '0', '0', '0', '0', '0',  '\r', '\n
 char cmd3[] = {'S', 'R', ',', '3', '2', '0', '0', '0', '0', '0', '0',  '\r', '\n'};
 char cmd4[] = {'S','H','W',',','2','A','2','B',',','4','B','4','1','4','E','4','F','5','0','4','5','5','2','4','F', '\r', '\n'};
 
+
+
 /**function prototype *******************/
 void YourHighPriorityISRCode();
 void YourLowPriorityISRCode();
@@ -299,7 +301,7 @@ void main(void){
     //1命令時間:1/(48MHz/4) = 0.166)
     //5ms(200Hz)ほしいので、5000/0.1666 = 30120…欲しいカウント数)
     //65536 - 30120 ≒ 35416
-    T0CON = 0b10000111;//タイマ0,8ビット,プリスケーラ1:2
+    T0CON = 0b10000000;//タイマ0,8ビット,プリスケーラ1:2
     WriteTimer0(35416);//タイマセット
     INTCONbits.GIE = 1;//割り込み機能有効
     INTCONbits.TMR0IE = 1;//TMR0割り込み許可
@@ -520,7 +522,7 @@ void Calc(){
     
      
 //--------------PSD増幅後AD変換----------------
-    
+    /*
     SetChanADC(ADC_CH0);
     ConvertADC();
     while(BusyADC()); 
@@ -544,20 +546,11 @@ void Calc(){
     while(BusyADC()); 
     outbuf[24] = ADRESH;//上位8ビット
     outbuf[25] = ADRESL;//下位8ビット
-   
-    //デバッグ用
-    //outbuf[18] = 256;
-    //outbuf[19] = 0;
-    //outbuf[20] = 256;
-    //outbuf[21] = 0;
-    //outbuf[22] = 256;
-    //outbuf[23] = 0;
-    //outbuf[24] = 256;
-    //outbuf[25] = 0;
-   
+   */
+    
     outbuf[26] = '\r';
     outbuf[27] = '\n';
-       
+           
     while(!USBUSARTIsTxTrfReady()) CDCTxService();//これで取りこぼしせず送れるが何故かはまだ不明      
     putUSBUSART(outbuf, 28);
     CDCTxService();
