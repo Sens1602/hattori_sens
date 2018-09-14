@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Fri Sep 07 16:41:56 2018
+Linker Map File - Created Thu Sep 13 16:34:28 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,108 +7,93 @@ Linker Map File - Created Fri Sep 07 16:41:56 2018
                _entry_scn       code   0x000000    program   0x000006
            .code___init.o       code   0x000006    program   0x000002
 REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
-          .code_adcbusy.o       code   0x00000e    program   0x00000a
+            .code_udefs.o       code   0x00000e    program   0x000000
+         .romdata_udefs.o    romdata   0x00000e    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
+         .idata_udefs.o_i    romdata   0x00000e    program   0x000000
+      .idata_i2c_idle.o_i    romdata   0x00000e    program   0x000000
+      .romdata_i2c_idle.o    romdata   0x00000e    program   0x000000
+         .romdata_uread.o    romdata   0x00000e    program   0x000000
+       .idata_adcopen.o_i    romdata   0x00000e    program   0x000000
+       .romdata_adcopen.o    romdata   0x00000e    program   0x000000
+         .idata_uread.o_i    romdata   0x00000e    program   0x000000
+      .idata_i2c_open.o_i    romdata   0x00000e    program   0x000000
+      .romdata_i2c_open.o    romdata   0x00000e    program   0x000000
+         .romdata_uopen.o    romdata   0x00000e    program   0x000000
+         .idata_uopen.o_i    romdata   0x00000e    program   0x000000
+      .idata_i2c_writ.o_i    romdata   0x00000e    program   0x000000
+      .romdata_i2c_writ.o    romdata   0x00000e    program   0x000000
+       .idata_t0write.o_i    romdata   0x00000e    program   0x000000
+       .romdata_t0write.o    romdata   0x00000e    program   0x000000
+        .idata_uwrite.o_i    romdata   0x00000e    program   0x000000
+        .romdata_uwrite.o    romdata   0x00000e    program   0x000000
+        .idata___init.o_i    romdata   0x00000e    program   0x000000
+        .romdata___init.o    romdata   0x00000e    program   0x000000
+         .romdata_main2.o    romdata   0x00000e    program   0x000000
+         .idata_ugets.o_i    romdata   0x00000e    program   0x000000
+         .romdata_ugets.o    romdata   0x00000e    program   0x000000
+            .code_c018i.o       code   0x00000e    program   0x000000
+         .romdata_c018i.o    romdata   0x00000e    program   0x000000
+         .idata_c018i.o_i    romdata   0x00000e    program   0x000000
 REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x00000e
-             .code_main.o       code   0x00002c    program   0x0011b6
-                     PROG       code   0x0011e2    program   0x000286
-               _cinit_scn       code   0x001468    program   0x00009e
-            .code_uopen.o       code   0x001506    program   0x00008a
-         .code_i2c_writ.o       code   0x001590    program   0x000072
-          .code_adcopen.o       code   0x001602    program   0x00006e
-            .code_ugets.o       code   0x001670    program   0x00005e
-            .code_uread.o       code   0x0016ce    program   0x00003e
-          .code_t0write.o       code   0x00170c    program   0x000038
-         .code_i2c_open.o       code   0x001744    program   0x000036
-             D10KTCYXCODE       code   0x00177a    program   0x00002e
-           .code_uwrite.o       code   0x0017a8    program   0x00002e
-         .code_adcsetch.o       code   0x0017d6    program   0x00002e
-         .code_fxd1616u.o       code   0x001804    program   0x00002c
-                    .code       code   0x001830    program   0x000020
-             _startup_scn       code   0x001850    program   0x00001c
-              D10TCYXCODE       code   0x00186c    program   0x000016
-         .code_i2c_idle.o       code   0x001882    program   0x00000e
-          .code_adcconv.o       code   0x001890    program   0x000004
-         .romdata_udefs.o    romdata   0x001894    program   0x000000
-         .idata_udefs.o_i    romdata   0x001894    program   0x000000
-         .romdata_c018i.o    romdata   0x001894    program   0x000000
-      .romdata_adcsetch.o    romdata   0x001894    program   0x000000
-      .romdata_i2c_writ.o    romdata   0x001894    program   0x000000
-          .idata_main.o_i    romdata   0x001894    program   0x0000b9
-         .romdata_uread.o    romdata   0x001894    program   0x000000
-         .idata_uread.o_i    romdata   0x001894    program   0x000000
-          .romdata_main.o    romdata   0x001894    program   0x000000
-         .romdata_uopen.o    romdata   0x001894    program   0x000000
-         .idata_uopen.o_i    romdata   0x001894    program   0x000000
-         .romdata_ugets.o    romdata   0x001894    program   0x000000
-      .romdata_i2c_open.o    romdata   0x001894    program   0x000000
-         .idata_ugets.o_i    romdata   0x001894    program   0x000000
-        .romdata___init.o    romdata   0x001894    program   0x000000
-       .romdata_adcopen.o    romdata   0x001894    program   0x000000
-       .idata_t0write.o_i    romdata   0x001894    program   0x000000
-      .romdata_i2c_idle.o    romdata   0x001894    program   0x000000
-       .romdata_t0write.o    romdata   0x001894    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x001894    program   0x000000
-        .romdata_uwrite.o    romdata   0x001894    program   0x000000
-       .romdata_adcbusy.o    romdata   0x001894    program   0x000000
-        .idata_uwrite.o_i    romdata   0x001894    program   0x000000
-       .romdata_adcconv.o    romdata   0x001894    program   0x000000
-        .idata___init.o_i    romdata   0x00194d    program   0x000000
-      .idata_i2c_writ.o_i    romdata   0x00194d    program   0x000000
-      .idata_adcsetch.o_i    romdata   0x00194d    program   0x000000
-      .idata_i2c_open.o_i    romdata   0x00194d    program   0x000000
-       .idata_adcopen.o_i    romdata   0x00194d    program   0x000000
-      .idata_i2c_idle.o_i    romdata   0x00194d    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x00194d    program   0x000000
-       .idata_adcconv.o_i    romdata   0x00194d    program   0x000000
-       .idata_adcbusy.o_i    romdata   0x00194d    program   0x000000
-         .idata_c018i.o_i    romdata   0x00194d    program   0x000000
-            .code_udefs.o       code   0x00194e    program   0x000000
-            .code_c018i.o       code   0x00194e    program   0x000000
-    .config_300000_main.o    romdata   0x300000    program   0x000001
-    .config_300001_main.o    romdata   0x300001    program   0x000001
-    .config_300002_main.o    romdata   0x300002    program   0x000001
-    .config_300003_main.o    romdata   0x300003    program   0x000001
-    .config_300005_main.o    romdata   0x300005    program   0x000001
-    .config_300006_main.o    romdata   0x300006    program   0x000001
-                MATH_DATA      udata   0x000000       data   0x000014
-                 .tmpdata      udata   0x000014       data   0x000004
-                DELAYDAT2      udata   0x000018       data   0x000001
-                DELAYDAT1      udata   0x000019       data   0x000001
-            .idata_main.o      idata   0x000100       data   0x0000b9
+            .code_main2.o       code   0x00002c    program   0x000c3e
+               _cinit_scn       code   0x000c6a    program   0x00009e
+            .code_uopen.o       code   0x000d08    program   0x00008a
+         .code_i2c_writ.o       code   0x000d92    program   0x000072
+          .code_adcopen.o       code   0x000e04    program   0x00006e
+            .code_ugets.o       code   0x000e72    program   0x00005e
+                     PROG       code   0x000ed0    program   0x00004c
+            .code_uread.o       code   0x000f1c    program   0x00003e
+          .code_t0write.o       code   0x000f5a    program   0x000038
+         .code_i2c_open.o       code   0x000f92    program   0x000036
+             D10KTCYXCODE       code   0x000fc8    program   0x00002e
+           .code_uwrite.o       code   0x000ff6    program   0x00002e
+         .code_fxd1616u.o       code   0x001024    program   0x00002c
+                    .code       code   0x001050    program   0x000020
+             _startup_scn       code   0x001070    program   0x00001c
+              D10TCYXCODE       code   0x00108c    program   0x000016
+         .code_i2c_idle.o       code   0x0010a2    program   0x00000e
+         .idata_main2.o_i    romdata   0x0010b0    program   0x0000b9
+   .config_300000_main2.o    romdata   0x300000    program   0x000001
+   .config_300001_main2.o    romdata   0x300001    program   0x000001
+   .config_300002_main2.o    romdata   0x300002    program   0x000001
+   .config_300003_main2.o    romdata   0x300003    program   0x000001
+   .config_300005_main2.o    romdata   0x300005    program   0x000001
+   .config_300006_main2.o    romdata   0x300006    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000004
+                DELAYDAT2      udata   0x000014       data   0x000001
+                DELAYDAT1      udata   0x000015       data   0x000001
+           .idata_main2.o      idata   0x000100       data   0x0000b9
            .udata_c018i.o      udata   0x0001b9       data   0x00000a
            .udata_udefs.o      udata   0x0001c3       data   0x000001
-           .udata_uread.o      udata   0x0001c4       data   0x000000
            .idata_uread.o      idata   0x0001c4       data   0x000000
-        .udata_adcsetch.o      udata   0x0001c4       data   0x000000
-        .idata_adcsetch.o      idata   0x0001c4       data   0x000000
            .idata_udefs.o      idata   0x0001c4       data   0x000000
         .udata_i2c_writ.o      udata   0x0001c4       data   0x000000
         .idata_i2c_writ.o      idata   0x0001c4       data   0x000000
          .udata_t0write.o      udata   0x0001c4       data   0x000000
-           .idata_ugets.o      idata   0x0001c4       data   0x000000
          .idata_t0write.o      idata   0x0001c4       data   0x000000
           .udata_uwrite.o      udata   0x0001c4       data   0x000000
           .idata_uwrite.o      idata   0x0001c4       data   0x000000
           .udata___init.o      udata   0x0001c4       data   0x000000
           .idata___init.o      idata   0x0001c4       data   0x000000
            .udata_ugets.o      udata   0x0001c4       data   0x000000
-           .idata_c018i.o      idata   0x0001c4       data   0x000000
-         .udata_adcbusy.o      udata   0x0001c4       data   0x000000
-         .idata_adcbusy.o      idata   0x0001c4       data   0x000000
-         .udata_adcconv.o      udata   0x0001c4       data   0x000000
-         .idata_adcconv.o      idata   0x0001c4       data   0x000000
-        .udata_fxd1616u.o      udata   0x0001c4       data   0x000000
-        .idata_fxd1616u.o      idata   0x0001c4       data   0x000000
-        .udata_i2c_idle.o      udata   0x0001c4       data   0x000000
-        .idata_i2c_idle.o      idata   0x0001c4       data   0x000000
-         .udata_adcopen.o      udata   0x0001c4       data   0x000000
-         .idata_adcopen.o      idata   0x0001c4       data   0x000000
-        .udata_i2c_open.o      udata   0x0001c4       data   0x000000
-        .idata_i2c_open.o      idata   0x0001c4       data   0x000000
-           .udata_uopen.o      udata   0x0001c4       data   0x000000
+           .idata_ugets.o      idata   0x0001c4       data   0x000000
+           .udata_uread.o      udata   0x0001c4       data   0x000000
            .idata_uopen.o      idata   0x0001c4       data   0x000000
-            .udata_main.o      udata   0x000200       data   0x0000b6
+           .udata_uopen.o      udata   0x0001c4       data   0x000000
+        .idata_i2c_open.o      idata   0x0001c4       data   0x000000
+        .udata_i2c_open.o      udata   0x0001c4       data   0x000000
+         .idata_adcopen.o      idata   0x0001c4       data   0x000000
+         .udata_adcopen.o      udata   0x0001c4       data   0x000000
+        .idata_i2c_idle.o      idata   0x0001c4       data   0x000000
+        .udata_i2c_idle.o      udata   0x0001c4       data   0x000000
+        .idata_fxd1616u.o      idata   0x0001c4       data   0x000000
+        .udata_fxd1616u.o      udata   0x0001c4       data   0x000000
+           .idata_c018i.o      idata   0x0001c4       data   0x000000
+           .udata_main2.o      udata   0x000200       data   0x0000b6
                    .stack      udata   0x000300       data   0x000100
             SFR_UNBANKED0      udata   0x000f66       data   0x00009a
 
@@ -117,139 +102,93 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00194c      
+                            0x000000    0x00000d      
+                            0x000018    0x001168      
                             0x300000    0x300003      
                             0x300005    0x300006      
-            6483 out of 33048 program addresses used, program memory utilization is 19%
+            4453 out of 33048 program addresses used, program memory utilization is 13%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                  BusyADC   0x00000e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
-               ConvertADC   0x001890    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
-                   D10K_1   0x001786    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001792    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001784    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x00187c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001874    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   D1616S   0x0012d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x0012e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x0012de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x0012f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-             Delay10KTCYx   0x00177a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x00186c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                 Delay_ms   0x0010a4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                  Delay_s   0x000fea    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 Delay_us   0x00115e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 FLO1632S   0x0011e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632U   0x0011e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPD32   0x00120c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 FXD1616S   0x0012b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x001804    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                  INT3216   0x0012fe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  IdleI2C   0x001882    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
-                  OpenADC   0x001602    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                  OpenI2C   0x001744    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
-                OpenUSART   0x001506    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                ProcessIO   0x000660    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     RI2C   0x000f1c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                ReadUSART   0x0016ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
-        Remapped_High_ISR   0x000008    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-         Remapped_Low_ISR   0x000018    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               SetChanADC   0x0017d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-                     WI2C   0x000e8e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 WriteI2C   0x001590    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
-              WriteTimer0   0x00170c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-               WriteUSART   0x0017a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
-  YourHighPriorityISRCode   0x00002c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-   YourLowPriorityISRCode   0x0003e0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-       _D10KTCYXCODE_0010   0x00178a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001796    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x001876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001878    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x00187a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                 __FpExit   0x001368    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x001394    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-            __FpReturnNaN   0x00135c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x00136e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x001386    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x001374    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x00138e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x00136a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x0013ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x00140c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x00143c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-          ___for_lbl00171   0x0011c8    program     static                          
-          ___for_lbl00172   0x0011ce    program     static                          
-          ___for_lbl00173   0x001194    program     static                          
-       ___return_lbl00000   0x000004    program     static                          
+                   D10K_1   0x000fd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000fe0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000fd2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x00109c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001094    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   D1616S   0x000ef2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000f00    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000efc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000f12    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000ee2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+             Delay10KTCYx   0x000fc8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x00108c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                 Delay_ms   0x000b2c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                  Delay_s   0x000a72    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 Delay_us   0x000be6    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 FXD1616S   0x000ed0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x001024    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                  IdleI2C   0x0010a2    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
+                  OpenADC   0x000e04    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                  OpenI2C   0x000f92    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
+                OpenUSART   0x000d08    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                ProcessIO   0x000598    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     RI2C   0x0009a4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                ReadUSART   0x000f1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+        Remapped_High_ISR   0x000008    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+         Remapped_Low_ISR   0x000018    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     WI2C   0x000916    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 WriteI2C   0x000d92    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
+              WriteTimer0   0x000f5a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               WriteUSART   0x000ff6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+  YourHighPriorityISRCode   0x00002c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+   YourLowPriorityISRCode   0x000358    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+       _D10KTCYXCODE_0010   0x000fd8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000fe4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x001096    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001098    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00109a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+          ___for_lbl00131   0x000c50    program     static                          
+          ___for_lbl00132   0x000c56    program     static                          
+          ___for_lbl00133   0x000c1c    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00000   0x00182e    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x00104e    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00001   0x00186a    program     static                          
-       ___return_lbl00002   0x001504    program     static                          
-       ___return_lbl00170   0x0011ce    program     static                          
-               __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_3   0x300003    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+       ___return_lbl00001   0x00108a    program     static                          
+       ___return_lbl00002   0x000d06    program     static                          
+       ___return_lbl00130   0x000c56    program     static                          
+               __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_3   0x300003    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-              __tmplbl_49   0x0011b0    program     static                          
-            __zero_memory   0x001830    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                _do_cinit   0x001468    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              __tmplbl_49   0x000c38    program     static                          
+            __zero_memory   0x001050    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                _do_cinit   0x000c6a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x001850    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-          binary_to_ascii   0x000cd2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                compare_l   0x001846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                copy_loop   0x0014da    program     static                          
-            copy_one_byte   0x0014e0    program     static                          
-                     done   0x001504    program     static                          
-             done_copying   0x0014ee    program     static                          
-                  endloop   0x00182a    program     static                          
-             get_response   0x000e24    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                getsUSART   0x001670    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
-                 jANotInf   0x00122a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jANotZero   0x00123e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jExit   0x00135a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                jI2F16Beg   0x0011f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    jLoop   0x00133a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x001266    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jLoopExit   0x00134a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x00130e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x00131c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001312    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jNext   0x00128c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x00128a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                  jNotInf   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jPkLoop   0x0013a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x0013ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x0013d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x0013be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x001378    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              jSignedZero   0x001234    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                  jUnpkA1   0x001416    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x00142e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x001424    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x001446    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x00145e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x001454    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x001438    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                    jZero   0x001324    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-               jZero1and2   0x00137c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                     loop   0x001860    program     static                          
-                     loop   0x00180e    program     static                          
-                   loop_h   0x00183e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_l   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     main   0x000402    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             send_command   0x000dc2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     test   0x001482    program     static                          
-               zero_block   0x00183e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 _startup   0x001070    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+          binary_to_ascii   0x00075a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                compare_l   0x001066    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                copy_loop   0x000cdc    program     static                          
+            copy_one_byte   0x000ce2    program     static                          
+                     done   0x000d06    program     static                          
+             done_copying   0x000cf0    program     static                          
+                  endloop   0x00104a    program     static                          
+             get_response   0x0008ac    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                getsUSART   0x000e72    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
+                     loop   0x00102e    program     static                          
+                     loop   0x001080    program     static                          
+                   loop_h   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_l   0x001068    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     main   0x00037a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             send_command   0x00084a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     test   0x000c84    program     static                          
+               zero_block   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -288,8 +227,8 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -501,96 +440,90 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-                accel_h_x   0x00022a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_h_y   0x00022e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_h_z   0x000232       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_x   0x00022c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_y   0x000230       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_z   0x000234       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                        b   0x000227       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_x   0x000252       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_y   0x000258       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_z   0x00025e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_x   0x000255       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_y   0x00025b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_z   0x000261       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_x   0x000264       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_y   0x00026a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_z   0x000270       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_x   0x000267       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_y   0x00026d       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_z   0x000273       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_x1   0x000276       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_x2   0x00027c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_y1   0x000282       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_y2   0x000288       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_x1   0x000279       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_x2   0x00027f       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_y1   0x000285       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_y2   0x00028b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd0   0x000110       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd1   0x000114       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd2   0x000119       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd3   0x000125       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd4   0x000131       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd5   0x000134       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd6   0x000158       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd7   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmdX   0x0001b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                  counter   0x000223       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                accel_h_x   0x00022a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_h_y   0x00022e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_h_z   0x000232       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_x   0x00022c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_y   0x000230       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_z   0x000234       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                        b   0x000227       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_x   0x000252       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_y   0x000258       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_z   0x00025e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_x   0x000255       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_y   0x00025b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_z   0x000261       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_x   0x000264       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_y   0x00026a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_z   0x000270       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_x   0x000267       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_y   0x00026d       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_z   0x000273       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_x1   0x000276       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_x2   0x00027c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_y1   0x000282       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_y2   0x000288       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_x1   0x000279       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_x2   0x00027f       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_y1   0x000285       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_y2   0x00028b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd0   0x000110       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd1   0x000114       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd2   0x000119       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd3   0x000125       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd4   0x000131       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd5   0x000134       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd6   0x000158       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd7   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmdX   0x0001b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                  counter   0x000223       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                 curr_byte   0x0001bc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x0001be       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x0001c0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                      err   0x000201       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_x   0x000236       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_y   0x00023a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_z   0x00023e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_x   0x000238       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_y   0x00023c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_z   0x000240       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                        i   0x000200       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                   outbuf   0x000205       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+                      err   0x000201       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_x   0x000236       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_y   0x00023a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_z   0x00023e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_x   0x000238       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_y   0x00023c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_z   0x000240       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                        i   0x000200       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                   outbuf   0x000205       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                      prom   0x0001b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 psd_h_x1   0x000242       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_x2   0x000246       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_y1   0x00024a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_y2   0x00024e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_x1   0x000244       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_x2   0x000248       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_y1   0x00024c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_y2   0x000250       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_x   0x00028e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_y   0x000292       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_z   0x000296       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_x   0x000290       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_y   0x000294       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_z   0x000298       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_x   0x00029a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_y   0x00029e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_z   0x0002a2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_x   0x00029c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_y   0x0002a0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_z   0x0002a4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_x1   0x0002a6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_x2   0x0002aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_y1   0x0002ae       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_y2   0x0002b2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_x1   0x0002a8       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_x2   0x0002ac       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_y1   0x0002b0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_y2   0x0002b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     temp   0x000229       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                usart_buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                   whoami   0x000203       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+                 psd_h_x1   0x000242       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_x2   0x000246       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_y1   0x00024a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_y2   0x00024e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_x1   0x000244       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_x2   0x000248       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_y1   0x00024c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_y2   0x000250       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_x   0x00028e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_y   0x000292       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_z   0x000296       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_x   0x000290       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_y   0x000294       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_z   0x000298       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_x   0x00029a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_y   0x00029e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_z   0x0002a2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_x   0x00029c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_y   0x0002a0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_z   0x0002a4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_x1   0x0002a6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_x2   0x0002aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_y1   0x0002ae       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_y2   0x0002b2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_x1   0x0002a8       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_x2   0x0002ac       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_y1   0x0002b0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_y2   0x0002b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     temp   0x000229       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                usart_buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                   whoami   0x000203       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
 
 
 
@@ -600,133 +533,86 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-        Remapped_High_ISR   0x000008    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+        Remapped_High_ISR   0x000008    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
        ___return_lbl00000   0x00000c    program     static                          
-                  BusyADC   0x00000e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
-         Remapped_Low_ISR   0x000018    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+         Remapped_Low_ISR   0x000018    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
        ___return_lbl00001   0x00001c    program     static                          
-  YourHighPriorityISRCode   0x00002c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-   YourLowPriorityISRCode   0x0003e0    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     main   0x000402    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                ProcessIO   0x000660    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-          binary_to_ascii   0x000cd2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             send_command   0x000dc2    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             get_response   0x000e24    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     WI2C   0x000e8e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     RI2C   0x000f1c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                  Delay_s   0x000fea    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 Delay_ms   0x0010a4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 Delay_us   0x00115e    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-          ___for_lbl00173   0x001194    program     static                          
-              __tmplbl_49   0x0011b0    program     static                          
-          ___for_lbl00171   0x0011c8    program     static                          
-       ___return_lbl00170   0x0011ce    program     static                          
-          ___for_lbl00172   0x0011ce    program     static                          
-                 FLO1632U   0x0011e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632S   0x0011e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                jI2F16Beg   0x0011f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPD32   0x00120c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x00122a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jSignedZero   0x001234    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jANotZero   0x00123e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jLoop   0x001266    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x00128a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jNext   0x00128c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 FXD1616S   0x0012b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x0012d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x0012de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x0012e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x0012f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  INT3216   0x0012fe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x00130e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001312    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x00131c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jZero   0x001324    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jNotInf   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x00133a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                jLoopExit   0x00134a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jExit   0x00135a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-            __FpReturnNaN   0x00135c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpExit   0x001368    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x00136a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x00136e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x001374    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x001378    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jZero1and2   0x00137c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x001386    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x00138e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x001394    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                  jPkLoop   0x0013a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x0013be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x0013d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x0013ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x0013ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x00140c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA1   0x001416    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x001424    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x00142e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x001438    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x00143c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x001446    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x001454    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x00145e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                _do_cinit   0x001468    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x001482    program     static                          
-                copy_loop   0x0014da    program     static                          
-            copy_one_byte   0x0014e0    program     static                          
-             done_copying   0x0014ee    program     static                          
-                     done   0x001504    program     static                          
-       ___return_lbl00002   0x001504    program     static                          
-                OpenUSART   0x001506    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                 WriteI2C   0x001590    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
-                  OpenADC   0x001602    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                getsUSART   0x001670    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
-                ReadUSART   0x0016ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
-              WriteTimer0   0x00170c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-                  OpenI2C   0x001744    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
-             Delay10KTCYx   0x00177a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001784    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x001786    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00178a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001792    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001796    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-               WriteUSART   0x0017a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
-               SetChanADC   0x0017d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-                 FXD1616U   0x001804    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x00180e    program     static                          
-                  endloop   0x00182a    program     static                          
-       ___return_lbl00000   0x00182e    program     static                          
-            __zero_memory   0x001830    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               zero_block   0x00183e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_h   0x00183e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                compare_l   0x001846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   loop_l   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 _startup   0x001850    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x001860    program     static                          
-       ___return_lbl00001   0x00186a    program     static                          
-              Delay10TCYx   0x00186c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001874    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x001876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001878    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x00187a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x00187c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                  IdleI2C   0x001882    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
-               ConvertADC   0x001890    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
-               __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_3   0x300003    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-               __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+  YourHighPriorityISRCode   0x00002c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+   YourLowPriorityISRCode   0x000358    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     main   0x00037a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                ProcessIO   0x000598    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+          binary_to_ascii   0x00075a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             send_command   0x00084a    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             get_response   0x0008ac    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     WI2C   0x000916    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     RI2C   0x0009a4    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                  Delay_s   0x000a72    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 Delay_ms   0x000b2c    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 Delay_us   0x000be6    program     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+          ___for_lbl00133   0x000c1c    program     static                          
+              __tmplbl_49   0x000c38    program     static                          
+          ___for_lbl00131   0x000c50    program     static                          
+          ___for_lbl00132   0x000c56    program     static                          
+       ___return_lbl00130   0x000c56    program     static                          
+                _do_cinit   0x000c6a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000c84    program     static                          
+                copy_loop   0x000cdc    program     static                          
+            copy_one_byte   0x000ce2    program     static                          
+             done_copying   0x000cf0    program     static                          
+       ___return_lbl00002   0x000d06    program     static                          
+                     done   0x000d06    program     static                          
+                OpenUSART   0x000d08    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                 WriteI2C   0x000d92    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_writ.c
+                  OpenADC   0x000e04    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                getsUSART   0x000e72    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\ugets.c
+                 FXD1616S   0x000ed0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000ee2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x000ef2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000efc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000f00    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000f12    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                ReadUSART   0x000f1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+              WriteTimer0   0x000f5a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+                  OpenI2C   0x000f92    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
+             Delay10KTCYx   0x000fc8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000fd2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x000fd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x000fd8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000fe0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000fe4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+               WriteUSART   0x000ff6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+                 FXD1616U   0x001024    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x00102e    program     static                          
+                  endloop   0x00104a    program     static                          
+       ___return_lbl00000   0x00104e    program     static                          
+            __zero_memory   0x001050    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               zero_block   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_h   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                compare_l   0x001066    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   loop_l   0x001068    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 _startup   0x001070    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001080    program     static                          
+       ___return_lbl00001   0x00108a    program     static                          
+              Delay10TCYx   0x00108c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001094    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x001096    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001098    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00109a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x00109c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                  IdleI2C   0x0010a2    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_idle.c
+               __config_0   0x300000    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_1   0x300001    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_2   0x300002    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_3   0x300003    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_4   0x300005    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+               __config_5   0x300006    program     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                      SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -741,156 +627,150 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                    __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
-                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcsetch.c
-                  __tmp_0   0x000014       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
-            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-                usart_buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd0   0x000110       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd1   0x000114       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd2   0x000119       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd3   0x000125       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd4   0x000131       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd5   0x000134       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd6   0x000158       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmd7   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     cmdX   0x0001b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                  __tmp_0   0x000010       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                  __tmp_0   0x000010       data     static C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            DelayCounter2   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                usart_buf   0x000100       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd0   0x000110       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd1   0x000114       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd2   0x000119       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd3   0x000125       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd4   0x000131       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd5   0x000134       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd6   0x000158       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmd7   0x000182       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     cmdX   0x0001b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                      prom   0x0001b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 curr_byte   0x0001bc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x0001be       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x0001c0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
              USART_Status   0x0001c3       data     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
-                        i   0x000200       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                      err   0x000201       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                   whoami   0x000203       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                   outbuf   0x000205       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                  counter   0x000223       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                        b   0x000227       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                     temp   0x000229       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_h_x   0x00022a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_x   0x00022c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_h_y   0x00022e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_y   0x000230       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_h_z   0x000232       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                accel_l_z   0x000234       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_x   0x000236       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_x   0x000238       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_y   0x00023a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_y   0x00023c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_h_z   0x00023e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 gylo_l_z   0x000240       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_x1   0x000242       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_x1   0x000244       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_x2   0x000246       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_x2   0x000248       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_y1   0x00024a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_y1   0x00024c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_h_y2   0x00024e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-                 psd_l_y2   0x000250       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_x   0x000252       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_x   0x000255       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_y   0x000258       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_y   0x00025b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_h_z   0x00025e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             bt_accel_l_z   0x000261       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_x   0x000264       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_x   0x000267       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_y   0x00026a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_y   0x00026d       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_h_z   0x000270       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_gylo_l_z   0x000273       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_x1   0x000276       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_x1   0x000279       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_x2   0x00027c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_x2   0x00027f       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_y1   0x000282       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_y1   0x000285       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_h_y2   0x000288       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-              bt_psd_l_y2   0x00028b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_x   0x00028e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_x   0x000290       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_y   0x000292       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_y   0x000294       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_h_z   0x000296       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-            ptr_accel_l_z   0x000298       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_x   0x00029a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_x   0x00029c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_y   0x00029e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_y   0x0002a0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_h_z   0x0002a2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_gylo_l_z   0x0002a4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_x1   0x0002a6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_x1   0x0002a8       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_x2   0x0002aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_x2   0x0002ac       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_y1   0x0002ae       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_y1   0x0002b0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_h_y2   0x0002b2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
-             ptr_psd_l_y2   0x0002b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main.c
+                        i   0x000200       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                      err   0x000201       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                   whoami   0x000203       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                   outbuf   0x000205       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                  counter   0x000223       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                        b   0x000227       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                     temp   0x000229       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_h_x   0x00022a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_x   0x00022c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_h_y   0x00022e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_y   0x000230       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_h_z   0x000232       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                accel_l_z   0x000234       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_x   0x000236       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_x   0x000238       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_y   0x00023a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_y   0x00023c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_h_z   0x00023e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 gylo_l_z   0x000240       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_x1   0x000242       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_x1   0x000244       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_x2   0x000246       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_x2   0x000248       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_y1   0x00024a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_y1   0x00024c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_h_y2   0x00024e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+                 psd_l_y2   0x000250       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_x   0x000252       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_x   0x000255       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_y   0x000258       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_y   0x00025b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_h_z   0x00025e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             bt_accel_l_z   0x000261       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_x   0x000264       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_x   0x000267       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_y   0x00026a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_y   0x00026d       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_h_z   0x000270       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_gylo_l_z   0x000273       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_x1   0x000276       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_x1   0x000279       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_x2   0x00027c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_x2   0x00027f       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_y1   0x000282       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_y1   0x000285       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_h_y2   0x000288       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+              bt_psd_l_y2   0x00028b       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_x   0x00028e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_x   0x000290       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_y   0x000292       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_y   0x000294       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_h_z   0x000296       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+            ptr_accel_l_z   0x000298       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_x   0x00029a       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_x   0x00029c       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_y   0x00029e       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_y   0x0002a0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_h_z   0x0002a2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_gylo_l_z   0x0002a4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_x1   0x0002a6       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_x1   0x0002a8       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_x2   0x0002aa       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_x2   0x0002ac       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_y1   0x0002ae       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_y1   0x0002b0       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_h_y2   0x0002b2       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
+             ptr_psd_l_y2   0x0002b4       data     extern C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c
                      UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UFRML   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UFRMLbits   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UFRMHbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UFRMHbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   UIEbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEIRbits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEIR   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEIEbits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEIE   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     USTAT   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UCONbits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UCON   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UADDRbits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UCONbits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UADDR   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UADDRbits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UCFGbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UCFG   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP0bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP0   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP1bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP1   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP2bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP2   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP3bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP2bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP4bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP3bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP5bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP4bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP5bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  UEP6bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP6   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP7   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP8   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 UEP9bits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      UEP9   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 UEP9bits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP10   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP10bits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP11   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP11bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP12bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP13bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP14   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     UEP15   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -901,18 +781,18 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -921,10 +801,10 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -948,30 +828,30 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
              ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              CCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   CCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              CCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -987,8 +867,8 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                   SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                       PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
@@ -997,22 +877,22 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                     TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                  RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
-                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                    PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm
                   PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2553.asm

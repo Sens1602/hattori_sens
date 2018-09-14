@@ -1,5 +1,4 @@
 import serial as s
-import numpy as np
 from time import sleep
 import pandas as pd
 
@@ -13,14 +12,8 @@ class Main():
         self.read_data_length = 5
 
 
-
 def main():
     m = Main()
-    """
-    m.ser.write(b"+\r\n")
-    data_b = m.ser.read(10)
-    print(data_b)
-    """
 
     m.ser.write(b"sf,1\r\n")
     data_b = m.ser.read(5)
@@ -75,6 +68,8 @@ def main():
     df_init = pd.DataFrame({'accelX': [0], 'accelY': [0], 'accelZ': [0],
                             'gyloX': [0], 'gyloY': [0], 'gyloZ': [0],
                             'psdX1': [0], 'psdX2': [0], 'psdY1': [0], 'psdY2': [0]})
+    df_init.to_csv(save_path + "wireless_psd.csv", mode="a")
+
     acx = 0
     acy = 0
     acz = 0
@@ -88,8 +83,8 @@ def main():
 
     while 1:
         data_b = m.ser.read(55)
-        #print(data_b)
-        if "F" == chr(data_b[12]):
+
+        if "F" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
             acxh = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
             acxl = 16 *int(chr(data_b[18]), 16) + int(chr(data_b[19]), 16)
             acx = acxh*256 + acxl
@@ -108,13 +103,18 @@ def main():
             gyzh = 16 * int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
             gyzl = 16 * int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
             gyz = gyzh * 256 + gyzl
+            """
+            print(data_b)
+            print(data_b[49])
+            print(data_b[50])
+            print(data_b[51])
+            print(data_b[52])
+            """
+            df = pd.DataFrame(columns = [acx, acy, acz, gyz, gyy, gyz, px1, px2, py1, py2])
+            df.to_csv(save_path + "wireless_psd.csv", mode= "a")
+            print("imu")
 
-            #df = pd.DataFrame(columns = [acx, acy, acz, gyx, gyy, gyz, 0, 0, 0, 0])
-            #df.to_csv(save_path + "testest.csv", mode= "a")
-            print("ju")
-
-        elif "0" == chr(data_b[12]):
-            #print("pippi")
+        elif "0" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
             px1h = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
             px1l = 16 *int(chr(data_b[18]), 16) + int(chr(data_b[19]), 16)
             px1 = 5.0 * (px1h*256 + px1l)/4096
@@ -129,14 +129,15 @@ def main():
             py2 = 5.0 * (py2h*256 + py2l)/4096
 
             df = pd.DataFrame(columns = [acx, acy, acz, gyz, gyy, gyz, px1, px2, py1, py2])
-            df.to_csv(save_path + "testest.csv", mode= "a")
-            print("pippi")
+            df.to_csv(save_path + "wireless_psd.csv", mode= "a")
+            print("psd")
 
         else:
-            print("kanopero")
+            print("missed")
+            df = pd.DataFrame(columns = [acx, acy, acz, gyz, gyy, gyz, px1, px2, py1, py2])
+            df.to_csv(save_path + "wireless_psd.csv", mode= "a")
             while b"\n" != m.ser.read(1):
                 pass
-        #print(int(chr(data_b[0]), 16))
 
 
 if __name__ == '__main__':
