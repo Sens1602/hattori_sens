@@ -22,7 +22,7 @@ from pyqtgraph.Qt import QtGui, QtCore
 import pandas as pd
 import datetime
 
-save_path = "C:/simulation/"
+save_path = "//192.168.13.10/Public/hattori/sens/"
 
 
 class Ui_MainWindow(object):
@@ -134,20 +134,73 @@ class Ui_MainWindow(object):
 
         # serial communication
         self.port = port
-        self.ser = sr.Serial(str(self.port), 9600)
+        self.ser = sr.Serial(str(self.port), 115200)
         self.ser.flushInput()
+
+        self.ser.write(b"sf,1\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"ss,40000001\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"sr,90000000\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"pz\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"ps,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"pc,EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE,1A,20\r\n")
+        data_b = self.ser.read(5)
+        print(data_b)
+
+        self.ser.write(b"r,1\r\n")
+        data_b = self.ser.read(8)
+        print(data_b)
+        sleep(5)
+
+        """
+        self.ser.flushInput()
+        self.ser.write(b"e,0,001ec0550fd1\r\n")
+        data_b = self.ser.read(16)
+        print(data_b)
+
+        self.ser.write(b"cuwc,123456789012345678901234567890ff,1\r\n")
+        data_b = self.ser.read(20)
+        print(data_b)
+        sleep(3)
+        self.ser.flushInput()
+        """
+        self.acx = 0
+        self.acy = 0
+        self.acz = 0
+        self.gyx = 0
+        self.gyy = 0
+        self.gyz = 0
+        self.vx1 = 0
+        self.vx2 = 0
+        self.vy1 = 0
+        self.vy2 = 0
+
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.serial_monitor)
         self.timer.start()
-        self.read_data_length = 11
+        self.read_data_length = 55
         self.unit_data_set = int(self.read_data_length / 11)
         self.plot_counter = 0
         self.plot_pich = 10
-        self.data_counter = 0
 
+        print("kanopero")
         # save
         d = datetime.datetime.today()
-        self.filename = (str(d.year) + '_' + str(d.month) + '_' +
+        self.filename = ("wirelesspsd.csv" + str(d.year) + '_' + str(d.month) + '_' +
                          str(d.day) + '_' + str(d.hour) + '_' +
                          str(d.minute) + '_' + str(d.second) + ".csv")
         df_init = pd.DataFrame({'vx1 [V]':np.array([0]),
@@ -164,7 +217,81 @@ class Ui_MainWindow(object):
 
 
     def serial_monitor(self):
+        data_b = m.ser.read(55)
+
+        if "F" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
+            acxh = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
+            acxl = 16 *int(chr(data_b[18]), 16) + int(chr(data_b[19]), 16)
+            acx = acxh*256 + acxl
+            acyh = 16 *int(chr(data_b[20]), 16) + int(chr(data_b[21]), 16)
+            acyl = 16 *int(chr(data_b[22]), 16) + int(chr(data_b[23]), 16)
+            acy = acyh*256 + acyl
+            aczh = 16 *int(chr(data_b[24]), 16) + int(chr(data_b[25]), 16)
+            aczl = 16 *int(chr(data_b[26]), 16) + int(chr(data_b[27]), 16)
+            acz = aczh*256 + aczl
+            gyxh = 16 *int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
+            gyxl = 16 *int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
+            gyx = gyxh*256 + gyxl
+            gyyh = 16 * int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
+            gyyl = 16 * int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
+            gyy = gyyh * 256 + gyyl
+            gyzh = 16 * int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
+            gyzl = 16 * int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
+            gyz = gyzh * 256 + gyzl
+            print("imu")
+
+        elif "0" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
+            px1h = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
+            px1l = 16 *int(chr(data_b[18]), 16) + int(chr(data_b[19]), 16)
+            self.vx1 = 5.0 * (px1h*256 + px1l)/4096
+            px2h = 16 *int(chr(data_b[20]), 16) + int(chr(data_b[21]), 16)
+            px2l = 16 *int(chr(data_b[22]), 16) + int(chr(data_b[23]), 16)
+            self.vx2 = 5.0 * (px2h*256 + px2l)/4096
+            py1h = 16 *int(chr(data_b[24]), 16) + int(chr(data_b[25]), 16)
+            py1l = 16 *int(chr(data_b[26]), 16) + int(chr(data_b[27]), 16)
+            self.vy1 = 5.0 * (py1h*256 + py1l)/4096
+            py2h = 16 *int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
+            py2l = 16 *int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
+            self.vy2 = 5.0 * (py2h*256 + py2l)/4096
+
+            self.x = ((self.vy1[self.counter] + self.vy1[self.counter]) - (
+                        self.vx1[self.counter] + self.vy2[self.counter])) / (
+                                 self.vx1[self.counter] + self.vx2[self.counter] + self.vy1[self.counter] + self.vy2[
+                             self.counter])
+            self.y = ((self.vx2[self.counter] + self.vy2[self.counter]) - (
+                        self.vx1[self.counter] + self.vy1[self.counter])) / (
+                                 self.vx1[self.counter] + self.vx2[self.counter] + self.vy1[self.counter] + self.vy2[
+                             self.counter])
+
+            df = pd.DataFrame(columns =
+                          [self.vx1[self.counter],
+                           self.vx2[self.counter],
+                           self.vy1[self.counter],
+                           self.vy2[self.counter],
+                           self.x,
+                           self.y])
+            df.to_csv(save_path + self.filename, mode= "a")
+
+            print("psd")
+            print(df)
+
+        else:
+            print("missed")
+            df = pd.DataFrame(columns =
+                          [self.vx1[self.counter],
+                           self.vx2[self.counter],
+                           self.vy1[self.counter],
+                           self.vy2[self.counter],
+                           self.x,
+                           self.y])
+            df.to_csv(save_path + self.filename, mode="a")
+            while b"\n" != self.ser.read(1):
+                pass
+
+
         # Detect first characters
+
+        """
         self.tag = b'X'
         while self.tag != b't':
             self.tag = self.ser.read(1)
@@ -181,9 +308,7 @@ class Ui_MainWindow(object):
         self.vx2[self.counter] = 5 * ((data_b[2] << 8) + data_b[3]) / 4096
         self.vy1[self.counter] = 5 * ((data_b[4] << 8) + data_b[5]) / 4096
         self.vy2[self.counter] = 5 * ((data_b[6] << 8) + data_b[7]) / 4096
-
-        self.x = ((self.vx2[self.counter]+self.vy1[self.counter]) - (self.vx1[self.counter]+self.vy2[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
-        self.y = ((self.vx2[self.counter]+self.vy2[self.counter]) - (self.vx1[self.counter]+self.vy1[self.counter]))/(self.vx1[self.counter]+self.vx2[self.counter]+self.vy1[self.counter]+self.vy2[self.counter])
+        """
 
         if self.plot_counter == self.plot_pich:
             self.treeWidget.takeTopLevelItem(0)
@@ -205,42 +330,11 @@ class Ui_MainWindow(object):
             self.p4_vline.setPos(self.counter)
             self.plot_counter = 0
 
-        """
-        self.treeWidget.takeTopLevelItem(0)
-        self.item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(0, str(self.vx1[self.counter]))
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(1, str(self.vx2[self.counter]))
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(2, str(self.vy1[self.counter]))
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(3, str(self.vy2[self.counter]))
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(4, str(self.x))
-        self.treeWidget.topLevelItem(self.view_data_len-1).setText(5, str(self.y))
-        self.curve1.setData(self.times, self.vx1)
-        self.curve2.setData(self.times, self.vx2)
-        self.curve3.setData(self.times, self.vy1)
-        self.curve4.setData(self.times, self.vy2)
-        #self.curve0.setData([self.x], [self.y])
-        self.p1_vline.setPos(self.counter)
-        self.p2_vline.setPos(self.counter)
-        self.p3_vline.setPos(self.counter)
-        self.p4_vline.setPos(self.counter)
-        """
-        df = pd.DataFrame(columns =
-                          [self.vx1[self.counter],
-                           self.vx2[self.counter],
-                           self.vy1[self.counter],
-                           self.vy2[self.counter],
-                           self.x,
-                           self.y])
-        df.to_csv(save_path + self.filename, mode="a")
 
         self.counter += 1
         self.plot_counter += 1
         if self.counter == len(self.times):
             self.counter = 0
-
-        self.data_counter +=1
-        print(self.data_counter)
-
 
 
     def retranslateUi(self, MainWindow):
