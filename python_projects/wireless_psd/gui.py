@@ -166,7 +166,6 @@ class Ui_MainWindow(object):
         print(data_b)
         sleep(5)
 
-        """
         self.ser.flushInput()
         self.ser.write(b"e,0,001ec0550fd1\r\n")
         data_b = self.ser.read(16)
@@ -177,7 +176,7 @@ class Ui_MainWindow(object):
         print(data_b)
         sleep(3)
         self.ser.flushInput()
-        """
+
         self.acx = 0
         self.acy = 0
         self.acz = 0
@@ -197,10 +196,9 @@ class Ui_MainWindow(object):
         self.plot_counter = 0
         self.plot_pich = 10
 
-        print("kanopero")
         # save
         d = datetime.datetime.today()
-        self.filename = ("wirelesspsd.csv" + str(d.year) + '_' + str(d.month) + '_' +
+        self.filename = ("wirelsespsd_" + str(d.year) + '_' + str(d.month) + '_' +
                          str(d.day) + '_' + str(d.hour) + '_' +
                          str(d.minute) + '_' + str(d.second) + ".csv")
         df_init = pd.DataFrame({'vx1 [V]':np.array([0]),
@@ -210,6 +208,7 @@ class Ui_MainWindow(object):
                                 'x':np.array([0]),
                                 'y':np.array([0])})
         df_init.to_csv(save_path + self.filename)
+        print("kanopero")
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
@@ -217,7 +216,7 @@ class Ui_MainWindow(object):
 
 
     def serial_monitor(self):
-        data_b = m.ser.read(55)
+        data_b = self.ser.read(55)
 
         if "F" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
             acxh = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
@@ -285,6 +284,8 @@ class Ui_MainWindow(object):
                            self.x,
                            self.y])
             df.to_csv(save_path + self.filename, mode="a")
+            print("kanopero")
+
             while b"\n" != self.ser.read(1):
                 pass
 
