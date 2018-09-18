@@ -2,11 +2,12 @@ import serial as s
 from time import sleep
 import pandas as pd
 
-save_path = "C:/Users/Hattori/Desktop/"
+#save_path = "C:/Users/Hattori/Desktop/"
+save_path = "//192.168.13.10/Public/hattori/sens/"
 
 class Main():
     def __init__(self):
-        self.ser = s.Serial("COM4", 115200)
+        self.ser = s.Serial("COM18", 115200)
         print(self.ser.name)
         self.ser.flushInput()
         self.read_data_length = 5
@@ -45,7 +46,7 @@ def main():
     sleep(5)
 
     m.ser.flushInput()
-    m.ser.write(b"e,0,001ec0553341\r\n")
+    m.ser.write(b"e,0,001ec0550fd1\r\n")
     data_b = m.ser.read(16)
     print(data_b)
 
@@ -104,14 +105,9 @@ def main():
             gyzl = 16 * int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
             gyz = gyzh * 256 + gyzl
             """
-            print(data_b)
-            print(data_b[49])
-            print(data_b[50])
-            print(data_b[51])
-            print(data_b[52])
-            """
             df = pd.DataFrame(columns = [acx, acy, acz, gyz, gyy, gyz, px1, px2, py1, py2])
             df.to_csv(save_path + "wireless_psd.csv", mode= "a")
+            """
             print("imu")
 
         elif "0" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
@@ -131,6 +127,7 @@ def main():
             df = pd.DataFrame(columns = [acx, acy, acz, gyz, gyy, gyz, px1, px2, py1, py2])
             df.to_csv(save_path + "wireless_psd.csv", mode= "a")
             print("psd")
+            print(df)
 
         else:
             print("missed")
