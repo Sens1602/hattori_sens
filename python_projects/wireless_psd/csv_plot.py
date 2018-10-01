@@ -16,7 +16,7 @@ def main():
        """
 
        path = "//192.168.13.10/Public/hattori/sens/" + \
-              "wirelsespsd_2018_9_20_16_33_28.csv"
+              "wirelsespsd_2018_9_26_15_14_31.csv"
 
        fsize = 72
        sample = 20000
@@ -31,7 +31,7 @@ def main():
        """
        print(df)
        ax1 = fig.add_subplot(3, 1, 1)
-       ax1.plot(df['index'], df['x'], color="black", markevery=[0, -1])
+       ax1.plot(df['index'], df['vx1 [V]'], color="black", markevery=[0, -1])
        ax1.tick_params(labelsize=fsize)
        ax1.tick_params(axis="x", colors="white")
        #ax1.set_xlabel("time[ms]", fontsize=fsize, color="gray")
@@ -45,7 +45,7 @@ def main():
 
 
        ax2 = fig.add_subplot(3, 1, 2)
-       ax2.plot(df['index'], df['y'], color="black", markevery=[0, -1])
+       ax2.plot(df['index'], df['vx2 [V]'], color="black", markevery=[0, -1])
        ax2.tick_params(labelsize=fsize)
        ax2.tick_params(axis="x")
 
@@ -56,7 +56,7 @@ def main():
        ax2.set_ylim(0, 5)
 
        ax3 = fig.add_subplot(3, 1, 3)
-       ax3.plot(df['index'], df['vx22'], color="black", markevery=[0, -1])
+       ax3.plot(df['index'], df['vy1 [V]'], color="black", markevery=[0, -1])
        ax3.tick_params(labelsize=fsize)
        ax3.tick_params(axis="x")
 
