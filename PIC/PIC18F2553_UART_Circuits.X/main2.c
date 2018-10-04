@@ -126,6 +126,7 @@ char *ptr_psd_l_y2;
 /**function prototype *******************/
 void YourHighPriorityISRCode();
 void YourLowPriorityISRCode();
+void ProcessIO_adc();
 void ProcessIO();
 void send_command(char* src);
 void get_response(char* dst);
@@ -157,9 +158,8 @@ void YourHighPriorityISRCode(){
         INTCONbits.TMR0IF = 0; //?????? 
         WriteTimer0(35416);//??????
         
-        //PORTCbits.RC2 ^= 1;
-        ProcessIO();
-        
+        ProcessIO_adc();
+        /*
         binary_to_ascii(accel_h_x, ptr_accel_h_x);
         binary_to_ascii(accel_l_x, ptr_accel_l_x);
         binary_to_ascii(accel_h_y, ptr_accel_h_y);
@@ -172,6 +172,7 @@ void YourHighPriorityISRCode(){
         binary_to_ascii(gylo_l_y, ptr_gylo_l_y);
         binary_to_ascii(gylo_h_z, ptr_gylo_h_z);
         binary_to_ascii(gylo_l_z, ptr_gylo_l_z);
+        */
         binary_to_ascii(psd_h_x1, ptr_psd_h_x1);
         binary_to_ascii(psd_l_x1, ptr_psd_l_x1);
         binary_to_ascii(psd_h_x2, ptr_psd_h_x2);
@@ -181,6 +182,7 @@ void YourHighPriorityISRCode(){
         binary_to_ascii(psd_h_y2, ptr_psd_h_y2);
         binary_to_ascii(psd_l_y2, ptr_psd_l_y2);
 
+        /*
         cmd7[9] = 'F';
         cmd7[10] = 'F';
         cmd7[11] = 'F';
@@ -210,7 +212,31 @@ void YourHighPriorityISRCode(){
         cmd7[35] = bt_gylo_l_z[0];
         cmd7[36] = bt_gylo_l_z[1];
         send_command((char *)cmd7);  
+        */
         
+        cmd7[9] = '0';
+        cmd7[10] = '0';
+        cmd7[11] = '0';
+        cmd7[12] = '0';        
+        cmd7[13] = bt_psd_h_x1[0];
+        cmd7[14] = bt_psd_h_x1[1];
+        cmd7[15] = bt_psd_l_x1[0];
+        cmd7[16] = bt_psd_l_x1[1];
+        cmd7[17] = bt_psd_h_x2[0];
+        cmd7[18] = bt_psd_h_x2[1];
+        cmd7[19] = bt_psd_l_x2[0];
+        cmd7[20] = bt_psd_l_x2[1];
+        cmd7[21] = bt_psd_h_y1[0];
+        cmd7[22] = bt_psd_h_y1[1];       
+        cmd7[23] = bt_psd_l_y1[0];
+        cmd7[24] = bt_psd_l_y1[1];
+        cmd7[25] = bt_psd_h_y2[0];
+        cmd7[26] = bt_psd_h_y2[1];
+        cmd7[27] = bt_psd_l_y2[0];
+        cmd7[28] = bt_psd_l_y2[1];
+        
+        send_command((char *)cmd7);  
+       
     }    
 }
 #pragma interruptlow YourLowPriorityISRCode
@@ -291,6 +317,7 @@ void main(void){
     //PORTCbits.RC1 = 0;
     Delay_s(1); 
         
+         
     send_command((char *)cmd0);
     Delay_s(5);   
     
@@ -298,6 +325,7 @@ void main(void){
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
 
+    /*
     //I2C configration
     //?????=FOSC/((SSPADD + 1)*4)
     OpenI2C(MASTER, SLEW_ON);   // master mode
@@ -311,13 +339,13 @@ void main(void){
     err = WI2C(0b11010000, 0x6B, 0x00);   
     err = WI2C(0b11010000, 0x37, 0x02);    
     whoami = RI2C(0b11010000, 0x75);
-       
+*/       
     //timer configration
     //18F2553?1??4????
     //1????:1/(48MHz/4) = 0.166)
     //5ms(200Hz)??????5000/0.1666 = 30120?????????)
     //65536 - 30120 ? 35416
-    T0CON = 0b10000001;//???0,8???,??????1:2
+    T0CON = 0b10000111;//???0,8???,??????1:2
     WriteTimer0(35416);//??????
     INTCONbits.GIE = 1;//????????
     INTCONbits.TMR0IE = 1;//TMR0??????
@@ -326,7 +354,34 @@ void main(void){
     }
 }
 
+void ProcessIO_adc(){
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 = ADRESH;//??8???
+    psd_l_x1 = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH1);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 = ADRESH;//??8???
+    psd_l_x2 = ADRESL;//??8???
+
+    SetChanADC(ADC_CH2);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 = ADRESH;//??8???
+    psd_l_y1 = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH4);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 = ADRESH;//??8???
+    psd_l_y2 = ADRESL;//??8???
+}
+
 void ProcessIO(){
+    
 //----------------accelaration, gylo-----------------
     IdleI2C();                                 // ??????
     StartI2C();                                // start ???????
