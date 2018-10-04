@@ -345,7 +345,7 @@ void main(void){
     //1????:1/(48MHz/4) = 0.166)
     //5ms(200Hz)??????5000/0.1666 = 30120?????????)
     //65536 - 30120 ? 35416
-    T0CON = 0b10000010;//???0,8???,??????1:2
+    T0CON = 0b10000000;//???0,8???,??????1:2
     WriteTimer0(35416);//??????
     INTCONbits.GIE = 1;//????????
     INTCONbits.TMR0IE = 1;//TMR0??????
@@ -378,6 +378,64 @@ void ProcessIO_adc(){
     while(BusyADC()); 
     psd_h_y2 = ADRESH;//??8???
     psd_l_y2 = ADRESL;//??8???
+  
+    
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 += ADRESH;//??8???
+    psd_l_x1 += ADRESL;//??8???
+    
+    SetChanADC(ADC_CH1);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 += ADRESH;//??8???
+    psd_l_x2 += ADRESL;//??8???
+
+    SetChanADC(ADC_CH2);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;//??8???
+    psd_l_y1 += ADRESL;//??8???
+    
+    SetChanADC(ADC_CH4);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;//??8???
+    psd_l_y2 += ADRESL;//??8???
+    
+    SetChanADC(ADC_CH0);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x1 += ADRESH;//??8???
+    psd_l_x1 += ADRESL;//??8???
+    
+    SetChanADC(ADC_CH1);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_x2 += ADRESH;//??8???
+    psd_l_x2 += ADRESL;//??8???
+
+    SetChanADC(ADC_CH2);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y1 += ADRESH;//??8???
+    psd_l_y1 += ADRESL;//??8???
+    
+    SetChanADC(ADC_CH4);
+    ConvertADC();
+    while(BusyADC()); 
+    psd_h_y2 += ADRESH;//??8???
+    psd_l_y2 += ADRESL;//??8???
+   
+    psd_h_x1 = psd_h_x1 / 3;
+    psd_l_x1 = psd_l_x1 / 3;
+    psd_h_x2 = psd_h_x2 / 3;
+    psd_l_x2 = psd_l_x2 / 3;
+    psd_h_y1 = psd_h_y1 / 3;
+    psd_l_y1 = psd_l_y1 / 3;
+    psd_h_y2 = psd_h_y2 / 3;
+    psd_l_y2 = psd_l_y2 / 3;  
 }
 
 void ProcessIO(){

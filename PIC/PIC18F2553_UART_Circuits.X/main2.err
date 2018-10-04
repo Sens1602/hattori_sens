@@ -1,7 +1,7 @@
 Warning[2058] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 161 : call of function without prototype
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 391 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 393 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 396 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 398 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 404 : unexpected return value
-Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 406 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 449 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 451 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 454 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 456 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 462 : unexpected return value
+Warning[2052] C:\Users\Hattori\Documents\github\hattori_sens\PIC\PIC18F2553_UART_Circuits.X\main2.c 464 : unexpected return value
