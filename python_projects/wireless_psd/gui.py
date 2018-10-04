@@ -183,10 +183,6 @@ class Ui_MainWindow(object):
         self.gyx = 0
         self.gyy = 0
         self.gyz = 0
-        self.vx1 = 0
-        self.vx2 = 0
-        self.vy1 = 0
-        self.vy2 = 0
 
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.serial_monitor)
@@ -208,7 +204,6 @@ class Ui_MainWindow(object):
                                 'x':np.array([0]),
                                 'y':np.array([0])})
         df_init.to_csv(save_path + self.filename)
-        print("kanopero")
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
@@ -217,6 +212,7 @@ class Ui_MainWindow(object):
 
     def serial_monitor(self):
         data_b = self.ser.read(55)
+        print(data_b)
 
         if "F" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
             acxh = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
@@ -242,16 +238,16 @@ class Ui_MainWindow(object):
         elif "0" == chr(data_b[12]) and "A" == chr(data_b[49]) and "A" == chr(data_b[50]) and "A" == chr(data_b[51]):
             px1h = 16 *int(chr(data_b[16]), 16) + int(chr(data_b[17]), 16)
             px1l = 16 *int(chr(data_b[18]), 16) + int(chr(data_b[19]), 16)
-            self.vx1 = 5.0 * (px1h*256 + px1l)/4096
+            self.vx1[self.counter] = 5.0 * (px1h*256 + px1l)/4096
             px2h = 16 *int(chr(data_b[20]), 16) + int(chr(data_b[21]), 16)
             px2l = 16 *int(chr(data_b[22]), 16) + int(chr(data_b[23]), 16)
-            self.vx2 = 5.0 * (px2h*256 + px2l)/4096
+            self.vx2[self.counter] = 5.0 * (px2h*256 + px2l)/4096
             py1h = 16 *int(chr(data_b[24]), 16) + int(chr(data_b[25]), 16)
             py1l = 16 *int(chr(data_b[26]), 16) + int(chr(data_b[27]), 16)
-            self.vy1 = 5.0 * (py1h*256 + py1l)/4096
+            self.vy1[self.counter] = 5.0 * (py1h*256 + py1l)/4096
             py2h = 16 *int(chr(data_b[28]), 16) + int(chr(data_b[29]), 16)
             py2l = 16 *int(chr(data_b[30]), 16) + int(chr(data_b[31]), 16)
-            self.vy2 = 5.0 * (py2h*256 + py2l)/4096
+            self.vy2[self.counter] = 5.0 * (py2h*256 + py2l)/4096
 
             self.x = ((self.vy1[self.counter] + self.vy1[self.counter]) - (
                         self.vx1[self.counter] + self.vy2[self.counter])) / (
@@ -269,13 +265,14 @@ class Ui_MainWindow(object):
                            self.vy2[self.counter],
                            self.x,
                            self.y])
-            df.to_csv(save_path + self.filename, mode= "a")
+            df.to_csv(save_path + self.filename, mode="a")
 
             print("psd")
             print(df)
 
         else:
             print("missed")
+            """
             df = pd.DataFrame(columns =
                           [self.vx1[self.counter],
                            self.vx2[self.counter],
@@ -284,6 +281,7 @@ class Ui_MainWindow(object):
                            self.x,
                            self.y])
             df.to_csv(save_path + self.filename, mode="a")
+            """
             print("kanopero")
 
             while b"\n" != self.ser.read(1):
@@ -329,6 +327,10 @@ class Ui_MainWindow(object):
             self.p2_vline.setPos(self.counter)
             self.p3_vline.setPos(self.counter)
             self.p4_vline.setPos(self.counter)
+            self.p1.setYRange(0, 5.2)
+            self.p2.setYRange(0, 5.2)
+            self.p3.setYRange(0, 5.2)
+            self.p4.setYRange(0, 5.2)
             self.plot_counter = 0
 
 
