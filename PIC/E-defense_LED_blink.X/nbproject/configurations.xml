@@ -4,6 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>HardwareProfile.h</itemPath>
+      <itemPath>usb_config.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -12,7 +14,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main2.c</itemPath>
+      <itemPath>usb_descriptors.c</itemPath>
+      <itemPath>LED_blink_main.c</itemPath>
+      <itemPath>../../../../Microchip/USB/usb_device.c</itemPath>
+      <itemPath>../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -22,6 +27,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
+    <Elem>../../../../Microchip/USB</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -81,7 +87,8 @@
         <property key="enable-ot" value="true"/>
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include\USB;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -89,9 +96,18 @@
         <property key="verbose" value="false"/>
         <property key="warning-level" value="2"/>
       </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
       <C18-LD>
         <property key="cod-file" value="false"/>
-        <property key="extra-lib-directories" value=""/>
+        <property key="extra-lib-directories"
+                  value="C:\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </C18-LD>
@@ -111,7 +127,7 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="firmware.download.all" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
@@ -126,7 +142,7 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-7fff"/>
-        <property key="poweroptions.powerenable" value="true"/>
+        <property key="poweroptions.powerenable" value="false"/>
         <property key="programmertogo.imagename" value=""/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -135,7 +151,7 @@
         <property key="programoptions.preservedataflash.ranges"
                   value="${programoptions.preservedataflash.ranges}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges" value="f00000-f000ff"/>
+        <property key="programoptions.preserveeeprom.ranges" value="0-ff"/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
