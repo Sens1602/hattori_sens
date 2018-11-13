@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="62">
+<configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>HardwareProfile.h</itemPath>
-      <itemPath>usb_config.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -14,10 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>usb_descriptors.c</itemPath>
-      <itemPath>../../../../Microchip/USB/usb_device.c</itemPath>
-      <itemPath>../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
-      <itemPath>LED_blink_main.c</itemPath>
+      <itemPath>newmain.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -25,10 +20,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>.</Elem>
-    <Elem>../../../../Microchip/USB</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -42,6 +33,9 @@
         <languageToolchainVersion>3.47</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
+      <packs>
+        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.0.6"/>
+      </packs>
       <compileType>
         <linkerTool>
           <linkerLibItems>
@@ -67,8 +61,8 @@
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <C18>
-        <property key="code-model" value="ms"/>
-        <property key="data-model" value="oa-"/>
+        <property key="code-model" value="mS"/>
+        <property key="data-model" value="Oa-"/>
         <property key="default-char-unsigned" value="false"/>
         <property key="enable-all-optimizations" value="true"/>
         <property key="enable-int-promotion" value="false"/>
@@ -84,8 +78,7 @@
         <property key="enable-ot" value="true"/>
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
-        <property key="extra-include-directories"
-                  value="C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include\USB;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
+        <property key="extra-include-directories" value=""/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -103,8 +96,7 @@
       </C18-AS>
       <C18-LD>
         <property key="cod-file" value="false"/>
-        <property key="extra-lib-directories"
-                  value="C:\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
+        <property key="extra-lib-directories" value=""/>
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </C18-LD>
@@ -117,49 +109,6 @@
         <property key="stack-analysis-mcc18" value="false"/>
         <property key="stack-analysis-mplink" value="false"/>
       </C18LanguageToolchain>
-      <PICkit3PlatformTool>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="Freeze Peripherals" value="true"/>
-        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="firmware.download.all" value="false"/>
-        <property key="hwtoolclock.frcindebug" value="false"/>
-        <property key="memories.aux" value="false"/>
-        <property key="memories.bootflash" value="true"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.configurationmemory2" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.flashdata" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="0-7fff"/>
-        <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmertogo.imagename" value=""/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.pgmspeed" value="2"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${programoptions.preservedataflash.ranges}"/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges" value="0-ff"/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveuserid" value="false"/>
-        <property key="programoptions.programcalmem" value="false"/>
-        <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="programoptions.usehighvoltageonmclr" value="false"/>
-        <property key="programoptions.uselvpprogramming" value="false"/>
-        <property key="voltagevalue" value="5.0"/>
-      </PICkit3PlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

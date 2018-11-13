@@ -48,6 +48,8 @@ USB_HANDLE    lastTransmission;
 unsigned char i;
 
 int err;//I2C??????????
+int led_blightness = 0;
+int  blight_flag = 0;
 char outbuf[30];//
 unsigned long counter;
 int b;
@@ -67,7 +69,6 @@ unsigned int WI2C( unsigned char control,
             unsigned char address, unsigned char data);
 unsigned int RI2C(unsigned char control, unsigned char address);
 void Calc();
-void binary_to_ascii(int a, char *text);
 
 
 /*** interrupt vector***/
@@ -84,19 +85,39 @@ void Remapped_Low_ISR (void){
 /****interrupt function***/
 #pragma interrupt YourHighPriorityISRCode
 void YourHighPriorityISRCode(){
-    if(INTCONbits.TMR0IF){ //???????Timer1??????        
-        INTCONbits.TMR0IF = 0; //?????? 
-        WriteTimer0(35416);//??????
-        //????????
+    if(INTCONbits.TMR0IF){  
+        INTCONbits.TMR0IF = 0; 
+        WriteTimer0(35416);
+
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-            USBDeviceAttach();// USB??????			
-        // ????
+            USBDeviceAttach();
+
         if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
-            //Calc();//????????
             PORTBbits.RB5 ^= 1;
+            if(blight_flag ==0 && led_blightness<50){
+                led_blightness++;
+            }else if(led_blightness > 0){
+                blight_flag = 1;
+                led_blightness--;
+            }else{
+                blight_flag = 0;
+            }
+  
+            /*          
+            if(led_blightness != 40){
+                led_blightness = 40;
+            }else{
+                led_blightness = 0;
+            }                                                        
+            */
+            outbuf[0] = WI2C(0b11001010, 0x06, 100);
+            outbuf[1] = led_blightness;
+            
+            while(!USBUSARTIsTxTrfReady()) CDCTxService();//magic spell
+            putUSBUSART(outbuf, 2);
+            CDCTxService();
         }      
     }
-        
     #if defined(USB_INTERRUPT)
         USBDeviceTasks();
     #endif
@@ -110,65 +131,30 @@ void YourLowPriorityISRCode()
 /****main function***/
 void main(void){  
     //wait for oscillation stability
-    for(i=0; i<100; i++){
-        Nop(); 
-    }
+    for(i=0; i<100; i++)Nop(); 
+    PORTBbits.RB5 = 0;
 
     TRISA = 0b11111111;
     TRISB = 0b00011100;
     TRISC = 0b00000000;
+    USBDeviceInit();
     
-    ptr_accel_h_x = bt_accel_h_x;
-    ptr_accel_l_x = bt_accel_l_x;
-    
-    //USB buffer clear
-	for (i=0; i<sizeof(USB_Out_Buf); i++){
-		USB_Out_Buf[i] = 0;
-    }
-    lastTransmission = 0;		// handle clear
-    USBDeviceInit();			// USB initialize
-    PORTCbits.RC2 = 0;
-
-    //ADC configration
-    OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_12_TAD, ADC_CH0
-            & ADC_INT_OFF & ADC_REF_VDD_VSS, 0x0B);
-
     //I2C configration
     //SSPADD = ((Fosc/4) / Fscl) - 1
-    
     OpenI2C(MASTER, SLEW_ON);   // master mode
     SSPADD = 29;                //I2C400kHz?
-    err = WI2C(0b11010000, 0x24, 0x0D);//slave clock configration
-      
-    //MPU initialize
-    //accel, gylo wake to sleep
-    
-    err = WI2C(0b11010000, 0x6B, 0x00);   
-    err = WI2C(0b11010000, 0x37, 0x02);
-    //magnetic sensor 16bit ADC mode
-    err = WI2C(0b00011000, 0x0A, 0x16);//100Hz mode
-   
-    
-    //timer configration
-    //18F2553?1??4????
-    //1????:1/(48MHz/4) = 0.166)
-    //5ms(200Hz)??????5000/0.1666 = 30120?????????)
-    //65536 - 30120 ? 35416
-    T0CON = 0b10000111;//???0,8???,??????1:2
-    WriteTimer0(35416);//??????
-    INTCONbits.GIE = 1;//????????
-    INTCONbits.TMR0IE = 1;//TMR0??????
+    err = WI2C(0b11001010, 0x01, 0b00000011);
+    err = WI2C(0b11001010, 0x06, 0x11111111);
+
+    //Timei0 configration
+    T0CON = 0b10000100;
+    WriteTimer0(35416);
+    INTCONbits.GIE = 1;
+    INTCONbits.TMR0IE = 1;
         
-    PORTBbits.RB5 = 1;
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-        USBDeviceAttach();				// USB??????			
-        // ????
-        /*
-        if((USBDeviceState >= CONFIGURED_STATE)&&(USBSuspendControl!=1)){
-            Calc();
-        }  
-        */     
+            USBDeviceAttach();	
     }
 }
 
@@ -197,7 +183,7 @@ unsigned int WI2C( unsigned char control,
     StopI2C();                                 // ???????
     PIR1bits.SSPIF = 0;                        // SSPIF???
    // if ( PIR2bits.BCLIF )return ( 0 );       // ?????? 
-    return (0); 
+    return (0x64); 
     
 }
 
@@ -352,105 +338,9 @@ void Calc(){
     StopI2C();                                 // ???????
     PIR1bits.SSPIF = 0;                        // SSPIF???
     
-//---------------????---------------------
-//1???????ST2?????????????????  
-    
-    outbuf[13]= RI2C(0b00011000, 0x03);
-    err = RI2C(0b00011000, 0x09);           //ST2
-    outbuf[12]= RI2C(0b00011000, 0x04);
-    err = RI2C(0b00011000, 0x09);           //ST2
-    outbuf[15]= RI2C(0b00011000, 0x05);
-    err = RI2C(0b00011000, 0x09);           //ST2
-    outbuf[14]= RI2C(0b00011000, 0x06);
-    err = RI2C(0b00011000, 0x09);           //ST2
-    outbuf[17]= RI2C(0b00011000, 0x07);
-    err = RI2C(0b00011000, 0x09);           //ST2
-    outbuf[16]= RI2C(0b00011000, 0x08);
-    //outbuf[16]= RI2C(0b00011000, 0x00);//WAI
-    err = RI2C(0b00011000, 0x09);           //ST2
-    
-     
-//--------------PSD???AD??----------------
-    /*
-    SetChanADC(ADC_CH0);
-    ConvertADC();
-    while(BusyADC()); 
-    outbuf[18] = ADRESH;//??8???
-    outbuf[19] = ADRESL;//??8???
-    
-    SetChanADC(ADC_CH8);
-    ConvertADC();
-    while(BusyADC()); 
-    outbuf[20] = ADRESH;//??8???
-    outbuf[21] = ADRESL;//??8???
-
-    SetChanADC(ADC_CH9);
-    ConvertADC();
-    while(BusyADC()); 
-    outbuf[22] = ADRESH;//??8???
-    outbuf[23] = ADRESL;//??8???
-    
-    SetChanADC(ADC_CH11);
-    ConvertADC();
-    while(BusyADC()); 
-    outbuf[24] = ADRESH;//??8???
-    outbuf[25] = ADRESL;//??8???
-   */
-    //?????
-    //outbuf[18] = 256;
-    //outbuf[19] = 0;
-    //outbuf[20] = 256;
-    //outbuf[21] = 0;
-    //outbuf[22] = 256;
-    //outbuf[23] = 0;
-    //outbuf[24] = 256;
-    //outbuf[25] = 0;
-   
-    outbuf[26] = '\r';
-    outbuf[27] = '\n';
-       
-       
-    accel_h_x = outbuf[0];
-    accel_l_x = outbuf[1];
-    
-    binary_to_ascii(accel_h_x, ptr_accel_h_x);
-    binary_to_ascii(accel_l_x, ptr_accel_l_x);
-    /* do not run !!!!!! (compiler bug?)
-    sprintf(bt_accel_h_x, "%02x", accel_h_x);
-    sprintf(bt_accel_l_x, "%02x", accel_l_x);  
-    */
-    
-    outbuf[2] = 0;
-    outbuf[3] = bt_accel_h_x[0];
-    outbuf[4] = bt_accel_h_x[1];
-    outbuf[5] = 0;
-    outbuf[6] = bt_accel_l_x[0];
-    outbuf[7] = bt_accel_l_x[1];
-    outbuf[8] = 0;
-    
     //while(!USBUSARTIsTxTrfReady()) CDCTxService();//??????????????????????      
     putUSBUSART(outbuf, 28);
     CDCTxService();
-        
-}
-
-void binary_to_ascii(int a, char *text){
-    int high = (a & 0b11110000)>>4;
-    int low = (a & 0b00001111);
-
-    if(high < 10){
-        high += 48;
-    }else{
-        high += 55;
-    }
-    if(low < 10){
-        low += 48;
-    }else{
-        low += 55;
-    }
-    
-    *text = high;
-    *(text+1) = low;
 }
 
 /***********************************************************

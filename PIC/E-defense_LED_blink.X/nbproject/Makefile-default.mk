@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c LED_blink_main.c ../../../../Microchip/USB/usb_device.c "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c"
+SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c ../../../../Microchip/USB/usb_device.c "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" LED_blink_main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/LED_blink_main.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/LED_blink_main.o.d ${OBJECTDIR}/_ext/926206843/usb_device.o.d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o ${OBJECTDIR}/LED_blink_main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/_ext/926206843/usb_device.o.d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d ${OBJECTDIR}/LED_blink_main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/LED_blink_main.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
+OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o ${OBJECTDIR}/LED_blink_main.o
 
 # Source Files
-SOURCEFILES=usb_descriptors.c LED_blink_main.c ../../../../Microchip/USB/usb_device.c ../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c
+SOURCEFILES=usb_descriptors.c ../../../../Microchip/USB/usb_device.c ../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c LED_blink_main.c
 
 
 CFLAGS=
@@ -109,14 +109,6 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/LED_blink_main.o: LED_blink_main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/LED_blink_main.o.d 
-	@${RM} ${OBJECTDIR}/LED_blink_main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/LED_blink_main.o   LED_blink_main.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/LED_blink_main.o 
-	@${FIXDEPS} "${OBJECTDIR}/LED_blink_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
 	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o.d 
@@ -133,6 +125,14 @@ ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/LED_blink_main.o: LED_blink_main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/LED_blink_main.o.d 
+	@${RM} ${OBJECTDIR}/LED_blink_main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/LED_blink_main.o   LED_blink_main.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/LED_blink_main.o 
+	@${FIXDEPS} "${OBJECTDIR}/LED_blink_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -141,14 +141,6 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descriptors.o   usb_descriptors.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/LED_blink_main.o: LED_blink_main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/LED_blink_main.o.d 
-	@${RM} ${OBJECTDIR}/LED_blink_main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/LED_blink_main.o   LED_blink_main.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/LED_blink_main.o 
-	@${FIXDEPS} "${OBJECTDIR}/LED_blink_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
@@ -165,6 +157,14 @@ ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o   "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/LED_blink_main.o: LED_blink_main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/LED_blink_main.o.d 
+	@${RM} ${OBJECTDIR}/LED_blink_main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/LED_blink_main.o   LED_blink_main.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/LED_blink_main.o 
+	@${FIXDEPS} "${OBJECTDIR}/LED_blink_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

@@ -88,7 +88,7 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include\USB;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
+                  value="C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include;C:\Users\Tanii_Lab\Box Sync\Personal\Documents\Microchip Solutions v2011-06-02\Microchip\Include\USB;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -96,10 +96,18 @@
         <property key="verbose" value="false"/>
         <property key="warning-level" value="2"/>
       </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
       <C18-LD>
         <property key="cod-file" value="false"/>
         <property key="extra-lib-directories"
-                  value="..\..\..\..\..\..\..\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
+                  value="C:\Program Files (x86)\Microchip\mplabc18\v3.47\lib"/>
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </C18-LD>
@@ -119,7 +127,7 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="firmware.download.all" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
