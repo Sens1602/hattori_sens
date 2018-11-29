@@ -160,6 +160,8 @@ void main(void){
     INTCONbits.TMR0IE = 1;//TMR0割り込み許可
         
     PORTCbits.RC2 = 1;
+    PORTCbits.RC1 = 1;
+
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
         USBDeviceAttach();				// USB割り込み許可			

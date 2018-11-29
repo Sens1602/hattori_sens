@@ -1,0 +1,2 @@
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\usb_descriptors.c 12 : unable to locate 'usb.h'
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\usb_descriptors.c 13 : unable to locate 'usb_function_cdc.h'

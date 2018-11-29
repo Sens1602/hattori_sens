@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="65">
+<configurationDescriptor version="62">
   <logicalFolder name="root" displayName="root" projectFiles="true">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -15,9 +15,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>usb_descriptors.c</itemPath>
-      <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
-      <itemPath>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c</itemPath>
       <itemPath>miniPSD_wired.c</itemPath>
+      <itemPath>../../../../Microchip/USB/usb_device.c</itemPath>
+      <itemPath>../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -28,6 +28,7 @@
   <sourceRootList>
     <Elem>.</Elem>
     <Elem>../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB</Elem>
+    <Elem>../../../../Microchip/USB</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -42,9 +43,6 @@
         <languageToolchainVersion>3.47</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
-      <packs>
-        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.0.6"/>
-      </packs>
       <compileType>
         <linkerTool>
           <linkerLibItems>

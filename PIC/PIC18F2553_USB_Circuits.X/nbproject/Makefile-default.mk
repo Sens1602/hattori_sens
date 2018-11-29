@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" miniPSD_wired.c
+SOURCEFILES_QUOTED_IF_SPACED=usb_descriptors.c miniPSD_wired.c ../../../../Microchip/USB/usb_device.c "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c"
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wired.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d ${OBJECTDIR}/_ext/1821828070/usb_device.o.d ${OBJECTDIR}/miniPSD_wired.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/miniPSD_wired.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/usb_descriptors.o.d ${OBJECTDIR}/miniPSD_wired.o.d ${OBJECTDIR}/_ext/926206843/usb_device.o.d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o ${OBJECTDIR}/_ext/1821828070/usb_device.o ${OBJECTDIR}/miniPSD_wired.o
+OBJECTFILES=${OBJECTDIR}/usb_descriptors.o ${OBJECTDIR}/miniPSD_wired.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
 
 # Source Files
-SOURCEFILES=usb_descriptors.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c ../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c miniPSD_wired.c
+SOURCEFILES=usb_descriptors.c miniPSD_wired.c ../../../../Microchip/USB/usb_device.c ../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c
 
 
 CFLAGS=
@@ -109,22 +109,6 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/263263521/usb_function_cdc.o: ../../../../../../../Box\ Sync/Personal/Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/263263521" 
-	@${RM} ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o   "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/_ext/1821828070/usb_device.o: ../../../../../../../Box\ Sync/Personal/Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1821828070" 
-	@${RM} ${OBJECTDIR}/_ext/1821828070/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1821828070/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1821828070/usb_device.o   "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1821828070/usb_device.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1821828070/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/miniPSD_wired.o.d 
@@ -132,6 +116,22 @@ ${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wired.o   miniPSD_wired.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wired.o 
 	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wired.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/926206843/usb_device.o   ../../../../Microchip/USB/usb_device.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/926206843/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1083301514" 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o   "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
@@ -142,22 +142,6 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/263263521/usb_function_cdc.o: ../../../../../../../Box\ Sync/Personal/Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/263263521" 
-	@${RM} ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o   "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/263263521/usb_function_cdc.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/263263521/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/_ext/1821828070/usb_device.o: ../../../../../../../Box\ Sync/Personal/Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1821828070" 
-	@${RM} ${OBJECTDIR}/_ext/1821828070/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1821828070/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1821828070/usb_device.o   "../../../../../../../Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1821828070/usb_device.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1821828070/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/miniPSD_wired.o.d 
@@ -165,6 +149,22 @@ ${OBJECTDIR}/miniPSD_wired.o: miniPSD_wired.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/miniPSD_wired.o   miniPSD_wired.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/miniPSD_wired.o 
 	@${FIXDEPS} "${OBJECTDIR}/miniPSD_wired.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/926206843/usb_device.o   ../../../../Microchip/USB/usb_device.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/926206843/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1083301514" 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o   "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

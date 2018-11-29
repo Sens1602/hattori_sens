@@ -77,12 +77,13 @@ void main(void){
     //wait for oscillation stability
     for(i=0; i<100; i++)Nop(); 
     PORTBbits.RB5 = 0;
-
+    
     TRISA = 0b11111111;
-    TRISB = 0b00011100;
+    TRISB = 0b00001100;
     TRISC = 0b00000000;
     USBDeviceInit();
-    PORTBbits.RB5 = 1;
+    PORTBbits.RB5 = 0;
+    PORTBbits.RB4 = 1;
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
             USBDeviceAttach();	

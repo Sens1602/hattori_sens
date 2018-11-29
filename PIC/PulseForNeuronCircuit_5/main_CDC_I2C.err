@@ -1,3 +1,4 @@
-Warning[2058] F:\prog\mplab_projects\PulseForNeuronCircuit_5\main_CDC_I2C.c 146 : call of function without prototype
-Warning[2054] F:\prog\mplab_projects\PulseForNeuronCircuit_5\main_CDC_I2C.c 163 : suspicious pointer conversion
-Warning[2054] F:\prog\mplab_projects\PulseForNeuronCircuit_5\main_CDC_I2C.c 195 : suspicious pointer conversion
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\main_CDC_I2C.c 5 : unable to locate 'usb_function_cdc.h'
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\main_CDC_I2C.c 7 : unable to locate 'Compiler.h'
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\main_CDC_I2C.c 9 : unable to locate 'usb_device.h'
+Error[1027] C:\Users\Tanii_Lab\Documents\GitHub\hattori_sens\PIC\PulseForNeuronCircuit_5\main_CDC_I2C.c 10 : unable to locate 'usb.h'
