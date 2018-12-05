@@ -12,6 +12,6 @@ class Test(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    window = Test(port="COM3")
+    window = Test(port="COM10")
     window.show()
     sys.exit(app.exec_())
