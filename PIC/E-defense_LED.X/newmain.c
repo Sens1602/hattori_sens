@@ -48,8 +48,8 @@ int  blight_flag = 0;
 char text[] = "kashikoma";
 int err;
 unsigned long counter;
-char ch1_blightness = 0;
-char ch2_blightness = 3;
+char blink_flag = 1;
+
 
 
 /**function prototype *******************/
@@ -75,18 +75,18 @@ void YourHighPriorityISRCode(){
     if(INTCONbits.TMR0IF){  
         INTCONbits.TMR0IF = 0; 
         WriteTimer0(35416);
-        
-        ch1_blightness +=1;
-        ch2_blightness -=1;
-        text[2] = WI2C(0b11001010, 0x03, ch1_blightness);        
-        text[2] = WI2C(0b11001010, 0x05, ch2_blightness);        
-        
-        if(ch1_blightness == 100){
-            ch1_blightness = 0;
+        text[2] = WI2C(0b11001010, 0x05, 10);  
+        /*
+        if(blink_flag == 1){
+            text[2] = WI2C(0b11001010, 0x03, 0);        
+            text[2] = WI2C(0b11001010, 0x05, 1);        
+            blink_flag = 0;
+        }else{
+            text[2] = WI2C(0b11001010, 0x03, 1);        
+            text[2] = WI2C(0b11001010, 0x05, 0);        
+            blink_flag = 1;
         }
-        if(ch2_blightness == 0){
-            ch2_blightness = 3;
-        }
+        */
     }
     
     #if defined(USB_INTERRUPT)
@@ -133,7 +133,7 @@ void main(void){
     text[2] = WI2C(0b11001010, 0x05, 0b00000001);
 
     //Timei0 configration
-    T0CON = 0b10000110;
+    T0CON = 0b10000100;
     WriteTimer0(35416);
     INTCONbits.GIE = 1;
     INTCONbits.TMR0IE = 1;

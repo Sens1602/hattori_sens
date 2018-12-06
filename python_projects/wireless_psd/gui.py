@@ -314,7 +314,7 @@ class Ui_MainWindow(object):
             self.item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
             self.treeWidget.topLevelItem(self.view_data_len - 1).setText(0, str(self.vx1[self.counter]))
             self.treeWidget.topLevelItem(self.view_data_len - 1).setText(1, str(self.vx2[self.counter]))
-            self.tree      Widget.topLevelItem(self.view_data_len - 1).setText(2, str(self.vy1[self.counter]))
+            self.treeWidget.topLevelItem(self.view_data_len - 1).setText(2, str(self.vy1[self.counter]))
             self.treeWidget.topLevelItem(self.view_data_len - 1).setText(3, str(self.vy2[self.counter]))
             self.treeWidget.topLevelItem(self.view_data_len - 1).setText(4, str(self.x))
             self.treeWidget.topLevelItem(self.view_data_len - 1).setText(5, str(self.y))

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c usb_descripter.c "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c"
+SOURCEFILES_QUOTED_IF_SPACED=newmain.c usb_descripter.c ../../../../Microchip/USB/usb_device.c "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c"
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/usb_descripter.o ${OBJECTDIR}/_ext/854161337/usb_device.o ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/usb_descripter.o.d ${OBJECTDIR}/_ext/854161337/usb_device.o.d ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/usb_descripter.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/usb_descripter.o.d ${OBJECTDIR}/_ext/926206843/usb_device.o.d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/usb_descripter.o ${OBJECTDIR}/_ext/854161337/usb_device.o ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o
+OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/usb_descripter.o ${OBJECTDIR}/_ext/926206843/usb_device.o ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o
 
 # Source Files
-SOURCEFILES=newmain.c usb_descripter.c ../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c ../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c
+SOURCEFILES=newmain.c usb_descripter.c ../../../../Microchip/USB/usb_device.c ../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c
 
 
 CFLAGS=
@@ -105,7 +105,7 @@ ${OBJECTDIR}/newmain.o: newmain.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/newmain.o.d 
 	@${RM} ${OBJECTDIR}/newmain.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newmain.o   newmain.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newmain.o   newmain.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/newmain.o 
 	@${FIXDEPS} "${OBJECTDIR}/newmain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -113,32 +113,32 @@ ${OBJECTDIR}/usb_descripter.o: usb_descripter.c  nbproject/Makefile-${CND_CONF}.
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descripter.o.d 
 	@${RM} ${OBJECTDIR}/usb_descripter.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descripter.o   usb_descripter.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descripter.o   usb_descripter.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descripter.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descripter.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/854161337/usb_device.o: ../../Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/854161337" 
-	@${RM} ${OBJECTDIR}/_ext/854161337/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/_ext/854161337/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/854161337/usb_device.o   "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/854161337/usb_device.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/854161337/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/926206843/usb_device.o   ../../../../Microchip/USB/usb_device.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/926206843/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/43959106/usb_function_cdc.o: ../../Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/43959106" 
-	@${RM} ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o   "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/43959106/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1083301514" 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o   "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/newmain.o: newmain.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/newmain.o.d 
 	@${RM} ${OBJECTDIR}/newmain.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newmain.o   newmain.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newmain.o   newmain.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/newmain.o 
 	@${FIXDEPS} "${OBJECTDIR}/newmain.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -146,25 +146,25 @@ ${OBJECTDIR}/usb_descripter.o: usb_descripter.c  nbproject/Makefile-${CND_CONF}.
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descripter.o.d 
 	@${RM} ${OBJECTDIR}/usb_descripter.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descripter.o   usb_descripter.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/usb_descripter.o   usb_descripter.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/usb_descripter.o 
 	@${FIXDEPS} "${OBJECTDIR}/usb_descripter.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/854161337/usb_device.o: ../../Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/854161337" 
-	@${RM} ${OBJECTDIR}/_ext/854161337/usb_device.o.d 
-	@${RM} ${OBJECTDIR}/_ext/854161337/usb_device.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/854161337/usb_device.o   "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/usb_device.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/854161337/usb_device.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/854161337/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+${OBJECTDIR}/_ext/926206843/usb_device.o: ../../../../Microchip/USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/926206843" 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o.d 
+	@${RM} ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/926206843/usb_device.o   ../../../../Microchip/USB/usb_device.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/926206843/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/926206843/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/_ext/43959106/usb_function_cdc.o: ../../Documents/Microchip\ Solutions\ v2011-06-02/Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/43959106" 
-	@${RM} ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include" -I"C:/Users/Tanii_Lab/Box Sync/Personal/Documents/Microchip Solutions v2011-06-02/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o   "../../Documents/Microchip Solutions v2011-06-02/Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/43959106/usb_function_cdc.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/43959106/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o: ../../../../Microchip/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1083301514" 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"C:/Users/nano/Documents/Microchip/Include" -I"C:/Users/nano/Documents/Microchip/Include/USB" -I"C:/Program Files (x86)/Microchip/mplabc18/v3.47/h" -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o   "../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c" 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1083301514/usb_function_cdc.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 
