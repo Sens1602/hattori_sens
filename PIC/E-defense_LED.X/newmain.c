@@ -75,7 +75,8 @@ void YourHighPriorityISRCode(){
     if(INTCONbits.TMR0IF){  
         INTCONbits.TMR0IF = 0; 
         WriteTimer0(35416);
-        text[2] = WI2C(0b11001010, 0x05, 10);  
+        text[2] = WI2C(0b11001010, 0x05, 150);
+        text[2] = WI2C(0b11001010, 0x03, 0);  
         /*
         if(blink_flag == 1){
             text[2] = WI2C(0b11001010, 0x03, 0);        
