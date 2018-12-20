@@ -49,7 +49,7 @@ char text[] = "kashikoma";
 int err;
 unsigned long counter;
 char blink_flag = 1;
-
+int init_flg = 0;
 
 
 /**function prototype *******************/
@@ -116,7 +116,10 @@ void main(void){
     
     PORTBbits.RB4 = 1;
     PORTBbits.RB5 = 1;  
-
+    
+    //CLK input
+    PORTAbits.RA4 = 0;
+    
     //I2C configration
     //SSPADD = ((Fosc/4) / Fscl) - 1
     OpenI2C(MASTER, SLEW_ON);   // master mode
@@ -144,9 +147,19 @@ void main(void){
     while(1){  
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
             USBDeviceAttach();
-        while(!USBUSARTIsTxTrfReady()) CDCTxService();//magic spell
-        putUSBUSART(text, 9);
-        CDCTxService();
+        
+        if(init_flg == 0 && PORTAbits.RA4 == 1){
+            init_flg = 1;
+        }
+        if(init_flg == 1 && PORTAbits.RA4 == 1){
+            text[2] = WI2C(0b11001010, 0x05, 50);
+            text[2] = WI2C(0b11001010, 0x03, 0);  
+        }else if(init_flg == 1 && PORTAbits.RA4 ==0){
+            text[2] = WI2C(0b11001010, 0x05, 0);
+            text[2] = WI2C(0b11001010, 0x03, 50);     
+        }
+        
+        //usb????
     }
 }
 //I2C??????????
