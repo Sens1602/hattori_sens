@@ -75,8 +75,8 @@ void YourHighPriorityISRCode(){
     if(INTCONbits.TMR0IF){  
         INTCONbits.TMR0IF = 0; 
         WriteTimer0(35416);
-        text[2] = WI2C(0b11001010, 0x05, 150);
-        text[2] = WI2C(0b11001010, 0x03, 0);  
+        //text[2] = WI2C(0b11001010, 0x05, 150);
+        //text[2] = WI2C(0b11001010, 0x03, 0);  
         /*
         if(blink_flag == 1){
             text[2] = WI2C(0b11001010, 0x03, 0);        
@@ -137,10 +137,10 @@ void main(void){
     text[2] = WI2C(0b11001010, 0x05, 0b00000001);
 
     //Timei0 configration
-    T0CON = 0b10000100;
-    WriteTimer0(35416);
-    INTCONbits.GIE = 1;
-    INTCONbits.TMR0IE = 1;
+    //T0CON = 0b10000100;
+    //WriteTimer0(35416);
+    //INTCONbits.GIE = 1;
+    //INTCONbits.TMR0IE = 1;
     
     text[2] = WI2C(0b11001010, 0x03, 0b00000000);        
     text[2] = WI2C(0b11001010, 0x05, 0b00000000);    
@@ -148,6 +148,7 @@ void main(void){
         if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
             USBDeviceAttach();
         
+        /**/
         if(init_flg == 0 && PORTAbits.RA4 == 1){
             init_flg = 1;
         }
