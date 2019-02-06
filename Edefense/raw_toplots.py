@@ -8,7 +8,7 @@ def main():
     mpl.rcParams['agg.path.chunksize'] = 100000
 
 
-    path = "C:/Users/Tanii_Lab/Documents/"
+    path = "//192.168.13.10/Public/sens/実験データ/2019_02_01/"
     read_name = "r4_ch13.csv"
     out_name = "r4_ch13_out.csv"
     smp = 50
@@ -42,15 +42,16 @@ def main():
     df1.to_csv(path+out_name)
 
     # plot
-    ax0 = fig.add_subplot(3, 1, 1)
-    ax1 = fig.add_subplot(3, 1, 2)
-    ax2 = fig.add_subplot(3, 1, 3)
+    ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)
+    ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=3)
+    ax3 = plt.subplot2grid((3, 3), (2, 0), colspan=2)
+    ax4 = plt.subplot2grid((3, 3), (2, 2))
 
-    ax0.plot(time, x)
-    ax1.plot(time, y)
-    ax2.plot(time, x-(abs(x[0])))
-    ax2.plot(time, y-(abs(y[0])))
-
+    ax1.plot(time, x)
+    ax2.plot(time, y)
+    ax3.plot(time, x-abs(x[0]))
+    ax3.plot(time, y-abs(y[0]))
+    ax4.plot(x-abs(x[0]), y-abs(y[0]))
     fig.tight_layout()
     plt.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
     plt.show()
