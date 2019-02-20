@@ -32,7 +32,7 @@ def main():
         y2 = np.array(list(map(f, array[:, 4])))
         x1 = np.array(list(map(f, array[:, 5])))
 
-        x = ((x2 + y1) - (x1 - y2)) / (x1 + x2 + y1 + y2)
+        x = ((x2 + y1) - (x1 + y2)) / (x1 + x2 + y1 + y2)
         y = ((x2 + y2) - (x1 + y1)) / (x1 + x2 + y1 + y2)
         time = np.arange(0, len(x) / smp, 1 / smp)
 
