@@ -42,17 +42,6 @@ def main():
     y = ((x2+y2)-(x1+y1))/(x1+x2+y1+y2)
     index = np.arange(0, len(x))
 
-    # save
-    """
-    df1 = pd.DataFrame({'T [s]': time,
-                       'V1(Y1)': y1,
-                       'V2(X2)': x2,
-                       'V3(Y2)': y2,
-                       'V4(X1)': x1,
-                       'x': x,
-                       'y': y})
-    df1.to_csv(path+out_name)
-    """
     # linear approximation
     res1 = np.polyfit(x, xtrue, 1)
     XTRUE = np.poly1d(res1)(x)
@@ -77,6 +66,22 @@ def main():
     x_exp = np.poly1d(res1)(x_raw)
     y_exp = np.poly1d(res2)(y_raw)
     time = np.arange(0, len(x_raw)/smp, 1/smp)
+
+    ###### plot ######
+    df2 = pd.DataFrame({'T [s]': time,
+                        "r_x": x_exp,
+                        "r_y": y_exp,
+                        "x_raw": x_raw,
+                        "y_raw": y_raw,
+                        "V1(Y1)": y1_exp,
+                        "V2(X2)": x2_exp,
+                        "V3(Y2)": y2_exp,
+                        "V4(X1)": x1_exp,
+                        "x-axis coefficient: a": res1[0],
+                        "x-axis offset: b": res1[1],
+                        "y-axis coefficient: a": res2[0],
+                        "y-axis offset: b": res2[1]})
+    df2.to_csv(path+out_name_exp)
 
     ###### plot ######
     ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)
