@@ -3,35 +3,37 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from itertools import starmap
 import numpy as np
+import glob
+import os
 
 def main():
     mpl.rcParams['agg.path.chunksize'] = 100000
-    path = "C:/Users/6969p/Downloads/"
+    #path = "C:/Users/6969p/Downloads/"
+    path = "//192.168.13.10/Public/sens/measurment_data/sagyou/"
 
     # calibration data
-    read_name_cal = "XYS200_DPSD2018_no5_121.csv"
+    #read_name_cal = "XYS200_DPSD2018_no2_121_2683.csv"
+    #read_name_cal = "XYS200_DPSD2018_no3_121_2403.csv"
+    #read_name_cal = "XYS200_DPSD2018_no4_121_2304.csv"
+    #read_name_cal = "XYS200_DPSD2018_no5_121_2965.csv"
+    #read_name_cal = "XYS200_DPSD2018_no6_121_2402.csv"
+    read_name_cal = "XYS200_DPSD2018_no7_121_2394.csv"
+
     # experimental data
-    read_name_exp = "r4_ch13.csv"
-    out_name_exp = "r4_ch13_out.csv"
+    day = "/2019_02_07/"
+    read_name_exp = day + "*ch15" + "*.csv"
 
     smp = 50
     fig = plt.figure(figsize=(20, 10))
 
     ###### calibration ######
-    df0 = pd.read_csv(path+read_name_cal, delimiter=',', skiprows=4)
-    df0.columns = ["ch", "index", "X1", "Y1", "X2", "Y2"]
+    df0 = pd.read_csv(path+read_name_cal, delimiter=',', skiprows=5)
+    df0.columns = ["Xtrue", "Ytrue", "X1", "Y1", "X2", "Y2", "na", "na", "na", "na"]
     df0.fillna(0)
     array0 = df0.as_matrix()
 
     # hex -> decimal
     # v1 <-> y1, v2 <-> x2, v3 <-> y2, v4 <-> x1
-    """
-    f = lambda x: int(x, 16)
-    y1 = np.array(list(map(f, array[:, 2])))
-    x2 = np.array(list(map(f, array[:, 3])))
-    y2 = np.array(list(map(f, array[:, 4])))
-    x1 = np.array(list(map(f, array[:, 5])))
-    """
     xtrue = array0[:, 0]
     ytrue = array0[:, 1]
     y1 = array0[:, 2]
@@ -49,39 +51,46 @@ def main():
     YTRUE = np.poly1d(res2)(y)
 
     ###### Correction of experimental data using calibration data ######
-    df1 = pd.read_csv(path+read_name_exp, delimiter=',')
-    df1.columns = ["ch", "index", "X1", "Y1", "X2", "Y2"]
-    df1.fillna(0)
-    array1 = df1.as_matrix()
-
-    # hex -> decimal
-    # v1 <-> y1, v2 <-> x2, v3 <-> y2, v4 <-> x1
+    csvs = glob.glob(path+read_name_exp)
+    print(csvs)
     f = lambda x: int(x, 16)
-    y1_exp = np.array(list(map(f, array1[:, 2])))
-    x2_exp = np.array(list(map(f, array1[:, 3])))
-    y2_exp = np.array(list(map(f, array1[:, 4])))
-    x1_exp = np.array(list(map(f, array1[:, 5])))
-    x_raw = ((x2_exp+y1_exp)-(x1_exp+y2_exp))/(x1_exp+x2_exp+y1_exp+y2_exp)
-    y_raw = ((x2_exp+y2_exp)-(x1_exp+y1_exp))/(x1_exp+x2_exp+y1_exp+y2_exp)
-    x_exp = np.poly1d(res1)(x_raw)
-    y_exp = np.poly1d(res2)(y_raw)
-    time = np.arange(0, len(x_raw)/smp, 1/smp)
 
-    ###### plot ######
-    df2 = pd.DataFrame({'T [s]': time,
-                        "r_x": x_exp,
-                        "r_y": y_exp,
-                        "x_raw": x_raw,
-                        "y_raw": y_raw,
-                        "V1(Y1)": y1_exp,
-                        "V2(X2)": x2_exp,
-                        "V3(Y2)": y2_exp,
-                        "V4(X1)": x1_exp,
-                        "x-axis coefficient: a": res1[0],
-                        "x-axis offset: b": res1[1],
-                        "y-axis coefficient: a": res2[0],
-                        "y-axis offset: b": res2[1]})
-    df2.to_csv(path+out_name_exp)
+    for i in range(len(csvs)):
+        print(csvs[i])
+        df1 = pd.read_csv(csvs[i], delimiter=',', dtype='object')
+        df1.columns = ["ch", "index", "X1", "Y1", "X2", "Y2"]
+        array1 = df1.as_matrix()
+        df1.fillna(0)
+        array1 = np.delete(array1, -1, 0)
+        print(df1)
+        # hex -> decimal
+        # v1 <-> y1, v2 <-> x2, v3 <-> y2, v4 <-> x1
+        y1_exp = np.array(list(map(f, array1[:, 2])))
+        x2_exp = np.array(list(map(f, array1[:, 3])))
+        y2_exp = np.array(list(map(f, array1[:, 4])))
+        x1_exp = np.array(list(map(f, array1[:, 5])))
+        x_raw = ((x2_exp+y1_exp)-(x1_exp+y2_exp))/(x1_exp+x2_exp+y1_exp+y2_exp)
+        y_raw = ((x2_exp+y2_exp)-(x1_exp+y1_exp))/(x1_exp+x2_exp+y1_exp+y2_exp)
+        x_exp = np.poly1d(res1)(x_raw)
+        y_exp = np.poly1d(res2)(y_raw)
+        time = np.arange(0, len(x_raw)/smp, 1/smp)
+
+        ###### save ######
+        df2 = pd.DataFrame({'T [s]': time,
+                            "r_x": x_exp,
+                            "r_y": y_exp,
+                            "x_raw": x_raw,
+                            "y_raw": y_raw,
+                            "V1(Y1)": y1_exp,
+                            "V2(X2)": x2_exp,
+                            "V3(Y2)": y2_exp,
+                            "V4(X1)": x1_exp,
+                            "x-axis coefficient: a": res1[0],
+                            "x-axis offset: b": res1[1],
+                            "y-axis coefficient: a": res2[0],
+                            "y-axis offset: b": res2[1]})
+        filename, ext = os.path.splitext(os.path.basename(csvs[i]))
+        df2.to_csv(path+day+filename+"_out.csv")
 
     ###### plot ######
     ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)
@@ -101,7 +110,7 @@ def main():
     ax5.scatter(time, x_exp, color="red", s=5)
     fig.tight_layout()
     plt.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
-    plt.show()
+    #plt.show()
 
 
 if __name__ == '__main__':
