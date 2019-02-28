@@ -13,15 +13,15 @@ def main():
 
     # calibration data
     #read_name_cal = "XYS200_DPSD2018_no2_121_2683.csv"
-    #read_name_cal = "XYS200_DPSD2018_no3_121_2403.csv"
+    read_name_cal = "XYS200_DPSD2018_no3_121_2403.csv"
     #read_name_cal = "XYS200_DPSD2018_no4_121_2304.csv"
     #read_name_cal = "XYS200_DPSD2018_no5_121_2965.csv"
     #read_name_cal = "XYS200_DPSD2018_no6_121_2402.csv"
-    read_name_cal = "XYS200_DPSD2018_no7_121_2394.csv"
+    #read_name_cal = "XYS200_DPSD2018_no7_121_2394.csv"
 
     # experimental data
-    day = "/2019_02_07/"
-    read_name_exp = day + "*ch15" + "*.csv"
+    day = "/2019_02_12/"
+    read_name_exp = day + "*ch11" + "*.csv"
 
     smp = 50
     fig = plt.figure(figsize=(20, 10))
