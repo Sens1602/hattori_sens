@@ -20,7 +20,7 @@ def main():
     #read_name_cal = "XYS200_DPSD2018_no7_121_2394.csv"
 
     # experimental data
-    day = "/2019_02_12/"
+    day = "/2019_02_01/"
     read_name_exp = day + "*ch11" + "*.csv"
 
     smp = 50
@@ -92,6 +92,7 @@ def main():
         filename, ext = os.path.splitext(os.path.basename(csvs[i]))
         df2.to_csv(path+day+filename+"_out.csv")
 
+
     ###### plot ######
     ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)
     ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=3)
@@ -110,7 +111,7 @@ def main():
     ax5.scatter(time, x_exp, color="red", s=5)
     fig.tight_layout()
     plt.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
-    #plt.show()
+    plt.show()
 
 
 if __name__ == '__main__':
