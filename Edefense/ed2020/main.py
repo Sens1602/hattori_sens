@@ -17,8 +17,8 @@ def main():
     print(csvs)
     # offset of relative story displacement
     # 耐震 No2, 3, 4, … 免振 No10, 11, 12, …
-    offsets_x = [10, 20, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
-    offsets_y = [10, 20, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
+    offsets_x = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
+    offsets_y = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
 
     smp = 50 # 50Hz
     fig = plt.figure(figsize=(20, 10))
