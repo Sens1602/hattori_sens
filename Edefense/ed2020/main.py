@@ -9,19 +9,31 @@ import os
 def main():
     mpl.rcParams['agg.path.chunksize'] = 100000
     path = "C:/Users/Kouhei/Documents/edefense/20191204/"
-
-    # calibration data
+    # representative calibration data
     read_name_cal = "XYS200_DPSD2018_no2_121.csv"
-
     # experimental data
     read_name_meadata = "*ch*.csv"
 
     smp = 50
     fig = plt.figure(figsize=(20, 10))
+    ax = []
+    # offset of relative story displacement
+    # 耐震 No2, 3, 4, … 免振 No10, 11, 12, …
+    offsets_x = [10,20,30,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    offsets_y = [10, 20, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    num_plot = 8
+    # 耐震
+    for i in range(int(num_plot/2)):
+        ax.append(fig.add_subplot(4, 2, 2*(i+1)))
+    # 免振
+    for i in range(int(num_plot/2)):
+        ax.append(fig.add_subplot(4, 2, 2*(i+2)))
+
+    print(ax)
 
     ###### calibration ######
     df0 = pd.read_csv(path+read_name_cal, delimiter=',', skiprows=5)
-    print(df0)
+    #print(df0)
     df0.columns = ["Xtrue", "Ytrue", "X1", "Y1", "X2", "Y2", "na", "na", "na", "na"]
     df0.fillna(0)
     array0 = df0.values
@@ -46,17 +58,16 @@ def main():
 
     ###### Correction of experimental data using calibration data ######
     csvs = glob.glob(path+read_name_meadata)
-    print(csvs)
+    #print(csvs)
     f = lambda x: int(x, 16)
 
     for i in range(len(csvs)):
-        print(csvs[i])
         df1 = pd.read_csv(csvs[i], delimiter=',', dtype='object')
         df1.columns = ["ch", "index", "X1", "Y1", "X2", "Y2"]
         array1 = df1.values
         df1.fillna(0)
         array1 = np.delete(array1, -1, 0)
-        print(df1)
+        #print(df1)
         # hex -> decimal
         # v1 <-> y1, v2 <-> x2, v3 <-> y2, v4 <-> x1
         y1_exp = np.array(list(map(f, array1[:, 2])))
@@ -84,10 +95,12 @@ def main():
                             "y-axis coefficient: a": res2[0],
                             "y-axis offset: b": res2[1]})
         filename, ext = os.path.splitext(os.path.basename(csvs[i]))
-        print(df2)
+        #print(df2)
         df2.to_csv(path+filename+"_out.csv")
+        ax[i].plot(time, x_exp-offsets_x[i], color="red")
+        ax[i].plot(time, y_exp-offsets_y[i], color="blue")
 
-
+    """
     ###### plot ######
     ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)
     ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=3)
@@ -104,8 +117,9 @@ def main():
     ax5 = ax3.twinx()
     #ax5.plot(time, x_exp, color="red", lw=0.5)
     ax5.scatter(time, x_exp, color="red", s=5)
+    """
     fig.tight_layout()
-    plt.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
+    #plt.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
     plt.show()
 
 
