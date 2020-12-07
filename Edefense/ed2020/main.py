@@ -8,20 +8,40 @@ import os
 
 def main():
     mpl.rcParams['agg.path.chunksize'] = 100000
-    path = "C:/Users/Kouhei/Documents/edefense/20191204/"
+    path = "F:/ed2020/20201204/"
     # representative calibration data
     read_name_cal = "XYS200_DPSD2018_no2_121.csv"
     # experimental data
-    read_name_meadata = "*ch*.csv"
-    csvs = glob.glob(path+read_name_meadata)
-    print(csvs)
-    # offset of relative story displacement
-    # 耐震 No2, 3, 4, … 免振 No10, 11, 12, …
+    #read_name_meadata = "*ch*.csv"
+    #csvs = glob.glob(path+read_name_meadata)
+    """
+    # 手前　耐震 No2, 4, 6, 8; 免振 No10, 12, 14
+    csvs = ['F:/ed2020/20201204\\r8_ch01.csv',
+            'F:/ed2020/20201204\\r8_ch04.csv',
+            'F:/ed2020/20201204\\r8_ch06.csv',
+            'F:/ed2020/20201204\\r8_ch08.csv',
+            'F:/ed2020/20201204\\r8_ch10.csv',
+            'F:/ed2020/20201204\\r8_ch12.csv',
+            'F:/ed2020/20201204\\r8_ch14.csv']
     offsets_x = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
     offsets_y = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # mm
+    """
+    # 奥　耐震 No3, 5, 7, 9; 免振 No11, 13, 15, 17
+    csvs = ['F:/ed2020/20201204\\r8_ch03.csv',
+            'F:/ed2020/20201204\\r8_ch05.csv',
+            'F:/ed2020/20201204\\r8_ch07.csv',
+            'F:/ed2020/20201204\\r8_ch09.csv',
+            'F:/ed2020/20201204\\r8_ch11.csv',
+            'F:/ed2020/20201204\\r8_ch13.csv',
+            'F:/ed2020/20201204\\r8_ch15.csv']
+    offsets_x = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # mm
+    offsets_y = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # mm
+
+    offsets_x = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # mm
+    print(len(csvs))
 
     smp = 50 # 50Hz
-    fig = plt.figure(figsize=(20, 10))
+    fig = plt.figure(figsize=(30, 15))
     fig.suptitle("Horizontal axis: time [s], Vertical axis: Relative-story displacement [mm]")
     ax = []
     num_plot = 8
