@@ -14,7 +14,7 @@ def main():
     # experimental data
     #read_name_meadata = "*ch*.csv"
     #csvs = glob.glob(path+read_name_meadata)
-    """
+
     # 手前　耐震 No2, 4, 6, 8; 免振 No10, 12, 14
     csvs = ['F:/ed2020/20201204\\r8_ch01.csv',
             'F:/ed2020/20201204\\r8_ch04.csv',
@@ -34,6 +34,7 @@ def main():
             'F:/ed2020/20201204\\r8_ch11.csv',
             'F:/ed2020/20201204\\r8_ch13.csv',
             'F:/ed2020/20201204\\r8_ch15.csv']
+    """
     offsets_x = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # mm
     offsets_y = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # mm
 
